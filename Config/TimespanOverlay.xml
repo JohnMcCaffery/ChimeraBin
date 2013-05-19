@@ -1,0 +1,129 @@
+<Overlay Width="1920" Height="1080" >
+	<Any>
+		<Triggers>
+			<Trigger Type="SkeletonLost" Timeout="30000" Name="SkeletonLost" />
+			<Trigger Type="SkeletonFound" Name="SkeletonFound" />
+		</Triggers>
+
+		<TransitionStyles>
+			<Transition Type="BitmapTransition" Name="BitmapFade" Length="2000" Style="Fade" />
+			<Transition Type="OpacityTransition" Name="FadeOut" Length="2000" FadeOut="true" />
+			<Transition Type="OpacityTransition" Name="FadeIn" Length="2000" FadeOut="false" />
+		</TransitionStyles>
+
+		<States>
+			<State Type="ImageBG" Name="Splash" Splash="true">
+				<window Window="MainWindow" File="/MenuBGs/ExampleBG.png" Splash="True"/>
+			</State>
+
+			<State Type="Flythrough" Name="Idle" File="/Flythroughs/Caen-long.xml" Idle="true">
+				<IdleTrigger Type="SkeletonLost" />
+				<IdleTransition Transition="FadeOut" />
+				<SplashTransition Transition="FadeIn" />
+			</State>
+
+			<State Type="Slideshow" Name="Slideshow" Folder="Images/TodaySlideshow/" >
+				<NextTriggers>
+					<ImageTrigger X="1632" Y="918" File="Images/Buttons/NextTrans.png" />
+				</NextTriggers>
+				<PrevTriggers>
+					<ImageTrigger X="96" Y="918" File="Images/Buttons/PrevTrans.png" />
+				</PrevTriggers>
+			</State>
+
+			<State Type="ImageBG" Name="Story1Confirm" > <window Window="MainWindow" File="/StorytellingVideos/ConfirmDogs.png" Splash="True"/> </State>
+			<State Type="ImageBG" Name="Story2Confirm" > <window Window="MainWindow" File="/StorytellingVideos/ConfirmGartymore.png" Splash="True"/> </State>
+			<State Type="ImageBG" Name="Story3Confirm" > <window Window="MainWindow" File="/StorytellingVideos/ConfirmFrakkok.png" Splash="True"/> </State>
+			<State Type="ImageBG" Name="Story4Confirm" > <window Window="MainWindow" File="/StorytellingVideos/ConfirmFishmeran.png" Splash="True"/> </State>
+			<State Type="ImageBG" Name="Story5Confirm" > <window Window="MainWindow" File="/StorytellingVideos/ConfirmWolf.png" Splash="True"/> </State>
+
+			<State Type="Video" Name="Story1" File="/Videos/dogs.m4v" FinishState="Splash" />
+			<State Type="Video" Name="Story2" File="/Videos/garyore.m4v" FinishState="Splash" />
+			<State Type="Video" Name="Story3" File="/Videos/orkney.m4v" FinishState="Splash" />
+			<State Type="Video" Name="Story4" File="/Videos/fisherman.m4v" FinishState="Splash" />
+			<State Type="Video" Name="Story5" File="/Videos/wolf.m4v" FinishState="Splash" />
+
+			<!--
+      <State Type="Video" Name="Video" File="E:\Video\Edit\Out\vid.mpg" FinishState="None" L="310" T="310" R="790" B="590" RestartMode="true">
+	<window Window="MainWindow" File="../Images/Example/ExampleBGVideo.png" Splash="True"/>
+	<StartTriggers>
+	  <InvisibleTrigger T="310" L="310" R="790" B="590" />
+	</StartTriggers>
+	<StopTriggers>
+	  <InvisibleTrigger T="30" L="30" R="800" B="600" />
+	</StopTriggers>
+	<ResetTriggers>
+	  <ImageTrigger X="1000" Y="300" File="../Images/Example/Button.png" AlwaysOn="false" />
+	</ResetTriggers>
+      </State>
+      -->
+
+      <State Type="Flythrough" Name="GuidedTour" File="/Flythroughs/Caen-Guided.xml" Stepping="true" DisplaySubtitles="true" SubtitleTimeout="20">
+
+	      <StepTextSetup Window="MainWindow" Font="Verdana" Size="50" Color="Red" Style="Bold" Colour="Red" X="200" Y="200" />
+	      <SubtitleTextSetup Window="MainWindow" Font="Verdana" Size="30" Color="Red" Style="Bold" Colour="Red" X="200" Y="800" Alignment="TopMiddle" />
+
+	      <Triggers>
+			<ImageTrigger X="1632" Y="918" File="Images/Buttons/Next.png" />
+	      </Triggers>
+
+	      <Steps>
+		      <Step Step="0" Voiceover="C:\Users\Iain\Music\An Awesome Wave (converted)\01 Intro.m4a">
+			      <Image File="/Images/GuidedTour/DemoFlythroughGuidedTourImage.png" X="700" Y="50"/>
+			      <Subtitles>
+				      <Subtitle>First Subtitle</Subtitle>
+				      <Subtitle Time="5">Second Subtitle</Subtitle>
+			      </Subtitles>
+		      </Step>
+	      </Steps>
+      </State>
+      </States>
+      <Transitions>
+	      <InvisibleTransition From="Splash" To="GuidedTour" Transition="FadeOut" L="960" T="380" R="1410" B="665" />
+
+	      <ImageTransition From="Idle" 		To="Splash" Transition="FadeIn" Trigger="SkeletonFound" />
+	      <ImageTransition From="GuidedTour" 	To="Splash" Transition="FadeIn" X="96" Y="918" File="/Images/Buttons/Back.png" />
+	      <ImageTransition From="Slideshow" 	To="Splash" Transition="BitmapFade" X="864" Y="918" File="/Images/Buttons/BackTrans.png" />
+
+	      <InvisibleTransition From="Splash" To="Confirm1" 	Transition="BitmapFade" L="115" T="395" R="835" B="485" />
+	      <InvisibleTransition From="Splash" To="Confirm2" 	Transition="BitmapFade" L="115" T="510" R="835" B="600" />
+	      <InvisibleTransition From="Splash" To="Confirm3" 	Transition="BitmapFade" L="115" T="625" R="835" B="720" />
+	      <InvisibleTransition From="Splash" To="Confirm4" 	Transition="BitmapFade" L="115" T="745" R="835" B="825" />
+	      <InvisibleTransition From="Splash" To="Confirm5" 	Transition="BitmapFade" L="115" T="860" R="835" B="955" />
+
+	      <InvisibleTransition From="Story1Confirm" To="Story1" Transition="BitmapFade" L="320" T="380" R="770" B="665" />
+	      <InvisibleTransition From="Story2Confirm" To="Story2" Transition="BitmapFade" L="320" T="380" R="770" B="665" />
+	      <InvisibleTransition From="Story3Confirm" To="Story3" Transition="BitmapFade" L="320" T="380" R="770" B="665" />
+	      <InvisibleTransition From="Story4Confirm" To="Story4" Transition="BitmapFade" L="320" T="380" R="770" B="665" />
+	      <InvisibleTransition From="Story5Confirm" To="Story5" Transition="BitmapFade" L="320" T="380" R="770" B="665" />
+
+	      <InvisibleTransition From="Story1Confirm" To="Splash" Transition="BitmapFade" L="960" T="380" R="1410" B="665" />
+	      <InvisibleTransition From="Story2Confirm" To="Splash" Transition="BitmapFade" L="960" T="380" R="1410" B="665" />
+	      <InvisibleTransition From="Story3Confirm" To="Splash" Transition="BitmapFade" L="960" T="380" R="1410" B="665" />
+	      <InvisibleTransition From="Story4Confirm" To="Splash" Transition="BitmapFade" L="960" T="380" R="1410" B="665" />
+	      <InvisibleTransition From="Story5Confirm" To="Splash" Transition="BitmapFade" L="960" T="380" R="1410" B="665" />
+      </Transitions>
+  </Any>
+
+  <!-- Settings specific to the overlay being instantiated based on click interactions -->
+
+  <ClickBased>
+	  <States>
+
+	  </States>
+	  <Transitions>
+
+	  </Transitions>
+  </ClickBased>
+
+  <!-- Settings specific to the overlay being instantiated based on hover interactions -->
+
+  <HoverBased>
+	  <States>
+
+	  </States>
+	  <Transitions>
+
+	  </Transitions>
+  </HoverBased>
+</Overlay>
