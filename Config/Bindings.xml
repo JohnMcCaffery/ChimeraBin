@@ -17,6 +17,7 @@
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.OverlayImageFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.StaticTextFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.DynamicTextFactory, OverlayLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.ActiveAreaFactory, OverlayLib"  scope="singleton" />
   <!-- Transitions -->
   <bind service="Chimera.Interfaces.Overlay.IImageTransitionFactory, OverlayLib" to="Chimera.Overlay.Transitions.BitmapFadeFactory, OverlayLib"  scope="singleton" />
   <!-- Triggers -->
@@ -43,6 +44,7 @@
   <!-- GridProxy related bindings -->
   <bind service="Chimera.Interfaces.IOutputFactory, ChimeraLib" to="Chimera.OpenSim.OpenSimViewerFactory, OpenSimLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.OpenSim.HeightmapPlugin, OpenSimLib" scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.OpenSim.Overlay.InfoStateFactory, OpenSimLib" scope="singleton" />
 
   <!-- Windows Media Player related bindings -->
   <bind service="Chimera.Interfaces.IMediaPlayer, OverlayLib" to="Chimera.Multimedia.WMPMediaPlayer, WindowsMediaPlayerLib"  scope="singleton" />
