@@ -2,10 +2,16 @@
 	<Any>
     <Features>
         <Feature Factory="ActiveArea" Name="LonghouseArea" File="Images/ActiveAreas/Longhouse.png" X="1200" Y="50">
-          <P X="128" Y="128" />
+          <P X="55" Y="55" />
+          <P X="55" Y="200" />
+          <P X="100" Y="200" />
+          <P X="100" Y="55" />
         </Feature>
         <Feature Factory="ActiveArea" Name="PeatArea" File="Images/ActiveAreas/PeatCutting.png"  X="1200" Y="50">
-          <P X="128" Y="128" />
+          <P X="145" Y="55" />
+          <P X="145" Y="200" />
+          <P X="200" Y="200" />
+          <P X="200" Y="55" />
         </Feature> 
     </Features>
     
@@ -45,8 +51,8 @@
 
       <State Factory="Info" Name="AvatarHelp">
         <Features>
-          <Feature Name="LonghouseArea" />
-          <Feature Name="PeatArea" />
+          <Feature Feature="LonghouseArea" />
+          <Feature Feature="PeatArea" />
         </Features>
       </State>
 
