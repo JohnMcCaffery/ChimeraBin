@@ -13,6 +13,10 @@
 
   <!--                        OVERLAY BINDINGS                         -->
 
+  <!-- Features -->
+  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.OverlayImageFactory, OverlayLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.StaticTextFactory, OverlayLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.DynamicTextFactory, OverlayLib"  scope="singleton" />
   <!-- Transitions -->
   <bind service="Chimera.Interfaces.Overlay.IImageTransitionFactory, OverlayLib" to="Chimera.Overlay.Transitions.BitmapFadeFactory, OverlayLib"  scope="singleton" />
   <!-- Triggers -->
@@ -44,6 +48,7 @@
   <bind service="Chimera.Interfaces.IMediaPlayer, OverlayLib" to="Chimera.Multimedia.WMPMediaPlayer, WindowsMediaPlayerLib"  scope="singleton" />
 
   <!-- Kinect related bindings -->
+  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Kinect.Overlay.SkeletonFeatureFactory, KinectLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.SkeletonLostFactory, KinectLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.SkeletonFoundFactory, KinectLib"  scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.GUI.KinectCamera, KinectLib" scope="singleton" />
