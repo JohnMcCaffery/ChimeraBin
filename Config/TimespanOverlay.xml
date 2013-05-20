@@ -1,5 +1,14 @@
 <Overlay Width="1920" Height="1080" >
 	<Any>
+    <Features>
+        <Feature Factory="ActiveArea" Name="LonghouseArea" File="Images/ActiveAreas/Longhouse.png" X="1200" Y="50">
+          <P X="128" Y="128" />
+        </Feature>
+        <Feature Factory="ActiveArea" Name="PeatArea" File="Images/ActiveAreas/PeatCutting.png"  X="1200" Y="50">
+          <P X="128" Y="128" />
+        </Feature> 
+    </Features>
+    
 		<Triggers>
 			<Trigger Factory="SkeletonLost" Timeout="30000" Name="SkeletonLost" />
 			<Trigger Factory="SkeletonFound" Name="SkeletonFound" />
@@ -35,12 +44,10 @@
 			</State>
 
       <State Factory="Info" Name="AvatarHelp">
-        <ActiveArea File="Images/ActiveAreas/Longhouse.png" X="1200" Y="50">
-          <P X="128" Y="128" />
-        </ActiveArea>
-        <ActiveArea File="Images/ActiveAreas/PeatCutting.png" X="1200" Y="50">
-          <P X="128" Y="128" />
-        </ActiveArea>
+        <Features>
+          <Feature Name="LonghouseArea" />
+          <Feature Name="PeatArea" />
+        </Features>
       </State>
 
 			<State Factory="ImageBG" Name="Story1Confirm" > <window Window="MainWindow" File="Images/StorytellingVideos/ConfirmDogs.png" Splash="True"/> </State>
