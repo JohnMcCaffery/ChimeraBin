@@ -1,26 +1,33 @@
 <Overlay Width="1920" Height="1080" >
-	<Any>
+  <Any>
     <Features>
-        <Feature Factory="ActiveArea" Name="LonghouseArea" File="Images/ActiveAreas/Longhouse.png" X="1200" Y="50">
+      <Area Factory="ActiveArea" Name="LonghouseArea">
+        <Feature Factory="Image" File="Images/ActiveAreas/Longhouse.png" X="1200" Y="50" />
+        <Trigger>
           <P X="55" Y="55" />
           <P X="55" Y="200" />
           <P X="100" Y="200" />
           <P X="100" Y="55" />
-        </Feature>
-        <Feature Factory="ActiveArea" Name="PeatArea" File="Images/ActiveAreas/PeatCutting.png"  X="1200" Y="50">
+        </Trigger>
+      </Area>
+
+      <Area Factory="ActiveArea" Name="PeatArea">
+        <Feature Factory="Image" File="Images/ActiveAreas/PeatCutting.png"  X="1200" Y="50" />
+        <Trigger>
           <P X="145" Y="55" />
           <P X="145" Y="200" />
           <P X="200" Y="200" />
           <P X="200" Y="55" />
-        </Feature> 
+        </Trigger>
+      </Area>
     </Features>
-    
-		<Triggers>
-			<Trigger Factory="SkeletonLost" Timeout="30000" Name="SkeletonLost" />
-			<Trigger Factory="SkeletonFound" Name="SkeletonFound" />
-		</Triggers>
 
-		<TransitionStyles>
+    <Triggers>
+      <Trigger Factory="SkeletonLost" Timeout="30000" Name="SkeletonLost" />
+      <Trigger Factory="SkeletonFound" Name="SkeletonFound" />
+    </Triggers>
+
+    <TransitionStyles>
 			<Transition Factory="BitmapTransition" Name="BitmapFade" Length="2000" Style="Fade" />
 			<Transition Factory="OpacityTransition" Name="FadeOut" Length="2000" FadeOut="true" />
 			<Transition Factory="OpacityTransition" Name="FadeIn" Length="2000" FadeOut="false" />
@@ -51,8 +58,8 @@
 
       <State Factory="Info" Name="AvatarHelp">
         <Features>
-          <Feature Feature="LonghouseArea" />
-          <Feature Feature="PeatArea" />
+          <Feature Name="LonghouseArea" />
+          <Feature Name="PeatArea" />
         </Features>
       </State>
 

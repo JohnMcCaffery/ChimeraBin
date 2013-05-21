@@ -17,7 +17,7 @@
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.OverlayImageFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.StaticTextFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.DynamicTextFactory, OverlayLib"  scope="singleton" />
-  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.ActiveAreaFactory, OverlayLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.ActiveAreaFeatureFactory, OverlayLib"  scope="singleton" />
   <!-- Transitions -->
   <bind service="Chimera.Interfaces.Overlay.IImageTransitionFactory, OverlayLib" to="Chimera.Overlay.Transitions.BitmapFadeFactory, OverlayLib"  scope="singleton" />
   <!-- Triggers -->
@@ -27,6 +27,7 @@
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Overlay.Triggers.ClickTriggerFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Overlay.Triggers.ImageClickTriggerFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Overlay.Triggers.TextClickTriggerFactory, OverlayLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Overlay.Triggers.ActiveAreaTriggerFactory, OverlayLib"  scope="singleton" />
   <!-- Selection Renderers -->
   <!--<bind service="Chimera.Interfaces.Overlay.ISelectionRendererFactory, OverlayLib" to="Chimera.Overlay.Triggers.TextClickTriggerFactory, OverlayLib"  scope="singleton" />-->
   <!-- Transition Styles -->
