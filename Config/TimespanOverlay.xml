@@ -113,9 +113,7 @@
 
       <Transitions>
 	      <InvisibleTransition From="Splash" To="GuidedTour"    Transition="FadeOut"    L="1080" T="415" R="1755" B="500" />
-        <!--<InvisibleTransition From="Splash" To="KinectAvatar"  Transition="FadeOut"    L="1080" T="535" R="1755" B="620" />-->
 	      <InvisibleTransition From="Splash" To="Slideshow"     Transition="BitmapFade" L="1080" T="645" R="1755" B="735" />
-	      <!--<InvisibleTransition From="Splash" To="KinectFlycam"  Transition="FadeOut"    L="1080" T="765" R="1755" B="865" /> -->
 
 	      <Transition From="Idle" 		To="Splash" Transition="FadeIn" Trigger="SkeletonFound" />
 	      <ImageTransition From="GuidedTour" 	To="Splash" Transition="FadeIn" X="96" Y="918" File="Images/Buttons/Back.png" />
@@ -162,8 +160,23 @@
     </Features>
 	  <States>
 
+      <State Factory="KinectControl" Name="KinectAvatar" Avatar="true" >
+        <Features>
+          <Feature Name="ExploreSkeleton" />
+        </Features>
+      </State>
+
+      <State Factory="KinectControl" Name="KinectFlycam" Avatar="false" X="600" Y="500" Z="60" Pitch="0" Yaw="-90" >
+        <Features>
+          <Feature Name="ExploreSkeleton" />
+        </Features>
+      </State>
+
 	  </States>
 	  <Transitions>
+
+        <InvisibleTransition From="Splash" To="KinectAvatar"  Transition="FadeOut"    L="1080" T="535" R="1755" B="620" />
+	      <InvisibleTransition From="Splash" To="KinectFlycam"  Transition="FadeOut"    L="1080" T="765" R="1755" B="865" /> 
 
 	  </Transitions>
   </HoverBased>
