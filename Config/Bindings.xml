@@ -6,10 +6,11 @@
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Plugins.KBMousePlugin, ChimeraLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.OpenSim.OpenSimController, OpenSimLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Flythrough.FlythroughPlugin, FlythroughLib" scope="singleton" />
-  <!--<bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.OverlayPlugin, OverlayLib" scope="singleton" />-->
   <!-- <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Touchscreen.TouchscreenPlugin, TouchscreenLib" scope="singleton" /> -->
+
+  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.OverlayPlugin, OverlayLib" scope="singleton" />
   <!-- Requires overlay to be bound -->
-  <!--<bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.Plugins.MousePlugin, OverlayLib" scope="singleton" />-->
+  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.Plugins.MousePlugin, OverlayLib" scope="singleton" />
 
   <!--                        OVERLAY BINDINGS                         -->
 
@@ -18,8 +19,12 @@
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.StaticTextFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.DynamicTextFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.ActiveAreaFeatureFactory, OverlayLib"  scope="singleton" />
-  <!-- Transitions -->
+  <!-- Image Transitions -->
   <bind service="Chimera.Interfaces.Overlay.IImageTransitionFactory, OverlayLib" to="Chimera.Overlay.Transitions.BitmapFadeFactory, OverlayLib"  scope="singleton" />
+  <!-- Renderers -->
+  <bind service="Chimera.Interfaces.Overlay.ISelectionRendererFactory, OverlayLib" to="Chimera.Overlay.SelectionRenderers.DialRendererFactory, OverlayLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.ISelectionRendererFactory, OverlayLib" to="Chimera.Overlay.SelectionRenderers.CircleRendererFactory, OverlayLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.ISelectionRendererFactory, OverlayLib" to="Chimera.Overlay.SelectionRenderers.CursorRendererFactory, OverlayLib"  scope="singleton" />
   <!-- Triggers -->
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Overlay.Triggers.HoverTriggerFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Overlay.Triggers.ImageHoverTriggerFactory, OverlayLib"  scope="singleton" />
@@ -55,6 +60,7 @@
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Kinect.Overlay.SkeletonFeatureFactory, KinectLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.SkeletonLostFactory, KinectLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.SkeletonFoundFactory, KinectLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.RaiseArmTriggerFactory, KinectLib"  scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.GUI.KinectCamera, KinectLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.KinectMovementPlugin, KinectLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.SimpleKinectCursor, KinectLib" scope="singleton" />
