@@ -64,7 +64,7 @@
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.GUI.KinectCamera, KinectLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.KinectMovementPlugin, KinectLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.SimpleKinectCursor, KinectLib" scope="singleton" />
-  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.RaiseArmHelpTrigger, KinectLib" scope="singleton" />
+  <!--<bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.RaiseArmHelpTrigger, KinectLib" scope="singleton" />-->
 
   <!-- Joystick related bindings -->
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Joystick.XBoxControllerPlugin, JoystickLib" scope="singleton" />
