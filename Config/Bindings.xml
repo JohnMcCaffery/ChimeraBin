@@ -8,9 +8,11 @@
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Flythrough.FlythroughPlugin, FlythroughLib" scope="singleton" />
   <!-- <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Touchscreen.TouchscreenPlugin, TouchscreenLib" scope="singleton" /> -->
 
+  <!-- Overlay bindings-->
+  <!--
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.OverlayPlugin, OverlayLib" scope="singleton" />
-  <!-- Requires overlay to be bound -->
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.Plugins.MousePlugin, OverlayLib" scope="singleton" />
+  -->
 
   <!--                        OVERLAY BINDINGS                         -->
 
@@ -38,10 +40,12 @@
   <!-- Transition Styles -->
   <bind service="Chimera.Interfaces.Overlay.ITransitionStyleFactory, OverlayLib" to="Chimera.Overlay.Transitions.BitmapTransitionFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITransitionStyleFactory, OverlayLib" to="Chimera.Overlay.Transitions.OpacityTransitionFactory, OverlayLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.ITransitionStyleFactory, OverlayLib" to="Chimera.Overlay.Transitions.CutTransitionFactory, OverlayLib"  scope="singleton" />
   <!-- States -->
   <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Overlay.States.ImageBGStateFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Overlay.States.VideoStateFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Overlay.States.SlideshowStateFactory, OverlayLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Overlay.States.ExploreStateFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Flythrough.Overlay.FlythroughStateFactory, FlythroughLib"  scope="singleton" />
 
 
@@ -63,9 +67,12 @@
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.RaiseArmTriggerFactory, KinectLib"  scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.GUI.KinectCamera, KinectLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.KinectMovementPlugin, KinectLib" scope="singleton" />
+  <!--
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.SimpleKinectCursor, KinectLib" scope="singleton" />
-  <!--<bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.RaiseArmHelpTrigger, KinectLib" scope="singleton" />-->
-
+-->
   <!-- Joystick related bindings -->
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Joystick.XBoxControllerPlugin, JoystickLib" scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickButtonTriggerFactory, JoystickLib" scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickActivatedTriggerFactory, JoystickLib" scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickInactivatedTriggerFactory, JoystickLib" scope="singleton" />
 </module>

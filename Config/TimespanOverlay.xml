@@ -1,5 +1,9 @@
 <Overlay Width="1920" Height="1080" >
   <Any>
+    <Features>
+      <Feature Factory="Image" Name="HelpSidebar" File="Images/Misc/HelpSidebar.png" X="50" Y="150" Window="MainWindow" />
+    </Features>
+    
     <SelectionRenderers>
       <Renderer Factory="Cursor" Name="DialCursor" InnerRenderer="Dial" Radius="40" Colour="Red" Window="MainWindow" />
     </SelectionRenderers>
@@ -12,13 +16,15 @@
 
 		<States>
 			<State Factory="ImageBG" Name="Splash" Splash="true">
-				<window Window="MainWindow" File="Images/MenuBGs/Caen-Splash.png" Splash="True"/>
+			<!--<State Factory="ImageBG" Name="Splash">-->
+				<window Window="MainWindow" File="Images/MenuBGs/Caen-Splash.png" Start="True"/>
         <Features>
           <Feature Name="SplashSkeleton" Window="MainWindow" />
         </Features>
 			</State>
 
 			<State Factory="Flythrough" Name="Idle" File="/Flythroughs/Caen-long.xml" Idle="true">
+			<!--<State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Splash="true">-->
         <Triggers>
           <Trigger Name="IdleTrigger" />
         </Triggers>
@@ -35,8 +41,19 @@
 				</PrevTriggers>
 			</State>
 
-      <State Factory="Info" Name="HelpAvatar" />
-      <State Factory="Info" Name="HelpFlycam" />
+      <State Factory="Info" Name="HelpAvatar" >
+        <Features>
+          <Feature Name="HelpSidebar" />
+          <Feature Name="HelpSkeleton" />
+        </Features>
+      </State>
+
+      <State Factory="Info" Name="HelpFlycam" >
+        <Features>
+          <Feature Name="HelpSidebar" />
+          <Feature Name="HelpSkeleton" />
+        </Features>
+    </State>
 
 			<State Factory="ImageBG" Name="Story1Confirm" > <window Window="MainWindow" File="Images/StorytellingVideos/ConfirmDogs.png" Splash="True"/> </State>
 			<State Factory="ImageBG" Name="Story2Confirm" > <window Window="MainWindow" File="Images/StorytellingVideos/ConfirmGartymore.png" Splash="True"/> </State>
@@ -77,6 +94,9 @@
       <Transitions>
 	      <InvisibleTransition From="Splash" To="GuidedTour"    Transition="FadeOut"    L="1080" T="415" R="1755" B="500" Window="MainWindow" Renderer="DialCursor" />
 	      <InvisibleTransition From="Splash" To="Slideshow"     Transition="BitmapFade" L="1080" T="645" R="1755" B="735" Window="MainWindow" Renderer="DialCursor"/>
+
+	      <ImageTransition From="HelpAvatar" 	To="Splash" Transition="FadeIn" X="1200" Y="900" File="Images/Buttons/MainMenu.png" Window="MainWindow" Renderer="DialCursor" />
+	      <ImageTransition From="HelpFlycam" 	To="Splash" Transition="FadeIn" X="1200" Y="900" File="Images/Buttons/MainMenu.png" Window="MainWindow" Renderer="DialCursor" />
 
 	      <Transition From="Idle" 		To="Splash" Transition="FadeIn" Trigger="SkeletonFound" />
 	      <ImageTransition From="GuidedTour" 	To="Splash" Transition="FadeIn" X="96" Y="918" File="Images/Buttons/Back.png" Window="MainWindow" Renderer="DialCursor" />
@@ -150,6 +170,9 @@
 
         <Transition From="KinectAvatar" To="HelpAvatar"  Transition="FadeIn" Trigger="ExitExplore" />
 	      <Transition From="KinectFlycam" To="HelpFlycam"  Transition="FadeIn" Trigger="ExitExplore" /> 
+
+	      <ImageTransition From="HelpAvatar" 	To="KinectAvatar" Transition="FadeIn" X="1600" Y="900" File="Images/Buttons/HelpToWorld.png" Window="MainWindow" Renderer="DialCursor" />
+	      <ImageTransition From="HelpFlycam" 	To="KinectFlycam" Transition="FadeIn" X="1600" Y="900" File="Images/Buttons/HelpToWorld.png" Window="MainWindow" Renderer="DialCursor" />
 	  </Transitions>
   </HoverBased>
 </Overlay>

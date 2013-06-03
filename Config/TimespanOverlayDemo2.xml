@@ -1,0 +1,166 @@
+<Overlay Width="1920" Height="1080" >
+  <Any>
+    <Features>
+      <Area Factory="ActiveArea" Name="LonghouseArea" Window="MainWindow" >
+        <Feature Factory="Image" File="Images/ActiveAreas/Longhouse.png" X="1200" Y="50" />
+        <Trigger>
+          <P X="55" Y="55" />
+          <P X="55" Y="200" />
+          <P X="100" Y="200" />
+          <P X="100" Y="55" />
+        </Trigger>
+      </Area>
+
+      <Area Factory="ActiveArea" Name="PeatArea" Window="MainWindow" >
+        <Feature Factory="Image" File="Images/ActiveAreas/PeatCutting.png"  X="1200" Y="50" />
+        <Trigger>
+          <P X="145" Y="55" />
+          <P X="145" Y="200" />
+          <P X="200" Y="200" />
+          <P X="200" Y="55" />
+        </Trigger>
+      </Area>
+    </Features>
+
+    <Triggers>
+      <Trigger Factory="JoystickActivated" Name="JSActivated" />
+      <Trigger Factory="JoystickInactive" Name="JSLost" TimeoutS="120" />
+      <Trigger Factory="JoystickButton" Name="A" Button="A" />
+      <Trigger Factory="JoystickButton" Name="B" Button="B" />
+      <Trigger Factory="JoystickButton" Name="X" Button="X" />
+      <Trigger Factory="JoystickButton" Name="Y" Button="Y" />
+      <Trigger Factory="JoystickButton" Button="RightShoulder" Name="R" />
+      <Trigger Factory="JoystickButton" Button="LeftShoulder" Name="L" />
+    </Triggers>
+
+    <TransitionStyles>
+			<Transition Factory="Cut" Name="Cut" />
+		</TransitionStyles>
+
+		<States>
+
+      <State Factory="Explore" Name="Explore" Avatar="true" />
+
+			<State Factory="Flythrough" Name="IdleFlythrough" File="Flythroughs/Caen-long.xml" Start="true" Idle="true">
+        <Triggers>
+          <Trigger Name="JSLost" />
+          <Trigger Name="A" />
+        </Triggers>
+				<IdleTransition Name="Cut" />
+				<SplashTransition Name="Cut" />
+			</State>
+
+			<State Factory="Slideshow" Name="Slideshow" Folder="Images/TodaySlideshow/" Transition="Fade" >
+				<NextTriggers>
+					<Trigger Name="L" />
+				</NextTriggers>
+				<PrevTriggers>
+					<Trigger Name="R" />
+				</PrevTriggers>
+			</State>
+
+      <State Factory="Info" Name="AvatarHelp">
+        <Features>
+          <Feature Name="LonghouseArea" />
+          <Feature Name="PeatArea" />
+        </Features>
+      </State>
+
+			<!--
+      <State Factory="Video" Name="Video" File="E:\Video\Edit\Out\vid.mpg" FinishState="None" L="310" T="310" R="790" B="590" RestartMode="true">
+	<window Window="MainWindow" File="../Images/Example/ExampleBGVideo.png" Splash="True"/>
+	<StartTriggers>
+	  <InvisibleTrigger T="310" L="310" R="790" B="590" />
+	</StartTriggers>
+	<StopTriggers>
+	  <InvisibleTrigger T="30" L="30" R="800" B="600" />
+	</StopTriggers>
+	<ResetTriggers>
+	  <ImageTrigger X="1000" Y="300" File="../Images/Example/Button.png" AlwaysOn="false" />
+	</ResetTriggers>
+      </State>
+      -->
+
+      <State Factory="Flythrough" Name="Excavation" File="Flythroughs/Caen-Walk2.xml" Stepping="true" DisplaySubtitles="false" SubtitleTimeout="5">
+
+	      <StepText Window="MainWindow" Font="Verdana" Size="25" Color="Red" Style="Bold" Colour="Red" X="20" Y="50" />
+	      <SubtitleText Window="MainWindow" Font="Verdana" Size="30" Color="Red" Style="Bold" Colour="Red" X="960" Y="900" Alignment="TopCenter" />
+
+	      <Triggers>
+          <Trigger Name="R" />
+        </Triggers>
+
+	      <Steps>
+		      <Step Step="0">
+			      <Image File="Images/Walk/SDC13462.jpg" X="1300" Y="100" W="500"/>
+		      </Step>
+		      <Step Step="1">
+			      <Image File="Images/Walk/SDC13494.jpg" X="100" Y="800" W="500"/>
+		      </Step>
+		      <Step Step="2">
+			      <Image File="Images/Walk/SDC13473.jpg" X="1300" Y="800" W="500"/>
+		      </Step>
+		      <Step Step="3">
+			      <Image File="Images/Walk/SDC13479.jpg" X="1300" Y="100" W="500"/>
+		      </Step>
+		      <Step Step="4">
+			      <Image File="Images/Walk/SDC13468C.jpg" X="100" Y="800" W="500"/>
+		      </Step>
+		      <Step Step="5">
+			      <Image File="Images/Walk/SDC13478.jpg" X="1300" Y="100" W="500"/>
+		      </Step>
+		      <Step Step="6">
+			      <Image File="Images/Walk/SDC13491.jpg" X="100" Y="800" W="500"/>
+		      </Step>
+		      <Step Step="7">
+			      <Image File="Images/Walk/SDC13488.jpg" X="1300" Y="100" W="500"/>
+		      </Step>
+		      <Step Step="8">
+			      <Image File="Images/Walk/SDC13477.jpg" X="100" Y="800" W="500"/>
+		      </Step>
+	      </Steps>
+      </State>
+      </States>
+
+      <Transitions>
+      </Transitions>
+  </Any>
+
+  <!-- Settings specific to the overlay being instantiated based on click interactions -->
+
+  <ClickBased>
+	  <States>
+
+	  </States>
+	  <Transitions>
+
+      <Transition From="IdleFlythrough" To="Explore" Transition="Cut" Trigger="JSActivated" />
+      <Transition From="IdleFlythrough" To="Explore" Transition="Cut" Trigger="X" />
+      <Transition From="IdleFlythrough" To="Slideshow" Transition="Cut" Trigger="B" />
+      <Transition From="IdleFlythrough" To="Excavation" Transition="Cut" Trigger="Y" />
+
+      <Transition From="Explore" To="Slideshow" Transition="Cut" Trigger="B" />
+      <Transition From="Explore" To="Excavation" Transition="Cut" Trigger="Y" />
+
+      <Transition From="Slideshow" To="Explore" Transition="Cut" Trigger="X" />
+      <Transition From="Slideshow" To="Excavation" Transition="Cut" Trigger="Y" />
+
+      <Transition From="Excavation" To="Explore" Transition="Cut" Trigger="X" />
+      <Transition From="Excavation" To="Slideshow" Transition="Cut" Trigger="B" />
+
+	  </Transitions>
+  </ClickBased>
+
+  <!-- Settings specific to the overlay being instantiated based on hover interactions -->
+
+  <HoverBased>
+    <Features>
+    </Features>
+	  <States>
+
+	  </States>
+	  <Transitions>
+
+	  </Transitions>
+  </HoverBased>
+</Overlay>
