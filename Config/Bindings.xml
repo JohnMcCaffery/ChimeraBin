@@ -9,10 +9,8 @@
   <!-- <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Touchscreen.TouchscreenPlugin, TouchscreenLib" scope="singleton" /> -->
 
   <!-- Overlay bindings-->
-  <!--
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.OverlayPlugin, OverlayLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.Plugins.MousePlugin, OverlayLib" scope="singleton" />
-  -->
 
   <!--                        OVERLAY BINDINGS                         -->
 
@@ -42,6 +40,7 @@
   <bind service="Chimera.Interfaces.Overlay.ITransitionStyleFactory, OverlayLib" to="Chimera.Overlay.Transitions.OpacityTransitionFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITransitionStyleFactory, OverlayLib" to="Chimera.Overlay.Transitions.CutTransitionFactory, OverlayLib"  scope="singleton" />
   <!-- States -->
+  <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Overlay.States.BlankStateFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Overlay.States.ImageBGStateFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Overlay.States.VideoStateFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Overlay.States.SlideshowStateFactory, OverlayLib"  scope="singleton" />
