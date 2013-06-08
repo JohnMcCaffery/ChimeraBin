@@ -19,6 +19,8 @@
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.StaticTextFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.DynamicTextFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.ActiveAreaFeatureFactory, OverlayLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.ScreenshotFeatureFactory, OverlayLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.FadeFeatureFactory, OverlayLib"  scope="singleton" />
   <!-- Image Transitions -->
   <bind service="Chimera.Interfaces.Overlay.IImageTransitionFactory, OverlayLib" to="Chimera.Overlay.Transitions.BitmapFadeFactory, OverlayLib"  scope="singleton" />
   <!-- Renderers -->
@@ -40,6 +42,7 @@
   <bind service="Chimera.Interfaces.Overlay.ITransitionStyleFactory, OverlayLib" to="Chimera.Overlay.Transitions.OpacityTransitionFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITransitionStyleFactory, OverlayLib" to="Chimera.Overlay.Transitions.CutTransitionFactory, OverlayLib"  scope="singleton" />
   <!-- States -->
+  <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Overlay.States.BlankStateFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Overlay.States.ImageBGStateFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Overlay.States.VideoStateFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Overlay.States.SlideshowStateFactory, OverlayLib"  scope="singleton" />
