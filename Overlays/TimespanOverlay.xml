@@ -1,12 +1,12 @@
 <Overlay Width="1920" Height="1080" >
   <Any>
     <Features>
-      <Feature Factory="Image" Name="HelpSidebarAvatar"  X="50" Y="150" Window="MainWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
-      <Feature Factory="Image" Name="HelpSidebarFlycam"  X="50" Y="150" Window="MainWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
+      <Feature Factory="Image" Name="HelpSidebarAvatar"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
+      <Feature Factory="Image" Name="HelpSidebarFlycam"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
     </Features>
     
     <SelectionRenderers>
-      <Renderer Factory="Cursor" Name="DialCursor" InnerRenderer="Dial" Radius="40" Colour="Red" Window="MainWindow" />
+      <Renderer Factory="Cursor" Name="DialCursor" InnerRenderer="Dial" Radius="40" Colour="Red" Frame="MainWindow" />
     </SelectionRenderers>
 
     <TransitionStyles>
@@ -18,8 +18,8 @@
     <States>
       <State Factory="Blank" Name="Splash">
         <Features>
-          <Feature Name="SplashSkeleton" Window="MainWindow" />
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Window="MainWindow">Images/MenuBGs/Caen-Splash.png</Feature>
+          <Feature Name="SplashSkeleton" Frame="MainWindow" />
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Splash.png</Feature>
         </Features>
       </State>
 
@@ -33,10 +33,10 @@
 
       <State Factory="Slideshow" Name="Slideshow" Folder="Images/TodaySlideshow/" Transition="Fade" >
         <NextTriggers>
-          <ImageTrigger X="1532" Y="918"  Window="MainWindow" Renderer="DialCursor">Images/Buttons/NextTrans.png</ImageTrigger>
+          <ImageTrigger X="1532" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/NextTrans.png</ImageTrigger>
         </NextTriggers>
         <PrevTriggers>
-          <ImageTrigger X="96" Y="918"  Window="MainWindow" Renderer="DialCursor">Images/Buttons/PrevTrans.png</ImageTrigger>
+          <ImageTrigger X="96" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/PrevTrans.png</ImageTrigger>
         </PrevTriggers>
       </State>
 
@@ -54,25 +54,25 @@
         </Features>
       </State>
 
-      <State Factory="Blank" Name="Story1Confirm"> <Features> <Feature Factory="Image" Window="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmDogs.png</Feature> </Features> </State>
-      <State Factory="Blank" Name="Story2Confirm"> <Features> <Feature Factory="Image" Window="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmGartymore.png</Feature> </Features> </State>
-      <State Factory="Blank" Name="Story3Confirm"> <Features> <Feature Factory="Image" Window="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFrakkok.png</Feature> </Features> </State>
-      <State Factory="Blank" Name="Story4Confirm"> <Features> <Feature Factory="Image" Window="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFisherman.png</Feature> </Features> </State>
-      <State Factory="Blank" Name="Story5Confirm"> <Features> <Feature Factory="Image" Window="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmWolf.png</Feature> </Features> </State>
+      <State Factory="Blank" Name="Story1Confirm"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmDogs.png</Feature> </Features> </State>
+      <State Factory="Blank" Name="Story2Confirm"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmGartymore.png</Feature> </Features> </State>
+      <State Factory="Blank" Name="Story3Confirm"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFrakkok.png</Feature> </Features> </State>
+      <State Factory="Blank" Name="Story4Confirm"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFisherman.png</Feature> </Features> </State>
+      <State Factory="Blank" Name="Story5Confirm"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmWolf.png</Feature> </Features> </State>
 
-      <State Factory="Video" Name="Story1" File="Videos/Dogs.m4v" FinishState="Splash" Transition="BitmapFade" Window="MainWindow" />
-      <State Factory="Video" Name="Story2" File="Videos/Garyore.mp4" FinishState="Splash" Transition="BitmapFade" Window="MainWindow" />
-      <State Factory="Video" Name="Story3" File="Videos/Orkney.mp4" FinishState="Splash" Transition="BitmapFade" Window="MainWindow" />
-      <State Factory="Video" Name="Story4" File="Videos/Fisherman.mp4" FinishState="Splash" Transition="BitmapFade" Window="MainWindow" />
-      <State Factory="Video" Name="Story5" File="Videos/Wolf.mp4" FinishState="Splash" Transition="BitmapFade" Window="MainWindow" />
+      <State Factory="Video" Name="Story1" File="Videos/Dogs.m4v" FinishState="Splash" Transition="BitmapFade" Frame="MainWindow" />
+      <State Factory="Video" Name="Story2" File="Videos/Garyore.mp4" FinishState="Splash" Transition="BitmapFade" Frame="MainWindow" />
+      <State Factory="Video" Name="Story3" File="Videos/Orkney.mp4" FinishState="Splash" Transition="BitmapFade" Frame="MainWindow" />
+      <State Factory="Video" Name="Story4" File="Videos/Fisherman.mp4" FinishState="Splash" Transition="BitmapFade" Frame="MainWindow" />
+      <State Factory="Video" Name="Story5" File="Videos/Wolf.mp4" FinishState="Splash" Transition="BitmapFade" Frame="MainWindow" />
 
       <State Factory="Flythrough" Start="true" Name="GuidedTour" File="Flythroughs/Caen-GuidedHack.xml" AutoStep="false" Loop="false" DisplaySubtitles="true" SubtitleTimeout="5">
 
-        <StepText Window="MainWindow" Font="Verdana" Size="50" Color="Red" Style="Bold" Colour="Red" X="50" Y="50" />
-        <SubtitleText Window="MainWindow" Font="Verdana" Size="30" Color="Black" Style="Regular" X="960" Y="800" Alignment="TopCenter" />
+        <StepText Frame="MainWindow" Font="Verdana" Size="50" Color="Red" Style="Bold" Colour="Red" X="50" Y="50" />
+        <SubtitleText Frame="MainWindow" Font="Verdana" Size="30" Colour="Black" Style="Regular" X="960" Y="800" Alignment="TopCenter" />
 
         <Triggers>
-          <ImageTrigger X="1532" Y="918"  Renderer="DialCursor" Window="MainWindow" >Images/Buttons/Next.png</ImageTrigger>
+          <ImageTrigger X="1532" Y="918"  Renderer="DialCursor" Frame="MainWindow" >Images/Buttons/Next.png</ImageTrigger>
         </Triggers>
 
         <Steps>
@@ -107,8 +107,10 @@ people populated the Strath around 1800.</Subtitle>
 
           <Step Step="2">
             <Subtitles>
-              <Subtitle>In 1813, the settlement of Caen is described by Donald Sage, the minister’s son, as...</Subtitle>
-              <Subtitle Time="5">“The last farm or township on the banks of the Helmisdale is Cäen, a snug sheltered spot,</Subtitle>
+              <Subtitle>In 1813, the settlement of Caen is described by 
+Donald Sage, the minister’s son, as...</Subtitle>
+              <Subtitle Time="5">“The last farm or township on the banks of the 
+Helmisdale is Cäen, a snug sheltered spot,</Subtitle>
               <Subtitle Time="10">surrounded with hills to the N.W. and E., and having a southerly exposure.</Subtitle>
               <Subtitle Time="15">During the earlier years of my father’s ministry, this place contained nearly a hundred inhabitants.”</Subtitle>
 
@@ -237,9 +239,10 @@ being taken by cart back to the township</Subtitle>
 
           <Step Step="11">
             <Features>
-              <Feature FadeFeature="">
-                <Start Factory="Screenshot" />
+              <Feature Factory="Fade">
+                <Start Factory="Screenshot" IncludeOverlay="true" />
                 <Finish Factory="Image" X="0" Y="0" W="1920" H="1080">Images/GuidedTour/Map.jpg</Finish>
+                <Transition Factory="Fade" Length="3000" />
               </Feature>
             </Features>
 
@@ -251,7 +254,8 @@ for more profitable sheep farming.</Subtitle>
               <Subtitle Time="10">The last inhabitants Caen left around 1825</Subtitle>
               <Subtitle Time="15">and the old rig and furrow cultivation near the river
 on the valley floor was overlaid with large walled sheep encloses.</Subtitle>
-              <Subtitle Time="20">Some of the people cleared emigrated to the Red River Settlement in Canada in 1815.</Subtitle>
+              <Subtitle Time="20">Some of the people cleared emigrated
+to the Red River Settlement in Canada in 1815.</Subtitle>
               <Subtitle Time="25">Today the only inhabited dwelling is the shepherd’s house.</Subtitle>
 
               <Subtitle Time="30">The building remains survive as low stone footings covered in grass and you can see the remains
@@ -265,33 +269,33 @@ main menu and enter the township with an avatar.</Subtitle>
     </States>
 
       <Transitions>
-	      <InvisibleTransition From="Splash" To="GuidedTour"    Transition="FadeOut"    L="1080" T="415" R="1755" B="500" Window="MainWindow" Renderer="DialCursor" />
-	      <InvisibleTransition From="Splash" To="Slideshow"     Transition="BitmapFade" L="1080" T="645" R="1755" B="735" Window="MainWindow" Renderer="DialCursor"/>
+	      <InvisibleTransition From="Splash" To="GuidedTour"    Transition="FadeOut"    L="1080" T="415" R="1755" B="500" Frame="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Splash" To="Slideshow"     Transition="BitmapFade" L="1080" T="645" R="1755" B="735" Frame="MainWindow" Renderer="DialCursor"/>
 
-	      <ImageTransition From="HelpAvatar" 	To="Splash" Transition="FadeIn" X="1200" Y="900"  Window="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
-	      <ImageTransition From="HelpFlycam" 	To="Splash" Transition="FadeIn" X="1200" Y="900"  Window="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
+	      <ImageTransition From="HelpAvatar" 	To="Splash" Transition="FadeIn" X="1200" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
+	      <ImageTransition From="HelpFlycam" 	To="Splash" Transition="FadeIn" X="1200" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
 
 	      <Transition From="Idle" 		To="Splash" Transition="FadeIn" Trigger="SkeletonFound" />
-	      <ImageTransition From="GuidedTour" 	To="Splash" Transition="FadeIn" X="96" Y="918"  Window="MainWindow" Renderer="DialCursor" >Images/Buttons/Back.png</ImageTransition>
-	      <ImageTransition From="Slideshow" 	To="Splash" Transition="BitmapFade" X="864" Y="918"  Window="MainWindow" Renderer="DialCursor" >Images/Buttons/BackTrans.png</ImageTransition>
+	      <ImageTransition From="GuidedTour" 	To="Splash" Transition="FadeIn" X="96" Y="918"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/Back.png</ImageTransition>
+	      <ImageTransition From="Slideshow" 	To="Splash" Transition="BitmapFade" X="864" Y="918"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/BackTrans.png</ImageTransition>
 
-	      <InvisibleTransition From="Splash" To="Story1Confirm" 	Transition="BitmapFade" L="115" T="395" R="835" B="485" Window="MainWindow" Renderer="DialCursor" />
-	      <InvisibleTransition From="Splash" To="Story2Confirm" 	Transition="BitmapFade" L="115" T="510" R="835" B="600" Window="MainWindow" Renderer="DialCursor" />
-	      <InvisibleTransition From="Splash" To="Story3Confirm" 	Transition="BitmapFade" L="115" T="625" R="835" B="720" Window="MainWindow" Renderer="DialCursor" />
-	      <InvisibleTransition From="Splash" To="Story4Confirm" 	Transition="BitmapFade" L="115" T="745" R="835" B="825" Window="MainWindow" Renderer="DialCursor" />
-	      <InvisibleTransition From="Splash" To="Story5Confirm" 	Transition="BitmapFade" L="115" T="860" R="835" B="955" Window="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Splash" To="Story1Confirm" 	Transition="BitmapFade" L="115" T="395" R="835" B="485" Frame="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Splash" To="Story2Confirm" 	Transition="BitmapFade" L="115" T="510" R="835" B="600" Frame="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Splash" To="Story3Confirm" 	Transition="BitmapFade" L="115" T="625" R="835" B="720" Frame="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Splash" To="Story4Confirm" 	Transition="BitmapFade" L="115" T="745" R="835" B="825" Frame="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Splash" To="Story5Confirm" 	Transition="BitmapFade" L="115" T="860" R="835" B="955" Frame="MainWindow" Renderer="DialCursor" />
 
-	      <InvisibleTransition From="Story1Confirm" To="Splash" Transition="BitmapFade" L="440" T="380" R="900" B="670" Window="MainWindow" Renderer="DialCursor" />
-	      <InvisibleTransition From="Story2Confirm" To="Splash" Transition="BitmapFade" L="440" T="380" R="900" B="670" Window="MainWindow" Renderer="DialCursor" />
-	      <InvisibleTransition From="Story3Confirm" To="Splash" Transition="BitmapFade" L="440" T="380" R="900" B="670" Window="MainWindow" Renderer="DialCursor" />
-	      <InvisibleTransition From="Story4Confirm" To="Splash" Transition="BitmapFade" L="440" T="380" R="900" B="670" Window="MainWindow" Renderer="DialCursor" />
-	      <InvisibleTransition From="Story5Confirm" To="Splash" Transition="BitmapFade" L="440" T="380" R="900" B="670" Window="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Story1Confirm" To="Splash" Transition="BitmapFade" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Story2Confirm" To="Splash" Transition="BitmapFade" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Story3Confirm" To="Splash" Transition="BitmapFade" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Story4Confirm" To="Splash" Transition="BitmapFade" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Story5Confirm" To="Splash" Transition="BitmapFade" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
 
-	      <InvisibleTransition From="Story1Confirm" To="Story1" Transition="BitmapFade" L="1075" T="380" R="1535" B="670" Window="MainWindow" Renderer="DialCursor" />
-	      <InvisibleTransition From="Story2Confirm" To="Story2" Transition="BitmapFade" L="1075" T="380" R="1535" B="670" Window="MainWindow" Renderer="DialCursor" />
-	      <InvisibleTransition From="Story3Confirm" To="Story3" Transition="BitmapFade" L="1075" T="380" R="1535" B="670" Window="MainWindow" Renderer="DialCursor" />
-	      <InvisibleTransition From="Story4Confirm" To="Story4" Transition="BitmapFade" L="1075" T="380" R="1535" B="670" Window="MainWindow" Renderer="DialCursor" />
-	      <InvisibleTransition From="Story5Confirm" To="Story5" Transition="BitmapFade" L="1075" T="380" R="1535" B="670" Window="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Story1Confirm" To="Story1" Transition="BitmapFade" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Story2Confirm" To="Story2" Transition="BitmapFade" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Story3Confirm" To="Story3" Transition="BitmapFade" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Story4Confirm" To="Story4" Transition="BitmapFade" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
+	      <InvisibleTransition From="Story5Confirm" To="Story5" Transition="BitmapFade" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
       </Transitions>
   </Any>
 
@@ -317,9 +321,9 @@ main menu and enter the township with an avatar.</Subtitle>
     </Triggers>
 
     <Features>
-        <Feature Factory="Skeleton" Name="SplashSkeleton" L="940" R="1470" T="1000" Scale="100" Window="MainWindow" />
-        <Feature Factory="Skeleton" Name="ExploreSkeleton" X="60" Y="1050" W="1850" Scale="100" Window="MainWindow" />
-        <Feature Factory="Skeleton" Name="HelpSkeleton" X="125" Y="140.5" W="0" Scale="125" Window="MainWindow" />
+        <Feature Factory="Skeleton" Name="SplashSkeleton" L="940" R="1470" T="1000" Scale="100" Frame="MainWindow" />
+        <Feature Factory="Skeleton" Name="ExploreSkeleton" X="60" Y="1050" W="1850" Scale="100" Frame="MainWindow" />
+        <Feature Factory="Skeleton" Name="HelpSkeleton" X="125" Y="140.5" W="0" Scale="125" Frame="MainWindow" />
     </Features>
 	  <States>
 
@@ -331,21 +335,21 @@ main menu and enter the township with an avatar.</Subtitle>
 
       <State Factory="KinectControl" Name="KinectFlycam" Avatar="false" X="600" Y="500" Z="60" Pitch="0" Yaw="-90" >
         <Features>
-          <Feature Name="ExploreSkeleton" Window="MainWindow"/>
+          <Feature Name="ExploreSkeleton" Frame="MainWindow"/>
         </Features>
       </State>
 
 	  </States>
     <Transitions>
 
-      <InvisibleTransition From="Splash" To="KinectAvatar"  Transition="FadeOut"    L="1080" T="535" R="1755" B="620" Window="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Splash" To="KinectFlycam"  Transition="FadeOut"    L="1080" T="765" R="1755" B="865" Window="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Splash" To="KinectAvatar"  Transition="FadeOut"    L="1080" T="535" R="1755" B="620" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Splash" To="KinectFlycam"  Transition="FadeOut"    L="1080" T="765" R="1755" B="865" Frame="MainWindow" Renderer="DialCursor" />
 
       <Transition From="KinectAvatar" To="HelpAvatar"  Transition="FadeIn" Trigger="ExitExplore" />
       <Transition From="KinectFlycam" To="HelpFlycam"  Transition="FadeIn" Trigger="ExitExplore" />
 
-      <ImageTransition From="HelpAvatar" 	To="KinectAvatar" Transition="FadeIn" X="1600" Y="900"  Window="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
-      <ImageTransition From="HelpFlycam" 	To="KinectFlycam" Transition="FadeIn" X="1600" Y="900"  Window="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
+      <ImageTransition From="HelpAvatar" 	To="KinectAvatar" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
+      <ImageTransition From="HelpFlycam" 	To="KinectFlycam" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
     </Transitions>
   </HoverBased>
 </Overlay>
