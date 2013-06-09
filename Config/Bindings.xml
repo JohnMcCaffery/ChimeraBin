@@ -19,6 +19,8 @@
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.StaticTextFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.DynamicTextFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Drawables.ActiveAreaFeatureFactory, OverlayLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Features.ScreenshotFeatureFactory, OverlayLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Features.FadeFeatureFactory, OverlayLib"  scope="singleton" />
   <!-- Image Transitions -->
   <bind service="Chimera.Interfaces.Overlay.IImageTransitionFactory, OverlayLib" to="Chimera.Overlay.Transitions.BitmapFadeFactory, OverlayLib"  scope="singleton" />
   <!-- Renderers -->
