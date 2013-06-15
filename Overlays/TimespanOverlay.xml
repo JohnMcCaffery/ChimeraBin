@@ -3,6 +3,9 @@
     <Features>
       <Feature Factory="Image" Name="HelpSidebarAvatar"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
       <Feature Factory="Image" Name="HelpSidebarFlycam"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
+
+      <Feature Factory="Image" Name="HelpSidebarAvatarL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
+      <Feature Factory="Image" Name="HelpSidebarFlycamL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
     </Features>
     
     <SelectionRenderers>
@@ -20,6 +23,8 @@
         <Features>
           <Feature Name="SplashSkeleton" Frame="MainWindow" />
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Splash.png</Feature>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
         </Features>
       </State>
 
@@ -54,17 +59,17 @@
         </Features>
       </State>
 
-      <State Factory="Blank" Name="Story1Confirm"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmDogs.png</Feature> </Features> </State>
-      <State Factory="Blank" Name="Story2Confirm"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmGartymore.png</Feature> </Features> </State>
-      <State Factory="Blank" Name="Story3Confirm"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFrakkok.png</Feature> </Features> </State>
-      <State Factory="Blank" Name="Story4Confirm"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFisherman.png</Feature> </Features> </State>
-      <State Factory="Blank" Name="Story5Confirm"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmWolf.png</Feature> </Features> </State>
+      <State Factory="Blank" Name="Story1Confirm" BlackBG="true"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmDogs.png</Feature> </Features> </State>
+      <State Factory="Blank" Name="Story2Confirm" BlackBG="true"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmGartymore.png</Feature> </Features> </State>
+      <State Factory="Blank" Name="Story3Confirm" BlackBG="true"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFrakkok.png</Feature> </Features> </State>
+      <State Factory="Blank" Name="Story4Confirm" BlackBG="true"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFisherman.png</Feature> </Features> </State>
+      <State Factory="Blank" Name="Story5Confirm" BlackBG="true"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmWolf.png</Feature> </Features> </State>
 
-      <State Factory="Video" Name="Story1" File="Videos/Dogs.m4v" FinishState="Splash" Transition="BitmapFade" Frame="MainWindow" />
-      <State Factory="Video" Name="Story2" File="Videos/Garyore.mp4" FinishState="Splash" Transition="BitmapFade" Frame="MainWindow" />
-      <State Factory="Video" Name="Story3" File="Videos/Orkney.mp4" FinishState="Splash" Transition="BitmapFade" Frame="MainWindow" />
-      <State Factory="Video" Name="Story4" File="Videos/Fisherman.mp4" FinishState="Splash" Transition="BitmapFade" Frame="MainWindow" />
-      <State Factory="Video" Name="Story5" File="Videos/Wolf.mp4" FinishState="Splash" Transition="BitmapFade" Frame="MainWindow" />
+      <State Factory="Video" Name="Story1" BlackBG="true" File="Videos/Dogs.m4v" FinishState="Splash" Transition="BitmapFade" Frame="MainWindow" />
+      <State Factory="Video" Name="Story2" BlackBG="true" File="Videos/Garyore.mp4" FinishState="Splash" Transition="BitmapFade" Frame="MainWindow" />
+      <State Factory="Video" Name="Story3" BlackBG="true" File="Videos/Orkney.mp4" FinishState="Splash" Transition="BitmapFade" Frame="MainWindow" />
+      <State Factory="Video" Name="Story4" BlackBG="true" File="Videos/Fisherman.mp4" FinishState="Splash" Transition="BitmapFade" Frame="MainWindow" />
+      <State Factory="Video" Name="Story5" BlackBG="true" File="Videos/Wolf.mp4" FinishState="Splash" Transition="BitmapFade" Frame="MainWindow" />
 
       <State Factory="Flythrough" Name="GuidedTour" Start="true" File="Flythroughs/Caen-Guided-Full.xml" AutoStep="true" Loop="false" DisplaySubtitles="true" SubtitleTimeout="5">
 
@@ -338,6 +343,10 @@
           </Step>
 
           <Step Step="9">
+            <Features>
+              <Feature Factory="Image" X="200" Y="100" W="1000" Frame="LeftWindow" >Images/GuidedTour/RigAndFurrow.jpg</Feature>
+            </Features>
+
             <Subtitles>
               <Subtitle>
                 Rig and furrow cultivation appears as a
@@ -412,10 +421,20 @@
 
           <Step Step="11">
             <Features>
-              <Feature Factory="Fade">
-                <Start Factory="Screenshot" IncludeOverlay="true" />
+              <Feature Factory="Fade" Frame="MainWindow">
+                <Start Factory="Screenshot" IncludeOverlay="true" Frame="MainWindow" />
                 <Finish Factory="Image" X="0" Y="0" W="1920" H="1080">Images/GuidedTour/Map.jpg</Finish>
-                <Transition Factory="Fade" Length="6000" />
+                <Transition Factory="Fade" Length="10000" />
+              </Feature>
+              <Feature Factory="Fade" Frame="LeftWindow" >
+                <Start Factory="Screenshot" IncludeOverlay="true" Frame="LeftWindow" />
+                <Finish Factory="Colour" Colour="Black" />
+                <Transition Factory="Fade" Length="10000" />
+              </Feature>
+              <Feature Factory="Fade" Frame="RightWindow" >
+                <Start Factory="Screenshot" IncludeOverlay="true" Frame="RightWindow" />
+                <Finish Factory="Colour" Colour="Black" />
+                <Transition Factory="Fade" Length="10000" />
               </Feature>
             </Features>
 
@@ -423,36 +442,40 @@
               <Subtitle>
                 The story of the demise of Caen as a
                 farming settlement is closely linked to the events
+              </Subtitle>
+              <Subtitle Time="5">
                 that took place at the time of
                 the Clearances 200 years ago
               </Subtitle>
-              <Subtitle Time="5">
+              <Subtitle Time="10">
                 when the wider Strath was cleared to make way
                 for more profitable sheep farming.
               </Subtitle>
-              <Subtitle Time="10">
+              <Subtitle Time="15">
                 The last inhabitants Caen left around 1825
               </Subtitle>
-              <Subtitle Time="15">
+              <Subtitle Time="20">
                 and the old rig and furrow cultivation near the river
                 on the valley floor was overlaid
                 with large walled sheep encloses.
               </Subtitle>
-              <Subtitle Time="20">
+              <Subtitle Time="25">
                 Some of the people cleared emigrated
                 to the Red River Settlement in Canada in 1815.
               </Subtitle>
-              <Subtitle Time="25">
+              <Subtitle Time="30">
                 Today the only inhabited dwelling
                 is the shepherd’s house.
               </Subtitle>
-              <Subtitle Time="30">
+              <Subtitle Time="35">
                 The building remains survive as low stone footings
                 covered in grass and you can see the remains
+              </Subtitle>
+              <Subtitle Time="40">
                 of old rig and furrow cultivation
                 on the land around the township.
               </Subtitle>
-              <Subtitle Time="35">
+              <Subtitle Time="45">
                 If you’ve enjoyed this tour you can go back to the
                 main menu and enter the township with an avatar.
               </Subtitle>
@@ -516,20 +539,23 @@
 
     <Features>
       <Feature Factory="Skeleton" Name="SplashSkeleton" L="940" R="1470" T="1000" Scale="100" Frame="MainWindow" />
-      <Feature Factory="Skeleton" Name="ExploreSkeleton" X="60" Y="1050" W="1850" Scale="100" Frame="MainWindow" />
+      <!--<Feature Factory="Skeleton" Name="ExploreSkeleton" X="60" Y="1050" W="1850" Scale="100" Frame="MainWindow" />-->
+      <Feature Factory="Skeleton" Name="ExploreSkeleton" X="125" Y="140.5" W="0" Scale="125" Frame="LeftWindow" />
       <Feature Factory="Skeleton" Name="HelpSkeleton" X="125" Y="140.5" W="0" Scale="125" Frame="MainWindow" />
     </Features>
     <States>
 
-      <State Factory="KinectControl" Name="KinectAvatar" Avatar="true" >
+      <State Factory="KinectControl" Name="KinectAvatar" Avatar="true" Opacity=".7" >
         <Features>
           <Feature Name="ExploreSkeleton" />
+          <Feature Name="HelpSidebarAvatarL" />
         </Features>
       </State>
 
-      <State Factory="KinectControl" Name="KinectFlycam" Avatar="false" X="600" Y="500" Z="60" Pitch="0" Yaw="-90" >
+      <State Factory="KinectControl" Name="KinectFlycam" Avatar="false" X="600" Y="500" Z="60" Pitch="0" Yaw="-90" Opacity=".7" >
         <Features>
-          <Feature Name="ExploreSkeleton" Frame="MainWindow"/>
+          <Feature Name="ExploreSkeleton" Frame="MainWindow" />
+          <Feature Name="HelpSidebarFlycamL" />
         </Features>
       </State>
 
