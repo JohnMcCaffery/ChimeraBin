@@ -1,0 +1,125 @@
+<Overlay Width="1920" Height="1080" >
+  <Any>
+    <Triggers>
+      <Trigger Factory="JoystickActivated" Name="JSActivated" />
+      <Trigger Factory="JoystickInactive" Name="JSLost" TimeoutS="120" />
+      <Trigger Factory="JoystickButton" Name="A" Button="A" />
+      <Trigger Factory="JoystickButton" Name="B" Button="B" />
+      <Trigger Factory="JoystickButton" Name="X" Button="X" />
+      <Trigger Factory="JoystickButton" Name="Y" Button="Y" />
+      <Trigger Factory="JoystickButton" Button="RightShoulder" Name="R" />
+      <Trigger Factory="JoystickButton" Button="LeftShoulder" Name="L" />
+    </Triggers>
+
+    <TransitionStyles>
+			<Transition Factory="Cut" Name="Cut" />
+		</TransitionStyles>
+
+		<States>
+      <!-- <State Factory="Flythrough" Name="IdleFlythrough" File="Flythroughs/Caen-long.xml" Start="true" Idle="true"> -->
+      <State Factory="Flythrough" Name="IdleFlythrough" File="Flythroughs/Cathedral5.xml" Start="true" Idle="true">
+        <IdleTriggers>
+          <!--<Trigger Name="JSLost" />-->
+          <Trigger Name="A" />
+        </IdleTriggers>
+        <IdleTransition Name="Cut" />
+        <SplashTransition Name="Cut" />
+      </State>
+
+      <State Factory="Slideshow" Name="Slideshow" Folder="Images/TodaySlideshow/" Transition="Fade" >
+        <NextTriggers>
+          <Trigger Name="L" />
+        </NextTriggers>
+        <PrevTriggers>
+          <Trigger Name="R" />
+        </PrevTriggers>
+      </State>
+
+      <State Factory="Info" Name="AvatarHelp">
+        <Features>
+          <Feature Name="LonghouseArea" />
+          <Feature Name="PeatArea" />
+        </Features>
+      </State>
+
+      <!--
+      <State Factory="Video" Name="Video" File="E:\Video\Edit\Out\vid.mpg" FinishState="None" L="310" T="310" R="790" B="590" RestartMode="true">
+	<window Window="MainWindow" File="../Images/Example/ExampleBGVideo.png" Splash="True"/>
+	<StartTriggers>
+	  <InvisibleTrigger T="310" L="310" R="790" B="590" />
+	</StartTriggers>
+	<StopTriggers>
+	  <InvisibleTrigger T="30" L="30" R="800" B="600" />
+	</StopTriggers>
+	<ResetTriggers>
+	  <ImageTrigger X="1000" Y="300" File="../Images/Example/Button.png" AlwaysOn="false" />
+	</ResetTriggers>
+      </State>
+
+      <State Factory="Flythrough" Name="Excavation" File="Flythroughs/Caen-Guided.xml" Stepping="true" DisplaySubtitles="true" SubtitleTimeout="5">
+
+	      <StepText Window="MainWindow" Font="Verdana" Size="25" Color="Red" Style="Bold" Colour="Red" X="20" Y="50" />
+	      <SubtitleText Window="MainWindow" Font="Verdana" Size="30" Color="Red" Style="Bold" Colour="Red" X="960" Y="900" Alignment="TopCenter" />
+
+	      <Triggers>
+          <Trigger Name="R" />
+        </Triggers>
+
+	      <Steps>
+		      <Step Step="0" Voiceover="C:\Users\Iain\Music\An Awesome Wave (converted)\01 Intro.m4a">
+			      <Image File="Images/GuidedTour/DemoFlythroughStepImage.png" X="1100" Y="100"/>
+			      <Subtitles>
+				      <Subtitle>First Subtitle</Subtitle>
+				      <Subtitle Time="5">Second Subtitle</Subtitle>
+			      </Subtitles>
+		      </Step>
+	      </Steps>
+      </State>
+      -->
+    </States>
+
+    <Transitions>
+    </Transitions>
+  </Any>
+
+  <!-- Settings specific to the overlay being instantiated based on click interactions -->
+
+  <ClickBased>
+    <States>
+
+    </States>
+    <Transitions>
+
+      <Transition From="IdleFlythrough" To="ExploreA" Transition="Cut" Trigger="JSActivated" />
+      <Transition From="IdleFlythrough" To="ExploreA" Transition="Cut" Trigger="X" />
+      <Transition From="IdleFlythrough" To="Slideshow" Transition="Cut" Trigger="B" />
+      <!--<Transition From="IdleFlythrough" To="Excavation" Transition="Cut" Trigger="Y" />-->
+
+      <Transition From="ExploreA" To="Slideshow" Transition="Cut" Trigger="B" />
+      <Transition From="ExploreA" To="ExploreF" Transition="Cut" Trigger="X" />
+      <Transition From="ExploreF" To="ExploreA" Transition="Cut" Trigger="X" />
+      <!--<Transition From="Explore" To="Excavation" Transition="Cut" Trigger="Y" />-->
+
+      <Transition From="Slideshow" To="ExploreA" Transition="Cut" Trigger="X" />
+      <!--<Transition From="Slideshow" To="Excavation" Transition="Cut" Trigger="Y" />-->
+
+      <!--<Transition From="Excavation" To="Explore" Transition="Cut" Trigger="X" />-->
+      <!--<Transition From="Excavation" To="Slideshow" Transition="Cut" Trigger="B" />-->
+
+    </Transitions>
+  </ClickBased>
+
+  <!-- Settings specific to the overlay being instantiated based on hover interactions -->
+
+  <HoverBased>
+    <Features>
+    </Features>
+    <States>
+      <State Factory="KinectControl" Name="ExploreA" Avatar="true" />
+      <State Factory="KinectControl" Name="ExploreF" Avatar="false" />
+    </States>
+    <Transitions>
+
+    </Transitions>
+  </HoverBased>
+</Overlay>
