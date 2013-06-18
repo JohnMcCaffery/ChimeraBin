@@ -2,6 +2,7 @@
   <Any>
     <Triggers>
       <Trigger Factory="FlythroughEnd" Name="FlythroughEnd" />
+      <Trigger Factory="Timer" Name="IntroTimer" Length="2000" />
     </Triggers>
     <Features>
       <Feature Factory="Image" Name="HelpSidebarAvatar"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
@@ -23,14 +24,6 @@
 		</TransitionStyles>
 
     <States>
-      <State Factory="Blank" Name="Splash">
-        <Features>
-          <Feature Name="SplashSkeleton" Frame="MainWindow" />
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Splash.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
-        </Features>
-      </State>
 
       <State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Idle="true">
         <!--<State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Splash="true">-->
@@ -38,6 +31,23 @@
           <Trigger Name="IdleTrigger" />
         </Triggers>
         <IdleTransition Name="FadeOut" />
+      </State>
+
+      <State Factory="Blank" Name="Intro">
+        <Features>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Intro.png</Feature>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
+        </Features>
+      </State>
+
+      <State Factory="Blank" Name="Splash">
+        <Features>
+          <Feature Name="SplashSkeleton" Frame="MainWindow" />
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Splash.png</Feature>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
+        </Features>
       </State>
 
       <State Factory="Slideshow" Name="Slideshow" Folder="Images/TodaySlideshow/" Transition="Fade" >
@@ -501,7 +511,9 @@
       <ImageTransition From="HelpAvatar" 	To="Splash" Transition="FadeIn" X="1200" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
       <ImageTransition From="HelpFlycam" 	To="Splash" Transition="FadeIn" X="1200" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
 
-      <Transition From="Idle" 		      To="GuidedTour" Transition="FadeIn" Trigger="SkeletonFound" />
+      <Transition From="Idle" 		      To="Intro" Transition="FadeIn" Trigger="SkeletonFound" />
+      <Transition From="Intro" 		      To="GuidedTour" Transition="FadeIn" Trigger="IntroTimer" />
+      <Transition From="Intro" 		      To="Splash" Transition="FadeIn" Trigger="ExitWorld" />
       <Transition From="GuidedTour" 		To="Splash" Transition="Cut" Trigger="FlythroughEnd" />
       <Transition From="GuidedTour" 		To="Splash" Transition="Cut" Trigger="ExitWorld" />
       <!--<ImageTransition From="GuidedTour" 	To="Splash" Transition="FadeIn" X="96" Y="918"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/Back.png</ImageTransition>-->
