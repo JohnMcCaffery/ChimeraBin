@@ -2,7 +2,7 @@
   <Any>
     <Triggers>
       <Trigger Factory="FlythroughEnd" Name="FlythroughEnd" />
-      <Trigger Factory="Timer" Name="IntroTimer" Length="2000" />
+      <Trigger Factory="Timer" Name="IntroTimer" LengthMS="2000" />
     </Triggers>
     <Features>
       <Feature Factory="Image" Name="HelpSidebarAvatar"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
@@ -512,10 +512,13 @@
       <ImageTransition From="HelpFlycam" 	To="Splash" Transition="FadeIn" X="1200" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
 
       <Transition From="Idle" 		      To="Intro" Transition="FadeIn" Trigger="SkeletonFound" />
-      <Transition From="Intro" 		      To="GuidedTour" Transition="FadeIn" Trigger="IntroTimer" />
-      <Transition From="Intro" 		      To="Splash" Transition="FadeIn" Trigger="ExitWorld" />
+
+      <Transition From="Intro" 		      To="GuidedTour" Transition="FadeOut" Trigger="IntroTimer" />
+      <Transition From="Intro" 		      To="Splash" Transition="Cut" Trigger="ExitWorld" />
+
       <Transition From="GuidedTour" 		To="Splash" Transition="Cut" Trigger="FlythroughEnd" />
-      <Transition From="GuidedTour" 		To="Splash" Transition="Cut" Trigger="ExitWorld" />
+      <Transition From="GuidedTour" 		To="Splash" Transition="FadeIn" Trigger="ExitWorld" />
+
       <!--<ImageTransition From="GuidedTour" 	To="Splash" Transition="FadeIn" X="96" Y="918"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/Back.png</ImageTransition>-->
       <ImageTransition From="Slideshow" 	To="Splash" Transition="Cut" X="864" Y="918"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/BackTrans.png</ImageTransition>
 
