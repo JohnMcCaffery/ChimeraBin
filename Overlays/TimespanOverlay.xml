@@ -2,6 +2,7 @@
   <Any>
     <Triggers>
       <Trigger Factory="FlythroughEnd" Name="FlythroughEnd" />
+      <Trigger Factory="Timer" Name="IntroTimer" LengthMS="5000" />
     </Triggers>
     <Features>
       <Feature Factory="Image" Name="HelpSidebarAvatar"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
@@ -23,6 +24,23 @@
 		</TransitionStyles>
 
     <States>
+
+      <State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Idle="true" Start="true" >
+        <!--<State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Splash="true">-->
+        <Triggers>
+          <Trigger Name="IdleTrigger" />
+        </Triggers>
+        <IdleTransition Name="FadeOut" />
+      </State>
+
+      <State Factory="Blank" Name="Intro" EnableCursor="false" >
+        <Features>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Intro.png</Feature>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
+        </Features>
+      </State>
+
       <State Factory="Blank" Name="Splash">
         <Features>
           <Feature Name="SplashSkeleton" Frame="MainWindow" />
@@ -30,14 +48,6 @@
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
         </Features>
-      </State>
-
-      <State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Idle="true">
-        <!--<State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Splash="true">-->
-        <Triggers>
-          <Trigger Name="IdleTrigger" />
-        </Triggers>
-        <IdleTransition Name="FadeOut" />
       </State>
 
       <State Factory="Slideshow" Name="Slideshow" Folder="Images/TodaySlideshow/" Transition="Fade" >
@@ -75,7 +85,7 @@
       <State Factory="Video" Name="Story4" BlackBG="true" File="Videos/Fisherman.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" />
       <State Factory="Video" Name="Story5" BlackBG="true" File="Videos/Wolf.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" />
 
-      <State Factory="Flythrough" Name="GuidedTour" Start="true" File="Flythroughs/Caen-Guided-Full.xml" AutoStep="true" Loop="false" DisplaySubtitles="true" SubtitleTimeout="5">
+      <State Factory="Flythrough" Name="GuidedTour" File="Flythroughs/Caen-Guided-Full.xml" AutoStep="true" Loop="false" DisplaySubtitles="true" SubtitleTimeout="5">
 
         <!--<StepText Frame="MainWindow" Font="Verdana" Size="50" Color="Red" Style="Bold" Colour="Red" X="50" Y="50" />-->
         <SubtitleText Frame="MainWindow" Font="Verdana" Size="30" Colour="Yellow" Style="Regular" X="960" Y="918" Alignment="TopCenter" />
@@ -87,8 +97,8 @@
         -->
 
         <Steps>
-          <Step Step="0" ><!-- Voiceover="../Voiceovers/Voiceover1.wma"-->
-            <!--<Features> <Image  X="600" Y="100">../Images/Example/SlideshowImg.png</Image> </Feature>-->
+          <!--<Step Step="0" Voiceover="../Voiceovers/Voiceover1.wma">-->
+          <Step Step="0" Voiceover="../../Voiceovers/test1.m4a">
             <Subtitles>
               <Subtitle>
                 The settlement of Caen is located a few miles
@@ -98,7 +108,7 @@
                 along the Strath of Kildonan road.
               </Subtitle>
               <Subtitle Time="15">
-                It is located in a narrow valley along 
+                It is located in a narrow valley along
                 the banks of a tumbling burn
               </Subtitle>
               <Subtitle Time="20">
@@ -109,17 +119,18 @@
                 indicates that people had been farming some 6000 years.
               </Subtitle>
               <Subtitle Time="30">
-                The last farmers were ejected from their 
+                The last farmers were ejected from their
                 homes at the time of Highland Clearances,
               </Subtitle>
               <Subtitle Time="35">
-                some 200 years ago, when the land was used to 
+                some 200 years ago, when the land was used to
                 graze huge flocks of more profitable sheep.
               </Subtitle>
             </Subtitles>
           </Step>
 
-          <Step Step="1">
+          <!--<Step Step="1" Voiceover="../Voiceovers/Voiceover2.wma">-->
+          <Step Step="1" Voiceover="../V../oiceovers/test2.mp3">
             <Subtitles>
               <Subtitle>
                 The place name Caen can be translated as 
@@ -501,9 +512,14 @@
       <ImageTransition From="HelpAvatar" 	To="Splash" Transition="FadeIn" X="1200" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
       <ImageTransition From="HelpFlycam" 	To="Splash" Transition="FadeIn" X="1200" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
 
-      <Transition From="Idle" 		      To="GuidedTour" Transition="FadeIn" Trigger="SkeletonFound" />
+      <Transition From="Idle" 		      To="Intro" Transition="FadeIn" Trigger="SkeletonFound" />
+
+      <Transition From="Intro" 		      To="GuidedTour" Transition="FadeOut" Trigger="IntroTimer" />
+      <Transition From="Intro" 		      To="Splash" Transition="Cut" Trigger="ExitWorld" />
+
       <Transition From="GuidedTour" 		To="Splash" Transition="Cut" Trigger="FlythroughEnd" />
-      <Transition From="GuidedTour" 		To="Splash" Transition="Cut" Trigger="ExitWorld" />
+      <Transition From="GuidedTour" 		To="Splash" Transition="FadeIn" Trigger="ExitWorld" />
+
       <!--<ImageTransition From="GuidedTour" 	To="Splash" Transition="FadeIn" X="96" Y="918"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/Back.png</ImageTransition>-->
       <ImageTransition From="Slideshow" 	To="Splash" Transition="Cut" X="864" Y="918"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/BackTrans.png</ImageTransition>
 
