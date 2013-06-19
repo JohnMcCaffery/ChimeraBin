@@ -1,5 +1,3 @@
-cd Bin
-
 Chimera.exe
 
 IF %errorlevel% EQU -1073741819 (
