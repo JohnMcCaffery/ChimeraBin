@@ -25,13 +25,19 @@
 
     <States>
 
-      <State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Idle="true" Start="true" >
-        <!--<State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Splash="true">-->
+      <State Factory="Blank" Name="IdleOutro" EnableCursor="false" Idle="true" >
+        <Features>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Outro.png</Feature>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
+        </Features>
         <IdleTriggers>
           <Trigger Name="IdleTrigger" />
         </IdleTriggers>
-        <IdleTransition Name="FadeOut" />
+        <IdleTransition Name="FadeIn" />
       </State>
+
+      <State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Start="true" />
 
       <State Factory="Blank" Name="Intro" EnableCursor="false" >
         <Features>
@@ -512,6 +518,8 @@
 
       <Transition From="Idle" 		      To="Intro" Transition="FadeIn" Trigger="SkeletonFound" />
 
+      <Transition From="IdleOutro"		  To="Idle" Transition="FadeOut" Trigger="IntroTimer" />
+
       <Transition From="Intro" 		      To="GuidedTour" Transition="FadeOut" Trigger="IntroTimer" />
       <Transition From="Intro" 		      To="Splash" Transition="Cut" Trigger="ExitWorld" />
 
@@ -577,7 +585,7 @@
         </Features>
       </State>
 
-      <State Factory="KinectControl" Name="KinectFlycam" Avatar="false" X="600" Y="500" Z="60" Pitch="0" Yaw="-90" Opacity=".7" >
+      <State Factory="KinectControl" Name="KinectFlycam" Avatar="false" X="487.95" Y="130.58" Z="60" Pitch="0" Yaw="126.00" Opacity=".7" >
         <Features>
           <Feature Name="ExploreSkeleton" Frame="MainWindow" />
           <Feature Name="HelpSidebarFlycamL" />
