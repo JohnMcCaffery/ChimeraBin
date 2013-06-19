@@ -1,5 +1,59 @@
 <Overlay Width="1920" Height="1080" >
   <Any>
+
+    <Features>
+      <Area Factory="ActiveArea" Name="LonghouseArea" Window="MainWindow" >
+        <Feature Factory="Image" X="1200" Y="50" >Images/ActiveAreas/Longhouse.png </Feature>
+        <Trigger>
+          <Points>
+            <P X="445.83" Y="282.11" />
+            <P X="446.94" Y="285.69" />
+            <P X="418.84" Y="293.44" />
+            <P X="412.86" Y="291.65" />
+          </Points>
+        </Trigger>
+      </Area>
+
+      <Area Factory="ActiveArea" Name="PeatArea" Window="MainWindow" >
+        <Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/PeatCutting.png</Feature>
+        <Trigger>
+          <Points>
+            <P X="324.78" Y="348.74" />
+            <P X="311.11" Y="249.81" />
+            <P X="310.52" Y="230.37" />
+            <P X="324.27" Y="230.50" />
+          </Points>
+        </Trigger>
+      </Area>
+
+      <Area Factory="ActiveArea" Name="YawAreaEast" Window="MainWindow" >
+        <Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/MidTownshipEast.JPG</Feature>
+        <Trigger>
+          <Yaw Min="5" Max="82" />
+          <Points>
+            <P X="390" Y="213" />
+            <P X="390" Y="231" />
+            <P X="402" Y="233" />
+            <P X="405" Y="218" />
+          </Points>
+        </Trigger>
+      </Area>
+
+      <Area Factory="ActiveArea" Name="YawAreaWest" Window="MainWindow" >
+        <Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/MidTownshipWest.JPG</Feature>
+        <Trigger>
+          <Yaw Min="100" Max="180" />
+          <Points>
+            <P X="390" Y="213" />
+            <P X="390" Y="231" />
+            <P X="402" Y="233" />
+            <P X="405" Y="218" />
+          </Points>
+        </Trigger>
+      </Area>
+
+    </Features>
+    
     <Triggers>
       <Trigger Factory="FlythroughEnd" Name="FlythroughEnd" />
       <Trigger Factory="Timer" Name="IntroTimer" LengthMS="5000" />
@@ -590,6 +644,10 @@
         <Features>
           <Feature Name="ExploreSkeleton" Frame="MainWindow" />
           <Feature Name="HelpSidebarFlycamL" />
+          <Feature Name="LonghouseArea" />
+          <Feature Name="PeatArea" />
+          <Feature Name="YawAreaEast" />
+          <Feature Name="YawAreaWest" />
         </Features>
       </State>
 
