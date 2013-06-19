@@ -18,9 +18,9 @@ GOTO :EOF
 :exit
 cd ..
 
-cscript shutdown1.vbs
-timeout 1
-cscript shutdown2.vbs
+rem cscript shutdown1.vbs
+rem timeout 1
+rem cscript shutdown2.vbs
 
 git pull
 git add Logs/*
