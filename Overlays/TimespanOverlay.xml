@@ -565,7 +565,8 @@
   <HoverBased>
 
     <Triggers>
-      <Trigger Factory="SkeletonLost" Timeout="2000" Name="IdleTrigger" />
+      <!--<Trigger Factory="SkeletonLost" Timeout="2000" Name="IdleTrigger" />-->
+      <Trigger Factory="SkeletonLost" Timeout="300000" Name="IdleTrigger" />
       <Trigger Factory="SkeletonFound" Name="SkeletonFound" />
       <Trigger Factory="RaiseArm" Name="ExitWorld" />
     </Triggers>
