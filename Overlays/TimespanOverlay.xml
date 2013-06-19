@@ -27,9 +27,9 @@
 
       <State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Idle="true" Start="true" >
         <!--<State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Splash="true">-->
-        <Triggers>
+        <IdleTriggers>
           <Trigger Name="IdleTrigger" />
-        </Triggers>
+        </IdleTriggers>
         <IdleTransition Name="FadeOut" />
       </State>
 
@@ -557,7 +557,7 @@
   <HoverBased>
 
     <Triggers>
-      <Trigger Factory="SkeletonLost" Timeout="30000" Name="IdleTrigger" />
+      <Trigger Factory="SkeletonLost" Timeout="2000" Name="IdleTrigger" />
       <Trigger Factory="SkeletonFound" Name="SkeletonFound" />
       <Trigger Factory="RaiseArm" Name="ExitWorld" />
     </Triggers>
