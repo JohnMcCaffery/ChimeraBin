@@ -1,4 +1,4 @@
-timeout 20
+timeout 10
 
 cd C:\Users\OpenVirtualWorlds\Documents\John\Chimera\Bin
 
@@ -11,6 +11,6 @@ rem cd C:\Users\OpenVirtualWorlds\Desktop\Opensim-Timespan\
 rem start "OpenSim" /MAX OpenSim.exe
 rem cd C:\Users\OpenVirtualWorlds\Documents\John\Chimera\
 
-timeout 60
+rem timeout 60
 
-launch.bat
+Scripts\launch.bat
