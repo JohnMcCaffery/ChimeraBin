@@ -192,6 +192,7 @@
 
           <Step Step="1" >
           <!--<Step Step="1" Voiceover="../Voiceovers/Voiceover2.wma">-->
+
             <Subtitles>
               <Subtitle>
                 The place name Caen can be translated as 
@@ -497,26 +498,13 @@
             </Subtitles>
           </Step>
 
-          <Step Step="11">
-            <Features>
+          <Step Step="11">            <Features>
+              <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="MainWindow" />
+              <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="LeftWindow" />
+              <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="RightWindow" />
               <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/GuidedTour/Map.jpg</Feature>
-              <!--
-              <Feature Factory="Fade" Frame="MainWindow">
-                <Start Factory="Screenshot" IncludeOverlay="true" Frame="MainWindow" />
-                <Finish Factory="Image" X="0" Y="0" W="1920" H="1080">Images/GuidedTour/Map.jpg</Finish>
-                <Transition Factory="Fade" Length="10000" />
-              </Feature>
-              <Feature Factory="Fade" Frame="LeftWindow" >
-                <Start Factory="Screenshot" IncludeOverlay="true" Frame="LeftWindow" />
-                <Finish Factory="Colour" Colour="Black" />
-                <Transition Factory="Fade" Length="10000" />
-              </Feature>
-              <Feature Factory="Fade" Frame="RightWindow" >
-                <Start Factory="Screenshot" IncludeOverlay="true" Frame="RightWindow" />
-                <Finish Factory="Colour" Colour="Black" />
-                <Transition Factory="Fade" Length="10000" />
-              </Feature>
-              -->
+              <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+              <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
             </Features>
 
             <Subtitles>

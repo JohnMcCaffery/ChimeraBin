@@ -22,6 +22,7 @@
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Features.ActiveAreaFeatureFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Features.ScreenshotFeatureFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Features.FadeFeatureFactory, OverlayLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Features.OpacityFadeFeatureFactory, OverlayLib"  scope="singleton" />
   <!-- Image Transitions -->
   <bind service="Chimera.Interfaces.Overlay.IFeatureTransitionFactory, OverlayLib" to="Chimera.Overlay.Transitions.FeatureFadeFactory, OverlayLib"  scope="singleton" />
   <!-- Renderers -->
