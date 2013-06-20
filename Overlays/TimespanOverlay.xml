@@ -29,7 +29,7 @@
       -->
 
       <Area Factory="ActiveArea" Name="YawAreaEast" Frame="LeftWindow" >
-        <Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/MidTownshipEast.JPG</Feature>
+        <Feature Factory="Image" X="1200" Y="50" Width="500" Frame="LeftWindpw" >Images/ActiveAreas/MidTownshipEast.JPG</Feature>
         <Trigger>
           <Yaw Min="5" Max="82" />
           <Points>
@@ -42,7 +42,7 @@
       </Area>
 
       <Area Factory="ActiveArea" Name="YawAreaWest" Frame="RightWindow" >
-        <Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/MidTownshipWest.JPG</Feature>
+        <Feature Factory="Image" X="1200" Y="50" Width="500" Frame="RightWindow" >Images/ActiveAreas/MidTownshipWest.JPG</Feature>
         <Trigger>
           <Yaw Min="100" Max="180" />
           <Points>
@@ -623,7 +623,7 @@
 
     <Triggers>
       <!--<Trigger Factory="SkeletonLost" Timeout="2000" Name="IdleTrigger" />-->
-      <Trigger Factory="SkeletonLost" Timeout="300000" Name="IdleTrigger" />
+      <Trigger Factory="SkeletonLost" Timeout="360000" Name="IdleTrigger" />
       <Trigger Factory="SkeletonFound" Name="SkeletonFound" />
       <Trigger Factory="RaiseArm" Name="ExitWorld" />
     </Triggers>
