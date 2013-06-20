@@ -2,7 +2,8 @@
   <Any>
 
     <Features>
-      <Area Factory="ActiveArea" Name="LonghouseArea" Window="RightWindow" >
+    <!--
+      <Area Factory="ActiveArea" Name="LonghouseArea" Frame="RightWindow" >
         <Feature Factory="Image" X="1200" Y="50" >Images/ActiveAreas/Longhouse.png </Feature>
         <Trigger>
           <Points>
@@ -14,7 +15,7 @@
         </Trigger>
       </Area>
 
-      <Area Factory="ActiveArea" Name="PeatArea" Window="LeftWindow" >
+      <Area Factory="ActiveArea" Name="PeatArea" Frame="LeftWindow" >
         <Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/PeatCutting.png</Feature>
         <Trigger>
           <Points>
@@ -25,8 +26,9 @@
           </Points>
         </Trigger>
       </Area>
+      -->
 
-      <Area Factory="ActiveArea" Name="YawAreaEast" Window="LeftWindow" >
+      <Area Factory="ActiveArea" Name="YawAreaEast" Frame="LeftWindow" >
         <Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/MidTownshipEast.JPG</Feature>
         <Trigger>
           <Yaw Min="5" Max="82" />
@@ -39,7 +41,7 @@
         </Trigger>
       </Area>
 
-      <Area Factory="ActiveArea" Name="YawAreaWest" Window="RightWindow" >
+      <Area Factory="ActiveArea" Name="YawAreaWest" Frame="RightWindow" >
         <Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/MidTownshipWest.JPG</Feature>
         <Trigger>
           <Yaw Min="100" Max="180" />
@@ -156,7 +158,8 @@
         -->
 
         <Steps>
-          <Step Step="0" Voiceover="../Voiceovers/Voiceover1.wma">
+          <!--<Step Step="0" Voiceover="../Voiceovers/Voiceover1.wma">-->
+          <Step Step="0" >
             <Subtitles>
               <Subtitle>
                 The settlement of Caen is located a few miles
@@ -187,7 +190,8 @@
             </Subtitles>
           </Step>
 
-          <Step Step="1" Voiceover="../Voiceovers/Voiceover2.wma">
+          <Step Step="1" >
+          <!--<Step Step="1" Voiceover="../Voiceovers/Voiceover2.wma">-->
             <Subtitles>
               <Subtitle>
                 The place name Caen can be translated as 
