@@ -2,7 +2,7 @@
   <Any>
 
     <Features>
-      <Area Factory="ActiveArea" Name="LonghouseArea" Window="MainWindow" >
+      <Area Factory="ActiveArea" Name="LonghouseArea" Window="RightWindow" >
         <Feature Factory="Image" X="1200" Y="50" >Images/ActiveAreas/Longhouse.png </Feature>
         <Trigger>
           <Points>
@@ -14,7 +14,7 @@
         </Trigger>
       </Area>
 
-      <Area Factory="ActiveArea" Name="PeatArea" Window="MainWindow" >
+      <Area Factory="ActiveArea" Name="PeatArea" Window="LeftWindow" >
         <Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/PeatCutting.png</Feature>
         <Trigger>
           <Points>
@@ -26,7 +26,7 @@
         </Trigger>
       </Area>
 
-      <Area Factory="ActiveArea" Name="YawAreaEast" Window="MainWindow" >
+      <Area Factory="ActiveArea" Name="YawAreaEast" Window="LeftWindow" >
         <Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/MidTownshipEast.JPG</Feature>
         <Trigger>
           <Yaw Min="5" Max="82" />
@@ -39,7 +39,7 @@
         </Trigger>
       </Area>
 
-      <Area Factory="ActiveArea" Name="YawAreaWest" Window="MainWindow" >
+      <Area Factory="ActiveArea" Name="YawAreaWest" Window="RightWindow" >
         <Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/MidTownshipWest.JPG</Feature>
         <Trigger>
           <Yaw Min="100" Max="180" />
@@ -52,19 +52,18 @@
         </Trigger>
       </Area>
 
+      <Feature Factory="Image" Name="HelpSidebarAvatar"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
+      <Feature Factory="Image" Name="HelpSidebarFlycam"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
+
+      <Feature Factory="Image" Name="HelpSidebarAvatarL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
+      <Feature Factory="Image" Name="HelpSidebarFlycamL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
+
     </Features>
     
     <Triggers>
       <Trigger Factory="FlythroughEnd" Name="FlythroughEnd" />
       <Trigger Factory="Timer" Name="IntroTimer" LengthMS="5000" />
     </Triggers>
-    <Features>
-      <Feature Factory="Image" Name="HelpSidebarAvatar"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
-      <Feature Factory="Image" Name="HelpSidebarFlycam"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
-
-      <Feature Factory="Image" Name="HelpSidebarAvatarL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
-      <Feature Factory="Image" Name="HelpSidebarFlycamL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
-    </Features>
     
     <SelectionRenderers>
       <Renderer Factory="Cursor" Name="DialCursor" InnerRenderer="Dial" Radius="40" Colour="Red" Frame="MainWindow" />
