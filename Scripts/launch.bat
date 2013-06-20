@@ -9,12 +9,10 @@ IF %errorlevel% EQU 0 GOTO exit ELSE GOTO restart
 GOTO :EOF
 
 :restart
-cd ..
-launch.bat
+Scripts\launch.bat
 GOTO :EOF
 
 :exit
-cd ..
 
 rem cscript shutdown1.vbs
 rem timeout 1
