@@ -158,8 +158,7 @@
         -->
 
         <Steps>
-          <!--<Step Step="0" Voiceover="../Voiceovers/Voiceover1.wma">-->
-          <Step Step="0" >
+          <Step Step="0" Voiceover="Audio/1.mp3">
             <Subtitles>
               <Subtitle>
                 The settlement of Caen is located a few miles
@@ -190,8 +189,7 @@
             </Subtitles>
           </Step>
 
-          <Step Step="1" >
-          <!--<Step Step="1" Voiceover="../Voiceovers/Voiceover2.wma">-->
+          <Step Step="1" Voiceover="Audio/2.mp3" >
 
             <Subtitles>
               <Subtitle>
@@ -215,7 +213,7 @@
             </Subtitles>
           </Step>
 
-          <Step Step="2">
+          <Step Step="2" Voiceover="Audio/3.mp3" >
             <Subtitles>
               <Subtitle>
                 In 1813, the settlement of Caen is described by
@@ -250,7 +248,7 @@
             </Subtitles>
           </Step>
 
-          <Step Step="3">
+          <Step Step="3" Voiceover="Audio/4.mp3" >
             <Subtitles>
               <Subtitle>
                 A longhouse is a long and narrow dwelling 
@@ -287,7 +285,7 @@
             </Subtitles>
           </Step>
 
-          <Step Step="4">
+          <Step Step="4" Voiceover="Audio/5.mp3" >
             <Subtitles>
               <Subtitle>
                 Longhouses commonly have two living areas 
@@ -326,7 +324,7 @@
             </Subtitles>
           </Step>
 
-          <Step Step="5">
+          <Step Step="5" Voiceover="Audio/6.mp3" >
             <Subtitles>
               <Subtitle>
                 Cattle in the highlands were routinely kept indoors
@@ -353,7 +351,7 @@
             </Subtitles>
           </Step>
 
-          <Step Step="6">
+          <Step Step="6" Voiceover="Audio/7.mp3" >
             <Subtitles>
               <Subtitle>
                 Some longhouses had gardens where vegetables were grown,
@@ -366,7 +364,7 @@
             </Subtitles>
           </Step>
 
-          <Step Step="7">
+          <Step Step="7" Voiceover="Audio/8.mp3" >
             <Subtitles>
               <Subtitle>
                 The township had other buildings, including 
@@ -380,7 +378,7 @@
             </Subtitles>
           </Step>
 
-          <Step Step="8">
+          <Step Step="8" Voiceover="Audio/9.mp3" >
             <Subtitles>
               <Subtitle>
                 Caen had two corn-drying kilns which were used 
@@ -421,7 +419,7 @@
             </Subtitles>
           </Step>
 
-          <Step Step="9">
+          <Step Step="9" Voiceover="Audio/10.mp3" >
             <Features>
               <Feature Factory="Image" X="200" Y="100" W="1000" Frame="LeftWindow" >Images/GuidedTour/RigAndFurrow.jpg</Feature>
             </Features>
@@ -477,7 +475,7 @@
             </Subtitles>
           </Step>
 
-          <Step Step="10">
+          <Step Step="10" Voiceover="Audio/11.mp3" >
             <Subtitles>
               <Subtitle>
                 Peat was commonly used as a source of fuel for
@@ -498,7 +496,7 @@
             </Subtitles>
           </Step>
 
-          <Step Step="11">
+          <Step Step="11" Voiceover="Audio/12.mp3" >
             <Features>
               <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="MainWindow" />
               <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="LeftWindow" />
@@ -649,8 +647,12 @@
       <InvisibleTransition From="Splash" To="KinectAvatar"  Transition="FadeOut"    L="1080" T="535" R="1755" B="620" Frame="MainWindow" Renderer="DialCursor" />
       <InvisibleTransition From="Splash" To="KinectFlycam"  Transition="FadeOut"    L="1080" T="765" R="1755" B="865" Frame="MainWindow" Renderer="DialCursor" />
 
+      <!--
       <Transition From="KinectAvatar" To="HelpAvatar"  Transition="FadeIn" Trigger="ExitWorld" />
       <Transition From="KinectFlycam" To="HelpFlycam"  Transition="FadeIn" Trigger="ExitWorld" />
+      -->
+      <Transition From="KinectAvatar" To="Splash"  Transition="FadeIn" Trigger="ExitWorld" />
+      <Transition From="KinectFlycam" To="Splash"  Transition="FadeIn" Trigger="ExitWorld" />
 
       <ImageTransition From="HelpAvatar" 	To="KinectAvatar" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
       <ImageTransition From="HelpFlycam" 	To="KinectFlycam" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
