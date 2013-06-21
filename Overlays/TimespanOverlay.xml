@@ -2,7 +2,8 @@
   <Any>
 
     <Features>
-      <Area Factory="ActiveArea" Name="LonghouseArea" Window="MainWindow" >
+    <!--
+      <Area Factory="ActiveArea" Name="LonghouseArea" Frame="RightWindow" >
         <Feature Factory="Image" X="1200" Y="50" >Images/ActiveAreas/Longhouse.png </Feature>
         <Trigger>
           <Points>
@@ -14,7 +15,7 @@
         </Trigger>
       </Area>
 
-      <Area Factory="ActiveArea" Name="PeatArea" Window="MainWindow" >
+      <Area Factory="ActiveArea" Name="PeatArea" Frame="LeftWindow" >
         <Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/PeatCutting.png</Feature>
         <Trigger>
           <Points>
@@ -25,9 +26,10 @@
           </Points>
         </Trigger>
       </Area>
+      -->
 
-      <Area Factory="ActiveArea" Name="YawAreaEast" Window="MainWindow" >
-        <Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/MidTownshipEast.JPG</Feature>
+      <Area Factory="ActiveArea" Name="YawAreaEast" Frame="LeftWindow" >
+        <Feature Factory="Image" X="1200" Y="50" Width="500" Frame="LeftWindpw" >Images/ActiveAreas/MidTownshipEast.JPG</Feature>
         <Trigger>
           <Yaw Min="5" Max="82" />
           <Points>
@@ -39,8 +41,8 @@
         </Trigger>
       </Area>
 
-      <Area Factory="ActiveArea" Name="YawAreaWest" Window="MainWindow" >
-        <Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/MidTownshipWest.JPG</Feature>
+      <Area Factory="ActiveArea" Name="YawAreaWest" Frame="RightWindow" >
+        <Feature Factory="Image" X="1200" Y="50" Width="500" Frame="RightWindow" >Images/ActiveAreas/MidTownshipWest.JPG</Feature>
         <Trigger>
           <Yaw Min="100" Max="180" />
           <Points>
@@ -52,19 +54,18 @@
         </Trigger>
       </Area>
 
+      <Feature Factory="Image" Name="HelpSidebarAvatar"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
+      <Feature Factory="Image" Name="HelpSidebarFlycam"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
+
+      <Feature Factory="Image" Name="HelpSidebarAvatarL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
+      <Feature Factory="Image" Name="HelpSidebarFlycamL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
+
     </Features>
     
     <Triggers>
       <Trigger Factory="FlythroughEnd" Name="FlythroughEnd" />
       <Trigger Factory="Timer" Name="IntroTimer" LengthMS="5000" />
     </Triggers>
-    <Features>
-      <Feature Factory="Image" Name="HelpSidebarAvatar"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
-      <Feature Factory="Image" Name="HelpSidebarFlycam"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
-
-      <Feature Factory="Image" Name="HelpSidebarAvatarL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
-      <Feature Factory="Image" Name="HelpSidebarFlycamL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
-    </Features>
     
     <SelectionRenderers>
       <Renderer Factory="Cursor" Name="DialCursor" InnerRenderer="Dial" Radius="40" Colour="Red" Frame="MainWindow" />
@@ -157,7 +158,8 @@
         -->
 
         <Steps>
-          <Step Step="0" Voiceover="../Voiceovers/Voiceover1.wma">
+          <!--<Step Step="0" Voiceover="../Voiceovers/Voiceover1.wma">-->
+          <Step Step="0" >
             <Subtitles>
               <Subtitle>
                 The settlement of Caen is located a few miles
@@ -188,7 +190,9 @@
             </Subtitles>
           </Step>
 
-          <Step Step="1" Voiceover="../Voiceovers/Voiceover2.wma">
+          <Step Step="1" >
+          <!--<Step Step="1" Voiceover="../Voiceovers/Voiceover2.wma">-->
+
             <Subtitles>
               <Subtitle>
                 The place name Caen can be translated as 
@@ -496,24 +500,12 @@
 
           <Step Step="11">
             <Features>
+              <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="MainWindow" />
+              <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="LeftWindow" />
+              <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="RightWindow" />
               <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/GuidedTour/Map.jpg</Feature>
-              <!--
-              <Feature Factory="Fade" Frame="MainWindow">
-                <Start Factory="Screenshot" IncludeOverlay="true" Frame="MainWindow" />
-                <Finish Factory="Image" X="0" Y="0" W="1920" H="1080">Images/GuidedTour/Map.jpg</Finish>
-                <Transition Factory="Fade" Length="10000" />
-              </Feature>
-              <Feature Factory="Fade" Frame="LeftWindow" >
-                <Start Factory="Screenshot" IncludeOverlay="true" Frame="LeftWindow" />
-                <Finish Factory="Colour" Colour="Black" />
-                <Transition Factory="Fade" Length="10000" />
-              </Feature>
-              <Feature Factory="Fade" Frame="RightWindow" >
-                <Start Factory="Screenshot" IncludeOverlay="true" Frame="RightWindow" />
-                <Finish Factory="Colour" Colour="Black" />
-                <Transition Factory="Fade" Length="10000" />
-              </Feature>
-              -->
+              <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+              <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
             </Features>
 
             <Subtitles>
@@ -620,7 +612,7 @@
 
     <Triggers>
       <!--<Trigger Factory="SkeletonLost" Timeout="2000" Name="IdleTrigger" />-->
-      <Trigger Factory="SkeletonLost" Timeout="300000" Name="IdleTrigger" />
+      <Trigger Factory="SkeletonLost" Timeout="360000" Name="IdleTrigger" />
       <Trigger Factory="SkeletonFound" Name="SkeletonFound" />
       <Trigger Factory="RaiseArm" Name="ExitWorld" />
     </Triggers>
