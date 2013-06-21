@@ -647,8 +647,12 @@
       <InvisibleTransition From="Splash" To="KinectAvatar"  Transition="FadeOut"    L="1080" T="535" R="1755" B="620" Frame="MainWindow" Renderer="DialCursor" />
       <InvisibleTransition From="Splash" To="KinectFlycam"  Transition="FadeOut"    L="1080" T="765" R="1755" B="865" Frame="MainWindow" Renderer="DialCursor" />
 
+      <!--
       <Transition From="KinectAvatar" To="HelpAvatar"  Transition="FadeIn" Trigger="ExitWorld" />
       <Transition From="KinectFlycam" To="HelpFlycam"  Transition="FadeIn" Trigger="ExitWorld" />
+      -->
+      <Transition From="KinectAvatar" To="Splash"  Transition="FadeIn" Trigger="ExitWorld" />
+      <Transition From="KinectFlycam" To="Splash"  Transition="FadeIn" Trigger="ExitWorld" />
 
       <ImageTransition From="HelpAvatar" 	To="KinectAvatar" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
       <ImageTransition From="HelpFlycam" 	To="KinectFlycam" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
