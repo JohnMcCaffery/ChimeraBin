@@ -92,7 +92,11 @@
         <IdleTransition Name="FadeIn" />
       </State>
 
-      <State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Start="true" />
+      <State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Start="true">
+        <IdleTriggers>
+          <Trigger Name="FlythroughEnd" />
+        </IdleTriggers>
+      </State>
 
       <State Factory="Blank" Name="Intro" EnableCursor="false" >
         <Features>
