@@ -115,13 +115,50 @@
         </Features>
       </State>
 
-      <State Factory="Slideshow" Name="Slideshow" Folder="Images/TodaySlideshow/" Transition="Fade" >
+      <State Factory="Slideshow" Name="Slideshow" >
         <NextTriggers>
           <ImageTrigger X="1532" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/NextTrans.png</ImageTrigger>
         </NextTriggers>
         <PrevTriggers>
           <ImageTrigger X="96" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/PrevTrans.png</ImageTrigger>
         </PrevTriggers>
+        <Steps>
+          <Step>
+            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/1.JPG</Feature>
+          </Step>
+          <Step>
+            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/2.JPG</Feature>
+          </Step>
+          <Step>
+            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/3.JPG</Feature>
+          </Step>
+          <Step>
+            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/4.JPG</Feature>
+          </Step>
+          <Step>
+            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/5.JPG</Feature>
+          </Step>
+          <Step>
+            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/6.JPG</Feature>
+          </Step>
+          <Step>
+            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/7.JPG</Feature>
+          </Step>
+        </Steps>
       </State>
 
       <State Factory="Info" Name="HelpAvatar" >
@@ -526,9 +563,9 @@
 
           <Step Step="11" Voiceover="Audio/12.mp3" >
             <Features>
-              <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="MainWindow" />
               <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="LeftWindow" />
               <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="RightWindow" />
+              <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="MainWindow" />
               <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/GuidedTour/Map.jpg</Feature>
               <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
               <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
