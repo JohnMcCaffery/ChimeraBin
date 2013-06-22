@@ -1,6 +1,6 @@
 Chimera.exe
 
-IF %errorlevel% 0 GOTO exit 
+IF ERRORLEVEL 0 GOTO exit 
 
 rem GOTO :EOF
 
