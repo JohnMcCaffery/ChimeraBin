@@ -1,17 +1,13 @@
 Chimera.exe
 
-rem IF %errorlevel% EQU -1073741819 (
-rem GOTO exit
-rem ) ELSE ( 
-rem IF %errorlevel% EQU 0 GOTO exit ELSE GOTO restart
-rem )
+IF %errorlevel% 0 GOTO exit 
 
-IF %errorlevel% GOTO restart ELSE GOTO exit 
+rem GOTO :EOF
 
-GOTO :EOF
+rem :restart
 
-:restart
 Scripts\launch.bat
+
 GOTO :EOF
 
 :exit
