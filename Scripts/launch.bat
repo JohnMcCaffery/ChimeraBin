@@ -2,10 +2,6 @@ Chimera.exe
 
 IF ERRORLEVEL 0 GOTO exit 
 
-rem GOTO :EOF
-
-rem :restart
-
 Scripts\launch.bat
 
 GOTO :EOF
@@ -21,6 +17,6 @@ git add Logs/*
 git commit -m "Shutdown log push - %DATE% %TIME% "
 git push
 
-rem shutdown.exe /s /t 00
+shutdown.exe /s /t 00
 
 GOTO :EOF
