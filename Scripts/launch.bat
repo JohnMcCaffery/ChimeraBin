@@ -6,7 +6,7 @@ rem ) ELSE (
 rem IF %errorlevel% EQU 0 GOTO exit ELSE GOTO restart
 rem )
 
-IF %errorlevel% EQU 0 GOTO exit ELSE GOTO restart
+IF %errorlevel% GOTO restart ELSE GOTO exit 
 
 GOTO :EOF
 
@@ -25,6 +25,6 @@ git add Logs/*
 git commit -m "Shutdown log push - %DATE% %TIME% "
 git push
 
-shutdown.exe /s /t 00
+rem shutdown.exe /s /t 00
 
 GOTO :EOF
