@@ -1,10 +1,12 @@
 Chimera.exe
 
-IF %errorlevel% EQU -1073741819 (
-GOTO exit
-) ELSE ( 
+rem IF %errorlevel% EQU -1073741819 (
+rem GOTO exit
+rem ) ELSE ( 
+rem IF %errorlevel% EQU 0 GOTO exit ELSE GOTO restart
+rem )
+
 IF %errorlevel% EQU 0 GOTO exit ELSE GOTO restart
-)
 
 GOTO :EOF
 
