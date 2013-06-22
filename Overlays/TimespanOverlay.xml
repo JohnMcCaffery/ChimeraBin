@@ -213,14 +213,16 @@
 
       <State Factory="Flythrough" Name="GuidedTour" File="Flythroughs/Caen-Guided-Full.xml" AutoStep="true" Loop="false" DisplaySubtitles="true" SubtitleTimeout="5">
 
-        <!--<StepText Frame="MainWindow" Font="Verdana" Size="50" Color="Red" Style="Bold" Colour="Red" X="50" Y="50" />-->
         <SubtitleText Frame="MainWindow" Font="Verdana" Size="30" Colour="Yellow" Style="Regular" X="960" Y="918" Alignment="TopCenter" />
 
-        <!--
-        <Triggers>
-          <ImageTrigger X="1532" Y="918"  Renderer="DialCursor" Frame="MainWindow" >Images/Buttons/Next.png</ImageTrigger>
-        </Triggers>
-        -->
+        <IdleTriggers>
+          <Trigger Factory="Simple" />
+        </IdleTriggers>
+
+        <Features>
+          <Feature Factory="StaticText" X="50" Y="50" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow">Raise your arm above your head to explore Caen
+at your own pace or view local stories</Feature>
+        </Features>
 
         <Steps>
           <Step Step="0" Voiceover="Audio/1.mp3">
