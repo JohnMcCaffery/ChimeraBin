@@ -1,5 +1,7 @@
 Chimera.exe
 
+echo %errorlevel%
+
 IF ERRORLEVEL 0 GOTO exit 
 
 Scripts\launch.bat
