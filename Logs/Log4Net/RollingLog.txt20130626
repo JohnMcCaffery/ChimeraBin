@@ -1,0 +1,1292 @@
+2013-06-25 13:38:38,628 [9] WARN  Startup - Unable to launch. Problem loading bindings. Could not find a part of the path 'E:\Chimera\Bin\Config\'.
+2013-06-25 13:38:38,753 [9] WARN  Startup - Unable to launch. Problem instantiating coordinator. Error activating IOutputFactory
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  2) Injection of dependency IOutputFactory into parameter outputFactory of constructor of type Core
+  1) Request for Core
+
+Suggestions:
+  1) Ensure that you have defined a binding for IOutputFactory.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+2013-06-25 13:38:38,754 [9] DEBUG Startup - 
+Ninject.ActivationException: Error activating IOutputFactory
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  2) Injection of dependency IOutputFactory into parameter outputFactory of constructor of type Core
+  1) Request for Core
+
+Suggestions:
+  1) Ensure that you have defined a binding for IOutputFactory.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+   at Ninject.KernelBase.Resolve(IRequest request) in E:\ninject\src\Ninject\KernelBase.cs:line 359
+   at Ninject.Planning.Targets.Target`1.GetValue(Type service, IContext parent) in E:\ninject\src\Ninject\Planning\Targets\Target.cs:line 197
+   at Ninject.Planning.Targets.Target`1.ResolveWithin(IContext parent) in E:\ninject\src\Ninject\Planning\Targets\Target.cs:line 165
+   at Ninject.Activation.Providers.StandardProvider.GetValue(IContext context, ITarget target) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 114
+   at Ninject.Activation.Providers.StandardProvider.<>c__DisplayClass4.<Create>b__2(ITarget target) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 96
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Ninject.Activation.Providers.StandardProvider.Create(IContext context) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 96
+   at Ninject.Activation.Context.Resolve() in E:\ninject\src\Ninject\Activation\Context.cs:line 157
+   at Ninject.KernelBase.<>c__DisplayClass13.<Resolve>b__d(IBinding binding) in E:\ninject\src\Ninject\KernelBase.cs:line 390
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.<CastIterator>d__b1`1.MoveNext()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, IParameter[] parameters) in E:\ninject\src\Ninject\Syntax\ResolutionExtensions.cs:line 37
+   at Chimera.Launcher.Launcher..ctor(String[] args) in E:\Chimera\Src\LauncherLib\Launcher.cs:line 103
+2013-06-25 13:39:08,971 [1] WARN  Startup - Unable to launch. Problem loading bindings. Could not find a part of the path 'E:\Chimera\Bin\Config\'.
+2013-06-25 13:39:09,045 [1] WARN  Startup - Unable to launch. Problem instantiating coordinator. Error activating IOutputFactory
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  2) Injection of dependency IOutputFactory into parameter outputFactory of constructor of type Core
+  1) Request for Core
+
+Suggestions:
+  1) Ensure that you have defined a binding for IOutputFactory.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+2013-06-25 13:39:09,047 [1] DEBUG Startup - 
+Ninject.ActivationException: Error activating IOutputFactory
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  2) Injection of dependency IOutputFactory into parameter outputFactory of constructor of type Core
+  1) Request for Core
+
+Suggestions:
+  1) Ensure that you have defined a binding for IOutputFactory.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+   at Ninject.KernelBase.Resolve(IRequest request) in E:\ninject\src\Ninject\KernelBase.cs:line 359
+   at Ninject.Planning.Targets.Target`1.GetValue(Type service, IContext parent) in E:\ninject\src\Ninject\Planning\Targets\Target.cs:line 197
+   at Ninject.Planning.Targets.Target`1.ResolveWithin(IContext parent) in E:\ninject\src\Ninject\Planning\Targets\Target.cs:line 165
+   at Ninject.Activation.Providers.StandardProvider.GetValue(IContext context, ITarget target) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 114
+   at Ninject.Activation.Providers.StandardProvider.<>c__DisplayClass4.<Create>b__2(ITarget target) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 96
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Ninject.Activation.Providers.StandardProvider.Create(IContext context) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 96
+   at Ninject.Activation.Context.Resolve() in E:\ninject\src\Ninject\Activation\Context.cs:line 157
+   at Ninject.KernelBase.<>c__DisplayClass13.<Resolve>b__d(IBinding binding) in E:\ninject\src\Ninject\KernelBase.cs:line 390
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.<CastIterator>d__b1`1.MoveNext()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, IParameter[] parameters) in E:\ninject\src\Ninject\Syntax\ResolutionExtensions.cs:line 37
+   at Chimera.Launcher.Launcher..ctor(String[] args) in E:\Chimera\Src\LauncherLib\Launcher.cs:line 103
+2013-06-25 13:45:34,705 [1] WARN  Startup - Unable to launch. Problem loading bindings. Could not find a part of the path 'E:\Chimera\Bin\Config\'.
+2013-06-25 13:45:34,772 [1] WARN  Startup - Unable to launch. Problem instantiating coordinator. Error activating IOutputFactory
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  2) Injection of dependency IOutputFactory into parameter outputFactory of constructor of type Core
+  1) Request for Core
+
+Suggestions:
+  1) Ensure that you have defined a binding for IOutputFactory.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+2013-06-25 13:45:34,778 [1] DEBUG Startup - 
+Ninject.ActivationException: Error activating IOutputFactory
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  2) Injection of dependency IOutputFactory into parameter outputFactory of constructor of type Core
+  1) Request for Core
+
+Suggestions:
+  1) Ensure that you have defined a binding for IOutputFactory.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+   at Ninject.KernelBase.Resolve(IRequest request) in E:\ninject\src\Ninject\KernelBase.cs:line 359
+   at Ninject.Planning.Targets.Target`1.GetValue(Type service, IContext parent) in E:\ninject\src\Ninject\Planning\Targets\Target.cs:line 197
+   at Ninject.Planning.Targets.Target`1.ResolveWithin(IContext parent) in E:\ninject\src\Ninject\Planning\Targets\Target.cs:line 165
+   at Ninject.Activation.Providers.StandardProvider.GetValue(IContext context, ITarget target) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 114
+   at Ninject.Activation.Providers.StandardProvider.<>c__DisplayClass4.<Create>b__2(ITarget target) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 96
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Ninject.Activation.Providers.StandardProvider.Create(IContext context) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 96
+   at Ninject.Activation.Context.Resolve() in E:\ninject\src\Ninject\Activation\Context.cs:line 157
+   at Ninject.KernelBase.<>c__DisplayClass13.<Resolve>b__d(IBinding binding) in E:\ninject\src\Ninject\KernelBase.cs:line 390
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.<CastIterator>d__b1`1.MoveNext()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, IParameter[] parameters) in E:\ninject\src\Ninject\Syntax\ResolutionExtensions.cs:line 37
+   at Chimera.Launcher.Launcher..ctor(String[] args) in E:\Chimera\Src\LauncherLib\Launcher.cs:line 100
+2013-06-25 13:47:21,813 [9] WARN  Startup - Unable to launch. Problem loading bindings. Could not find a part of the path 'E:\Chimera\Bin\Config\'.
+2013-06-25 13:47:21,896 [9] WARN  Startup - Unable to launch. Problem instantiating coordinator. Error activating IOutputFactory
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  2) Injection of dependency IOutputFactory into parameter outputFactory of constructor of type Core
+  1) Request for Core
+
+Suggestions:
+  1) Ensure that you have defined a binding for IOutputFactory.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+2013-06-25 13:47:21,897 [9] DEBUG Startup - 
+Ninject.ActivationException: Error activating IOutputFactory
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  2) Injection of dependency IOutputFactory into parameter outputFactory of constructor of type Core
+  1) Request for Core
+
+Suggestions:
+  1) Ensure that you have defined a binding for IOutputFactory.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+   at Ninject.KernelBase.Resolve(IRequest request) in E:\ninject\src\Ninject\KernelBase.cs:line 359
+   at Ninject.Planning.Targets.Target`1.GetValue(Type service, IContext parent) in E:\ninject\src\Ninject\Planning\Targets\Target.cs:line 197
+   at Ninject.Planning.Targets.Target`1.ResolveWithin(IContext parent) in E:\ninject\src\Ninject\Planning\Targets\Target.cs:line 165
+   at Ninject.Activation.Providers.StandardProvider.GetValue(IContext context, ITarget target) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 114
+   at Ninject.Activation.Providers.StandardProvider.<>c__DisplayClass4.<Create>b__2(ITarget target) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 96
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Ninject.Activation.Providers.StandardProvider.Create(IContext context) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 96
+   at Ninject.Activation.Context.Resolve() in E:\ninject\src\Ninject\Activation\Context.cs:line 157
+   at Ninject.KernelBase.<>c__DisplayClass13.<Resolve>b__d(IBinding binding) in E:\ninject\src\Ninject\KernelBase.cs:line 390
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.<CastIterator>d__b1`1.MoveNext()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, IParameter[] parameters) in E:\ninject\src\Ninject\Syntax\ResolutionExtensions.cs:line 37
+   at Chimera.Launcher.Launcher..ctor(String[] args) in E:\Chimera\Src\LauncherLib\Launcher.cs:line 103
+2013-06-25 13:51:23,970 [9] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
+2013-06-25 13:51:24,001 [9] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2013-06-25 13:51:24,003 [9] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 13:51:24,027 [9] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
+2013-06-25 13:51:24,034 [9] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2013-06-25 13:51:24,034 [9] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 13:51:24,045 [9] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
+2013-06-25 13:51:24,051 [9] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2013-06-25 13:51:24,052 [9] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 13:51:24,065 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 13:51:24,066 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 13:51:24,068 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 13:51:24,072 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 13:51:24,359 [9] DEBUG Overlay - LeftWindpw is not a known frame. Using MainWindow as default.
+2013-06-25 13:51:24,501 [9] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
+2013-06-25 13:51:24,501 [9] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2013-06-25 13:51:24,503 [9] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2013-06-25 13:51:24,506 [9] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:51:24,607 [9] INFO  Overlay - Created BlankState state IdleOutro.
+2013-06-25 13:51:24,612 [9] INFO  Overlay - Created FlythroughState state Idle.
+2013-06-25 13:51:24,613 [9] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:51:24,709 [9] INFO  Overlay - Created BlankState state Intro.
+2013-06-25 13:51:24,710 [9] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:51:24,805 [9] INFO  Overlay - Created BlankState state Splash.
+2013-06-25 13:51:25,097 [9] INFO  Overlay - Created SlideshowState state Slideshow.
+2013-06-25 13:51:25,100 [9] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:51:25,100 [9] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:51:25,100 [9] INFO  Overlay - Created InfoState state HelpAvatar.
+2013-06-25 13:51:25,101 [9] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:51:25,102 [9] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:51:25,102 [9] INFO  Overlay - Created InfoState state HelpFlycam.
+2013-06-25 13:51:25,103 [9] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:51:25,115 [9] INFO  Overlay - Created BlankState state Story1Confirm.
+2013-06-25 13:51:25,116 [9] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:51:25,127 [9] INFO  Overlay - Created BlankState state Story2Confirm.
+2013-06-25 13:51:25,128 [9] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:51:25,139 [9] INFO  Overlay - Created BlankState state Story3Confirm.
+2013-06-25 13:51:25,141 [9] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:51:25,151 [9] INFO  Overlay - Created BlankState state Story4Confirm.
+2013-06-25 13:51:25,153 [9] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:51:25,163 [9] INFO  Overlay - Created BlankState state Story5Confirm.
+2013-06-25 13:51:25,179 [9] INFO  Overlay - Created VideoState state Story1.
+2013-06-25 13:51:25,187 [9] INFO  Overlay - Created VideoState state Story2.
+2013-06-25 13:51:25,195 [9] INFO  Overlay - Created VideoState state Story3.
+2013-06-25 13:51:25,204 [9] INFO  Overlay - Created VideoState state Story4.
+2013-06-25 13:51:25,213 [9] INFO  Overlay - Created VideoState state Story5.
+2013-06-25 13:51:25,238 [9] INFO  Overlay - Created FlythroughState state GuidedTour.
+2013-06-25 13:51:25,256 [9] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:51:25,257 [9] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:51:25,257 [9] INFO  Overlay - Created KinectControlState state KinectAvatar.
+2013-06-25 13:51:25,259 [9] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:51:25,259 [9] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:51:25,260 [9] DEBUG Overlay - Unable to get feature for state feature from Feature. LonghouseArea is not bound to a known instance. 
+2013-06-25 13:51:25,260 [9] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:51:25,260 [9] DEBUG Overlay - Unable to get feature for state feature from Feature. PeatArea is not bound to a known instance. 
+2013-06-25 13:51:25,261 [9] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:51:25,261 [9] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:51:25,262 [9] INFO  Overlay - Created KinectControlState state KinectFlycam.
+2013-06-25 13:51:25,263 [9] INFO  Overlay - Creating Transitions
+2013-06-25 13:51:25,277 [9] DEBUG MainWindowOverlay - Disabling cursor control
+2013-06-25 13:51:25,278 [9] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-06-25 13:51:25,278 [9] DEBUG RightWindowOverlay - Disabling cursor control
+2013-06-25 13:51:25,395 [9] INFO  Overlay - Current state set to Idle.
+2013-06-25 13:51:25,396 [9] INFO  Core - Loaded Overlay. Enabled.
+2013-06-25 13:51:25,397 [9] INFO  Core - Loaded MouseCursor. Enabled.
+2013-06-25 13:51:25,399 [9] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 13:51:25,401 [9] DEBUG KinectMovement - Disabled
+2013-06-25 13:51:25,402 [9] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 13:51:25,405 [9] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 13:51:43,389 [9] DEBUG Core - Shutting down tick thread.
+2013-06-25 13:51:43,418 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 13:51:43,454 [9] DEBUG OpenSim.MainWindowProxy - Closing
+2013-06-25 13:51:43,454 [31] DEBUG OpenSim.MainWindowViewer - Closing
+2013-06-25 13:51:43,454 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 13:51:43,486 [RemoteControlListener] WARN  RemoteControl - Problem processing 'Not Yet Received'.
+System.Net.Sockets.SocketException (0x80004005): A blocking operation was interrupted by a call to WSACancelBlockingCall
+   at System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   at System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   at Chimera.RemoteControl.RemoteControlPlugin.ListenThread() in E:\Chimera\Src\RemoteControlLib\RemoteControlPlugin.cs:line 87
+2013-06-25 13:51:43,489 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2013-06-25 13:51:43,494 [RemoteControlListener] DEBUG Core - Shutting down tick thread.
+2013-06-25 13:51:43,496 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 13:51:43,499 [32] DEBUG OpenSim.MainWindowViewer - Closing
+2013-06-25 13:51:43,504 [9] DEBUG OpenSim.LeftWindowProxy - Closing
+2013-06-25 13:51:43,506 [33] DEBUG OpenSim.LeftWindowViewer - Closing
+2013-06-25 13:51:43,508 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
+2013-06-25 13:51:43,508 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
+2013-06-25 13:51:43,509 [9] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 13:51:43,527 [9] DEBUG OpenSim.RightWindowProxy - Closing
+2013-06-25 13:51:43,527 [34] DEBUG OpenSim.RightWindowViewer - Closing
+2013-06-25 13:51:43,531 [9] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 13:51:43,564 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 13:51:43,565 [35] DEBUG OpenSim.MainWindowViewer - Closing
+2013-06-25 13:51:43,567 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 13:51:43,569 [36] DEBUG OpenSim.MainWindowViewer - Closing
+2013-06-25 13:51:43,570 [RemoteControlListener] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 13:51:43,572 [37] DEBUG OpenSim.LeftWindowViewer - Closing
+2013-06-25 13:51:43,573 [RemoteControlListener] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 13:51:43,575 [38] DEBUG OpenSim.RightWindowViewer - Closing
+2013-06-25 13:52:57,905 [8] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 13:52:57,939 [8] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 13:52:57,945 [8] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 13:52:57,952 [8] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 13:52:58,220 [8] DEBUG Overlay - LeftWindpw is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,303 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,318 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,323 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,326 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,345 [8] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
+2013-06-25 13:52:58,346 [8] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2013-06-25 13:52:58,352 [8] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2013-06-25 13:52:58,356 [8] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:52:58,401 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,429 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,430 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,459 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,460 [8] INFO  Overlay - Created BlankState state IdleOutro.
+2013-06-25 13:52:58,468 [8] INFO  Overlay - Created FlythroughState state Idle.
+2013-06-25 13:52:58,470 [8] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:52:58,515 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,543 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,544 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,583 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,584 [8] INFO  Overlay - Created BlankState state Intro.
+2013-06-25 13:52:58,586 [8] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:52:58,626 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,654 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,656 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,689 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,691 [8] INFO  Overlay - Created BlankState state Splash.
+2013-06-25 13:52:58,698 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,701 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,723 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,724 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,759 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,760 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,798 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,801 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,836 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,836 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,861 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,861 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,896 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,896 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:58,930 [8] INFO  Overlay - Created SlideshowState state Slideshow.
+2013-06-25 13:52:58,934 [8] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:52:58,934 [8] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:52:58,936 [8] INFO  Overlay - Created InfoState state HelpAvatar.
+2013-06-25 13:52:58,937 [8] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:52:58,938 [8] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:52:58,938 [8] INFO  Overlay - Created InfoState state HelpFlycam.
+2013-06-25 13:52:58,941 [8] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:52:58,952 [8] INFO  Overlay - Created BlankState state Story1Confirm.
+2013-06-25 13:52:58,954 [8] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:52:58,968 [8] INFO  Overlay - Created BlankState state Story2Confirm.
+2013-06-25 13:52:58,970 [8] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:52:58,980 [8] INFO  Overlay - Created BlankState state Story3Confirm.
+2013-06-25 13:52:58,985 [8] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:52:59,002 [8] INFO  Overlay - Created BlankState state Story4Confirm.
+2013-06-25 13:52:59,004 [8] DEBUG Overlay - Unable to get colour for State. No Colour attribute specified.
+2013-06-25 13:52:59,016 [8] INFO  Overlay - Created BlankState state Story5Confirm.
+2013-06-25 13:52:59,038 [8] INFO  Overlay - Created VideoState state Story1.
+2013-06-25 13:52:59,051 [8] INFO  Overlay - Created VideoState state Story2.
+2013-06-25 13:52:59,063 [8] INFO  Overlay - Created VideoState state Story3.
+2013-06-25 13:52:59,077 [8] INFO  Overlay - Created VideoState state Story4.
+2013-06-25 13:52:59,088 [8] INFO  Overlay - Created VideoState state Story5.
+2013-06-25 13:52:59,103 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:59,105 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:59,107 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:59,114 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:59,115 [8] DEBUG Overlay - RightWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:59,115 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:59,117 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:59,118 [8] DEBUG Overlay - LeftWindow is not a known frame. Using MainWindow as default.
+2013-06-25 13:52:59,121 [8] INFO  Overlay - Created FlythroughState state GuidedTour.
+2013-06-25 13:52:59,129 [8] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:52:59,132 [8] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:52:59,136 [8] INFO  Overlay - Created KinectControlState state KinectAvatar.
+2013-06-25 13:52:59,142 [8] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:52:59,143 [8] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:52:59,144 [8] DEBUG Overlay - Unable to get feature for state feature from Feature. LonghouseArea is not bound to a known instance. 
+2013-06-25 13:52:59,146 [8] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:52:59,147 [8] DEBUG Overlay - Unable to get feature for state feature from Feature. PeatArea is not bound to a known instance. 
+2013-06-25 13:52:59,148 [8] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:52:59,151 [8] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-06-25 13:52:59,153 [8] INFO  Overlay - Created KinectControlState state KinectFlycam.
+2013-06-25 13:52:59,157 [8] INFO  Overlay - Creating Transitions
+2013-06-25 13:52:59,176 [8] DEBUG MainWindowOverlay - Disabling cursor control
+2013-06-25 13:52:59,362 [8] INFO  Overlay - Current state set to Idle.
+2013-06-25 13:52:59,368 [8] INFO  Core - Loaded Overlay. Enabled.
+2013-06-25 13:52:59,369 [8] INFO  Core - Loaded MouseCursor. Enabled.
+2013-06-25 13:52:59,374 [8] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 13:52:59,378 [8] DEBUG KinectMovement - Disabled
+2013-06-25 13:52:59,378 [8] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 13:52:59,390 [8] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 13:52:59,904 [Heightmap Bot Login Thread] WARN  Heightmap - Unable to log in heightmap bot. Could not authenticate your avatar. Please check your username and password, and check the grid if problems persist.
+2013-06-25 13:53:10,064 [8] DEBUG Core - Shutting down tick thread.
+2013-06-25 13:53:10,091 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 13:53:10,130 [8] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 13:53:10,153 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2013-06-25 13:53:10,153 [RemoteControlListener] WARN  RemoteControl - Problem processing 'Not Yet Received'.
+System.Net.Sockets.SocketException (0x80004005): A blocking operation was interrupted by a call to WSACancelBlockingCall
+   at System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   at System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   at Chimera.RemoteControl.RemoteControlPlugin.ListenThread() in E:\Chimera\Src\RemoteControlLib\RemoteControlPlugin.cs:line 87
+2013-06-25 13:53:10,163 [RemoteControlListener] DEBUG Core - Shutting down tick thread.
+2013-06-25 13:53:10,170 [8] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 13:53:10,223 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 13:53:10,227 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 13:54:42,118 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 13:54:42,153 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 13:54:42,155 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 13:54:42,165 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 13:54:42,176 [9] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 13:54:42,182 [9] DEBUG KinectMovement - Disabled
+2013-06-25 13:54:42,183 [9] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 13:54:42,187 [9] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 13:54:42,193 [9] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 13:54:42,977 [Heightmap Bot Login Thread] WARN  Heightmap - Unable to log in heightmap bot. Could not authenticate your avatar. Please check your username and password, and check the grid if problems persist.
+2013-06-25 13:54:56,193 [9] DEBUG Core - Shutting down tick thread.
+2013-06-25 13:54:56,219 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 13:54:56,256 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 13:54:56,261 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 13:54:56,275 [RemoteControlListener] WARN  RemoteControl - Problem processing 'Not Yet Received'.
+System.Net.Sockets.SocketException (0x80004005): A blocking operation was interrupted by a call to WSACancelBlockingCall
+   at System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   at System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   at Chimera.RemoteControl.RemoteControlPlugin.ListenThread() in E:\Chimera\Src\RemoteControlLib\RemoteControlPlugin.cs:line 87
+2013-06-25 13:54:56,282 [RemoteControlListener] DEBUG Core - Shutting down tick thread.
+2013-06-25 13:54:56,342 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 13:54:56,343 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 13:54:56,362 [RemoteControlListener] WARN  RemoteControl - Problem closing down on failed exit. 
+System.InvalidOperationException: Cross-thread operation not valid: Control 'CoordinatorForm' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   at System.Windows.Forms.Form.Close()
+   at Chimera.GUI.Forms.CoordinatorForm.mCoordinator_Closed(Core coordinator, EventArgs args) in E:\Chimera\Src\ChimeraLib\GUI\Forms\CoordinatorForm.cs:line 404
+   at Chimera.Core.Close(String reason) in E:\Chimera\Src\ChimeraLib\Core\Core.cs:line 643
+   at Chimera.Core.Close() in E:\Chimera\Src\ChimeraLib\Core\Core.cs:line 624
+   at Chimera.RemoteControl.RemoteControlPlugin.ListenThread() in E:\Chimera\Src\RemoteControlLib\RemoteControlPlugin.cs:line 102
+2013-06-25 13:59:08,499 [10] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 13:59:08,536 [10] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 13:59:08,537 [10] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 13:59:08,544 [10] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 13:59:08,556 [10] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 13:59:08,560 [10] DEBUG KinectMovement - Disabled
+2013-06-25 13:59:08,561 [10] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 13:59:08,565 [10] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 13:59:08,568 [10] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 13:59:09,037 [Heightmap Bot Login Thread] WARN  Heightmap - Unable to log in heightmap bot. Could not authenticate your avatar. Please check your username and password, and check the grid if problems persist.
+2013-06-25 14:01:25,973 [10] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:01:25,990 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 14:01:26,035 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:01:26,042 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:01:26,066 [RemoteControlListener] WARN  RemoteControl - Problem processing 'Not Yet Received'.
+System.Net.Sockets.SocketException (0x80004005): A blocking operation was interrupted by a call to WSACancelBlockingCall
+   at System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   at System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   at Chimera.RemoteControl.RemoteControlPlugin.ListenThread() in E:\Chimera\Src\RemoteControlLib\RemoteControlPlugin.cs:line 87
+2013-06-25 14:01:26,071 [RemoteControlListener] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:01:26,131 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:01:26,132 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:01:46,015 [10] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:01:46,045 [10] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:01:46,046 [10] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:01:46,054 [10] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:01:46,058 [10] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 14:01:46,061 [10] DEBUG KinectMovement - Disabled
+2013-06-25 14:01:46,061 [10] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 14:01:46,067 [10] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 14:01:46,070 [10] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 14:02:31,996 [10] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:02:32,008 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 14:02:32,059 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:02:32,074 [RemoteControlListener] WARN  RemoteControl - Problem processing 'Not Yet Received'.
+System.Net.Sockets.SocketException (0x80004005): A blocking operation was interrupted by a call to WSACancelBlockingCall
+   at System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   at System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   at Chimera.RemoteControl.RemoteControlPlugin.ListenThread() in E:\Chimera\Src\RemoteControlLib\RemoteControlPlugin.cs:line 87
+2013-06-25 14:02:32,076 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:02:32,082 [RemoteControlListener] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:02:32,143 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:02:32,143 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:02:50,005 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:02:50,035 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:02:50,036 [1] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:02:50,046 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:02:50,046 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 14:02:50,048 [1] DEBUG KinectMovement - Disabled
+2013-06-25 14:02:50,049 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 14:02:50,053 [1] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 14:02:50,057 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 14:02:50,554 [1] INFO  ProcessManager - Listening for crashes.
+2013-06-25 14:02:58,397 [1] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:02:58,420 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 14:02:58,463 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:02:58,469 [RemoteControlListener] WARN  RemoteControl - Problem processing 'Not Yet Received'.
+System.Net.Sockets.SocketException (0x80004005): A blocking operation was interrupted by a call to WSACancelBlockingCall
+   at System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   at System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   at Chimera.RemoteControl.RemoteControlPlugin.ListenThread() in E:\Chimera\Src\RemoteControlLib\RemoteControlPlugin.cs:line 87
+2013-06-25 14:02:58,469 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:02:58,480 [RemoteControlListener] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:02:58,541 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:02:58,543 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:05:32,562 [10] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:05:32,591 [10] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:05:32,592 [10] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:05:32,616 [10] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:05:32,617 [10] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 14:05:32,620 [10] DEBUG KinectMovement - Disabled
+2013-06-25 14:05:32,620 [10] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 14:05:32,623 [10] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 14:05:32,631 [10] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 14:05:36,076 [10] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:05:36,097 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 14:05:36,140 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:05:36,157 [RemoteControlListener] WARN  RemoteControl - Problem processing 'Not Yet Received'.
+System.Net.Sockets.SocketException (0x80004005): A blocking operation was interrupted by a call to WSACancelBlockingCall
+   at System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   at System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   at Chimera.RemoteControl.RemoteControlPlugin.ListenThread() in E:\Chimera\Src\RemoteControlLib\RemoteControlPlugin.cs:line 88
+2013-06-25 14:05:36,157 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:05:36,162 [RemoteControlListener] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:05:36,225 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:05:36,225 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:05:40,374 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:05:40,407 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:05:40,408 [1] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:05:40,413 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:05:40,419 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 14:05:40,427 [1] DEBUG KinectMovement - Disabled
+2013-06-25 14:05:40,430 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 14:05:40,437 [1] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 14:05:40,444 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 14:05:40,902 [1] INFO  ProcessManager - Listening for crashes.
+2013-06-25 14:05:43,933 [1] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:05:43,936 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 14:05:43,996 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:05:44,003 [RemoteControlListener] WARN  RemoteControl - Problem processing 'Not Yet Received'.
+System.Net.Sockets.SocketException (0x80004005): A blocking operation was interrupted by a call to WSACancelBlockingCall
+   at System.Net.Sockets.Socket.ReceiveFrom(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, EndPoint& remoteEP)
+   at System.Net.Sockets.UdpClient.Receive(IPEndPoint& remoteEP)
+   at Chimera.RemoteControl.RemoteControlPlugin.ListenThread() in E:\Chimera\Src\RemoteControlLib\RemoteControlPlugin.cs:line 88
+2013-06-25 14:05:44,004 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:05:44,014 [RemoteControlListener] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:05:44,078 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:05:44,080 [RemoteControlListener] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:06:05,372 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:06:05,399 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:06:05,402 [1] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:06:05,417 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:06:05,419 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 14:06:05,421 [1] DEBUG KinectMovement - Disabled
+2013-06-25 14:06:05,422 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 14:06:05,426 [1] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 14:06:05,436 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 14:06:05,882 [1] INFO  ProcessManager - Listening for crashes.
+2013-06-25 14:06:08,115 [1] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:06:08,143 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 14:06:08,181 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:06:08,187 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:07:04,728 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:07:04,762 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:07:04,763 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:07:04,779 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:07:04,780 [9] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 14:07:04,782 [9] DEBUG KinectMovement - Disabled
+2013-06-25 14:07:04,782 [9] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 14:07:04,786 [9] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 14:07:04,790 [9] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 14:07:07,915 [9] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:07:07,935 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 14:07:07,976 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:07:07,985 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:08:59,132 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:08:59,168 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:08:59,175 [1] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:08:59,190 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:08:59,193 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 14:08:59,197 [1] DEBUG KinectMovement - Disabled
+2013-06-25 14:08:59,198 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 14:08:59,205 [1] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 14:08:59,213 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 14:08:59,759 [1] INFO  ProcessManager - Listening for crashes.
+2013-06-25 14:09:26,858 [1] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:09:26,863 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 14:09:26,921 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:09:26,927 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:12:38,659 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:12:38,682 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:12:38,683 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:12:38,685 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:12:38,687 [9] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 14:12:38,688 [9] DEBUG KinectMovement - Disabled
+2013-06-25 14:12:38,688 [9] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 14:12:38,689 [9] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 14:12:38,692 [9] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 14:13:13,905 [9] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:13:13,926 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 14:13:13,969 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:13:13,990 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:13:56,362 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:13:56,385 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:13:56,386 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:13:56,388 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:13:56,390 [9] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 14:13:56,392 [9] DEBUG KinectMovement - Disabled
+2013-06-25 14:13:56,392 [9] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 14:13:56,393 [9] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 14:13:56,396 [9] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 14:14:16,296 [9] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:14:16,299 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 14:14:16,360 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:14:16,381 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:14:39,926 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:14:39,950 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:14:39,951 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:14:39,954 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:14:39,956 [9] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 14:14:39,958 [9] DEBUG KinectMovement - Disabled
+2013-06-25 14:14:39,958 [9] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 14:14:39,960 [9] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 14:14:39,963 [9] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 14:15:24,160 [9] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:15:24,190 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 14:15:24,224 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:15:24,243 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:16:52,809 [9] INFO  OpenSim.LeftWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 14:16:52,834 [9] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2013-06-25 14:16:52,836 [9] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 14:16:52,862 [9] INFO  OpenSim.RightWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 14:16:52,873 [9] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2013-06-25 14:16:52,875 [9] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 14:16:53,129 [9] WARN  Core - Unable to instantiate core. Could not find a part of the path 'E:\Chimera\Bin\Config\TimespanRoom.xml'.
+2013-06-25 14:16:53,130 [9] DEBUG Core - Unable to instantiate core.
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Chimera\Bin\Config\TimespanRoom.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at Chimera.Plugins.ProjectorPlugin.Init(Core coordinator) in E:\Chimera\Src\ChimeraLib\Plugins\ProjectorPlugin.cs:line 105
+   at Chimera.Core..ctor(IOutputFactory outputFactory, ISystemPlugin[] plugins) in E:\Chimera\Src\ChimeraLib\Core\Core.cs:line 304
+2013-06-25 14:16:53,165 [9] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:16:53,234 [9] WARN  Startup - Unable to launch. Problem instantiating coordinator. Object reference not set to an instance of an object.
+2013-06-25 14:16:53,234 [9] DEBUG Startup - 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Chimera.Plugins.KBMousePlugin.set_Enabled(Boolean value) in E:\Chimera\Src\ChimeraLib\Plugins\KBMousePlugin.cs:line 88
+   at Chimera.Core.Close(String reason) in E:\Chimera\Src\ChimeraLib\Core\Core.cs:line 637
+   at Chimera.Core.Close() in E:\Chimera\Src\ChimeraLib\Core\Core.cs:line 625
+   at Chimera.Core..ctor(IOutputFactory outputFactory, ISystemPlugin[] plugins) in E:\Chimera\Src\ChimeraLib\Core\Core.cs:line 322
+   at DynamicInjector17633b27672b451bbce2ca9bba5af51d(Object[] )
+   at Ninject.Activation.Providers.StandardProvider.Create(IContext context) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 97
+   at Ninject.Activation.Context.Resolve() in E:\ninject\src\Ninject\Activation\Context.cs:line 157
+   at Ninject.KernelBase.<>c__DisplayClass13.<Resolve>b__d(IBinding binding) in E:\ninject\src\Ninject\KernelBase.cs:line 390
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.<CastIterator>d__b1`1.MoveNext()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, IParameter[] parameters) in E:\ninject\src\Ninject\Syntax\ResolutionExtensions.cs:line 37
+   at Chimera.Launcher.Launcher..ctor(String[] args) in E:\Chimera\Src\LauncherLib\Launcher.cs:line 103
+2013-06-25 14:17:04,176 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:49544
+2013-06-25 14:17:04,215 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:49545
+2013-06-25 14:17:28,553 [10] WARN  OpenSim - Restarting RightWindow viewer because UnexpectedViewerClose.
+2013-06-25 14:17:28,557 [10] DEBUG OpenSim.RightWindowProxy - Closing
+2013-06-25 14:17:52,541 [9] INFO  OpenSim.LeftWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 14:17:52,565 [9] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2013-06-25 14:17:52,567 [9] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 14:17:52,596 [9] INFO  OpenSim.RightWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 14:17:52,604 [9] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2013-06-25 14:17:52,619 [9] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 14:17:52,677 [9] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 14:17:52,679 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:17:52,680 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:17:52,683 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:17:52,685 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:17:52,688 [9] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 14:17:52,690 [9] DEBUG KinectMovement - Disabled
+2013-06-25 14:17:52,690 [9] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 14:17:52,694 [9] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 14:17:52,697 [9] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 14:18:03,394 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:58776
+2013-06-25 14:18:03,465 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:58777
+2013-06-25 14:18:15,462 [9] DEBUG OpenSim.LeftWindowProxy - Closing
+2013-06-25 14:18:15,464 [9] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 14:18:18,902 [9] DEBUG OpenSim.RightWindowProxy - Closing
+2013-06-25 14:18:18,902 [9] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 14:30:17,889 [9] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 14:30:19,849 [9] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 14:31:00,801 [9] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 14:31:02,721 [9] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 14:31:44,175 [9] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 14:31:46,096 [9] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:31:46,106 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 14:31:48,613 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:31:48,616 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:31:48,637 [9] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 14:31:48,656 [188] DEBUG OpenSim.LeftWindowViewer - Closing
+2013-06-25 14:31:48,657 [9] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 14:31:48,660 [187] DEBUG OpenSim.RightWindowViewer - Closing
+2013-06-25 14:31:49,800 [187] INFO  OpenSim.RightWindowViewer - Closed
+2013-06-25 14:31:54,624 [188] INFO  OpenSim.LeftWindowViewer - Closed
+2013-06-25 14:32:44,628 [8] INFO  OpenSim.LeftWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 14:32:44,654 [8] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2013-06-25 14:32:44,656 [8] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 14:32:44,724 [8] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 14:32:44,727 [8] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:32:44,728 [8] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:32:44,731 [8] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:32:44,760 [8] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:32:44,766 [8] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 14:32:44,767 [8] DEBUG KinectMovement - Disabled
+2013-06-25 14:32:44,768 [8] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 14:32:44,769 [8] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 14:32:44,773 [8] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 14:32:53,967 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:62970
+2013-06-25 14:33:06,130 [142] DEBUG OpenSim.LeftWindowViewer - Closing
+2013-06-25 14:33:11,784 [9] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
+2013-06-25 14:33:11,786 [8] DEBUG OpenSim.LeftWindowProxy - Closing
+2013-06-25 14:33:11,786 [8] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 14:33:12,792 [8] INFO  OpenSim.LeftWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 14:33:12,796 [8] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2013-06-25 14:33:12,819 [9] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 14:33:12,843 [142] INFO  OpenSim.LeftWindowViewer - Closed
+2013-06-25 14:33:22,170 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:54718
+2013-06-25 14:33:43,359 [8] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:33:43,364 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 14:33:43,420 [8] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:33:43,431 [8] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:33:43,432 [8] DEBUG OpenSim.LeftWindowProxy - Closing
+2013-06-25 14:33:43,433 [8] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 14:33:43,435 [96] DEBUG OpenSim.LeftWindowViewer - Closing
+2013-06-25 14:33:43,439 [8] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 14:33:44,287 [96] INFO  OpenSim.LeftWindowViewer - Closed
+2013-06-25 14:35:49,235 [10] INFO  OpenSim.LeftWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 14:35:49,262 [10] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2013-06-25 14:35:49,264 [10] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 14:35:49,327 [10] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 14:35:49,329 [10] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:35:49,332 [10] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:35:49,333 [10] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:35:49,337 [10] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:35:49,340 [10] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 14:35:49,341 [10] DEBUG KinectMovement - Disabled
+2013-06-25 14:35:49,341 [10] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 14:35:49,343 [10] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 14:35:49,346 [10] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 14:35:58,850 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:52621
+2013-06-25 14:36:10,469 [58] DEBUG OpenSim.LeftWindowViewer - Closing
+2013-06-25 14:36:16,061 [58] INFO  OpenSim.LeftWindowViewer - Closed
+2013-06-25 14:38:13,874 [59] WARN  OpenMetaverse - Socket Shutdown: ConnectionReset
+2013-06-25 14:49:29,802 [10] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:49:29,817 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 14:49:29,870 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:49:29,889 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:49:29,890 [10] DEBUG OpenSim.LeftWindowProxy - Closing
+2013-06-25 14:49:29,891 [10] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 14:49:29,898 [10] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 14:49:32,919 [10] INFO  OpenSim.LeftWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 14:49:32,944 [10] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2013-06-25 14:49:32,947 [10] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 14:49:33,010 [10] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 14:49:33,012 [10] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:49:33,013 [10] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:49:33,015 [10] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:49:33,024 [10] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:49:33,024 [10] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 14:49:33,026 [10] DEBUG KinectMovement - Disabled
+2013-06-25 14:49:33,026 [10] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 14:49:33,027 [10] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 14:49:33,030 [10] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 14:49:41,315 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:49701
+2013-06-25 14:49:48,435 [438] DEBUG OpenSim.LeftWindowViewer - Closing
+2013-06-25 14:49:49,088 [438] INFO  OpenSim.LeftWindowViewer - Closed
+2013-06-25 14:49:53,969 [10] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:49:53,983 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 14:49:54,033 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:49:54,053 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:49:54,054 [10] DEBUG OpenSim.LeftWindowProxy - Closing
+2013-06-25 14:49:54,055 [10] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 14:49:54,070 [10] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 14:55:58,284 [9] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 14:55:58,307 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:55:58,308 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:55:58,309 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:55:58,311 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:55:58,331 [9] WARN  Core - Unable to instantiate core. The given key was not present in the dictionary.
+2013-06-25 14:55:58,332 [9] DEBUG Core - Unable to instantiate core.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Chimera.Overlay.OverlayPlugin.get_Item(String windowName) in E:\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.State.cs:line 105
+   at Touchscreen.TouchscreenPlugin.input_FrameAdded(Frame f, EventArgs args) in E:\Chimera\Src\TouchscreenLib\TouchscreenPlugin.cs:line 103
+   at Touchscreen.TouchscreenPlugin.Init(Core input) in E:\Chimera\Src\TouchscreenLib\TouchscreenPlugin.cs:line 96
+   at Chimera.Core..ctor(IOutputFactory outputFactory, ISystemPlugin[] plugins) in E:\Chimera\Src\ChimeraLib\Core\Core.cs:line 304
+2013-06-25 14:55:58,336 [9] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:55:58,397 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:55:58,407 [9] DEBUG Touchscreen - Disabled
+2013-06-25 14:55:58,407 [9] DEBUG KinectMovement - Disabled
+2013-06-25 14:55:58,408 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:55:58,408 [9] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 14:55:58,409 [9] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 14:56:03,048 [1] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 14:56:03,071 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:56:03,073 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:56:03,075 [1] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:56:03,079 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:56:03,082 [1] WARN  Core - Unable to instantiate core. The given key was not present in the dictionary.
+2013-06-25 14:56:03,084 [1] DEBUG Core - Unable to instantiate core.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Touchscreen.TouchscreenPlugin.input_FrameAdded(Frame f, EventArgs args) in E:\Chimera\Src\TouchscreenLib\TouchscreenPlugin.cs:line 103
+   at Touchscreen.TouchscreenPlugin.Init(Core input) in E:\Chimera\Src\TouchscreenLib\TouchscreenPlugin.cs:line 96
+   at Chimera.Core..ctor(IOutputFactory outputFactory, ISystemPlugin[] plugins) in E:\Chimera\Src\ChimeraLib\Core\Core.cs:line 304
+2013-06-25 14:56:03,091 [1] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:56:03,152 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:56:03,156 [1] DEBUG Touchscreen - Disabled
+2013-06-25 14:56:03,157 [1] DEBUG KinectMovement - Disabled
+2013-06-25 14:56:03,158 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:56:03,160 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 14:56:03,160 [1] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 14:57:30,279 [1] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 14:57:30,302 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 14:57:30,305 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 14:57:30,306 [1] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 14:57:30,309 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 14:57:30,312 [1] WARN  Core - Unable to instantiate core. The given key was not present in the dictionary.
+2013-06-25 14:57:30,313 [1] DEBUG Core - Unable to instantiate core.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Touchscreen.TouchscreenPlugin.input_FrameAdded(Frame f, EventArgs args) in E:\Chimera\Src\TouchscreenLib\TouchscreenPlugin.cs:line 103
+   at Touchscreen.TouchscreenPlugin.Init(Core input) in E:\Chimera\Src\TouchscreenLib\TouchscreenPlugin.cs:line 96
+   at Chimera.Core..ctor(IOutputFactory outputFactory, ISystemPlugin[] plugins) in E:\Chimera\Src\ChimeraLib\Core\Core.cs:line 304
+2013-06-25 14:57:30,320 [1] DEBUG Core - Shutting down tick thread.
+2013-06-25 14:57:30,382 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:57:30,386 [1] DEBUG Touchscreen - Disabled
+2013-06-25 14:57:30,388 [1] DEBUG KinectMovement - Disabled
+2013-06-25 14:57:30,388 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 14:57:30,389 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 14:57:30,390 [1] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 15:31:18,754 [9] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 15:31:18,777 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 15:31:18,778 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 15:31:18,779 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 15:31:18,782 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 15:31:18,789 [9] INFO  Core - Loaded Touchscreen. Enabled.
+2013-06-25 15:31:18,790 [9] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 15:31:18,791 [9] DEBUG KinectMovement - Disabled
+2013-06-25 15:31:18,791 [9] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 15:31:18,792 [9] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 15:31:18,794 [9] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 15:31:30,787 [9] DEBUG Touchscreen - Disabled
+2013-06-25 15:31:32,244 [9] DEBUG Touchscreen - Enabled
+2013-06-25 15:31:51,257 [9] DEBUG Touchscreen - Disabled
+2013-06-25 15:31:59,961 [9] DEBUG Touchscreen - Enabled
+2013-06-25 15:32:16,951 [9] DEBUG Core - Shutting down tick thread.
+2013-06-25 15:32:16,956 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 15:32:17,012 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:32:20,224 [9] DEBUG Touchscreen - Disabled
+2013-06-25 15:32:20,227 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:32:20,229 [9] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 15:32:20,230 [9] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 15:33:56,117 [9] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 15:33:56,141 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 15:33:56,143 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 15:33:56,144 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 15:33:56,147 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 15:33:56,198 [9] INFO  Core - Loaded Touchscreen. Enabled.
+2013-06-25 15:33:56,199 [9] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 15:33:56,200 [9] DEBUG KinectMovement - Disabled
+2013-06-25 15:33:56,200 [9] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 15:33:56,201 [9] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 15:33:56,204 [9] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 15:34:02,642 [9] DEBUG Touchscreen - Disabled
+2013-06-25 15:34:03,272 [9] DEBUG Touchscreen - Enabled
+2013-06-25 15:34:05,944 [9] DEBUG Touchscreen - Disabled
+2013-06-25 15:34:43,379 [9] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 15:34:43,402 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 15:34:43,403 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 15:34:43,403 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 15:34:43,406 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 15:34:43,457 [9] INFO  Core - Loaded Touchscreen. Enabled.
+2013-06-25 15:34:43,457 [9] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 15:34:43,458 [9] DEBUG KinectMovement - Disabled
+2013-06-25 15:34:43,458 [9] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 15:34:43,460 [9] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 15:34:43,464 [9] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 15:34:53,265 [9] DEBUG Touchscreen - Disabled
+2013-06-25 15:34:53,896 [9] DEBUG Touchscreen - Enabled
+2013-06-25 15:34:54,703 [9] DEBUG Touchscreen - Disabled
+2013-06-25 15:34:55,247 [9] DEBUG Touchscreen - Enabled
+2013-06-25 15:34:55,520 [9] DEBUG Touchscreen - Disabled
+2013-06-25 15:34:55,704 [9] DEBUG Touchscreen - Enabled
+2013-06-25 15:34:55,903 [9] DEBUG Touchscreen - Disabled
+2013-06-25 15:34:56,087 [9] DEBUG Touchscreen - Enabled
+2013-06-25 15:34:56,284 [9] DEBUG Touchscreen - Disabled
+2013-06-25 15:34:56,463 [9] DEBUG Touchscreen - Enabled
+2013-06-25 15:34:56,647 [9] DEBUG Touchscreen - Disabled
+2013-06-25 15:34:56,847 [9] DEBUG Touchscreen - Enabled
+2013-06-25 15:34:57,688 [9] DEBUG Touchscreen - Disabled
+2013-06-25 15:34:58,167 [9] DEBUG Touchscreen - Enabled
+2013-06-25 15:35:13,355 [9] DEBUG Core - Shutting down tick thread.
+2013-06-25 15:35:13,366 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 15:35:13,416 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:35:13,517 [9] DEBUG Touchscreen - Disabled
+2013-06-25 15:35:13,518 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:35:13,520 [9] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 15:35:13,520 [9] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 15:37:38,640 [8] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 15:37:38,664 [8] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 15:37:38,666 [8] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 15:37:38,666 [8] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 15:37:38,669 [8] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 15:37:38,676 [8] INFO  Core - Loaded Touchscreen. Enabled.
+2013-06-25 15:37:38,677 [8] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 15:37:38,678 [8] DEBUG KinectMovement - Disabled
+2013-06-25 15:37:38,678 [8] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 15:37:38,679 [8] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 15:37:38,681 [8] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 15:37:44,133 [8] DEBUG Core - Shutting down tick thread.
+2013-06-25 15:37:44,162 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 15:37:44,197 [8] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:37:44,217 [8] DEBUG Touchscreen - Disabled
+2013-06-25 15:37:44,218 [8] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:37:44,220 [8] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 15:37:44,221 [8] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 15:38:01,049 [10] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 15:38:01,073 [10] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 15:38:01,074 [10] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 15:38:01,075 [10] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 15:38:01,077 [10] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 15:38:01,084 [10] INFO  Core - Loaded Touchscreen. Enabled.
+2013-06-25 15:38:01,086 [10] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 15:38:01,087 [10] DEBUG KinectMovement - Disabled
+2013-06-25 15:38:01,087 [10] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 15:38:01,088 [10] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 15:38:01,091 [10] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 15:38:16,476 [10] DEBUG Core - Shutting down tick thread.
+2013-06-25 15:38:16,494 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 15:38:16,539 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:38:16,543 [10] DEBUG Touchscreen - Disabled
+2013-06-25 15:38:16,553 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:38:16,554 [10] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 15:38:16,554 [10] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 15:38:21,172 [9] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 15:38:21,195 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 15:38:21,197 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 15:38:21,197 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 15:38:21,200 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 15:39:06,208 [10] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 15:39:06,231 [10] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 15:39:06,233 [10] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 15:39:06,233 [10] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 15:39:06,236 [10] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 15:39:09,997 [10] DEBUG Touchscreen - Enabled
+2013-06-25 15:39:10,031 [10] INFO  Core - Loaded Touchscreen. Enabled.
+2013-06-25 15:39:10,033 [10] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 15:39:10,034 [10] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 15:39:10,036 [10] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 15:39:10,039 [10] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 15:39:15,479 [10] DEBUG Touchscreen - Disabled
+2013-06-25 15:39:16,286 [10] DEBUG Touchscreen - Enabled
+2013-06-25 15:39:16,990 [10] DEBUG Touchscreen - Disabled
+2013-06-25 15:39:17,461 [10] DEBUG Touchscreen - Enabled
+2013-06-25 15:39:17,925 [10] DEBUG Touchscreen - Disabled
+2013-06-25 15:39:18,996 [10] DEBUG Core - Shutting down tick thread.
+2013-06-25 15:39:19,003 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 15:39:19,057 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:39:19,080 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:39:19,082 [10] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 15:39:19,083 [10] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 15:40:05,248 [8] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 15:40:05,272 [8] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 15:40:05,273 [8] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 15:40:05,274 [8] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 15:40:05,276 [8] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 15:40:05,283 [8] DEBUG Touchscreen - Enabled
+2013-06-25 15:40:05,309 [8] INFO  Core - Loaded Touchscreen. Enabled.
+2013-06-25 15:40:05,312 [8] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 15:40:05,312 [8] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 15:40:05,314 [8] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 15:40:05,317 [8] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 15:41:05,516 [8] DEBUG Core - Shutting down tick thread.
+2013-06-25 15:41:05,542 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 15:41:05,581 [8] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:41:05,586 [8] DEBUG Touchscreen - Disabled
+2013-06-25 15:41:05,602 [8] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:41:05,604 [8] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 15:41:05,604 [8] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 15:41:38,133 [9] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 15:41:38,155 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 15:41:38,157 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 15:41:38,157 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 15:41:38,160 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 15:41:38,167 [9] DEBUG Touchscreen - Enabled
+2013-06-25 15:41:38,192 [9] INFO  Core - Loaded Touchscreen. Enabled.
+2013-06-25 15:41:38,193 [9] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 15:41:38,194 [9] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 15:41:38,199 [9] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 15:41:38,203 [9] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 15:41:48,693 [9] DEBUG Core - Shutting down tick thread.
+2013-06-25 15:41:48,712 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 15:41:48,757 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:41:48,761 [9] DEBUG Touchscreen - Disabled
+2013-06-25 15:41:48,773 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:41:48,774 [9] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 15:41:48,775 [9] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 15:43:34,375 [8] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 15:43:34,398 [8] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 15:43:34,399 [8] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 15:43:34,400 [8] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 15:43:34,402 [8] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 15:43:34,410 [8] DEBUG Touchscreen - Enabled
+2013-06-25 15:43:34,441 [8] INFO  Core - Loaded Touchscreen. Enabled.
+2013-06-25 15:43:34,442 [8] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 15:43:34,443 [8] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 15:43:34,444 [8] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 15:43:34,447 [8] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 15:47:48,009 [8] DEBUG Core - Shutting down tick thread.
+2013-06-25 15:47:48,030 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 15:47:48,072 [8] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:47:48,088 [8] DEBUG Touchscreen - Disabled
+2013-06-25 15:47:48,092 [8] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:47:48,093 [8] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 15:47:48,094 [8] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 15:47:51,452 [9] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 15:47:51,475 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 15:47:51,476 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 15:47:51,477 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 15:47:51,479 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 15:49:09,150 [10] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 15:49:09,172 [10] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 15:49:09,174 [10] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 15:49:09,174 [10] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 15:49:09,177 [10] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 15:49:26,284 [10] DEBUG Touchscreen - Enabled
+2013-06-25 15:49:26,306 [10] INFO  Core - Loaded Touchscreen. Enabled.
+2013-06-25 15:49:26,307 [10] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 15:49:26,308 [10] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 15:49:26,309 [10] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 15:49:26,313 [10] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 15:49:45,720 [10] DEBUG Core - Shutting down tick thread.
+2013-06-25 15:49:45,738 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 15:49:45,783 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:49:45,797 [10] DEBUG Touchscreen - Disabled
+2013-06-25 15:49:45,804 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:49:45,806 [10] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 15:49:45,807 [10] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 15:50:24,488 [9] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 15:50:24,511 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 15:50:24,512 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 15:50:24,513 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 15:50:24,515 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 15:50:24,523 [9] DEBUG Touchscreen - Enabled
+2013-06-25 15:50:24,548 [9] INFO  Core - Loaded Touchscreen. Enabled.
+2013-06-25 15:50:24,549 [9] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 15:50:24,550 [9] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 15:50:24,550 [9] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 15:50:24,553 [9] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 15:50:50,487 [9] DEBUG Core - Shutting down tick thread.
+2013-06-25 15:50:50,503 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 15:50:50,551 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:50:50,557 [9] DEBUG Touchscreen - Disabled
+2013-06-25 15:50:50,572 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 15:50:50,574 [9] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 15:50:50,574 [9] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 21:18:55,236 [10] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 21:18:55,260 [10] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 21:18:55,261 [10] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 21:18:55,262 [10] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 21:18:55,268 [10] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 21:18:55,275 [10] DEBUG Touchscreen - Enabled
+2013-06-25 21:18:55,302 [10] INFO  Core - Loaded Touchscreen. Enabled.
+2013-06-25 21:18:55,303 [10] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 21:18:55,304 [10] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 21:18:55,305 [10] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 21:18:55,307 [10] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 21:19:00,821 [10] DEBUG Core - Shutting down tick thread.
+2013-06-25 21:19:00,827 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 21:19:00,884 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 21:19:00,889 [10] DEBUG Touchscreen - Disabled
+2013-06-25 21:19:00,915 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 21:19:00,917 [10] INFO  Core - System shutdown for -Shutdown.
+2013-06-25 21:19:27,398 [9] INFO  OpenSim.MainWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:19:27,423 [9] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2013-06-25 21:19:27,426 [9] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:19:27,452 [9] INFO  OpenSim.LeftWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:19:27,454 [9] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2013-06-25 21:19:27,456 [9] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:19:27,467 [9] INFO  OpenSim.RightWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:19:27,469 [9] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2013-06-25 21:19:27,491 [9] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:19:27,545 [9] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 21:19:27,547 [9] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 21:19:27,548 [9] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 21:19:27,548 [9] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 21:19:27,551 [9] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 21:19:27,558 [9] DEBUG Touchscreen - Enabled
+2013-06-25 21:19:27,585 [9] INFO  Core - Loaded Touchscreen. Enabled.
+2013-06-25 21:19:27,586 [9] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 21:19:27,586 [9] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 21:19:27,587 [9] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 21:19:27,590 [9] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 21:19:41,949 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:61579
+2013-06-25 21:19:42,065 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:61580
+2013-06-25 21:19:42,246 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:61581
+2013-06-25 21:21:25,550 [9] DEBUG Core - Shutting down tick thread.
+2013-06-25 21:21:25,567 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 21:21:25,643 [342] DEBUG OpenSim.MainWindowViewer - Closing
+2013-06-25 21:21:25,652 [9] DEBUG OpenSim.MainWindowProxy - Closing
+2013-06-25 21:21:25,655 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 21:21:25,672 [9] DEBUG Touchscreen - Disabled
+2013-06-25 21:21:26,152 [9] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 21:21:26,157 [7] DEBUG OpenSim.MainWindowViewer - Closing
+2013-06-25 21:21:26,185 [9] DEBUG OpenSim.LeftWindowProxy - Closing
+2013-06-25 21:21:26,240 [344] DEBUG OpenSim.LeftWindowViewer - Closing
+2013-06-25 21:21:26,241 [9] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 21:21:26,299 [9] DEBUG OpenSim.RightWindowProxy - Closing
+2013-06-25 21:21:26,301 [9] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 21:21:26,307 [346] DEBUG OpenSim.RightWindowViewer - Closing
+2013-06-25 21:21:26,429 [9] INFO  Core - System shutdown for -Shutdown.
+2013-06-25 21:21:27,609 [7] INFO  OpenSim.MainWindowViewer - Closed
+2013-06-25 21:21:27,618 [342] INFO  OpenSim.MainWindowViewer - Closed
+2013-06-25 21:21:27,758 [344] INFO  OpenSim.LeftWindowViewer - Closed
+2013-06-25 21:21:57,429 [346] INFO  OpenSim.RightWindowViewer - Closed
+2013-06-25 21:22:16,052 [10] INFO  OpenSim.MainWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:22:16,078 [10] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2013-06-25 21:22:16,080 [10] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:22:16,107 [10] INFO  OpenSim.LeftWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:22:16,114 [10] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2013-06-25 21:22:16,115 [10] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:22:16,125 [10] INFO  OpenSim.RightWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:22:16,141 [10] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2013-06-25 21:22:16,142 [10] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:22:16,188 [10] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 21:22:16,189 [10] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 21:22:16,190 [10] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 21:22:16,191 [10] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 21:22:16,194 [10] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 21:22:16,202 [10] DEBUG Touchscreen - Enabled
+2013-06-25 21:22:16,234 [10] INFO  Core - Loaded Touchscreen. Enabled.
+2013-06-25 21:22:16,249 [10] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 21:22:16,250 [10] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 21:22:16,251 [10] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 21:22:16,254 [10] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 21:22:27,785 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:60598
+2013-06-25 21:22:27,873 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:60599
+2013-06-25 21:22:28,123 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:60600
+2013-06-25 21:22:54,149 [10] DEBUG Touchscreen - Disabled
+2013-06-25 21:25:26,099 [292] DEBUG OpenSim.RightWindowViewer - Closing
+2013-06-25 21:25:28,848 [291] DEBUG OpenSim.LeftWindowViewer - Closing
+2013-06-25 21:25:30,472 [291] INFO  OpenSim.LeftWindowViewer - Closed
+2013-06-25 21:25:42,186 [292] INFO  OpenSim.RightWindowViewer - Closed
+2013-06-25 21:26:24,407 [292] WARN  OpenMetaverse - Socket Shutdown: ConnectionReset
+2013-06-25 21:26:24,981 [11] WARN  OpenMetaverse - Socket Shutdown: ConnectionReset
+2013-06-25 21:26:29,096 [Tick Thread] WARN  OpenSim - Restarting LeftWindow viewer because ViewerStoppedResponding.
+2013-06-25 21:26:29,100 [10] DEBUG OpenSim.LeftWindowProxy - Closing
+2013-06-25 21:26:29,101 [10] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 21:26:30,109 [10] INFO  OpenSim.LeftWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:26:30,111 [10] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2013-06-25 21:26:30,114 [Tick Thread] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:26:40,686 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:54074
+2013-06-25 21:26:58,234 [286] DEBUG OpenSim.LeftWindowViewer - Closing
+2013-06-25 21:27:12,473 [Tick Thread] WARN  OpenSim - Restarting RightWindow viewer because ViewerStoppedResponding.
+2013-06-25 21:27:12,478 [10] DEBUG OpenSim.RightWindowProxy - Closing
+2013-06-25 21:27:12,478 [10] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 21:27:13,480 [10] INFO  OpenSim.RightWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:27:13,485 [10] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2013-06-25 21:27:13,491 [Tick Thread] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:27:25,740 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:54081
+2013-06-25 21:27:29,948 [286] INFO  OpenSim.LeftWindowViewer - Closed
+2013-06-25 21:27:55,040 [10] DEBUG OpenSim.LeftWindowProxy - Closing
+2013-06-25 21:27:55,040 [10] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 21:27:57,572 [282] DEBUG OpenSim.RightWindowViewer - Closing
+2013-06-25 21:28:12,497 [282] INFO  OpenSim.RightWindowViewer - Closed
+2013-06-25 21:28:13,391 [10] DEBUG OpenSim.RightWindowProxy - Closing
+2013-06-25 21:28:13,392 [10] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 21:30:22,360 [10] INFO  OpenSim.RightWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:30:22,363 [10] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2013-06-25 21:30:22,367 [10] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:30:24,080 [10] INFO  OpenSim.LeftWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:30:24,086 [10] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2013-06-25 21:30:24,090 [10] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:30:33,418 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:53538
+2013-06-25 21:30:35,480 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:53540
+2013-06-25 21:46:50,785 [229] DEBUG OpenSim.LeftWindowViewer - Closing
+2013-06-25 21:46:56,955 [221] DEBUG OpenSim.RightWindowViewer - Closing
+2013-06-25 21:46:57,752 [229] INFO  OpenSim.LeftWindowViewer - Closed
+2013-06-25 21:46:58,986 [10] DEBUG OpenSim.LeftWindowProxy - Closing
+2013-06-25 21:46:58,986 [10] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 21:47:00,294 [221] INFO  OpenSim.RightWindowViewer - Closed
+2013-06-25 21:47:01,520 [10] DEBUG OpenSim.RightWindowProxy - Closing
+2013-06-25 21:47:01,520 [10] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 21:48:56,082 [221] DEBUG OpenSim.MainWindowViewer - Closing
+2013-06-25 21:48:57,533 [221] INFO  OpenSim.MainWindowViewer - Closed
+2013-06-25 21:48:58,048 [10] DEBUG OpenSim.MainWindowProxy - Closing
+2013-06-25 21:48:58,048 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 21:49:04,553 [10] INFO  OpenSim.LeftWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:49:04,557 [10] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2013-06-25 21:49:04,587 [10] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:49:15,608 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:52389
+2013-06-25 21:50:19,257 [10] INFO  OpenSim.RightWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:50:19,261 [10] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2013-06-25 21:50:19,264 [10] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:50:28,937 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:61382
+2013-06-25 21:51:06,780 [10] INFO  OpenSim.MainWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:51:06,788 [10] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2013-06-25 21:51:06,792 [10] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:51:17,584 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:51963
+2013-06-25 21:56:28,100 [10] DEBUG Core - Shutting down tick thread.
+2013-06-25 21:56:28,129 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 21:56:28,165 [271] DEBUG OpenSim.MainWindowViewer - Closing
+2013-06-25 21:56:28,165 [10] DEBUG OpenSim.MainWindowProxy - Closing
+2013-06-25 21:56:28,265 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 21:56:28,629 [10] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 21:56:28,730 [270] DEBUG OpenSim.MainWindowViewer - Closing
+2013-06-25 21:56:28,732 [10] DEBUG OpenSim.LeftWindowProxy - Closing
+2013-06-25 21:56:28,733 [230] DEBUG OpenSim.LeftWindowViewer - Closing
+2013-06-25 21:56:28,734 [10] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 21:56:28,768 [10] DEBUG OpenSim.RightWindowProxy - Closing
+2013-06-25 21:56:28,770 [10] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 21:56:28,770 [267] DEBUG OpenSim.RightWindowViewer - Closing
+2013-06-25 21:56:28,783 [10] INFO  Core - System shutdown for -Shutdown.
+2013-06-25 21:56:32,103 [270] INFO  OpenSim.MainWindowViewer - Closed
+2013-06-25 21:56:32,103 [271] INFO  OpenSim.MainWindowViewer - Closed
+2013-06-25 21:56:32,196 [230] INFO  OpenSim.LeftWindowViewer - Closed
+2013-06-25 21:56:32,813 [267] INFO  OpenSim.RightWindowViewer - Closed
+2013-06-25 21:59:15,146 [1] INFO  OpenSim.MainWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:59:15,236 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2013-06-25 21:59:15,252 [1] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:59:15,295 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:59:15,299 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2013-06-25 21:59:15,301 [1] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:59:15,308 [1] INFO  OpenSim.RightWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 21:59:15,324 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2013-06-25 21:59:15,326 [1] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 21:59:15,360 [1] INFO  Core - Loaded Projectors. Enabled.
+2013-06-25 21:59:15,367 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 21:59:15,373 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 21:59:15,376 [1] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 21:59:15,402 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 21:59:15,417 [1] INFO  Core - Loaded Touchscreen. Disabled.
+2013-06-25 21:59:15,421 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 21:59:15,426 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 21:59:15,429 [1] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 21:59:15,451 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 21:59:16,222 [1] INFO  ProcessManager - Listening for crashes.
+2013-06-25 21:59:27,806 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:65162
+2013-06-25 21:59:27,906 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:65163
+2013-06-25 21:59:28,122 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:65164
+2013-06-25 22:02:22,979 [1] DEBUG Core - Shutting down tick thread.
+2013-06-25 22:02:22,984 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 22:02:23,056 [35] DEBUG OpenSim.MainWindowViewer - Closing
+2013-06-25 22:02:23,056 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2013-06-25 22:02:23,060 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 22:02:23,102 [34] DEBUG OpenSim.MainWindowViewer - Closing
+2013-06-25 22:02:23,103 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 22:02:23,126 [33] DEBUG OpenSim.LeftWindowViewer - Closing
+2013-06-25 22:02:23,132 [1] DEBUG OpenSim.LeftWindowProxy - Closing
+2013-06-25 22:02:23,134 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 22:02:23,143 [32] DEBUG OpenSim.RightWindowViewer - Closing
+2013-06-25 22:02:23,149 [1] DEBUG OpenSim.RightWindowProxy - Closing
+2013-06-25 22:02:23,155 [1] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 22:02:23,158 [1] INFO  Core - System shutdown for -Shutdown.
+2013-06-25 22:02:24,264 [35] INFO  OpenSim.MainWindowViewer - Closed
+2013-06-25 22:02:24,264 [34] INFO  OpenSim.MainWindowViewer - Closed
+2013-06-25 22:02:24,318 [33] INFO  OpenSim.LeftWindowViewer - Closed
+2013-06-25 22:02:24,412 [32] INFO  OpenSim.RightWindowViewer - Closed
+2013-06-25 22:02:49,259 [1] INFO  OpenSim.MainWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 22:02:49,287 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2013-06-25 22:02:49,291 [1] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 22:02:49,315 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 22:02:49,322 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2013-06-25 22:02:49,327 [1] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 22:02:49,333 [1] INFO  OpenSim.RightWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-06-25 22:02:49,378 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2013-06-25 22:02:49,381 [1] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-06-25 22:02:49,446 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-06-25 22:02:49,509 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-06-25 22:02:49,531 [1] INFO  Core - Loaded Flythrough. Enabled.
+2013-06-25 22:02:49,572 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2013-06-25 22:02:49,588 [1] INFO  Core - Loaded Touchscreen. Disabled.
+2013-06-25 22:02:49,593 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-06-25 22:02:49,596 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2013-06-25 22:02:49,599 [1] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-06-25 22:02:49,603 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2013-06-25 22:02:49,964 [1] INFO  ProcessManager - Listening for crashes.
+2013-06-25 22:03:00,541 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:64026
+2013-06-25 22:03:00,579 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:64027
+2013-06-25 22:03:00,852 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.11:9002 at 127.0.0.1:64028
+2013-06-25 22:30:54,960 [1] DEBUG Core - Shutting down tick thread.
+2013-06-25 22:30:54,964 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-06-25 22:30:55,027 [32] DEBUG OpenSim.MainWindowViewer - Closing
+2013-06-25 22:30:55,028 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2013-06-25 22:30:55,031 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 22:30:55,041 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-06-25 22:30:55,041 [27] DEBUG OpenSim.MainWindowViewer - Closing
+2013-06-25 22:30:55,049 [1] DEBUG OpenSim.LeftWindowProxy - Closing
+2013-06-25 22:30:55,049 [23] DEBUG OpenSim.LeftWindowViewer - Closing
+2013-06-25 22:30:55,050 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2013-06-25 22:30:55,056 [30] DEBUG OpenSim.RightWindowViewer - Closing
+2013-06-25 22:30:55,056 [1] DEBUG OpenSim.RightWindowProxy - Closing
+2013-06-25 22:30:55,062 [1] INFO  OpenSim.RightWindowProxy - Closed
+2013-06-25 22:30:55,067 [1] INFO  Core - System shutdown for -Shutdown.
+2013-06-25 22:30:56,445 [30] INFO  OpenSim.RightWindowViewer - Closed
+2013-06-25 22:30:56,451 [27] INFO  OpenSim.MainWindowViewer - Closed
+2013-06-25 22:30:56,454 [32] INFO  OpenSim.MainWindowViewer - Closed
+2013-06-25 22:30:56,506 [23] INFO  OpenSim.LeftWindowViewer - Closed
