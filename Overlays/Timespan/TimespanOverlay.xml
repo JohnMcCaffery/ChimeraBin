@@ -220,8 +220,8 @@
 		</IdleTriggers>
 	
 		<Features>
-		  <Feature Factory="StaticText" X="50" Y="50" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow">Raise your arm above your head to explore Caen
-	at your own pace or view local stories</Feature>
+		  <Feature Factory="StaticText" X="50" Y="50" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow">Whilst standing raise your arm above your head
+ to explore Caen at your own pace or view local stories</Feature>
 		</Features>
 	
 		<Steps>
@@ -240,7 +240,9 @@
 		      <Feature Factory="Image" X="200" Y="100" W="1000" Frame="LeftWindow" >Images/GuidedTour/RigAndFurrow.jpg</Feature>
 		    </Features>
 		  </Step>
-          <Step Step="10" Voiceover="Audio/11.mp3" />          <Step Step="11" Voiceover="Audio/12.mp3" >
+          <Step Step="10" Voiceover="Audio/11.mp3" />
+
+          <Step Step="11" Voiceover="Audio/12.mp3" >
             <Features>
               <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="LeftWindow" />
               <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="RightWindow" />
