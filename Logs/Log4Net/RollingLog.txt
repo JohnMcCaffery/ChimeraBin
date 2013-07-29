@@ -816,3 +816,290 @@
 2013-07-28 17:02:51,400 [39] INFO  OpenSim.MainWindowViewer - Closed
 2013-07-28 17:02:51,400 [43] INFO  OpenSim.MainWindowViewer - Closed
 2013-07-28 17:02:51,430 [51] INFO  OpenSim.LeftWindowViewer - Closed
+2013-07-29 13:35:24,435 [1] WARN  Startup - Unable to launch. Problem loading bindings. Could not find a part of the path 'E:\Chimera\Bin\Config\'.
+2013-07-29 13:35:24,512 [1] WARN  Startup - Unable to launch. Problem instantiating coordinator. Error activating IOutputFactory
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  2) Injection of dependency IOutputFactory into parameter outputFactory of constructor of type Core
+  1) Request for Core
+
+Suggestions:
+  1) Ensure that you have defined a binding for IOutputFactory.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+2013-07-29 13:35:24,541 [1] DEBUG Startup - 
+Ninject.ActivationException: Error activating IOutputFactory
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  2) Injection of dependency IOutputFactory into parameter outputFactory of constructor of type Core
+  1) Request for Core
+
+Suggestions:
+  1) Ensure that you have defined a binding for IOutputFactory.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+   at Ninject.KernelBase.Resolve(IRequest request) in E:\ninject\src\Ninject\KernelBase.cs:line 359
+   at Ninject.Planning.Targets.Target`1.GetValue(Type service, IContext parent) in E:\ninject\src\Ninject\Planning\Targets\Target.cs:line 197
+   at Ninject.Planning.Targets.Target`1.ResolveWithin(IContext parent) in E:\ninject\src\Ninject\Planning\Targets\Target.cs:line 165
+   at Ninject.Activation.Providers.StandardProvider.GetValue(IContext context, ITarget target) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 114
+   at Ninject.Activation.Providers.StandardProvider.<>c__DisplayClass4.<Create>b__2(ITarget target) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 96
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Ninject.Activation.Providers.StandardProvider.Create(IContext context) in E:\ninject\src\Ninject\Activation\Providers\StandardProvider.cs:line 96
+   at Ninject.Activation.Context.Resolve() in E:\ninject\src\Ninject\Activation\Context.cs:line 157
+   at Ninject.KernelBase.<>c__DisplayClass13.<Resolve>b__d(IBinding binding) in E:\ninject\src\Ninject\KernelBase.cs:line 390
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.<CastIterator>d__b1`1.MoveNext()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, IParameter[] parameters) in E:\ninject\src\Ninject\Syntax\ResolutionExtensions.cs:line 37
+   at Chimera.Launcher.Launcher..ctor(String[] args) in E:\Chimera\Src\LauncherLib\Launcher.cs:line 100
+2013-07-29 13:36:06,904 [1] INFO  OpenSim.MainWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-07-29 13:36:06,931 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2013-07-29 13:36:06,937 [1] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-07-29 13:36:06,956 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-07-29 13:36:06,963 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-07-29 13:36:06,970 [1] INFO  Core - Loaded Flythrough. Enabled.
+2013-07-29 13:36:06,977 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2013-07-29 13:36:06,982 [1] WARN  MousePlugin - Unable to initialise MousePlugin. No OverlayPlugin registered with the coordinator.
+2013-07-29 13:36:06,988 [1] WARN  Core - Unable to instantiate core. Unable to get plugin. No plugin of the specified type (Chimera.Overlay.OverlayPlugin) found.
+2013-07-29 13:36:06,993 [1] DEBUG Core - Unable to instantiate core.
+System.ArgumentException: Unable to get plugin. No plugin of the specified type (Chimera.Overlay.OverlayPlugin) found.
+   at Chimera.Core.GetPlugin[T]() in E:\Chimera\Src\ChimeraLib\Core\Core.cs:line 716
+   at Chimera.Overlay.Plugins.MousePlugin.Init(Core core) in E:\Chimera\Src\OverlayLib\Plugin\MousePlugin.cs:line 101
+   at Chimera.Core..ctor(IOutputFactory outputFactory, ISystemPlugin[] plugins) in E:\Chimera\Src\ChimeraLib\Core\Core.cs:line 304
+2013-07-29 13:36:07,007 [1] DEBUG Core - Shutting down tick thread.
+2013-07-29 13:36:07,070 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2013-07-29 13:36:07,070 [10] DEBUG OpenSim.MainWindowViewer - Closing
+2013-07-29 13:36:07,072 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-07-29 13:36:07,084 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-07-29 13:36:07,084 [9] DEBUG OpenSim.MainWindowViewer - Closing
+2013-07-29 13:36:07,098 [1] INFO  Core - System shutdown for -Shutdown.
+2013-07-29 13:36:22,715 [9] INFO  OpenSim.MainWindowViewer - Closed
+2013-07-29 13:36:22,715 [10] INFO  OpenSim.MainWindowViewer - Closed
+2013-07-29 13:41:21,584 [1] INFO  OpenSim.MainWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-07-29 13:41:21,614 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2013-07-29 13:41:21,618 [1] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-07-29 13:41:21,632 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-07-29 13:41:21,635 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-07-29 13:41:21,639 [1] INFO  Core - Loaded Flythrough. Enabled.
+2013-07-29 13:41:21,645 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2013-07-29 13:41:21,651 [1] WARN  MousePlugin - Unable to initialise MousePlugin. No OverlayPlugin registered with the coordinator.
+2013-07-29 13:41:21,657 [1] WARN  Core - Unable to instantiate core. Unable to get plugin. No plugin of the specified type (Chimera.Overlay.OverlayPlugin) found.
+2013-07-29 13:41:21,662 [1] DEBUG Core - Unable to instantiate core.
+System.ArgumentException: Unable to get plugin. No plugin of the specified type (Chimera.Overlay.OverlayPlugin) found.
+   at Chimera.Core.GetPlugin[T]() in E:\Chimera\Src\ChimeraLib\Core\Core.cs:line 716
+   at Chimera.Overlay.Plugins.MousePlugin.Init(Core core) in E:\Chimera\Src\OverlayLib\Plugin\MousePlugin.cs:line 101
+   at Chimera.Core..ctor(IOutputFactory outputFactory, ISystemPlugin[] plugins) in E:\Chimera\Src\ChimeraLib\Core\Core.cs:line 304
+2013-07-29 13:41:21,683 [1] DEBUG Core - Shutting down tick thread.
+2013-07-29 13:41:21,746 [9] DEBUG OpenSim.MainWindowViewer - Closing
+2013-07-29 13:41:21,747 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2013-07-29 13:41:21,754 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-07-29 13:41:21,776 [6] DEBUG OpenSim.MainWindowViewer - Closing
+2013-07-29 13:41:21,781 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-07-29 13:41:21,784 [1] INFO  Core - System shutdown for -Shutdown.
+2013-07-29 13:42:36,808 [9] INFO  OpenSim.MainWindowViewer - Closed
+2013-07-29 13:42:36,815 [6] INFO  OpenSim.MainWindowViewer - Closed
+2013-07-29 13:42:48,924 [1] INFO  OpenSim.MainWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-07-29 13:42:48,954 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2013-07-29 13:42:48,959 [1] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-07-29 13:42:48,985 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-07-29 13:42:48,994 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-07-29 13:42:48,997 [1] INFO  Core - Loaded Flythrough. Enabled.
+2013-07-29 13:42:49,004 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2013-07-29 13:42:49,008 [1] WARN  MousePlugin - Unable to initialise MousePlugin. No OverlayPlugin registered with the coordinator.
+2013-07-29 13:42:49,012 [1] INFO  Core - Loaded MouseCursor. Disabled.
+2013-07-29 13:42:49,020 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-07-29 13:42:49,025 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2013-07-29 13:42:49,029 [1] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-07-29 13:42:49,034 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2013-07-29 13:42:49,418 [1] INFO  ProcessManager - Listening for crashes.
+2013-07-29 13:42:49,527 [XML-RPC Login] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9014)
+2013-07-29 13:42:54,134 [23] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9015)
+2013-07-29 13:42:54,134 [24] ERROR OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for unknown sim 138.251.214.11:9015
+2013-07-29 13:42:54,136 [16] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9000)
+2013-07-29 13:42:54,136 [17] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9000)
+2013-07-29 13:42:54,140 [18] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9001)
+2013-07-29 13:42:54,148 [17] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9001)
+2013-07-29 13:42:54,151 [17] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9011)
+2013-07-29 13:42:55,002 [24] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9011)
+2013-07-29 13:42:55,006 [24] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9012)
+2013-07-29 13:42:55,999 [27] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9012)
+2013-07-29 13:42:56,002 [27] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9013)
+2013-07-29 13:42:56,999 [11] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9013)
+2013-07-29 13:42:57,002 [11] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9021)
+2013-07-29 13:42:58,519 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.30:9000 at 127.0.0.1:51458
+2013-07-29 13:42:58,999 [29] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9021)
+2013-07-29 13:42:59,011 [29] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9022)
+2013-07-29 13:43:00,000 [32] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9022)
+2013-07-29 13:43:00,011 [32] INFO  Heightmap - Finished mapping Timespan 1
+2013-07-29 13:43:03,456 [28] INFO  Heightmap - Finished mapping Timespan 8
+2013-07-29 13:43:03,779 [16] INFO  Heightmap - Finished mapping Timespan 6
+2013-07-29 13:43:04,229 [27] INFO  Heightmap - Finished mapping Timespan 7
+2013-07-29 13:43:04,244 [33] INFO  Heightmap - Finished mapping Timespan 4
+2013-07-29 13:43:04,567 [33] INFO  Heightmap - Finished mapping Timespan 3
+2013-07-29 13:43:04,857 [38] INFO  Heightmap - Finished mapping Timespan 2
+2013-07-29 13:43:05,394 [23] INFO  Heightmap - Finished mapping Timespan 9
+2013-07-29 13:43:05,819 [23] INFO  Heightmap - Finished mapping Timespan 5
+2013-07-29 13:43:05,822 [23] INFO  OpenMetaverse - <Heightmap Bot>: Logging out
+2013-07-29 13:43:05,837 [38] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 1 (138.251.214.11:9014) is aborting
+2013-07-29 13:43:05,982 [16] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 4 (138.251.214.11:9001) is aborting
+2013-07-29 13:43:05,982 [33] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 5 (138.251.214.11:9011) is aborting
+2013-07-29 13:43:05,986 [16] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 6 (138.251.214.11:9012) is aborting
+2013-07-29 13:43:05,989 [32] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 7 (138.251.214.11:9013) is aborting
+2013-07-29 13:43:05,989 [29] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 3 (138.251.214.11:9000) is aborting
+2013-07-29 13:43:05,994 [38] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 8 (138.251.214.11:9021) is aborting
+2013-07-29 13:43:06,002 [39] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 9 (138.251.214.11:9022) is aborting
+2013-07-29 13:43:06,012 [39] INFO  OpenMetaverse - <Heightmap Bot>: NetworkManager shutdown initiated
+2013-07-29 13:43:10,825 [23] INFO  OpenMetaverse - <Heightmap Bot>: NetworkManager shutdown initiated
+2013-07-29 13:44:35,796 [1] DEBUG Core - Shutting down tick thread.
+2013-07-29 13:44:35,803 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-07-29 13:44:35,862 [44] DEBUG OpenSim.MainWindowViewer - Closing
+2013-07-29 13:44:35,863 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2013-07-29 13:44:35,869 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-07-29 13:44:35,879 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-07-29 13:44:35,879 [47] DEBUG OpenSim.MainWindowViewer - Closing
+2013-07-29 13:44:35,882 [1] INFO  Core - System shutdown for -Shutdown.
+2013-07-29 13:44:37,610 [44] INFO  OpenSim.MainWindowViewer - Closed
+2013-07-29 13:44:37,610 [47] INFO  OpenSim.MainWindowViewer - Closed
+2013-07-29 13:53:12,887 [1] INFO  OpenSim.MainWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-07-29 13:53:12,913 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2013-07-29 13:53:12,917 [1] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-07-29 13:53:12,938 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-07-29 13:53:12,941 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-07-29 13:53:12,944 [1] INFO  Core - Loaded Flythrough. Enabled.
+2013-07-29 13:53:12,949 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2013-07-29 13:53:12,953 [1] WARN  MousePlugin - Unable to initialise MousePlugin. No OverlayPlugin registered with the coordinator.
+2013-07-29 13:53:12,956 [1] INFO  Core - Loaded MouseCursor. Disabled.
+2013-07-29 13:53:12,960 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-07-29 13:53:12,963 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2013-07-29 13:53:12,966 [1] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-07-29 13:53:12,972 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2013-07-29 13:53:13,294 [1] INFO  ProcessManager - Listening for crashes.
+2013-07-29 13:53:13,386 [XML-RPC Login] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9014)
+2013-07-29 13:53:17,381 [18] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9015)
+2013-07-29 13:53:17,382 [23] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9015)
+2013-07-29 13:53:17,383 [19] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9000)
+2013-07-29 13:53:17,383 [20] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9000)
+2013-07-29 13:53:17,383 [22] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9001)
+2013-07-29 13:53:17,387 [23] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9001)
+2013-07-29 13:53:17,394 [23] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9011)
+2013-07-29 13:53:17,400 [20] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9011)
+2013-07-29 13:53:17,403 [20] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9012)
+2013-07-29 13:53:17,978 [26] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9012)
+2013-07-29 13:53:17,981 [26] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9013)
+2013-07-29 13:53:18,977 [29] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9013)
+2013-07-29 13:53:18,980 [29] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9021)
+2013-07-29 13:53:19,976 [31] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9021)
+2013-07-29 13:53:20,991 [31] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9022)
+2013-07-29 13:53:21,467 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.30:9000 at 127.0.0.1:54269
+2013-07-29 13:53:22,476 [33] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9022)
+2013-07-29 13:53:22,494 [35] INFO  Heightmap - Finished mapping Timespan 1
+2013-07-29 13:53:26,356 [33] INFO  Heightmap - Finished mapping Timespan 8
+2013-07-29 13:53:26,609 [37] INFO  Heightmap - Finished mapping Timespan 6
+2013-07-29 13:53:26,852 [34] INFO  Heightmap - Finished mapping Timespan 7
+2013-07-29 13:53:27,161 [22] INFO  Heightmap - Finished mapping Timespan 2
+2013-07-29 13:53:27,271 [40] INFO  Heightmap - Finished mapping Timespan 4
+2013-07-29 13:53:27,476 [34] INFO  Heightmap - Finished mapping Timespan 3
+2013-07-29 13:53:27,672 [37] INFO  Heightmap - Finished mapping Timespan 9
+2013-07-29 13:53:28,865 [42] INFO  Heightmap - Finished mapping Timespan 5
+2013-07-29 13:53:28,868 [42] INFO  OpenMetaverse - <Heightmap Bot>: Logging out
+2013-07-29 13:53:28,877 [33] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 1 (138.251.214.11:9014) is aborting
+2013-07-29 13:53:28,969 [30] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 2 (138.251.214.11:9015) is aborting
+2013-07-29 13:53:28,976 [26] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 3 (138.251.214.11:9000) is aborting
+2013-07-29 13:53:28,976 [38] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 4 (138.251.214.11:9001) is aborting
+2013-07-29 13:53:28,977 [34] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 5 (138.251.214.11:9011) is aborting
+2013-07-29 13:53:28,983 [40] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 6 (138.251.214.11:9012) is aborting
+2013-07-29 13:53:28,987 [33] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 7 (138.251.214.11:9013) is aborting
+2013-07-29 13:53:28,989 [30] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 8 (138.251.214.11:9021) is aborting
+2013-07-29 13:53:28,992 [19] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 9 (138.251.214.11:9022) is aborting
+2013-07-29 13:53:29,001 [19] INFO  OpenMetaverse - <Heightmap Bot>: NetworkManager shutdown initiated
+2013-07-29 13:53:33,872 [42] INFO  OpenMetaverse - <Heightmap Bot>: NetworkManager shutdown initiated
+2013-07-29 13:54:56,918 [1] DEBUG Core - Shutting down tick thread.
+2013-07-29 13:54:56,927 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-07-29 13:54:56,983 [48] DEBUG OpenSim.MainWindowViewer - Closing
+2013-07-29 13:54:56,983 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2013-07-29 13:54:56,988 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-07-29 13:54:56,993 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-07-29 13:54:56,993 [49] DEBUG OpenSim.MainWindowViewer - Closing
+2013-07-29 13:54:56,996 [1] INFO  Core - System shutdown for -Shutdown.
+2013-07-29 13:54:58,645 [49] INFO  OpenSim.MainWindowViewer - Closed
+2013-07-29 13:54:58,645 [48] INFO  OpenSim.MainWindowViewer - Closed
+2013-07-29 13:55:13,426 [1] INFO  OpenSim.MainWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-07-29 13:55:13,452 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2013-07-29 13:55:13,457 [1] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-07-29 13:55:13,471 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2013-07-29 13:55:13,473 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-07-29 13:55:13,477 [1] INFO  Core - Loaded Flythrough. Enabled.
+2013-07-29 13:55:13,482 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2013-07-29 13:55:13,486 [1] WARN  MousePlugin - Unable to initialise MousePlugin. No OverlayPlugin registered with the coordinator.
+2013-07-29 13:55:13,490 [1] INFO  Core - Loaded MouseCursor. Disabled.
+2013-07-29 13:55:13,493 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-07-29 13:55:13,497 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2013-07-29 13:55:13,502 [1] WARN  KinectCursor - Unable to load kinect cursor. Overlay plugin is not loaded.
+2013-07-29 13:55:13,506 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2013-07-29 13:55:13,925 [1] INFO  ProcessManager - Listening for crashes.
+2013-07-29 13:55:13,961 [XML-RPC Login] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9014)
+2013-07-29 13:55:18,804 [26] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9015)
+2013-07-29 13:55:18,806 [18] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9000)
+2013-07-29 13:55:18,807 [23] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9000)
+2013-07-29 13:55:18,808 [30] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9001)
+2013-07-29 13:55:18,809 [27] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9001)
+2013-07-29 13:55:18,811 [29] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9015)
+2013-07-29 13:55:18,812 [31] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9011)
+2013-07-29 13:55:18,812 [19] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9011)
+2013-07-29 13:55:18,813 [20] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9012)
+2013-07-29 13:55:18,814 [33] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9012)
+2013-07-29 13:55:18,815 [23] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9013)
+2013-07-29 13:55:18,817 [37] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9013)
+2013-07-29 13:55:18,818 [27] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9021)
+2013-07-29 13:55:18,818 [28] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9021)
+2013-07-29 13:55:18,819 [21] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (138.251.214.11:9022)
+2013-07-29 13:55:18,819 [34] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (138.251.214.11:9022)
+2013-07-29 13:55:20,369 [29] INFO  Heightmap - Finished mapping Timespan 1
+2013-07-29 13:55:22,095 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.30:9000 at 127.0.0.1:54110
+2013-07-29 13:55:25,310 [37] INFO  Heightmap - Finished mapping Timespan 9
+2013-07-29 13:55:25,534 [35] INFO  Heightmap - Finished mapping Timespan 6
+2013-07-29 13:55:26,003 [28] INFO  Heightmap - Finished mapping Timespan 4
+2013-07-29 13:55:26,016 [27] INFO  Heightmap - Finished mapping Timespan 8
+2013-07-29 13:55:26,251 [36] INFO  Heightmap - Finished mapping Timespan 7
+2013-07-29 13:55:26,516 [29] INFO  Heightmap - Finished mapping Timespan 2
+2013-07-29 13:55:26,599 [39] INFO  Heightmap - Finished mapping Timespan 3
+2013-07-29 13:55:27,568 [28] INFO  Heightmap - Finished mapping Timespan 5
+2013-07-29 13:55:27,571 [28] INFO  OpenMetaverse - <Heightmap Bot>: Logging out
+2013-07-29 13:55:27,583 [21] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 1 (138.251.214.11:9014) is aborting
+2013-07-29 13:55:27,724 [32] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 2 (138.251.214.11:9015) is aborting
+2013-07-29 13:55:27,727 [35] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 3 (138.251.214.11:9000) is aborting
+2013-07-29 13:55:27,731 [30] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 4 (138.251.214.11:9001) is aborting
+2013-07-29 13:55:27,738 [33] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 5 (138.251.214.11:9011) is aborting
+2013-07-29 13:55:27,738 [19] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 7 (138.251.214.11:9013) is aborting
+2013-07-29 13:55:27,741 [23] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 8 (138.251.214.11:9021) is aborting
+2013-07-29 13:55:27,747 [34] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 9 (138.251.214.11:9022) is aborting
+2013-07-29 13:55:27,749 [18] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 6 (138.251.214.11:9012) is aborting
+2013-07-29 13:55:27,755 [23] INFO  OpenMetaverse - <Heightmap Bot>: NetworkManager shutdown initiated
+2013-07-29 13:55:32,576 [28] INFO  OpenMetaverse - <Heightmap Bot>: NetworkManager shutdown initiated
+2013-07-29 13:57:23,238 [Tick Thread] WARN  OpenSim - Restarting MainWindow viewer because ViewerStoppedResponding.
+2013-07-29 13:57:23,244 [Tick Thread] DEBUG OpenSim.MainWindowViewer - Closing
+2013-07-29 13:57:25,064 [Tick Thread] INFO  OpenSim.MainWindowViewer - Closed
+2013-07-29 13:57:25,068 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2013-07-29 13:57:25,071 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-07-29 13:57:26,077 [1] INFO  OpenSim.MainWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2013-07-29 13:57:26,081 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2013-07-29 13:57:26,083 [Tick Thread] INFO  ProcessController - Launching E:\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from E:\Armadillo-Phoenix\Armadillo\Bin
+2013-07-29 13:57:40,918 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.115:8999 at 127.0.0.1:64432
+2013-07-29 14:11:42,607 [1] DEBUG Core - Shutting down tick thread.
+2013-07-29 14:11:42,618 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-07-29 14:11:42,671 [49] DEBUG OpenSim.MainWindowViewer - Closing
+2013-07-29 14:11:42,671 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2013-07-29 14:11:42,677 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-07-29 14:11:42,691 [47] DEBUG OpenSim.MainWindowViewer - Closing
+2013-07-29 14:11:42,692 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-07-29 14:11:42,697 [1] INFO  Core - System shutdown for -Shutdown.
+2013-07-29 14:11:46,695 [49] INFO  OpenSim.MainWindowViewer - Closed
+2013-07-29 14:11:46,695 [47] INFO  OpenSim.MainWindowViewer - Closed
