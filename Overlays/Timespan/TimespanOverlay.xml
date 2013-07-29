@@ -1,241 +1,245 @@
-<Overlay Width="1920" Height="1080" >
-  <Any>
-
-    <Features>
-    <!--
-      <Area Factory="ActiveArea" Name="LonghouseArea" Frame="RightWindow" >
-        <Feature Factory="Image" X="1200" Y="50" >Images/ActiveAreas/Longhouse.png </Feature>
-        <Trigger>
-          <Points>
-            <P X="445.83" Y="282.11" />
-            <P X="446.94" Y="285.69" />
-            <P X="418.84" Y="293.44" />
-            <P X="412.86" Y="291.65" />
-          </Points>
-        </Trigger>
-      </Area>
-
-      <Area Factory="ActiveArea" Name="PeatArea" Frame="LeftWindow" >
-        <Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/PeatCutting.png</Feature>
-        <Trigger>
-          <Points>
-            <P X="324.78" Y="348.74" />
-            <P X="311.11" Y="249.81" />
-            <P X="310.52" Y="230.37" />
-            <P X="324.27" Y="230.50" />
-          </Points>
-        </Trigger>
-      </Area>
-      -->
-
-      <Area Factory="ActiveArea" Name="YawAreaEast" Frame="LeftWindow" >
-        <Feature Factory="Image" X="1200" Y="50" Width="500" Frame="LeftWindpw" >Images/ActiveAreas/MidTownshipEast.JPG</Feature>
-        <Trigger>
-          <Yaw Min="5" Max="82" />
-          <Points>
-            <P X="390" Y="213" />
-            <P X="390" Y="231" />
-            <P X="402" Y="233" />
-            <P X="405" Y="218" />
-          </Points>
-        </Trigger>
-      </Area>
-
-      <Area Factory="ActiveArea" Name="YawAreaWest" Frame="RightWindow" >
-        <Feature Factory="Image" X="1200" Y="50" Width="500" Frame="RightWindow" >Images/ActiveAreas/MidTownshipWest.JPG</Feature>
-        <Trigger>
-          <Yaw Min="100" Max="180" />
-          <Points>
-            <P X="390" Y="213" />
-            <P X="390" Y="231" />
-            <P X="402" Y="233" />
-            <P X="405" Y="218" />
-          </Points>
-        </Trigger>
-      </Area>
-
-      <Feature Factory="Image" Name="HelpSidebarAvatar"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
-      <Feature Factory="Image" Name="HelpSidebarFlycam"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
-
-      <Feature Factory="Image" Name="HelpSidebarAvatarL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
-      <Feature Factory="Image" Name="HelpSidebarFlycamL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
-
-    </Features>
-    
-    <Triggers>
-      <Trigger Factory="FlythroughEnd" Name="FlythroughEnd" />
-      <Trigger Factory="Timer" Name="IntroTimer" LengthMS="5000" />
-    </Triggers>
-    
-    <SelectionRenderers>
-      <Renderer Factory="Cursor" Name="DialCursor" InnerRenderer="Dial" Radius="40" Colour="Red" Frame="MainWindow" />
-    </SelectionRenderers>
-
-    <TransitionStyles>
-			<!--<Transition Factory="BitmapTransition" Name="BitmapFade" Length="2000" Style="Fade" />-->
-			<Transition Factory="CutTransition" Name="Cut" />
-			<Transition Factory="OpacityTransition" Name="FadeOut" Length="2000" FadeOut="true" />
-			<Transition Factory="OpacityTransition" Name="FadeIn" Length="2000" FadeOut="false" />
-		</TransitionStyles>
-
-    <States>
-
-      <State Factory="Blank" Name="IdleOutro" EnableCursor="false" Idle="true" >
-        <Features>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Outro.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
-        </Features>
-        <IdleTriggers>
-          <Trigger Name="IdleTrigger" />
-        </IdleTriggers>
-        <IdleTransition Name="FadeIn" />
-      </State>
-
-      <State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Start="true">
-        <IdleTriggers>
-          <Trigger Name="FlythroughEnd" />
-        </IdleTriggers>
-      </State>
-
-      <State Factory="Blank" Name="Intro" EnableCursor="false" >
-        <Features>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Intro.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
-        </Features>
-      </State>
-
-      <State Factory="Blank" Name="Splash">
-        <Features>
-          <Feature Name="SplashSkeleton" Frame="MainWindow" />
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Splash.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
-        </Features>
-      </State>
-
-      <State Factory="Slideshow" Name="Slideshow" >
-        <NextTriggers>
-          <ImageTrigger X="1532" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/NextTrans.png</ImageTrigger>
-        </NextTriggers>
-        <PrevTriggers>
-          <ImageTrigger X="96" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/PrevTrans.png</ImageTrigger>
-        </PrevTriggers>
-        <Steps>
-          <Step>
-            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/1.JPG</Feature>
-          </Step>
-          <Step>
-            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/2.JPG</Feature>
-          </Step>
-          <Step>
-            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/3.JPG</Feature>
-          </Step>
-          <Step>
-            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/4.JPG</Feature>
-          </Step>
-          <Step>
-            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/5.JPG</Feature>
-          </Step>
-          <Step>
-            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/6.JPG</Feature>
-          </Step>
-          <Step>
-            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/7.JPG</Feature>
-          </Step>
-        </Steps>
-      </State>
-
-      <State Factory="Info" Name="HelpAvatar" >
-        <Features>
-          <Feature Name="HelpSidebarAvatar" />
-          <Feature Name="HelpSkeleton" />
-        </Features>
-      </State>
-
-      <State Factory="Info" Name="HelpFlycam" >
-        <Features>
-          <Feature Name="HelpSidebarFlycam" />
-          <Feature Name="HelpSkeleton" />
-        </Features>
-      </State>
-
-      <State Factory="Blank" Name="Story1Confirm" BlackBG="true"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmDogs.png</Feature> </Features> </State>
-      <State Factory="Blank" Name="Story2Confirm" BlackBG="true"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmGartymore.png</Feature> </Features> </State>
-      <State Factory="Blank" Name="Story3Confirm" BlackBG="true"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFrakkok.png</Feature> </Features> </State>
-      <State Factory="Blank" Name="Story4Confirm" BlackBG="true"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFisherman.png</Feature> </Features> </State>
-      <State Factory="Blank" Name="Story5Confirm" BlackBG="true"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmWolf.png</Feature> </Features> </State>
-
-      <State Factory="Video" Name="Story1" BlackBG="true" File="Videos/Dogs.m4v" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-
-      <State Factory="Video" Name="Story2" BlackBG="true" File="Videos/Garyore.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-
-      <State Factory="Video" Name="Story3" BlackBG="true" File="Videos/Orkney.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-
-      <State Factory="Video" Name="Story4" BlackBG="true" File="Videos/Fisherman.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-
-      <State Factory="Video" Name="Story5" BlackBG="true" File="Videos/Wolf.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-
-      <State Factory="Flythrough" Name="GuidedTour" File="Flythroughs/Timespan/Caen-Guided-Full.xml" AutoStep="true" Loop="false" DisplaySubtitles="true" SubtitleTimeout="11">
-
-        <SubtitleText Frame="MainWindow" Font="Verdana" Size="30" Colour="Yellow" Style="Regular" X="960" Y="978" Alignment="TopCenter" />
-
-        <IdleTriggers>
-          <Trigger Factory="Simple" />
-        </IdleTriggers>
-
-        <Features>
-          <Feature Factory="StaticText" X="50" Y="50" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow">Raise your arm above your head to explore Caen
-at your own pace or view local stories</Feature>
-        </Features>
-
-        <Steps>
-
-          <Step Step="0" Voiceover="Audio/1.mp3" />
-          <Step Step="1" Voiceover="Audio/2.mp3" />
-          <Step Step="2" Voiceover="Audio/3.mp3" />
-          <Step Step="3" Voiceover="Audio/4.mp3" />
-          <Step Step="4" Voiceover="Audio/5.mp3" />
-          <Step Step="5" Voiceover="Audio/6.mp3" />
-          <Step Step="6" Voiceover="Audio/7.mp3" />
-          <Step Step="7" Voiceover="Audio/8.mp3" />
-          <Step Step="8" Voiceover="Audio/9.mp3" />
-          <Step Step="9" Voiceover="Audio/10.mp3" />
+	<Overlay Width="1920" Height="1080" >
+	  <Any>
+	
+	    <Features>
+	    <!--
+	      <Area Factory="ActiveArea" Name="LonghouseArea" Frame="RightWindow" >
+		<Feature Factory="Image" X="1200" Y="50" >Images/ActiveAreas/Longhouse.png </Feature>
+		<Trigger>
+		  <Points>
+		    <P X="445.83" Y="282.11" />
+		    <P X="446.94" Y="285.69" />
+		    <P X="418.84" Y="293.44" />
+		    <P X="412.86" Y="291.65" />
+		  </Points>
+		</Trigger>
+	      </Area>
+	
+	      <Area Factory="ActiveArea" Name="PeatArea" Frame="LeftWindow" >
+		<Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/PeatCutting.png</Feature>
+		<Trigger>
+		  <Points>
+		    <P X="324.78" Y="348.74" />
+		    <P X="311.11" Y="249.81" />
+		    <P X="310.52" Y="230.37" />
+		    <P X="324.27" Y="230.50" />
+		  </Points>
+		</Trigger>
+	      </Area>
+	      -->
+	
+	      <Area Factory="ActiveArea" Name="YawAreaEast" Frame="LeftWindow" >
+		<Feature Factory="Image" X="1200" Y="50" Width="500" Frame="LeftWindpw" >Images/ActiveAreas/MidTownshipEast.JPG</Feature>
+		<Trigger>
+		  <Yaw Min="5" Max="82" />
+		  <Points>
+		    <P X="390" Y="213" />
+		    <P X="390" Y="231" />
+		    <P X="402" Y="233" />
+		    <P X="405" Y="218" />
+		  </Points>
+		</Trigger>
+	      </Area>
+	
+	      <Area Factory="ActiveArea" Name="YawAreaWest" Frame="RightWindow" >
+		<Feature Factory="Image" X="1200" Y="50" Width="500" Frame="RightWindow" >Images/ActiveAreas/MidTownshipWest.JPG</Feature>
+		<Trigger>
+		  <Yaw Min="100" Max="180" />
+		  <Points>
+		    <P X="390" Y="213" />
+		    <P X="390" Y="231" />
+		    <P X="402" Y="233" />
+		    <P X="405" Y="218" />
+		  </Points>
+		</Trigger>
+	      </Area>
+	
+	      <Feature Factory="Image" Name="HelpSidebarAvatar"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
+	      <Feature Factory="Image" Name="HelpSidebarFlycam"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
+	
+	      <Feature Factory="Image" Name="HelpSidebarAvatarL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
+	      <Feature Factory="Image" Name="HelpSidebarFlycamL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
+	
+	    </Features>
+	    
+	    <Triggers>
+	      <Trigger Factory="FlythroughEnd" Name="FlythroughEnd" />
+	      <Trigger Factory="Timer" Name="IntroTimer" LengthMS="5000" />
+	    </Triggers>
+	    
+	    <SelectionRenderers>
+	      <Renderer Factory="Cursor" Name="DialCursor" InnerRenderer="Dial" Radius="40" Colour="Red" Frame="MainWindow" />
+	    </SelectionRenderers>
+	
+	    <TransitionStyles>
+				<!--<Transition Factory="BitmapTransition" Name="BitmapFade" Length="2000" Style="Fade" />-->
+				<Transition Factory="CutTransition" Name="Cut" />
+				<Transition Factory="OpacityTransition" Name="FadeOut" Length="2000" FadeOut="true" />
+				<Transition Factory="OpacityTransition" Name="FadeIn" Length="2000" FadeOut="false" />
+			</TransitionStyles>
+	
+	    <States>
+	
+	      <State Factory="Blank" Name="IdleOutro" EnableCursor="false" Idle="true" >
+		<Features>
+		  <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Outro.png</Feature>
+		  <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
+		  <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
+		</Features>
+		<IdleTriggers>
+		  <Trigger Name="IdleTrigger" />
+		</IdleTriggers>
+		<IdleTransition Name="FadeIn" />
+	      </State>
+	
+	      <State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Start="true">
+		<IdleTriggers>
+		  <Trigger Name="FlythroughEnd" />
+		</IdleTriggers>
+	      </State>
+	
+	      <State Factory="Blank" Name="Intro" EnableCursor="false" >
+		<Features>
+		  <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Intro.png</Feature>
+		  <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
+		  <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
+		</Features>
+	      </State>
+	
+	      <State Factory="Blank" Name="Splash">
+		<Features>
+		  <Feature Name="SplashSkeleton" Frame="MainWindow" />
+		  <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Splash.png</Feature>
+		  <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
+		  <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
+		</Features>
+	      </State>
+	
+	      <State Factory="Slideshow" Name="Slideshow" >
+		<NextTriggers>
+		  <ImageTrigger X="1532" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/NextTrans.png</ImageTrigger>
+		</NextTriggers>
+		<PrevTriggers>
+		  <ImageTrigger X="96" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/PrevTrans.png</ImageTrigger>
+		</PrevTriggers>
+		<Steps>
+		  <Step>
+		    <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+		    <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+		    <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/1.JPG</Feature>
+		  </Step>
+		  <Step>
+		    <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+		    <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+		    <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/2.JPG</Feature>
+		  </Step>
+		  <Step>
+		    <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+		    <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+		    <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/3.JPG</Feature>
+		  </Step>
+		  <Step>
+		    <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+		    <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+		    <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/4.JPG</Feature>
+		  </Step>
+		  <Step>
+		    <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+		    <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+		    <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/5.JPG</Feature>
+		  </Step>
+		  <Step>
+		    <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+		    <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+		    <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/6.JPG</Feature>
+		  </Step>
+		  <Step>
+		    <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+		    <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+		    <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/7.JPG</Feature>
+		  </Step>
+		</Steps>
+	      </State>
+	
+	      <State Factory="Info" Name="HelpAvatar" >
+		<Features>
+		  <Feature Name="HelpSidebarAvatar" />
+		  <Feature Name="HelpSkeleton" />
+		</Features>
+	      </State>
+	
+	      <State Factory="Info" Name="HelpFlycam" >
+		<Features>
+		  <Feature Name="HelpSidebarFlycam" />
+		  <Feature Name="HelpSkeleton" />
+		</Features>
+	      </State>
+	
+	      <State Factory="Blank" Name="Story1Confirm" BlackBG="true"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmDogs.png</Feature> </Features> </State>
+	      <State Factory="Blank" Name="Story2Confirm" BlackBG="true"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmGartymore.png</Feature> </Features> </State>
+	      <State Factory="Blank" Name="Story3Confirm" BlackBG="true"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFrakkok.png</Feature> </Features> </State>
+	      <State Factory="Blank" Name="Story4Confirm" BlackBG="true"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFisherman.png</Feature> </Features> </State>
+	      <State Factory="Blank" Name="Story5Confirm" BlackBG="true"> <Features> <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmWolf.png</Feature> </Features> </State>
+	
+	      <State Factory="Video" Name="Story1" BlackBG="true" File="Videos/Dogs.m4v" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
+		<IdleTriggers>
+		  <Trigger Name="VideoIdleTrigger" />
+		</IdleTriggers>
+	      </State>
+	
+	      <State Factory="Video" Name="Story2" BlackBG="true" File="Videos/garty.avi" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
+		<IdleTriggers>
+		  <Trigger Name="VideoIdleTrigger" />
+		</IdleTriggers>
+	      </State>
+	
+	      <State Factory="Video" Name="Story3" BlackBG="true" File="Videos/Orkney.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
+		<IdleTriggers>
+		  <Trigger Name="VideoIdleTrigger" />
+		</IdleTriggers>
+	      </State>
+	
+	      <State Factory="Video" Name="Story4" BlackBG="true" File="Videos/Fisherman.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
+		<IdleTriggers>
+		  <Trigger Name="VideoIdleTrigger" />
+		</IdleTriggers>
+	      </State>
+	
+	      <State Factory="Video" Name="Story5" BlackBG="true" File="Videos/Wolf.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
+		<IdleTriggers>
+		  <Trigger Name="VideoIdleTrigger" />
+		</IdleTriggers>
+	      </State>
+	
+	      <State Factory="Flythrough" Name="GuidedTour" File="Flythroughs/Timespan/Caen-Guided-Full.xml" AutoStep="true" Loop="false" DisplaySubtitles="true" SubtitleTimeout="11">
+	
+		<SubtitleText Frame="MainWindow" Font="Verdana" Size="30" Colour="Yellow" Style="Regular" X="960" Y="978" Alignment="TopCenter" />
+	
+		<IdleTriggers>
+		  <Trigger Factory="Simple" />
+		</IdleTriggers>
+	
+		<Features>
+		  <Feature Factory="StaticText" X="50" Y="50" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow">Whilst standing raise your arm above your head
+ to explore Caen at your own pace or view local stories</Feature>
+		</Features>
+	
+		<Steps>
+	
+		  <Step Step="0" Voiceover="Audio/1.mp3" />
+		  <Step Step="1" Voiceover="Audio/2.mp3" />
+		  <Step Step="2" Voiceover="Audio/3.mp3" />
+		  <Step Step="3" Voiceover="Audio/4.mp3" />
+		  <Step Step="4" Voiceover="Audio/5.mp3" />
+		  <Step Step="5" Voiceover="Audio/6.mp3" />
+		  <Step Step="6" Voiceover="Audio/7.mp3" />
+		  <Step Step="7" Voiceover="Audio/8.mp3" />
+		  <Step Step="8" Voiceover="Audio/9.mp3" />
+		  <Step Step="9" Voiceover="Audio/10.mp3" >
+		    <Features>
+		      <Feature Factory="Image" X="200" Y="100" W="1000" Frame="LeftWindow" >Images/GuidedTour/RigAndFurrow.jpg</Feature>
+		    </Features>
+		  </Step>
           <Step Step="10" Voiceover="Audio/11.mp3" />
 
           <Step Step="11" Voiceover="Audio/12.mp3" >
