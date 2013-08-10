@@ -525,3 +525,91 @@
 2013-08-09 19:59:38,733 [64] INFO  OpenSim.MainWindowViewer - Closed
 2013-08-09 19:59:43,273 [50] INFO  OpenSim.RightWindowViewer - Closed
 2013-08-09 19:59:49,443 [30] INFO  OpenSim.LeftWindowViewer - Closed
+2013-08-10 14:09:13,426 [9] WARN  Startup - Unable to launch. Problem loading bindings. Could not find a part of the path 'C:\Users\OpenVirtualWorlds\Documents\John\Chimera\Bin\Config\'.
+2013-08-10 14:09:13,500 [9] WARN  Startup - Unable to launch. Problem instantiating coordinator. Error activating IOutputFactory
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  2) Injection of dependency IOutputFactory into parameter outputFactory of constructor of type Core
+  1) Request for Core
+
+Suggestions:
+  1) Ensure that you have defined a binding for IOutputFactory.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+2013-08-10 14:09:13,501 [9] DEBUG Startup - 
+Ninject.ActivationException: Error activating IOutputFactory
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  2) Injection of dependency IOutputFactory into parameter outputFactory of constructor of type Core
+  1) Request for Core
+
+Suggestions:
+  1) Ensure that you have defined a binding for IOutputFactory.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+   at Ninject.KernelBase.Resolve(IRequest request)
+   at Ninject.Planning.Targets.Target`1.GetValue(Type service, IContext parent)
+   at Ninject.Planning.Targets.Target`1.ResolveWithin(IContext parent)
+   at Ninject.Activation.Providers.StandardProvider.GetValue(IContext context, ITarget target)
+   at Ninject.Activation.Providers.StandardProvider.<>c__DisplayClass4.<Create>b__2(ITarget target)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Ninject.Activation.Providers.StandardProvider.Create(IContext context)
+   at Ninject.Activation.Context.Resolve()
+   at Ninject.KernelBase.<>c__DisplayClass13.<Resolve>b__d(IBinding binding)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.<CastIterator>d__b1`1.MoveNext()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, IParameter[] parameters)
+   at Chimera.Launcher.Launcher..ctor(String[] args) in C:\Users\OpenVirtualWorlds\Documents\John\Chimera\Src\LauncherLib\Launcher.cs:line 103
+2013-08-10 14:09:33,790 [1] WARN  Startup - Unable to launch. Problem loading bindings. Could not find a part of the path 'C:\Users\OpenVirtualWorlds\Documents\John\Chimera\Bin\Config\'.
+2013-08-10 14:09:33,853 [1] WARN  Startup - Unable to launch. Problem instantiating coordinator. Error activating IOutputFactory
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  2) Injection of dependency IOutputFactory into parameter outputFactory of constructor of type Core
+  1) Request for Core
+
+Suggestions:
+  1) Ensure that you have defined a binding for IOutputFactory.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+2013-08-10 14:09:33,853 [1] DEBUG Startup - 
+Ninject.ActivationException: Error activating IOutputFactory
+No matching bindings are available, and the type is not self-bindable.
+Activation path:
+  2) Injection of dependency IOutputFactory into parameter outputFactory of constructor of type Core
+  1) Request for Core
+
+Suggestions:
+  1) Ensure that you have defined a binding for IOutputFactory.
+  2) If the binding was defined in a module, ensure that the module has been loaded into the kernel.
+  3) Ensure you have not accidentally created more than one kernel.
+  4) If you are using constructor arguments, ensure that the parameter name matches the constructors parameter name.
+  5) If you are using automatic module loading, ensure the search path and filters are correct.
+
+   at Ninject.KernelBase.Resolve(IRequest request)
+   at Ninject.Planning.Targets.Target`1.GetValue(Type service, IContext parent)
+   at Ninject.Planning.Targets.Target`1.ResolveWithin(IContext parent)
+   at Ninject.Activation.Providers.StandardProvider.GetValue(IContext context, ITarget target)
+   at Ninject.Activation.Providers.StandardProvider.<>c__DisplayClass4.<Create>b__2(ITarget target)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Ninject.Activation.Providers.StandardProvider.Create(IContext context)
+   at Ninject.Activation.Context.Resolve()
+   at Ninject.KernelBase.<>c__DisplayClass13.<Resolve>b__d(IBinding binding)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.<CastIterator>d__b1`1.MoveNext()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at Ninject.ResolutionExtensions.Get[T](IResolutionRoot root, IParameter[] parameters)
+   at Chimera.Launcher.Launcher..ctor(String[] args) in C:\Users\OpenVirtualWorlds\Documents\John\Chimera\Src\LauncherLib\Launcher.cs:line 100
