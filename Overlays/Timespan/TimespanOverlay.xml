@@ -92,7 +92,7 @@
 		<IdleTransition Name="FadeIn" />
 	      </State>
 	
-	      <State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Start="true">
+	      <State Factory="Flythrough" Name="Idle" File="Flythroughs/Timespan/Idle.xml" Start="true">
 		<IdleTriggers>
 		  <Trigger Name="FlythroughEnd" />
 		</IdleTriggers>
@@ -211,7 +211,7 @@
 		</IdleTriggers>
 	      </State>
 	
-	      <State Factory="Flythrough" Name="GuidedTour" File="Flythroughs/Timespan/Caen-Guided-Full.xml" AutoStep="true" Loop="false" DisplaySubtitles="true" SubtitleTimeout="11">
+	      <State Factory="Flythrough" Name="GuidedTour" File="Flythroughs/Timespan/Guided.xml" AutoStep="true" Loop="false" DisplaySubtitles="true" SubtitleTimeout="11">
 	
 		<SubtitleText Frame="MainWindow" Font="Verdana" Size="30" Colour="Yellow" Style="Regular" X="960" Y="978" Alignment="TopCenter" />
 	
