@@ -6,10 +6,18 @@
       <Feature Factory="StaticText" Name="RaiseArmPrompt" X="30" Y="30" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow">
         Whilst standing raise your arm above your head
         to explore Caen at your own pace or view local stories
-      </Feature>
+    </Feature>
 
-      <Feature Factory="StaticText" Name="RaiseArmPromptExplore" X="15" Y="10" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow"> Raise your arm above your head to get back to the main menu </Feature>
-      <!--
+    <Feature Factory="StaticText" Name="RaiseArmPromptExplore" X="15" Y="10" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow"> Raise your arm above your head to get back to the main menu </Feature>
+
+    <Feature Factory="StaticText" Name="SurveyText" X="5" Y="5" Font="Verdana" Colour="White" Size="28" Frame="LeftWindow">These images were taken at the Caen site in November 2012 when this project was begun.
+They document the initial surveying of the site to map the outlines of the original longhouses.
+The geography of the model is taken from this survey.
+The red flags were used to mark the corners of the buildings.
+This process pre-dates the excavation of the summer of 2013.
+    </Feature>
+
+    <!--
 	      <Area Factory="ActiveArea" Name="LonghouseArea" Frame="RightWindow" >
 		<Feature Factory="Image" X="1200" Y="50" >Images/ActiveAreas/Longhouse.png </Feature>
 		<Trigger>
@@ -130,36 +138,43 @@
           <Step>
             <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
             <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Name="SurveyText" />
             <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/1.JPG</Feature>
           </Step>
           <Step>
             <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
             <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Name="SurveyText" />
             <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/2.JPG</Feature>
           </Step>
           <Step>
             <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
             <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Name="SurveyText" />
             <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/3.JPG</Feature>
           </Step>
           <Step>
             <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
             <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Name="SurveyText" />
             <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/4.JPG</Feature>
           </Step>
           <Step>
             <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
             <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Name="SurveyText" />
             <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/5.JPG</Feature>
           </Step>
           <Step>
             <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
             <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Name="SurveyText" />
             <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/6.JPG</Feature>
           </Step>
           <Step>
             <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
             <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Name="SurveyText" />
             <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/7.JPG</Feature>
           </Step>
         </Steps>
