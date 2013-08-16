@@ -1,3 +1,9 @@
+cd ..\..\..\..\AppData\Roaming
+rm -rf Firestorm
+cd ..\Local
+rm -rf Firestorm
+cd ..\..\Documents\John\Chimera\Bin
+
 Timespan.exe
 
 echo %errorlevel%
