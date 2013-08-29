@@ -1,967 +1,352 @@
-2013-08-28 09:25:04,442 [1] INFO  Core - Loaded VW-Viewer. Enabled.
-2013-08-28 09:25:04,491 [1] INFO  Core - Loaded Flythrough. Enabled.
-2013-08-28 09:25:04,496 [1] INFO  Core - Loaded RemoteControl. Enabled.
-2013-08-28 09:25:04,808 [1] DEBUG Overlay - LeftWindpw is not a known frame. Using MainWindow as default.
-2013-08-28 09:25:04,909 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
-2013-08-28 09:25:04,910 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
-2013-08-28 09:25:04,915 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
-2013-08-28 09:25:04,918 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 09:25:05,031 [1] INFO  Overlay - Created BlankState state IdleOutro.
-2013-08-28 09:25:05,036 [1] INFO  Overlay - Created FlythroughState state Idle.
-2013-08-28 09:25:05,037 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 09:25:05,135 [1] INFO  Overlay - Created BlankState state Intro.
-2013-08-28 09:25:05,136 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 09:25:05,233 [1] INFO  Overlay - Created BlankState state Splash.
-2013-08-28 09:25:05,480 [1] INFO  Overlay - Created SlideshowState state Slideshow.
-2013-08-28 09:25:05,481 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 09:25:05,490 [1] INFO  Overlay - Created BlankState state Story1Confirm.
-2013-08-28 09:25:05,491 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 09:25:05,500 [1] INFO  Overlay - Created BlankState state Story2Confirm.
-2013-08-28 09:25:05,501 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 09:25:05,511 [1] INFO  Overlay - Created BlankState state Story3Confirm.
-2013-08-28 09:25:05,512 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 09:25:05,521 [1] INFO  Overlay - Created BlankState state Story4Confirm.
-2013-08-28 09:25:05,522 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 09:25:05,531 [1] INFO  Overlay - Created BlankState state Story5Confirm.
-2013-08-28 09:25:05,546 [1] INFO  Overlay - Created VideoState state Story1.
-2013-08-28 09:25:05,553 [1] INFO  Overlay - Created VideoState state Story2.
-2013-08-28 09:25:05,561 [1] INFO  Overlay - Created VideoState state Story3.
-2013-08-28 09:25:05,568 [1] INFO  Overlay - Created VideoState state Story4.
-2013-08-28 09:25:05,576 [1] INFO  Overlay - Created VideoState state Story5.
-2013-08-28 09:25:05,603 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 09:25:05,603 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
-2013-08-28 09:25:05,606 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 09:25:05,607 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 09:25:05,607 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 09:25:05,608 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 09:25:05,608 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 09:25:05,608 [1] INFO  Overlay - Created KinectControlState state KinectAvatar.
-2013-08-28 09:25:05,610 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 09:25:05,610 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 09:25:05,611 [1] INFO  Overlay - Created KinectControlState state KinectFlycam.
-2013-08-28 09:25:05,612 [1] INFO  Overlay - Creating Transitions
-2013-08-28 09:25:05,614 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
-2013-08-28 09:25:05,615 [1] DEBUG Overlay - Unable to create transition.
-2013-08-28 09:25:05,615 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
-2013-08-28 09:25:05,616 [1] DEBUG Overlay - Unable to create transition.
-2013-08-28 09:25:05,619 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
-2013-08-28 09:25:05,620 [1] DEBUG Overlay - Unable to create transition.
-2013-08-28 09:25:05,620 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
-2013-08-28 09:25:05,621 [1] DEBUG Overlay - Unable to create transition.
-2013-08-28 09:25:05,629 [1] DEBUG MainWindowOverlay - Disabling cursor control
-2013-08-28 09:25:05,630 [1] DEBUG LeftWindowOverlay - Disabling cursor control
-2013-08-28 09:25:05,630 [1] DEBUG RightWindowOverlay - Disabling cursor control
-2013-08-28 09:25:05,804 [1] INFO  Overlay - Current state set to Idle.
-2013-08-28 09:25:05,805 [1] INFO  Core - Loaded Overlay. Enabled.
-2013-08-28 09:25:05,807 [1] INFO  Core - Loaded HeightmapBot. Enabled.
-2013-08-28 09:25:05,808 [1] INFO  Core - Loaded KinectMovement. Disabled.
-2013-08-28 09:25:05,811 [1] INFO  Core - Loaded KinectCursor. Enabled.
-2013-08-28 09:25:05,867 [1] DEBUG XBoxController - Enabled
-2013-08-28 09:25:05,867 [1] INFO  Core - Loaded XBoxController. Enabled.
-2013-08-28 09:25:05,885 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:25:05,891 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:25:05,894 [1] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:25:05,939 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:25:05,940 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:25:05,940 [1] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:25:05,945 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:25:05,946 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:25:05,947 [1] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:25:05,962 [1] INFO  ProcessManager - Listening for crashes.
-2013-08-28 09:25:27,056 [Heightmap Bot Login Thread] WARN  Heightmap - Unable to log in heightmap bot. Error opening the login server connection: Unable to connect to the remote server
-2013-08-28 09:25:31,434 [3] WARN  OpenSim - Restarting RightWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:25:31,440 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:25:31,441 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 09:25:32,446 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:25:32,449 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:25:32,450 [3] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:25:32,465 [25] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:25:32,467 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:25:32,467 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:25:33,469 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:25:33,472 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:25:33,473 [25] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:25:33,483 [26] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:25:33,485 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:25:33,485 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:25:34,487 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:25:34,490 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:25:34,491 [26] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:25:38,049 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:25:38,059 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:25:48,055 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:25:48,058 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:25:52,204 [26] WARN  OpenSim - Restarting RightWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:25:52,205 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:25:52,205 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 09:25:53,206 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:25:53,207 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:25:53,208 [26] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:25:53,945 [26] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:25:53,946 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:25:53,946 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:25:54,947 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:25:54,948 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:25:54,949 [26] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:25:55,445 [26] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:25:55,446 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:25:55,446 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:25:56,447 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:25:56,450 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:25:56,451 [26] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:25:59,050 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:25:59,052 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:26:09,058 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:26:09,061 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:26:14,114 [26] WARN  OpenSim - Restarting RightWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:26:14,116 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:26:14,116 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 09:26:15,119 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:26:15,121 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:26:15,121 [26] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:26:15,797 [26] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:26:15,798 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:26:15,798 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:26:16,799 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:26:16,800 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:26:16,801 [26] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:26:17,836 [26] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:26:17,837 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:26:17,837 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:26:18,838 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:26:18,840 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:26:18,841 [26] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:26:20,047 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:26:20,049 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:26:30,055 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:26:30,060 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:26:36,095 [26] WARN  OpenSim - Restarting RightWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:26:36,096 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:26:36,096 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 09:26:37,097 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:26:37,098 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:26:37,099 [26] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:26:37,286 [26] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:26:37,288 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:26:37,288 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:26:38,289 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:26:38,291 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:26:38,292 [26] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:26:40,083 [26] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:26:40,084 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:26:40,084 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:26:41,057 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:26:41,063 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:26:41,089 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:26:41,091 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:26:41,092 [26] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:26:51,059 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:26:51,062 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:26:58,558 [26] WARN  OpenSim - Restarting RightWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:26:58,559 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:26:58,560 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 09:26:59,562 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:26:59,563 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:26:59,564 [26] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:26:59,568 [26] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:26:59,569 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:26:59,569 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:27:00,570 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:27:00,572 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:27:00,573 [26] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:27:02,063 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:27:02,066 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:27:02,346 [26] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:27:02,347 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:27:02,347 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:27:03,348 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:27:03,349 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:27:03,350 [26] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:27:12,055 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:27:12,058 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:27:21,217 [26] WARN  OpenSim - Restarting RightWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:27:21,218 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:27:21,218 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 09:27:22,220 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:27:22,223 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:27:22,223 [26] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:27:22,227 [66] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:27:22,228 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:27:22,228 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:27:23,232 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:27:23,234 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:27:23,235 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:27:24,379 [66] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:27:24,380 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:27:24,380 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:27:25,381 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:27:25,382 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:27:25,383 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:27:33,056 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:27:33,059 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:27:43,461 [66] WARN  OpenSim - Restarting RightWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:27:43,462 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:27:43,462 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 09:27:44,061 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:27:44,063 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:27:44,465 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:27:44,466 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:27:44,467 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:27:44,624 [66] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:27:44,625 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:27:44,625 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:27:45,626 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:27:45,628 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:27:45,629 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:27:46,431 [66] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:27:46,432 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:27:46,432 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:27:47,433 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:27:47,435 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:27:47,436 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:28:01,847 [LoginProxy] WARN  OpenMetaverse - Request timeout
-System.Net.WebException: The operation has timed out
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:01,849 [LoginProxy] ERROR OpenMetaverse - Unable to return timeout error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:03,033 [LoginProxy] WARN  OpenMetaverse - Request timeout
-System.Net.WebException: The operation has timed out
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:03,035 [LoginProxy] ERROR OpenMetaverse - Unable to return timeout error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:05,507 [66] WARN  OpenSim - Restarting RightWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:28:05,509 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:28:05,509 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 09:28:06,510 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:28:06,511 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:28:06,512 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:28:06,779 [66] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:28:06,780 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:28:06,780 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:28:07,780 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:28:07,783 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:28:07,784 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:28:08,547 [66] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:28:08,548 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:28:08,548 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:28:09,549 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:28:09,550 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:28:09,551 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:28:15,055 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:15,057 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:27,419 [LoginProxy] WARN  OpenMetaverse - Request timeout
-System.Net.WebException: The operation has timed out
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:27,420 [LoginProxy] ERROR OpenMetaverse - Unable to return timeout error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:27,555 [66] WARN  OpenSim - Restarting RightWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:28:27,556 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:28:27,557 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 09:28:28,558 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:28:28,560 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:28:28,560 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:28:28,741 [66] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:28:28,742 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:28:28,742 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:28:29,743 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:28:29,746 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:28:29,747 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:28:30,681 [66] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:28:30,681 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:28:30,682 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:28:31,682 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:28:31,683 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:28:31,684 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:28:36,057 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:36,059 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:45,030 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:45,033 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:46,954 [LoginProxy] WARN  OpenMetaverse - Request timeout
-System.Net.WebException: The operation has timed out
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:46,955 [LoginProxy] ERROR OpenMetaverse - Unable to return timeout error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:47,721 [LoginProxy] WARN  OpenMetaverse - Request timeout
-System.Net.WebException: The operation has timed out
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:47,722 [LoginProxy] ERROR OpenMetaverse - Unable to return timeout error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:28:49,691 [66] WARN  OpenSim - Restarting RightWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:28:49,692 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:28:49,692 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 09:28:50,693 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:28:50,696 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:28:50,697 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:28:50,844 [66] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:28:50,845 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:28:50,845 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:28:51,846 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:28:51,848 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:28:51,849 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:28:52,704 [66] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:28:52,704 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:28:52,704 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:28:53,705 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:28:53,706 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:28:53,707 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:29:06,026 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:06,029 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:09,221 [LoginProxy] WARN  OpenMetaverse - Request timeout
-System.Net.WebException: The operation has timed out
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:09,223 [LoginProxy] ERROR OpenMetaverse - Unable to return timeout error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:10,363 [LoginProxy] WARN  OpenMetaverse - Request timeout
-System.Net.WebException: The operation has timed out
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:10,364 [LoginProxy] ERROR OpenMetaverse - Unable to return timeout error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:11,746 [66] WARN  OpenSim - Restarting RightWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:29:11,747 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:29:11,747 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 09:29:12,749 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:29:12,750 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:29:12,751 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:29:12,914 [66] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:29:12,915 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:29:12,915 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:29:13,916 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:29:13,919 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:29:13,920 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:29:14,779 [66] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:29:14,780 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:29:14,780 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:29:15,781 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:29:15,782 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:29:15,783 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:29:18,057 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:18,059 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:33,826 [66] WARN  OpenSim - Restarting RightWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:29:33,827 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:29:33,827 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 09:29:34,828 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:29:34,830 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:29:34,831 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:29:35,022 [66] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:29:35,023 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:29:35,023 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:29:36,024 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:29:36,027 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:29:36,028 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:29:36,994 [66] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:29:36,995 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:29:36,995 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:29:37,996 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:29:37,997 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:29:37,998 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:29:39,064 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:39,067 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:51,222 [LoginProxy] ERROR OpenMetaverse - Request error
-System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 192.168.1.181:9000
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
-   --- End of inner exception stack trace ---
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:51,226 [LoginProxy] ERROR OpenMetaverse - Unable to return request error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:53,299 [LoginProxy] WARN  OpenMetaverse - Request timeout
-System.Net.WebException: The operation has timed out
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:53,301 [LoginProxy] ERROR OpenMetaverse - Unable to return timeout error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:54,473 [LoginProxy] WARN  OpenMetaverse - Request timeout
-System.Net.WebException: The operation has timed out
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:54,475 [LoginProxy] ERROR OpenMetaverse - Unable to return timeout error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:55,833 [LoginProxy] WARN  OpenMetaverse - Request timeout
-System.Net.WebException: The operation has timed out
-   at System.Net.HttpWebRequest.GetResponse()
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:55,835 [LoginProxy] ERROR OpenMetaverse - Unable to return timeout error as response to client
-System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
-   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
-2013-08-28 09:29:55,997 [66] WARN  OpenSim - Restarting RightWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:29:55,997 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:29:55,998 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 09:29:56,998 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:29:56,999 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:29:57,000 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:29:57,209 [66] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:29:57,210 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:29:57,210 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:29:58,211 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:29:58,213 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:29:58,214 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:29:59,011 [66] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:29:59,012 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:29:59,012 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:30:00,013 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:30:00,015 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:30:00,015 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:30:16,039 [LoginProxy] WARN  OpenMetaverse - [2] Bad request!
-2013-08-28 09:30:16,523 [LoginProxy] WARN  OpenMetaverse - [2] Bad request!
-2013-08-28 09:30:16,528 [LoginProxy] WARN  OpenMetaverse - [2] Bad request!
-2013-08-28 09:30:18,038 [66] WARN  OpenSim - Restarting RightWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:30:18,039 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:30:18,039 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 09:30:19,041 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:30:19,042 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:30:19,043 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:30:19,233 [66] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:30:19,233 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:30:19,234 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:30:20,234 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:30:20,237 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:30:20,238 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:30:21,106 [66] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
-2013-08-28 09:30:21,107 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:30:21,107 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:30:22,108 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:30:22,109 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:30:22,110 [66] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:31:19,064 [Flythrough thread] WARN  OpenSim - Restarting RightWindow viewer because ViewerStoppedResponding.
-2013-08-28 09:31:19,071 [Flythrough thread] DEBUG OpenSim.RightWindowViewer - Closing
-2013-08-28 09:31:20,249 [Flythrough thread] INFO  OpenSim.RightWindowViewer - Closed
-2013-08-28 09:31:20,252 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:31:20,252 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 09:31:21,254 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:31:21,255 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 09:31:21,256 [Flythrough thread] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:31:21,259 [Flythrough thread] WARN  OpenSim - Restarting LeftWindow viewer because ViewerStoppedResponding.
-2013-08-28 09:31:21,260 [Flythrough thread] DEBUG OpenSim.LeftWindowViewer - Closing
-2013-08-28 09:31:22,376 [Flythrough thread] INFO  OpenSim.LeftWindowViewer - Closed
-2013-08-28 09:31:22,377 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:31:22,377 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:31:23,378 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:31:23,381 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 09:31:23,382 [Flythrough thread] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:31:23,388 [Flythrough thread] WARN  OpenSim - Restarting MainWindow viewer because ViewerStoppedResponding.
-2013-08-28 09:31:23,389 [Flythrough thread] DEBUG OpenSim.MainWindowViewer - Closing
-2013-08-28 09:31:24,488 [Flythrough thread] INFO  OpenSim.MainWindowViewer - Closed
-2013-08-28 09:31:24,489 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:31:24,489 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:31:25,491 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 09:31:25,492 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 09:31:25,493 [Flythrough thread] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 09:31:33,264 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.181:9000 at 127.0.0.1:50499
-2013-08-28 09:31:36,466 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.181:9000 at 127.0.0.1:50501
-2013-08-28 09:31:38,433 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.181:9000 at 127.0.0.1:50502
-2013-08-28 09:32:03,046 [117] INFO  OpenSim - RightWindow viewer pressing ^%{F1}
-2013-08-28 09:32:03,077 [120] INFO  OpenSim - LeftWindow viewer pressing ^%{F1}
-2013-08-28 09:32:03,553 [117] INFO  OpenSim - RightWindow viewer pressing ^+u
-2013-08-28 09:32:04,061 [120] INFO  OpenSim - LeftWindow viewer pressing ^+u
-2013-08-28 09:32:08,131 [97] INFO  OpenSim - MainWindow viewer pressing ^%{F1}
-2013-08-28 09:32:08,640 [97] INFO  OpenSim - MainWindow viewer pressing ^+u
-2013-08-28 09:32:21,255 [Flythrough thread] WARN  OpenSim - Restarting RightWindow viewer because ViewerStoppedResponding.
-2013-08-28 09:32:21,257 [Flythrough thread] DEBUG OpenSim.RightWindowViewer - Closing
-2013-08-28 09:32:26,400 [127] INFO  OpenSim - RightWindow viewer pressing ^%{F1}
-2013-08-28 09:32:26,907 [127] INFO  OpenSim - RightWindow viewer pressing ^+u
-2013-08-28 09:32:27,160 [LoginProxy] WARN  ProcessManager - Exception caught in App Domain.
-2013-08-28 09:32:27,165 [1] DEBUG Core - Shutting down tick thread.
-2013-08-28 09:32:27,168 [Tick Thread] INFO  Core - Tick Thread shut down.
-2013-08-28 09:32:27,230 [106] DEBUG OpenSim.MainWindowViewer - Closing
-2013-08-28 09:32:27,233 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 09:32:27,234 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:32:27,243 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
-2013-08-28 09:32:27,255 [1] INFO  ProcessManager - Dumping to C:\Users\OpenVirtualWorlds\Documents\John\Chimera\Bin\Logs\2013\Aug\28-09.32Shutdown.html
-2013-08-28 09:32:27,258 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
-2013-08-28 09:32:27,260 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
-2013-08-28 09:32:27,266 [1] DEBUG XBoxController - Disabled
-2013-08-28 09:32:27,273 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 09:32:27,273 [111] DEBUG OpenSim.MainWindowViewer - Closing
-2013-08-28 09:32:27,277 [102] DEBUG OpenSim.LeftWindowViewer - Closing
-2013-08-28 09:32:27,277 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 09:32:27,424 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 09:32:27,425 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:32:27,425 [75] DEBUG OpenSim.RightWindowViewer - Closing
-2013-08-28 09:32:28,421 [Flythrough thread] INFO  OpenSim.RightWindowViewer - Closed
-2013-08-28 09:32:30,235 [102] INFO  OpenSim.LeftWindowViewer - Closed
-2013-08-28 09:32:30,865 [99] INFO  OpenSim - LeftWindow viewer pressing ^%{F1}
-2013-08-28 09:32:30,865 [99] INFO  OpenSim - LeftWindow viewer pressing ^+u
-2013-08-28 09:32:31,397 [98] INFO  OpenSim - MainWindow viewer pressing ^%{F1}
-2013-08-28 09:32:31,904 [98] INFO  OpenSim - MainWindow viewer pressing ^+u
-2013-08-28 09:32:32,865 [LoginProxy] WARN  ProcessManager - Exception caught in App Domain.
-2013-08-28 09:32:32,866 [1] DEBUG Core - Shutting down tick thread.
-2013-08-28 09:32:32,926 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 09:32:32,926 [91] DEBUG OpenSim.MainWindowViewer - Closing
-2013-08-28 09:32:33,432 [91] INFO  OpenSim.MainWindowViewer - Closed
-2013-08-28 09:32:33,432 [111] INFO  OpenSim.MainWindowViewer - Closed
-2013-08-28 09:32:34,430 [75] INFO  OpenSim.RightWindowViewer - Closed
-2013-08-28 09:32:43,432 [106] INFO  OpenSim.MainWindowViewer - Closed
-2013-08-28 09:32:52,628 [78] INFO  OpenSim - LeftWindow viewer pressing ^%{F1}
-2013-08-28 09:32:52,629 [78] INFO  OpenSim - LeftWindow viewer pressing ^+u
-2013-08-28 09:34:15,047 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
-2013-08-28 11:43:26,816 [1] DEBUG Core - Shutting down tick thread.
-2013-08-28 11:43:26,879 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 11:43:26,879 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 11:43:26,879 [1] INFO  ProcessManager - Dumping to C:\Users\OpenVirtualWorlds\Documents\John\Chimera\Bin\Logs\2013\Aug\28-11.43Shutdown.html
-2013-08-28 11:43:26,879 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 11:43:26,879 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 11:43:26,879 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 14:55:22,538 [1] DEBUG Core - Shutting down tick thread.
-2013-08-28 14:55:22,600 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 14:55:22,600 [1] INFO  ProcessManager - Dumping to C:\Users\OpenVirtualWorlds\Documents\John\Chimera\Bin\Logs\2013\Aug\28-14.55Shutdown.html
-2013-08-28 14:55:22,600 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 14:55:22,600 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 14:55:22,600 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 15:04:30,487 [1] INFO  Core - Loaded VW-Viewer. Enabled.
-2013-08-28 15:04:30,540 [1] INFO  Core - Loaded Flythrough. Enabled.
-2013-08-28 15:04:30,546 [1] INFO  Core - Loaded RemoteControl. Enabled.
-2013-08-28 15:04:30,837 [1] DEBUG Overlay - LeftWindpw is not a known frame. Using MainWindow as default.
-2013-08-28 15:04:30,939 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
-2013-08-28 15:04:30,940 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
-2013-08-28 15:04:30,945 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
-2013-08-28 15:04:30,948 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 15:04:31,062 [1] INFO  Overlay - Created BlankState state IdleOutro.
-2013-08-28 15:04:31,067 [1] INFO  Overlay - Created FlythroughState state Idle.
-2013-08-28 15:04:31,068 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 15:04:31,164 [1] INFO  Overlay - Created BlankState state Intro.
-2013-08-28 15:04:31,165 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 15:04:31,268 [1] INFO  Overlay - Created BlankState state Splash.
-2013-08-28 15:04:31,520 [1] INFO  Overlay - Created SlideshowState state Slideshow.
-2013-08-28 15:04:31,520 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 15:04:31,530 [1] INFO  Overlay - Created BlankState state Story1Confirm.
-2013-08-28 15:04:31,531 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 15:04:31,540 [1] INFO  Overlay - Created BlankState state Story2Confirm.
-2013-08-28 15:04:31,541 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 15:04:31,550 [1] INFO  Overlay - Created BlankState state Story3Confirm.
-2013-08-28 15:04:31,551 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 15:04:31,562 [1] INFO  Overlay - Created BlankState state Story4Confirm.
-2013-08-28 15:04:31,562 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2013-08-28 15:04:31,572 [1] INFO  Overlay - Created BlankState state Story5Confirm.
-2013-08-28 15:04:31,587 [1] INFO  Overlay - Created VideoState state Story1.
-2013-08-28 15:04:31,594 [1] INFO  Overlay - Created VideoState state Story2.
-2013-08-28 15:04:31,601 [1] INFO  Overlay - Created VideoState state Story3.
-2013-08-28 15:04:31,609 [1] INFO  Overlay - Created VideoState state Story4.
-2013-08-28 15:04:31,619 [1] INFO  Overlay - Created VideoState state Story5.
-2013-08-28 15:04:31,646 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 15:04:31,646 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
-2013-08-28 15:04:31,650 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 15:04:31,650 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 15:04:31,650 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 15:04:31,653 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 15:04:31,655 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 15:04:31,656 [1] INFO  Overlay - Created KinectControlState state KinectAvatar.
-2013-08-28 15:04:31,657 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 15:04:31,658 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2013-08-28 15:04:31,659 [1] INFO  Overlay - Created KinectControlState state KinectFlycam.
-2013-08-28 15:04:31,660 [1] INFO  Overlay - Creating Transitions
-2013-08-28 15:04:31,663 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
-2013-08-28 15:04:31,665 [1] DEBUG Overlay - Unable to create transition.
-2013-08-28 15:04:31,665 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
-2013-08-28 15:04:31,666 [1] DEBUG Overlay - Unable to create transition.
-2013-08-28 15:04:31,669 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
-2013-08-28 15:04:31,670 [1] DEBUG Overlay - Unable to create transition.
-2013-08-28 15:04:31,670 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
-2013-08-28 15:04:31,671 [1] DEBUG Overlay - Unable to create transition.
-2013-08-28 15:04:31,680 [1] DEBUG MainWindowOverlay - Disabling cursor control
-2013-08-28 15:04:31,680 [1] DEBUG LeftWindowOverlay - Disabling cursor control
-2013-08-28 15:04:31,681 [1] DEBUG RightWindowOverlay - Disabling cursor control
-2013-08-28 15:04:31,862 [1] INFO  Overlay - Current state set to Idle.
-2013-08-28 15:04:31,863 [1] INFO  Core - Loaded Overlay. Enabled.
-2013-08-28 15:04:31,864 [1] INFO  Core - Loaded HeightmapBot. Enabled.
-2013-08-28 15:04:31,866 [1] INFO  Core - Loaded KinectMovement. Disabled.
-2013-08-28 15:04:31,868 [1] INFO  Core - Loaded KinectCursor. Enabled.
-2013-08-28 15:04:31,919 [1] DEBUG XBoxController - Enabled
-2013-08-28 15:04:31,919 [1] INFO  Core - Loaded XBoxController. Enabled.
-2013-08-28 15:04:31,938 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 15:04:31,944 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2013-08-28 15:04:31,948 [1] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 15:04:31,992 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 15:04:31,993 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2013-08-28 15:04:31,993 [1] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 15:04:31,997 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
-2013-08-28 15:04:31,998 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2013-08-28 15:04:31,998 [1] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2013-08-28 15:04:32,016 [1] INFO  ProcessManager - Listening for crashes.
-2013-08-28 15:04:33,351 [XML-RPC Login] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9000)
-2013-08-28 15:04:36,906 [26] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (192.168.1.181:9001)
-2013-08-28 15:04:36,906 [28] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9001)
-2013-08-28 15:04:36,906 [33] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9002)
-2013-08-28 15:04:36,906 [29] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (192.168.1.181:9002)
-2013-08-28 15:04:36,907 [26] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9003)
-2013-08-28 15:04:36,908 [30] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (192.168.1.181:9003)
-2013-08-28 15:04:36,911 [29] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9004)
-2013-08-28 15:04:36,912 [30] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (192.168.1.181:9004)
-2013-08-28 15:04:38,314 [30] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9005)
-2013-08-28 15:04:40,311 [20] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (192.168.1.181:9005)
-2013-08-28 15:04:40,318 [20] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9006)
-2013-08-28 15:04:41,311 [11] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (192.168.1.181:9006)
-2013-08-28 15:04:41,558 [11] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9007)
-2013-08-28 15:04:41,559 [35] INFO  Heightmap - Finished mapping Timespan 1
-2013-08-28 15:04:41,560 [37] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (192.168.1.181:9007)
-2013-08-28 15:04:41,566 [36] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9008)
-2013-08-28 15:04:41,567 [39] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (192.168.1.181:9008)
-2013-08-28 15:04:44,260 [26] INFO  Heightmap - Finished mapping Timespan 9
-2013-08-28 15:04:44,493 [51] INFO  Heightmap - Finished mapping Timespan 6
-2013-08-28 15:04:44,962 [51] INFO  Heightmap - Finished mapping Timespan 4
-2013-08-28 15:04:45,539 [47] INFO  Heightmap - Finished mapping Timespan 2
-2013-08-28 15:04:45,632 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.181:9000 at 127.0.0.1:49409
-2013-08-28 15:04:45,711 [35] INFO  Heightmap - Finished mapping Timespan 3
-2013-08-28 15:04:45,822 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.181:9000 at 127.0.0.1:49410
-2013-08-28 15:04:46,225 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.181:9000 at 127.0.0.1:49411
-2013-08-28 15:04:47,019 [26] INFO  Heightmap - Finished mapping Timespan 7
-2013-08-28 15:04:47,372 [40] INFO  Heightmap - Finished mapping Timespan 5
-2013-08-28 15:04:47,443 [28] INFO  Heightmap - Finished mapping Timespan 8
-2013-08-28 15:04:47,445 [28] INFO  OpenMetaverse - <Heightmap Bot>: Logging out
-2013-08-28 15:04:47,506 [20] INFO  OpenMetaverse - <Heightmap Bot>: NetworkManager shutdown initiated
-2013-08-28 15:04:47,508 [20] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 2 (192.168.1.181:9001) is aborting
-2013-08-28 15:04:47,512 [20] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 3 (192.168.1.181:9002) is aborting
-2013-08-28 15:04:47,514 [20] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 4 (192.168.1.181:9003) is aborting
-2013-08-28 15:04:47,515 [20] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 5 (192.168.1.181:9004) is aborting
-2013-08-28 15:04:47,516 [20] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 6 (192.168.1.181:9005) is aborting
-2013-08-28 15:04:47,519 [20] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 7 (192.168.1.181:9006) is aborting
-2013-08-28 15:04:47,521 [20] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 8 (192.168.1.181:9007) is aborting
-2013-08-28 15:04:47,522 [20] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 9 (192.168.1.181:9008) is aborting
-2013-08-28 15:04:47,524 [20] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 1 (192.168.1.181:9000) is aborting
-2013-08-28 15:05:12,553 [57] INFO  OpenSim - LeftWindow viewer pressing ^%{F1}
-2013-08-28 15:05:13,083 [57] INFO  OpenSim - LeftWindow viewer pressing ^+u
-2013-08-28 15:05:15,279 [56] INFO  OpenSim - MainWindow viewer pressing ^%{F1}
-2013-08-28 15:05:15,660 [63] INFO  OpenSim - RightWindow viewer pressing ^%{F1}
-2013-08-28 15:05:15,790 [56] INFO  OpenSim - MainWindow viewer pressing ^+u
-2013-08-28 15:05:16,299 [63] INFO  OpenSim - RightWindow viewer pressing ^+u
-2013-08-28 15:05:57,695 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
-2013-08-28 15:05:59,751 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
-2013-08-28 15:05:59,753 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
-2013-08-28 15:05:59,754 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
-2013-08-28 15:05:59,754 [Tick Thread] INFO  Overlay - Current state set to Intro.
-2013-08-28 15:06:01,499 [StateChange] INFO  Overlay - Transitioning from Intro to Splash.
-2013-08-28 15:06:01,508 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
-2013-08-28 15:06:01,508 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
-2013-08-28 15:06:01,542 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
-2013-08-28 15:06:01,542 [StateChange] INFO  Overlay - Current state set to Splash.
-2013-08-28 15:06:09,867 [StateChange] INFO  Overlay - Transitioning from Splash to GuidedTour.
-2013-08-28 15:06:09,882 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2013-08-28 15:06:09,886 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2013-08-28 15:06:09,887 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2013-08-28 15:06:11,916 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
-2013-08-28 15:14:17,859 [StateChange] INFO  Overlay - Transitioning from GuidedTour to Splash.
-2013-08-28 15:14:18,063 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
-2013-08-28 15:14:18,063 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
-2013-08-28 15:14:18,131 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
-2013-08-28 15:14:18,146 [StateChange] INFO  Overlay - Current state set to Splash.
-2013-08-28 15:14:48,085 [StateChange] INFO  Overlay - Transitioning from Splash to IdleOutro.
-2013-08-28 15:14:50,119 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
-2013-08-28 15:14:50,119 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
-2013-08-28 15:14:50,120 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
-2013-08-28 15:14:50,121 [Tick Thread] INFO  Overlay - Current state set to IdleOutro.
-2013-08-28 15:14:55,126 [StateChange] INFO  Overlay - Transitioning from IdleOutro to Idle.
-2013-08-28 15:14:55,127 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2013-08-28 15:14:55,127 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2013-08-28 15:14:55,129 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2013-08-28 15:14:57,155 [Tick Thread] INFO  Overlay - Current state set to Idle.
-2013-08-28 16:44:10,352 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
-2013-08-28 16:44:12,533 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
-2013-08-28 16:44:12,533 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
-2013-08-28 16:44:12,550 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
-2013-08-28 16:44:12,551 [Tick Thread] INFO  Overlay - Current state set to Intro.
-2013-08-28 16:44:17,560 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
-2013-08-28 16:44:17,580 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2013-08-28 16:44:17,590 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2013-08-28 16:44:17,590 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2013-08-28 16:44:19,663 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
-2013-08-28 16:47:41,517 [RemoteControlListener] INFO  RemoteControl - Received 'Exit'.
-2013-08-28 16:47:41,517 [1] DEBUG Core - Shutting down tick thread.
-2013-08-28 16:47:41,537 [Tick Thread] INFO  Core - Tick Thread shut down.
-2013-08-28 16:47:41,577 [3] DEBUG OpenSim.MainWindowViewer - Closing
-2013-08-28 16:47:41,577 [1] DEBUG OpenSim.MainWindowProxy - Closing
-2013-08-28 16:47:41,577 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 16:47:41,617 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
-2013-08-28 16:47:41,647 [1] INFO  ProcessManager - Dumping to C:\Users\OpenVirtualWorlds\Documents\John\Chimera\Bin\Logs\2013\Aug\28-16.47Shutdown.html
-2013-08-28 16:47:41,647 [1] DEBUG XBoxController - Disabled
-2013-08-28 16:47:41,657 [27] DEBUG OpenSim.MainWindowViewer - Closing
-2013-08-28 16:47:41,657 [1] INFO  OpenSim.MainWindowProxy - Closed
-2013-08-28 16:47:41,657 [51] DEBUG OpenSim.LeftWindowViewer - Closing
-2013-08-28 16:47:41,667 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2013-08-28 16:47:41,667 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2013-08-28 16:47:41,677 [50] DEBUG OpenSim.RightWindowViewer - Closing
-2013-08-28 16:47:41,677 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
-2013-08-28 16:47:41,693 [1] DEBUG OpenSim.RightWindowProxy - Closing
-2013-08-28 16:47:41,693 [1] INFO  OpenSim.RightWindowProxy - Closed
-2013-08-28 16:47:41,693 [1] INFO  Core - System shutdown for Shut down.
-2013-08-28 16:47:41,693 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
-2013-08-28 16:47:43,986 [27] INFO  OpenSim.MainWindowViewer - Closed
-2013-08-28 16:47:43,986 [3] INFO  OpenSim.MainWindowViewer - Closed
-2013-08-28 16:47:44,095 [50] INFO  OpenSim.RightWindowViewer - Closed
-2013-08-28 16:47:44,781 [51] INFO  OpenSim.LeftWindowViewer - Closed
+2013-08-29 09:38:26,388 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2013-08-29 09:38:26,437 [1] INFO  Core - Loaded Flythrough. Enabled.
+2013-08-29 09:38:26,442 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2013-08-29 09:38:26,740 [1] DEBUG Overlay - LeftWindpw is not a known frame. Using MainWindow as default.
+2013-08-29 09:38:26,841 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
+2013-08-29 09:38:26,841 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2013-08-29 09:38:26,846 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2013-08-29 09:38:26,849 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2013-08-29 09:38:26,960 [1] INFO  Overlay - Created BlankState state IdleOutro.
+2013-08-29 09:38:26,965 [1] INFO  Overlay - Created FlythroughState state Idle.
+2013-08-29 09:38:26,966 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2013-08-29 09:38:27,061 [1] INFO  Overlay - Created BlankState state Intro.
+2013-08-29 09:38:27,062 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2013-08-29 09:38:27,157 [1] INFO  Overlay - Created BlankState state Splash.
+2013-08-29 09:38:27,402 [1] INFO  Overlay - Created SlideshowState state Slideshow.
+2013-08-29 09:38:27,403 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2013-08-29 09:38:27,412 [1] INFO  Overlay - Created BlankState state Story1Confirm.
+2013-08-29 09:38:27,413 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2013-08-29 09:38:27,422 [1] INFO  Overlay - Created BlankState state Story2Confirm.
+2013-08-29 09:38:27,423 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2013-08-29 09:38:27,432 [1] INFO  Overlay - Created BlankState state Story3Confirm.
+2013-08-29 09:38:27,433 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2013-08-29 09:38:27,442 [1] INFO  Overlay - Created BlankState state Story4Confirm.
+2013-08-29 09:38:27,443 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2013-08-29 09:38:27,453 [1] INFO  Overlay - Created BlankState state Story5Confirm.
+2013-08-29 09:38:27,468 [1] INFO  Overlay - Created VideoState state Story1.
+2013-08-29 09:38:27,475 [1] INFO  Overlay - Created VideoState state Story2.
+2013-08-29 09:38:27,482 [1] INFO  Overlay - Created VideoState state Story3.
+2013-08-29 09:38:27,489 [1] INFO  Overlay - Created VideoState state Story4.
+2013-08-29 09:38:27,498 [1] INFO  Overlay - Created VideoState state Story5.
+2013-08-29 09:38:27,524 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-08-29 09:38:27,524 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
+2013-08-29 09:38:27,527 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-08-29 09:38:27,527 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-08-29 09:38:27,527 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-08-29 09:38:27,527 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-08-29 09:38:27,528 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-08-29 09:38:27,528 [1] INFO  Overlay - Created KinectControlState state KinectAvatar.
+2013-08-29 09:38:27,529 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-08-29 09:38:27,529 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2013-08-29 09:38:27,529 [1] INFO  Overlay - Created KinectControlState state KinectFlycam.
+2013-08-29 09:38:27,531 [1] INFO  Overlay - Creating Transitions
+2013-08-29 09:38:27,535 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2013-08-29 09:38:27,536 [1] DEBUG Overlay - Unable to create transition.
+2013-08-29 09:38:27,536 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2013-08-29 09:38:27,538 [1] DEBUG Overlay - Unable to create transition.
+2013-08-29 09:38:27,541 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2013-08-29 09:38:27,542 [1] DEBUG Overlay - Unable to create transition.
+2013-08-29 09:38:27,542 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2013-08-29 09:38:27,544 [1] DEBUG Overlay - Unable to create transition.
+2013-08-29 09:38:27,553 [1] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 09:38:27,553 [1] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 09:38:27,553 [1] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 09:38:27,731 [1] INFO  Overlay - Current state set to Idle.
+2013-08-29 09:38:27,732 [1] INFO  Core - Loaded Overlay. Enabled.
+2013-08-29 09:38:27,733 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2013-08-29 09:38:27,735 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2013-08-29 09:38:27,737 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2013-08-29 09:38:27,781 [1] DEBUG XBoxController - Enabled
+2013-08-29 09:38:27,781 [1] INFO  Core - Loaded XBoxController. Enabled.
+2013-08-29 09:38:27,801 [1] INFO  OpenSim.MainWindowProxy - Proxying http://192.168.1.181:9000/
+2013-08-29 09:38:27,806 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2013-08-29 09:38:27,809 [1] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
+2013-08-29 09:38:27,853 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://192.168.1.181:9000/
+2013-08-29 09:38:27,854 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2013-08-29 09:38:27,854 [1] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
+2013-08-29 09:38:27,858 [1] INFO  OpenSim.RightWindowProxy - Proxying http://192.168.1.181:9000/
+2013-08-29 09:38:27,859 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2013-08-29 09:38:27,860 [1] INFO  ProcessController - Launching C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en from C:\Users\OpenVirtualWorlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
+2013-08-29 09:38:27,875 [1] INFO  ProcessManager - Listening for crashes.
+2013-08-29 09:38:29,139 [XML-RPC Login] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9000)
+2013-08-29 09:38:32,990 [28] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9001)
+2013-08-29 09:38:32,990 [30] ERROR OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for unknown sim 192.168.1.181:9001
+2013-08-29 09:38:32,993 [30] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9002)
+2013-08-29 09:38:32,996 [29] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (192.168.1.181:9002)
+2013-08-29 09:38:32,997 [29] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9003)
+2013-08-29 09:38:33,647 [20] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (192.168.1.181:9003)
+2013-08-29 09:38:33,649 [20] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9004)
+2013-08-29 09:38:34,647 [11] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (192.168.1.181:9004)
+2013-08-29 09:38:34,648 [11] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9005)
+2013-08-29 09:38:35,659 [35] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (192.168.1.181:9005)
+2013-08-29 09:38:42,129 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.181:9000 at 127.0.0.1:55096
+2013-08-29 09:38:43,280 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.181:9000 at 127.0.0.1:55098
+2013-08-29 09:38:43,890 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.181:9000 at 127.0.0.1:55099
+2013-08-29 09:38:49,663 [46] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9006)
+2013-08-29 09:39:00,215 [47] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (192.168.1.181:9006)
+2013-08-29 09:39:00,216 [47] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9007)
+2013-08-29 09:39:11,740 [39] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (192.168.1.181:9007)
+2013-08-29 09:39:11,746 [39] INFO  Heightmap - Finished mapping Timespan 1
+2013-08-29 09:39:11,751 [45] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (192.168.1.181:9008)
+2013-08-29 09:39:11,752 [49] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (192.168.1.181:9008)
+2013-08-29 09:39:13,060 [47] INFO  Heightmap - Finished mapping Timespan 7
+2013-08-29 09:39:13,486 [41] INFO  OpenSim - RightWindow viewer pressing ^%{F1}
+2013-08-29 09:39:14,299 [41] INFO  OpenSim - RightWindow viewer pressing ^+u
+2013-08-29 09:39:14,398 [38] INFO  OpenSim - LeftWindow viewer pressing ^%{F1}
+2013-08-29 09:39:14,536 [43] INFO  OpenSim - MainWindow viewer pressing ^%{F1}
+2013-08-29 09:39:15,285 [56] INFO  Heightmap - Finished mapping Timespan 8
+2013-08-29 09:39:15,343 [49] INFO  Heightmap - Finished mapping Timespan 6
+2013-08-29 09:39:15,426 [38] INFO  OpenSim - LeftWindow viewer pressing ^+u
+2013-08-29 09:39:15,813 [51] INFO  Heightmap - Finished mapping Timespan 4
+2013-08-29 09:39:16,012 [43] INFO  OpenSim - MainWindow viewer pressing ^+u
+2013-08-29 09:39:16,345 [28] INFO  Heightmap - Finished mapping Timespan 3
+2013-08-29 09:39:16,509 [28] INFO  Heightmap - Finished mapping Timespan 2
+2013-08-29 09:39:16,901 [61] INFO  Heightmap - Finished mapping Timespan 9
+2013-08-29 09:39:18,221 [47] INFO  Heightmap - Finished mapping Timespan 5
+2013-08-29 09:39:18,222 [47] INFO  OpenMetaverse - <Heightmap Bot>: Logging out
+2013-08-29 09:39:18,280 [53] INFO  OpenMetaverse - <Heightmap Bot>: NetworkManager shutdown initiated
+2013-08-29 09:39:18,284 [53] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 3 (192.168.1.181:9002) is aborting
+2013-08-29 09:39:18,288 [53] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 4 (192.168.1.181:9003) is aborting
+2013-08-29 09:39:18,289 [53] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 5 (192.168.1.181:9004) is aborting
+2013-08-29 09:39:18,291 [53] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 6 (192.168.1.181:9005) is aborting
+2013-08-29 09:39:18,292 [53] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 7 (192.168.1.181:9006) is aborting
+2013-08-29 09:39:18,294 [53] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 8 (192.168.1.181:9007) is aborting
+2013-08-29 09:39:18,295 [53] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 9 (192.168.1.181:9008) is aborting
+2013-08-29 09:39:18,296 [53] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 1 (192.168.1.181:9000) is aborting
+2013-08-29 09:49:48,901 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2013-08-29 09:49:50,988 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 09:49:50,988 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 09:49:50,989 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 09:49:50,989 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2013-08-29 09:49:56,065 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
+2013-08-29 09:49:56,162 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 09:49:56,163 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 09:49:56,163 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 09:49:58,222 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2013-08-29 09:58:54,739 [StateChange] INFO  Overlay - Transitioning from GuidedTour to Splash.
+2013-08-29 09:58:54,746 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 09:58:54,747 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 09:58:54,747 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 09:58:54,750 [StateChange] INFO  Overlay - Current state set to Splash.
+2013-08-29 09:59:24,804 [StateChange] INFO  Overlay - Transitioning from Splash to IdleOutro.
+2013-08-29 09:59:26,890 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 09:59:26,924 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 09:59:26,942 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 09:59:26,942 [Tick Thread] INFO  Overlay - Current state set to IdleOutro.
+2013-08-29 09:59:31,942 [StateChange] INFO  Overlay - Transitioning from IdleOutro to Idle.
+2013-08-29 09:59:31,944 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 09:59:31,944 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 09:59:31,963 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 09:59:34,071 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2013-08-29 10:35:10,511 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2013-08-29 10:35:12,686 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 10:35:12,696 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 10:35:12,697 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 10:35:12,744 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2013-08-29 10:35:17,750 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
+2013-08-29 10:35:17,776 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 10:35:17,784 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 10:35:17,785 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 10:35:19,951 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2013-08-29 10:52:39,222 [StateChange] INFO  Overlay - Transitioning from GuidedTour to Splash.
+2013-08-29 10:52:39,422 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 10:52:39,431 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 10:52:39,431 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 10:52:39,476 [StateChange] INFO  Overlay - Current state set to Splash.
+2013-08-29 10:52:40,857 [StateChange] INFO  Overlay - Transitioning from Splash to Story3Confirm.
+2013-08-29 10:52:41,001 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 10:52:41,005 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 10:52:41,005 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 10:52:41,006 [StateChange] INFO  Overlay - Current state set to Story3Confirm.
+2013-08-29 10:53:11,070 [StateChange] INFO  Overlay - Transitioning from Story3Confirm to IdleOutro.
+2013-08-29 10:53:13,207 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 10:53:13,262 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 10:53:13,262 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 10:53:13,262 [Tick Thread] INFO  Overlay - Current state set to IdleOutro.
+2013-08-29 10:53:18,309 [StateChange] INFO  Overlay - Transitioning from IdleOutro to Idle.
+2013-08-29 10:53:18,341 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 10:53:18,351 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 10:53:18,353 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 10:53:20,432 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2013-08-29 12:23:12,728 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2013-08-29 12:23:14,915 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 12:23:14,917 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 12:23:14,918 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 12:23:14,927 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2013-08-29 12:23:19,940 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
+2013-08-29 12:23:19,991 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 12:23:20,003 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 12:23:20,012 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 12:23:22,201 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2013-08-29 12:40:29,616 [StateChange] INFO  Overlay - Transitioning from GuidedTour to Splash.
+2013-08-29 12:40:29,829 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 12:40:29,850 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 12:40:29,883 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 12:40:29,910 [StateChange] INFO  Overlay - Current state set to Splash.
+2013-08-29 12:40:31,246 [StateChange] INFO  Overlay - Transitioning from Splash to Story5Confirm.
+2013-08-29 12:40:31,249 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 12:40:31,268 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 12:40:31,285 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 12:40:31,286 [StateChange] INFO  Overlay - Current state set to Story5Confirm.
+2013-08-29 12:41:01,291 [StateChange] INFO  Overlay - Transitioning from Story5Confirm to IdleOutro.
+2013-08-29 12:41:03,495 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 12:41:03,548 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 12:41:03,557 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 12:41:03,557 [Tick Thread] INFO  Overlay - Current state set to IdleOutro.
+2013-08-29 12:41:08,676 [StateChange] INFO  Overlay - Transitioning from IdleOutro to Idle.
+2013-08-29 12:41:08,721 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 12:41:08,721 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 12:41:08,722 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 12:41:10,881 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2013-08-29 13:41:05,793 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2013-08-29 13:41:07,983 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 13:41:07,988 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 13:41:07,988 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 13:41:07,989 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2013-08-29 13:41:13,018 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
+2013-08-29 13:41:13,043 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 13:41:13,055 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 13:41:13,064 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 13:41:15,307 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2013-08-29 13:50:17,000 [StateChange] INFO  Overlay - Transitioning from GuidedTour to Splash.
+2013-08-29 13:50:17,273 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 13:50:17,274 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 13:50:17,306 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 13:50:17,306 [StateChange] INFO  Overlay - Current state set to Splash.
+2013-08-29 13:51:37,334 [StateChange] INFO  Overlay - Transitioning from Splash to Story1Confirm.
+2013-08-29 13:51:37,340 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 13:51:37,340 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 13:51:37,340 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 13:51:37,341 [StateChange] INFO  Overlay - Current state set to Story1Confirm.
+2013-08-29 13:52:28,907 [StateChange] INFO  Overlay - Transitioning from Story1Confirm to Story1.
+2013-08-29 13:52:28,927 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 13:52:28,928 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 13:52:28,977 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 13:52:28,998 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 13:52:29,023 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 13:52:29,025 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 13:52:29,051 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 13:52:29,113 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 13:52:29,146 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 13:52:29,199 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 13:52:29,223 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 13:52:29,224 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 13:52:29,224 [StateChange] INFO  Overlay - Current state set to Story1.
+2013-08-29 13:58:43,378 [StateChange] INFO  Overlay - Transitioning from Story1 to Splash.
+2013-08-29 13:58:43,698 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 13:58:43,708 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 13:58:43,709 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 13:58:43,709 [StateChange] INFO  Overlay - Current state set to Splash.
+2013-08-29 13:58:45,081 [StateChange] INFO  Overlay - Transitioning from Splash to Story5Confirm.
+2013-08-29 13:58:45,135 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 13:58:45,154 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 13:58:45,159 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 13:58:45,159 [StateChange] INFO  Overlay - Current state set to Story5Confirm.
+2013-08-29 13:59:15,163 [StateChange] INFO  Overlay - Transitioning from Story5Confirm to IdleOutro.
+2013-08-29 13:59:17,377 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 13:59:17,384 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 13:59:17,385 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 13:59:17,418 [Tick Thread] INFO  Overlay - Current state set to IdleOutro.
+2013-08-29 13:59:22,432 [StateChange] INFO  Overlay - Transitioning from IdleOutro to Idle.
+2013-08-29 13:59:22,483 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 13:59:22,484 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 13:59:22,485 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 13:59:24,519 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2013-08-29 15:19:01,981 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2013-08-29 15:19:04,410 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 15:19:04,410 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 15:19:04,411 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 15:19:04,508 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2013-08-29 15:19:09,519 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
+2013-08-29 15:19:09,540 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 15:19:09,541 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 15:19:09,541 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 15:19:11,655 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2013-08-29 15:28:08,376 [StateChange] INFO  Overlay - Transitioning from GuidedTour to Splash.
+2013-08-29 15:28:08,676 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 15:28:08,693 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 15:28:08,693 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 15:28:08,706 [StateChange] INFO  Overlay - Current state set to Splash.
+2013-08-29 15:28:44,101 [StateChange] INFO  Overlay - Transitioning from Splash to Story5Confirm.
+2013-08-29 15:28:44,217 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 15:28:44,254 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 15:28:44,270 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 15:28:44,284 [StateChange] INFO  Overlay - Current state set to Story5Confirm.
+2013-08-29 15:30:57,377 [StateChange] INFO  Overlay - Transitioning from Story5Confirm to Story5.
+2013-08-29 15:30:57,402 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 15:30:57,409 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 15:30:57,423 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 15:30:57,424 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 15:30:57,425 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 15:30:57,425 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 15:30:57,458 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 15:30:57,474 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 15:30:57,475 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 15:30:57,517 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 15:30:57,518 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 15:30:57,518 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 15:30:57,518 [StateChange] INFO  Overlay - Current state set to Story5.
+2013-08-29 15:36:36,738 [StateChange] INFO  Overlay - Transitioning from Story5 to Splash.
+2013-08-29 15:36:36,880 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 15:36:36,893 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 15:36:36,893 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 15:36:36,894 [StateChange] INFO  Overlay - Current state set to Splash.
+2013-08-29 15:37:06,957 [StateChange] INFO  Overlay - Transitioning from Splash to IdleOutro.
+2013-08-29 15:37:09,138 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 15:37:09,138 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 15:37:09,139 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 15:37:09,140 [Tick Thread] INFO  Overlay - Current state set to IdleOutro.
+2013-08-29 15:37:14,171 [StateChange] INFO  Overlay - Transitioning from IdleOutro to Idle.
+2013-08-29 15:37:14,205 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 15:37:14,241 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 15:37:14,252 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 15:37:16,312 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2013-08-29 16:09:52,105 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2013-08-29 16:09:54,244 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 16:09:54,244 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 16:09:54,245 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 16:09:54,300 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2013-08-29 16:09:59,298 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
+2013-08-29 16:09:59,313 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 16:09:59,325 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 16:09:59,333 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 16:10:01,451 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2013-08-29 16:19:11,211 [StateChange] INFO  Overlay - Transitioning from GuidedTour to Splash.
+2013-08-29 16:19:11,378 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2013-08-29 16:19:11,409 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2013-08-29 16:19:11,432 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2013-08-29 16:19:11,446 [StateChange] INFO  Overlay - Current state set to Splash.
+2013-08-29 16:19:41,538 [StateChange] INFO  Overlay - Transitioning from Splash to IdleOutro.
+2013-08-29 16:19:43,864 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 16:19:43,877 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 16:19:43,908 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 16:19:43,916 [Tick Thread] INFO  Overlay - Current state set to IdleOutro.
+2013-08-29 16:19:48,892 [StateChange] INFO  Overlay - Transitioning from IdleOutro to Idle.
+2013-08-29 16:19:48,910 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2013-08-29 16:19:48,927 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2013-08-29 16:19:48,928 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2013-08-29 16:19:50,981 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2013-08-29 17:04:01,437 [RemoteControlListener] INFO  RemoteControl - Received 'Exit'.
+2013-08-29 17:04:01,443 [1] DEBUG Core - Shutting down tick thread.
+2013-08-29 17:04:01,458 [Tick Thread] INFO  Core - Tick Thread shut down.
+2013-08-29 17:04:01,520 [68] DEBUG OpenSim.MainWindowViewer - Closing
+2013-08-29 17:04:01,520 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2013-08-29 17:04:01,521 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-08-29 17:04:01,636 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2013-08-29 17:04:02,591 [1] INFO  ProcessManager - Dumping to C:\Users\OpenVirtualWorlds\Documents\John\Chimera\Bin\Logs\2013\Aug\29-17.04Shutdown.html
+2013-08-29 17:04:02,601 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
+2013-08-29 17:04:02,601 [1] DEBUG XBoxController - Disabled
+2013-08-29 17:04:02,611 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
+2013-08-29 17:04:02,621 [32] DEBUG OpenSim.MainWindowViewer - Closing
+2013-08-29 17:04:02,631 [1] INFO  OpenSim.MainWindowProxy - Closed
+2013-08-29 17:04:02,641 [1] DEBUG OpenSim.LeftWindowProxy - Closing
+2013-08-29 17:04:02,641 [63] DEBUG OpenSim.LeftWindowViewer - Closing
+2013-08-29 17:04:02,641 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2013-08-29 17:04:02,651 [65] DEBUG OpenSim.RightWindowViewer - Closing
+2013-08-29 17:04:02,651 [1] DEBUG OpenSim.RightWindowProxy - Closing
+2013-08-29 17:04:02,671 [1] INFO  OpenSim.RightWindowProxy - Closed
+2013-08-29 17:04:03,051 [1] INFO  Core - System shutdown for Shut down.
+2013-08-29 17:04:05,041 [65] INFO  OpenSim.RightWindowViewer - Closed
+2013-08-29 17:04:05,241 [63] INFO  OpenSim.LeftWindowViewer - Closed
+2013-08-29 17:04:08,711 [32] INFO  OpenSim.MainWindowViewer - Closed
+2013-08-29 17:04:08,711 [68] INFO  OpenSim.MainWindowViewer - Closed
