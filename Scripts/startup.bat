@@ -1,6 +1,6 @@
 timeout 10
 
-run autossh -f -M 4000 -R 0.0.0.0:3022:localhost:22 timespan@fyne.cs.st-andrews.ac.uk
+run autossh -M 4000 -R 0.0.0.0:3022:localhost:22 timespan@fyne.cs.st-andrews.ac.uk
 
 
 cd C:\Users\openvritualworlds\Documents\John\Chimera\Bin
