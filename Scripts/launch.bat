@@ -13,6 +13,7 @@ IF ERRORLEVEL 42 GOTO restart
 cscript shutdown1.vbs
 timeout 1
 cscript shutdown2.vbs
+timeout 60000
 
 git pull
 git add Logs/*
