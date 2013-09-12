@@ -1,7 +1,7 @@
 cd ..\..\..\..\AppData\Roaming
 rm -rf Firestorm
-cd ..\Local
-rm -rf Firestorm
+rem cd ..\Local
+rem rm -rf Firestorm
 cd ..\..\Documents\John\Chimera\Bin
 
 Timespan.exe
@@ -10,9 +10,9 @@ echo %errorlevel%
 
 IF ERRORLEVEL 42 GOTO restart 
 
-rem cscript shutdown1.vbs
-rem timeout 1
-rem cscript shutdown2.vbs
+cscript shutdown1.vbs
+timeout 1
+cscript shutdown2.vbs
 
 git pull
 git add Logs/*
