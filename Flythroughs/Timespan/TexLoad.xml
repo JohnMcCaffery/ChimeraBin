@@ -37,4 +37,23 @@
       <RotateToEvent Name="Rotate To 51" Pitch="0" Yaw="-135" Length="3000" />
     </OrientationSequence>
   </ComboEvent>
+  <ComboEvent Name="Repeat">
+    <PositionSequence>
+      <MoveToEvent Name="Move To 1" Target="&lt;128, 640, 100&gt;" Length="37000" />
+      <MoveToEvent Name="Move To 2" Target="&lt;640, 640, 150&gt;" Length="37000" />
+      <MoveToEvent Name="Move To 3" Target="&lt;640, 128, 85&gt;" Length="37000" />
+      <MoveToEvent Name="Move To 4" Target="&lt;128, 128, 85&gt;" Length="37000" />
+    </PositionSequence>
+    <OrientationSequence>
+      <RotateToEvent Name="Rotate To 50" Pitch="0" Yaw="180" Length="3000" />
+      <BlankEvent Length="31000" />
+      <RotateToEvent Name="Rotate To 1" Pitch="0" Yaw="90" Length="6000" />
+      <BlankEvent Length="31000" />
+      <RotateToEvent Name="Rotate To 2" Pitch="0" Yaw="0" Length="6000" />
+      <BlankEvent Length="31000" />
+      <RotateToEvent Name="Rotate To 3" Pitch="0" Yaw="-90" Length="6000" />
+      <BlankEvent Length="31000" />
+      <RotateToEvent Name="Rotate To 51" Pitch="0" Yaw="-135" Length="3000" />
+    </OrientationSequence>
+  </ComboEvent>
 </Events>
