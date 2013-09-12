@@ -12,7 +12,7 @@ git push
 
 cd C:\Users\openvritualworlds\Desktop\Opensim-Timespan\
 start "OpenSim" /MAX OpenSim.exe
-cd C:\Users\openvritualworlds\Documents\John\Chimera\
+cd C:\Users\openvritualworlds\Documents\John\Chimera\Bin\
 
 timeout 60
 
