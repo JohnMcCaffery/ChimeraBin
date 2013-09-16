@@ -6,14 +6,16 @@ cd ..\..\Documents\John\Chimera\Bin
 
 Timespan.exe
 
-echo %errorlevel%
+echo Chimera exited with code %errorlevel%
 
 IF ERRORLEVEL 42 GOTO restart 
 
-cscript shutdown1.vbs
+echo Shutting down
+
+cscript Scripts\shutdown1.vbs
 timeout 1
-cscript shutdown2.vbs
-timeout 60000
+cscript Scripts\shutdown2.vbs
+timeout 60
 
 git pull
 git add Logs/*
@@ -25,6 +27,8 @@ shutdown.exe /s /t 00
 GOTO :EOF
 
 :restart
+
+echo Restarting
 
 Scripts\launch.bat
 
