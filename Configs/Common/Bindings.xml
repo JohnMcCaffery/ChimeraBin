@@ -6,14 +6,16 @@
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Plugins.KBMousePlugin, ChimeraLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Flythrough.FlythroughPlugin, FlythroughLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.RemoteControl.RemoteControlPlugin, RemoteControlLib" scope="singleton" />
+  <!--
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Experimental.Plugins.MovementTracker, ExperimentalLib" scope="singleton" />
+-->
   <!-- <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Touchscreen.TouchscreenPlugin, TouchscreenLib" scope="singleton" /> -->
 
   <!-- Overlay bindings-->
   <!--
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.OverlayPlugin, OverlayLib" scope="singleton" />
-  -->
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.Plugins.MousePlugin, OverlayLib" scope="singleton" />
+  -->
 
   <!--                        OVERLAY BINDINGS                         -->
 
