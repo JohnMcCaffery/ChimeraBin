@@ -15,7 +15,7 @@ echo Shutting down
 cscript Scripts\shutdown1.vbs
 timeout 1
 cscript Scripts\shutdown2.vbs
-timeout 60
+timeout 20
 
 git pull
 git add Logs/*
