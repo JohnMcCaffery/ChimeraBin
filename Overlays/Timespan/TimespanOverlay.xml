@@ -104,7 +104,13 @@ This process pre-dates the excavation of the summer of 2013.
         <IdleTransition Name="FadeIn" />
       </State>
 
-      <State Factory="Flythrough" Name="Idle" File="Flythroughs/Timespan/Idle.xml" Start="true">
+      <State Factory="Flythrough" Name="Idle" File="Flythroughs/Timespan/Idle.xml" >
+        <IdleTriggers>
+          <Trigger Name="FlythroughEnd" />
+        </IdleTriggers>
+      </State>
+
+      <State Factory="Flythrough" Name="LoadTextures" File="Flythroughs/Timespan/TexLoad.xml" Start="true" Loop="false" >
         <IdleTriggers>
           <Trigger Name="FlythroughEnd" />
         </IdleTriggers>
