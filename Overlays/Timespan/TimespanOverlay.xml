@@ -2,7 +2,22 @@
   <Any>
 
     <Features>
-      <!--
+
+      <Feature Factory="StaticText" Name="RaiseArmPrompt" X="30" Y="30" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow">
+        Whilst standing raise your arm above your head to walk 
+        through the township (great for kids) or view local stories
+    </Feature>
+
+    <Feature Factory="StaticText" Name="RaiseArmPromptExplore" X="15" Y="10" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow">Stand and raise your arm above your head to get back to the main menu </Feature>
+
+    <Feature Factory="StaticText" Name="SurveyText" X="5" Y="5" Font="Verdana" Colour="White" Size="28" Frame="LeftWindow">These images were taken at the Caen site in November 2012 when this project was begun.
+They document the initial surveying of the site to map the outlines of the original longhouses.
+The geography of the model is taken from this survey.
+The red flags were used to mark the corners of the buildings.
+This process pre-dates the excavation of the summer of 2013.
+    </Feature>
+
+    <!--
 	      <Area Factory="ActiveArea" Name="LonghouseArea" Frame="RightWindow" >
 		<Feature Factory="Image" X="1200" Y="50" >Images/ActiveAreas/Longhouse.png </Feature>
 		<Trigger>
@@ -29,7 +44,7 @@
 	      -->
 
       <Area Factory="ActiveArea" Name="YawAreaEast" Frame="LeftWindow" >
-        <Feature Factory="Image" X="1200" Y="50" Width="500" Frame="LeftWindow" >Images/ActiveAreas/MidTownshipEast.JPG</Feature>
+        <Feature Factory="Image" X="1200" Y="50" Width="500" Frame="LeftWindpw" >Images/ActiveAreas/MidTownshipEast.JPG</Feature>
         <Trigger>
           <Yaw Min="5" Max="82" />
           <Points>
@@ -53,9 +68,6 @@
           </Points>
         </Trigger>
       </Area>
-
-      <Feature Factory="Image" Name="HelpSidebarAvatar"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
-      <Feature Factory="Image" Name="HelpSidebarFlycam"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
 
       <Feature Factory="Image" Name="HelpSidebarAvatarL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
       <Feature Factory="Image" Name="HelpSidebarFlycamL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
@@ -92,7 +104,13 @@
         <IdleTransition Name="FadeIn" />
       </State>
 
-      <State Factory="Flythrough" Name="Idle" File="Flythroughs/Caen-long.xml" Start="true">
+      <State Factory="Flythrough" Name="Idle" File="Flythroughs/Timespan/Idle.xml" >
+        <IdleTriggers>
+          <Trigger Name="FlythroughEnd" />
+        </IdleTriggers>
+      </State>
+
+      <State Factory="Flythrough" Name="LoadTextures" File="Flythroughs/Timespan/TexLoad.xml" Start="true" Loop="false" >
         <IdleTriggers>
           <Trigger Name="FlythroughEnd" />
         </IdleTriggers>
@@ -115,7 +133,7 @@
         </Features>
       </State>
 
-      <State Factory="Slideshow" Name="Slideshow" >
+      <State Factory="Slideshow" Name="Slideshow" StepLengthS="5" >
         <NextTriggers>
           <ImageTrigger X="1532" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/NextTrans.png</ImageTrigger>
         </NextTriggers>
@@ -126,53 +144,46 @@
           <Step>
             <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
             <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Name="SurveyText" />
             <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/1.JPG</Feature>
           </Step>
           <Step>
             <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
             <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Name="SurveyText" />
             <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/2.JPG</Feature>
           </Step>
           <Step>
             <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
             <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Name="SurveyText" />
             <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/3.JPG</Feature>
           </Step>
           <Step>
             <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
             <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Name="SurveyText" />
             <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/4.JPG</Feature>
           </Step>
           <Step>
             <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
             <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Name="SurveyText" />
             <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/5.JPG</Feature>
           </Step>
           <Step>
             <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
             <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Name="SurveyText" />
             <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/6.JPG</Feature>
           </Step>
           <Step>
             <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
             <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+            <Feature Name="SurveyText" />
             <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/7.JPG</Feature>
           </Step>
         </Steps>
-      </State>
-
-      <State Factory="Info" Name="HelpAvatar" >
-        <Features>
-          <Feature Name="HelpSidebarAvatar" />
-          <Feature Name="HelpSkeleton" />
-        </Features>
-      </State>
-
-      <State Factory="Info" Name="HelpFlycam" >
-        <Features>
-          <Feature Name="HelpSidebarFlycam" />
-          <Feature Name="HelpSkeleton" />
-        </Features>
       </State>
 
       <State Factory="Blank" Name="Story1Confirm" BlackBG="true">
@@ -231,7 +242,7 @@
         </IdleTriggers>
       </State>
 
-      <State Factory="Flythrough" Name="GuidedTour" File="Flythroughs/Timespan/Caen-Guided-Full.xml" AutoStep="true" Loop="false" DisplaySubtitles="true" SubtitleTimeout="11">
+      <State Factory="Flythrough" Name="GuidedTour" File="Flythroughs/Timespan/Guided.xml" AutoStep="true" Loop="false" DisplaySubtitles="true" SubtitleTimeout="11">
 
         <SubtitleText Frame="MainWindow" Font="Verdana" Size="30" Colour="Yellow" Style="Regular" X="960" Y="978" Alignment="TopCenter" />
 
@@ -240,10 +251,7 @@
         </IdleTriggers>
 
         <Features>
-          <Feature Factory="StaticText" X="50" Y="50" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow">
-            Whilst standing raise your arm above your head
-            to explore Caen at your own pace or view local stories
-          </Feature>
+          <Feature Name="RaiseArmPrompt" />
         </Features>
 
         <Steps>
@@ -667,26 +675,25 @@
     <Features>
       <Feature Factory="Skeleton" Name="SplashSkeleton" L="940" R="1470" T="1000" Scale="100" Frame="MainWindow" />
       <!--<Feature Factory="Skeleton" Name="ExploreSkeleton" X="60" Y="1050" W="1850" Scale="100" Frame="MainWindow" />-->
-      <Feature Factory="Skeleton" Name="ExploreSkeleton" X="125" Y="140.5" W="0" Scale="125" Frame="LeftWindow" />
-      <Feature Factory="Skeleton" Name="HelpSkeleton" X="125" Y="140.5" W="0" Scale="125" Frame="MainWindow" />
+      <Feature Factory="Skeleton" Name="ExploreSkeleton" X="100" Y="165.5" W="0" Scale="125" Frame="LeftWindow" />
     </Features>
     <States>
 
-      <State Factory="KinectControl" Name="KinectAvatar" Avatar="true" Opacity=".7" >
+      <State Factory="KinectControl" Name="KinectAvatar" Avatar="true" Opacity=".8" >
         <Features>
           <Feature Name="ExploreSkeleton" />
           <Feature Name="HelpSidebarAvatarL" />
+          <Feature Name="RaiseArmPromptExplore" />
+          <Feature Name="YawAreaEast" />
+          <Feature Name="YawAreaWest" />
         </Features>
       </State>
 
       <State Factory="KinectControl" Name="KinectFlycam" Avatar="false" X="487.95" Y="130.58" Z="60" Pitch="0" Yaw="126.00" Opacity=".7" >
         <Features>
+          <Feature Name="RaiseArmPromptExplore" />
           <Feature Name="ExploreSkeleton" Frame="MainWindow" />
           <Feature Name="HelpSidebarFlycamL" />
-          <Feature Name="LonghouseArea" />
-          <Feature Name="PeatArea" />
-          <Feature Name="YawAreaEast" />
-          <Feature Name="YawAreaWest" />
         </Features>
       </State>
 
