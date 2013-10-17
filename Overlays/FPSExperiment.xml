@@ -1,21 +1,21 @@
 <Overlay Width="1920" Height="1080" >
   <Any>
     <Triggers>
+      <Trigger Factory="FlythroughEnd" Name="FlythroughEnd" />
     </Triggers>
 
     <TransitionStyles>
     </TransitionStyles>
 
     <States>
-      <State Factory="Flythrough" Name="Init" Start="true">
-        <Features>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/realmatch_002.png</Feature>
-        </Features>
-      </State>
-
+      <State Factory="Flythrough" Name="Init" Start="true" File="Flythroughs/Timespan/TexLoad.xml" Loop="false" />
+      <State Factory="FPSRecorder" Name="FPS" Flythrough="Flythroughs/Timespan/TexLoad.xml" />
+      <State Factory="Blank" Name="Finished" />
 
     </States>
     <Transitions>
+      <Transition From="Init" To="FPSRecorder" Transition="Cut" Trigger="FlythroughEnd" />
+      <Transition From="FPSRecorder" To="Finished" Transition="Cut" Trigger="FlythroughEnd" />
     </Transitions>
   </Any>
 
