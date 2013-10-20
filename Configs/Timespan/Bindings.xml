@@ -76,6 +76,9 @@
 
   <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Kinect.Overlay.KinectControlStateFactory, KinectLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Kinect.Overlay.SkeletonFeatureFactory, KinectLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.DeviceInitialisedFactory, KinectLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.DeviceLostFactory, KinectLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.DeviceFoundFactory, KinectLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.SkeletonLostFactory, KinectLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.SkeletonFoundFactory, KinectLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.RaiseArmTriggerFactory, KinectLib"  scope="singleton" />
