@@ -14,6 +14,6 @@ cd C:\Users\openvritualworlds\Desktop\Opensim-Timespan\
 start "OpenSim" /MAX OpenSim.exe
 cd C:\Users\openvritualworlds\Documents\John\Chimera\Bin\
 
-timeout 180
+timeout 150
 
 Scripts\launch.bat
