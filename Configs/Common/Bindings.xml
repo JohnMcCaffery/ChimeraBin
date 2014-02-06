@@ -12,9 +12,9 @@
   <!-- <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Touchscreen.TouchscreenPlugin, TouchscreenLib" scope="singleton" /> -->
 
   <!-- Overlay bindings-->
+  <!--
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.OverlayPlugin, OverlayLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.Plugins.MousePlugin, OverlayLib" scope="singleton" />
-  <!--
   -->
 
   <!--                        OVERLAY BINDINGS                         -->
@@ -63,10 +63,12 @@
   <!--                        LIBRARY SPECIFIC BINDINGS                         -->
 
   <!-- GridProxy related bindings -->
-  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.OpenSim.OpenSimController, OpenSimLib" scope="singleton" />
   <bind service="Chimera.Interfaces.IOutputFactory, ChimeraLib" to="Chimera.OpenSim.OpenSimViewerFactory, OpenSimLib" scope="singleton" />
+  <!--
+  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.OpenSim.OpenSimController, OpenSimLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.OpenSim.HeightmapPlugin, OpenSimLib" scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.OpenSim.Overlay.InfoStateFactory, OpenSimLib" scope="singleton" />
+-->
 
   <!-- Windows Media Player related bindings -->
   <bind service="Chimera.Interfaces.IMediaPlayer, OverlayLib" to="Chimera.Multimedia.WMPMediaPlayer, WindowsMediaPlayerLib"  scope="singleton" />
