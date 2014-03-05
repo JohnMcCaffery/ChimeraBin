@@ -88,5 +88,6 @@
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickButtonTriggerFactory, JoystickLib" scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickActivatedTriggerFactory, JoystickLib" scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickInactivatedTriggerFactory, JoystickLib" scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Joystick.Overlay.JoystickControlStateFactory, JoystickLib" scope="singleton" />
 
 </module>
