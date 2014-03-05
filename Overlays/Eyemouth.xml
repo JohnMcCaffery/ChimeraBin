@@ -22,37 +22,6 @@
     <TransitionStyles>
 			<Transition Factory="Cut" Name="Cut" />
 		</TransitionStyles>
-
-		<States>
-          <State Factory="Blank" Name="Idle" EnableCursor="false" Idle="true" Start="true" >
-        <Features>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Outro.png</Feature>
-        </Features>
-        <IdleTriggers>
-          <Trigger Name="IdleTrigger" />
-		  <Trigger Name="ForceIdle" />
-        </IdleTriggers>
-        <IdleTransition Name="FadeIn" />
-      </State>
-	  
-	  <State Factory="Blank" Name="Intro" EnableCursor="false" >
-        <Features>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Intro.png</Feature>
-        </Features>
-        <IdleTransition Name="FadeIn" />
-      </State>
-	  
-	  <State Factory="Video" Name="Flythrough" BlackBG="true" File="Videos/Flythrough.mp4" FinishState="IntroB" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-
-      <State Factory="Video" Name="Instruction" BlackBG="true" File="Videos/Instruction.mp4" FinishState="ExploreBlank" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
 	  
 	  <State Factory="Blank" Name="Splash">
         <IdleTransition Name="Cut" />
@@ -62,6 +31,52 @@
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Eyemouth-Splash.png</Feature>
         </Features>
       </State>
+	  
+	  <States>
+          <State Factory="Blank" Name="Idle" EnableCursor="false" Idle="true" Start="true" >
+        <Features>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Outro.png</Feature>
+		  <Feature Factory="KeyPress" Keys="^+h" Frame="MainWindow"></Feature>
+        </Features>
+        <IdleTriggers>
+          <Trigger Name="IdleTrigger" />
+		  <Trigger Name="ForceIdle" />
+        </IdleTriggers>
+        <IdleTransition Name="FadeIn" />
+      </State>
+	  
+	  <State Factory="KinectControl" Name="Explore" Avatar="true">
+		<Features>
+          <Feature Factory="JoystickClick" LeftClick="true" Name="JoystickClick">
+			<Triggers>
+				<Trigger Factory="JoystickButton" Name="B" Button="B" />
+			</Triggers>
+		  </Feature>
+        </Features>
+		<IdleTriggers>
+          <Trigger Name="IdleTrigger" />
+		  <Trigger Name="ForceIdle" />
+        </IdleTriggers>
+	  </State>
+	  
+	  <State Factory="Blank" Name="Intro" EnableCursor="false" >
+        <Features>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Intro.png</Feature>
+        </Features>
+        <IdleTransition Name="FadeIn" />
+      </State>
+	  
+	  <State Factory="Video" Name="Instruction" BlackBG="true" File="Videos/Instruction.mp4" FinishState="Explore" Transition="Cut" Frame="MainWindow" >
+        <IdleTriggers>
+          <Trigger Name="VideoIdleTrigger" />
+        </IdleTriggers>
+      </State>
+	  
+	  <State Factory="Video" Name="Flythrough" BlackBG="true" File="Videos/Flythrough.mp4" FinishState="Instruction" Transition="Cut" Frame="MainWindow" >
+        <IdleTriggers>
+          <Trigger Name="VideoIdleTrigger" />
+        </IdleTriggers>
+      </State>
     </States>
 
     <Transitions>
@@ -70,9 +85,9 @@
 	  <Transition From="Intro"			To="Flythrough" Transition="FadeOut" Trigger="IntroTimer" />
       <Transition From="Intro"			To="Splash" Transition="Cut" Trigger="ExitWorld" />
       <Transition From="Flythrough" 	To="Splash" Transition="FadeIn" Trigger="ExitWorld" />
-	  <Transition From="Flythrough"			To="Instruction" Transition="FadeOut" Trigger="VideoTimer" />
+	  <!--<Transition From="Flythrough"			To="Instruction" Transition="FadeOut" Trigger="VideoTimer" />-->
       <Transition From="Instruction"	To="Splash" Transition="FadeIn" Trigger="ExitWorld" />
-	  <Transition From="Instruction"			To="Explore" Transition="FadeOut" Trigger="VideoTimer2" />
+	   <!--<Transition From="Instruction"			To="Explore" Transition="FadeOut" Trigger="VideoTimer2" />-->
 	  <Transition From="Explore"		To="Splash" Transition="FadeIn" Trigger="ExitWorld" />
     </Transitions>
   </Any>
@@ -94,19 +109,7 @@
     <Features>
     </Features>
     <States>
-      <State Factory="KinectControl" Name="Explore" Avatar="true">
-		<Features>
-          <Feature Factory="JoystickClick" LeftClick="true" Name="JoystickClick">
-			<Triggers>
-				<Trigger Factory="JoystickButton" Name="B" Button="B" />
-			</Triggers>
-		  </Feature>
-        </Features>
-		<IdleTriggers>
-          <Trigger Name="IdleTrigger" />
-		  <Trigger Name="ForceIdle" />
-        </IdleTriggers>
-	  </State>
+      
     </States>
     <Transitions>
 
