@@ -94,9 +94,9 @@ This process pre-dates the excavation of the summer of 2013.
 
       <State Factory="Blank" Name="IdleOutro" EnableCursor="false" Idle="true" >
         <Features>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Outro.png</Feature>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Outro.png</Feature>
         </Features>
         <IdleTriggers>
           <Trigger Name="IdleTrigger" />
@@ -110,26 +110,28 @@ This process pre-dates the excavation of the summer of 2013.
         </IdleTriggers>
       </State>
 
+	  <!--
       <State Factory="Flythrough" Name="LoadTextures" File="Flythroughs/Timespan/TexLoad.xml" Start="true" Loop="false" >
         <IdleTriggers>
           <Trigger Name="FlythroughEnd" />
         </IdleTriggers>
       </State>
+	  -->
 
       <State Factory="Blank" Name="Intro" EnableCursor="false" >
         <Features>
+          <!-- <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature> -->
+          <!-- <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature> -->
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Intro.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
         </Features>
       </State>
 
-      <State Factory="Blank" Name="Splash">
+      <State Factory="Blank" Name="Splash" Start="true">
         <Features>
           <Feature Name="SplashSkeleton" Frame="MainWindow" />
+          <!-- <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature> -->
+          <!-- <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature> -->
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Splash.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
         </Features>
       </State>
 
@@ -251,7 +253,7 @@ This process pre-dates the excavation of the summer of 2013.
         </IdleTriggers>
 
         <Features>
-          <Feature Name="RaiseArmPrompt" />
+          <!--<Feature Name="RaiseArmPrompt" />-->
         </Features>
 
         <Steps>
@@ -284,11 +286,11 @@ This process pre-dates the excavation of the summer of 2013.
           </Step>
 
           <Step Step="12" Voiceover="Audio/13.mp3" >
-            <Features>
+            <!--<Features>
               <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
               <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
               <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/GuidedTour/Map.jpg</Feature>
-            </Features>
+            </Features>-->
           </Step>>
 
 
@@ -651,18 +653,18 @@ This process pre-dates the excavation of the summer of 2013.
 
   <!-- Settings specific to the overlay being instantiated based on click interactions -->
 
-  <ClickBased>
+  <HoverBased>
     <States>
 
     </States>
     <Transitions>
 
     </Transitions>
-  </ClickBased>
+  </HoverBased>
 
   <!-- Settings specific to the overlay being instantiated based on hover interactions -->
 
-  <HoverBased>
+  <ClickBased>
 
     <Triggers>
       <!--<Trigger Factory="SkeletonLost" Timeout="2000" Name="IdleTrigger" />-->
@@ -681,19 +683,19 @@ This process pre-dates the excavation of the summer of 2013.
 
       <State Factory="KinectControl" Name="KinectAvatar" Avatar="true" Opacity=".8" >
         <Features>
-          <Feature Name="ExploreSkeleton" />
-          <Feature Name="HelpSidebarAvatarL" />
-          <Feature Name="RaiseArmPromptExplore" />
-          <Feature Name="YawAreaEast" />
-          <Feature Name="YawAreaWest" />
+          <!--<Feature Name="ExploreSkeleton" />-->
+          <!--<Feature Name="HelpSidebarAvatarL" />-->
+          <!--<Feature Name="RaiseArmPromptExplore" />-->
+          <!--<Feature Name="YawAreaEast" />-->
+          <!--<Feature Name="YawAreaWest" />-->
         </Features>
       </State>
 
       <State Factory="KinectControl" Name="KinectFlycam" Avatar="false" X="487.95" Y="130.58" Z="60" Pitch="0" Yaw="126.00" Opacity=".7" >
         <Features>
-          <Feature Name="RaiseArmPromptExplore" />
-          <Feature Name="ExploreSkeleton" Frame="MainWindow" />
-          <Feature Name="HelpSidebarFlycamL" />
+          <!--<Feature Name="RaiseArmPromptExplore" />-->
+          <!--<Feature Name="ExploreSkeleton" Frame="MainWindow" />-->
+          <!--<Feature Name="HelpSidebarFlycamL" />-->
         </Features>
       </State>
 
@@ -713,5 +715,5 @@ This process pre-dates the excavation of the summer of 2013.
       <ImageTransition From="HelpAvatar" 	To="KinectAvatar" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
       <ImageTransition From="HelpFlycam" 	To="KinectFlycam" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
     </Transitions>
-  </HoverBased>
+  </ClickBased>
 </Overlay>

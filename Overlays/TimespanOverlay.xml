@@ -28,6 +28,7 @@
       </Area>
       -->
 
+	  <!--
       <Area Factory="ActiveArea" Name="YawAreaEast" Frame="LeftWindow" >
         <Feature Factory="Image" X="1200" Y="50" Width="500" Frame="LeftWindpw" >Images/ActiveAreas/MidTownshipEast.JPG</Feature>
         <Trigger>
@@ -53,12 +54,13 @@
           </Points>
         </Trigger>
       </Area>
+	  -->
 
       <Feature Factory="Image" Name="HelpSidebarAvatar"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
       <Feature Factory="Image" Name="HelpSidebarFlycam"  X="50" Y="150" Frame="MainWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
 
-      <Feature Factory="Image" Name="HelpSidebarAvatarL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
-      <Feature Factory="Image" Name="HelpSidebarFlycamL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
+      <!--<Feature Factory="Image" Name="HelpSidebarAvatarL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarAvatar.png</Feature> -->
+      <!--<Feature Factory="Image" Name="HelpSidebarFlycamL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarFlycam.png</Feature> -->
 
     </Features>
     
@@ -83,8 +85,8 @@
       <State Factory="Blank" Name="IdleOutro" EnableCursor="false" Idle="true" >
         <Features>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Outro.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
+          <!--<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>-->
+          <!--<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>-->
         </Features>
         <IdleTriggers>
           <Trigger Name="IdleTrigger" />
@@ -101,8 +103,8 @@
       <State Factory="Blank" Name="Intro" EnableCursor="false" >
         <Features>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Intro.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
+          <!--<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>-->
+          <!--<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>-->
         </Features>
       </State>
 
@@ -110,8 +112,8 @@
         <Features>
           <Feature Name="SplashSkeleton" Frame="MainWindow" />
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Splash.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
+          <!--<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>-->
+          <!--<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>-->
         </Features>
       </State>
 
