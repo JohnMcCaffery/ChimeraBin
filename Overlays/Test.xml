@@ -51,6 +51,11 @@
 				<Trigger Factory="JoystickButton" Name="B" Button="B" />
 			</Triggers>
 		  </Feature>
+		  <Feature Factory="KeyClick" Keys="^w,^{TAB},^w" Frame="MainWindow">
+		    <Triggers>
+				<Trigger Factory="JoystickButton" Name="X" Button="X" />
+			</Triggers>
+		  </Feature>
         </Features>
 		<IdleTriggers>
           <Trigger Name="IdleTrigger" />

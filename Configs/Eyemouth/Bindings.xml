@@ -28,6 +28,7 @@
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Features.OpacityFadeFeatureFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Features.ClickFeatureFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.OpenSim.Overlay.KeyPressFeatureFactory, OpenSimLib" scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.OpenSim.Overlay.KeyClickFeatureFactory, OpenSimLib" scope="singleton" />
   
   <!-- Image Transitions -->
   <bind service="Chimera.Interfaces.Overlay.IFeatureTransitionFactory, OverlayLib" to="Chimera.Overlay.Transitions.FeatureFadeFactory, OverlayLib"  scope="singleton" />
