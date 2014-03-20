@@ -4,14 +4,16 @@
   <!--                        PLUGIN BINDINGS                         -->
   <!--<bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Plugins.ProjectorPlugin, ChimeraLib" scope="singleton" />-->
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Plugins.KBMousePlugin, ChimeraLib" scope="singleton" />
-  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.OpenSim.OpenSimController, OpenSimLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Flythrough.FlythroughPlugin, FlythroughLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.RemoteControl.RemoteControlPlugin, RemoteControlLib" scope="singleton" />
+  <!--
+  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Experimental.Plugins.MovementTracker, ExperimentalLib" scope="singleton" />
+  -->
   <!-- <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Touchscreen.TouchscreenPlugin, TouchscreenLib" scope="singleton" /> -->
 
   <!-- Overlay bindings-->
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.OverlayPlugin, OverlayLib" scope="singleton" />
-  <!--<bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.Plugins.MousePlugin, OverlayLib" scope="singleton" />-->
+  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.Plugins.MousePlugin, OverlayLib" scope="singleton" />
 
   <!--                        OVERLAY BINDINGS                         -->
 
@@ -59,6 +61,7 @@
   <!--                        LIBRARY SPECIFIC BINDINGS                         -->
 
   <!-- GridProxy related bindings -->
+  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.OpenSim.OpenSimController, OpenSimLib" scope="singleton" />
   <bind service="Chimera.Interfaces.IOutputFactory, ChimeraLib" to="Chimera.OpenSim.OpenSimViewerFactory, OpenSimLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.OpenSim.HeightmapPlugin, OpenSimLib" scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.OpenSim.Overlay.InfoStateFactory, OpenSimLib" scope="singleton" />
@@ -68,6 +71,7 @@
 
   <!-- Kinect related bindings -->
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.KinectMovementPlugin, KinectLib" scope="singleton" />
+  <!--<bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.EyeTrackerPlugin, KinectLib" scope="singleton" />-->
   <!--<bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.GUI.KinectCamera, KinectLib" scope="singleton" />-->
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.SimpleKinectCursor, KinectLib" scope="singleton" />
 
@@ -78,8 +82,8 @@
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.RaiseArmTriggerFactory, KinectLib"  scope="singleton" />
 
   <!-- Joystick related bindings -->
-  <!--
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Joystick.XBoxControllerPlugin, JoystickLib" scope="singleton" />
+  <!--
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickButtonTriggerFactory, JoystickLib" scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickActivatedTriggerFactory, JoystickLib" scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickInactivatedTriggerFactory, JoystickLib" scope="singleton" />

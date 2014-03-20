@@ -1,12 +1,21 @@
+cd ..\..\..\..\AppData\Roaming
+rm -rf Firestorm
+rem cd ..\Local
+rem rm -rf Firestorm
+cd ..\..\Documents\John\Chimera\Bin
+
 Timespan.exe
 
-echo %errorlevel%
+echo Chimera exited with code %errorlevel%
 
 IF ERRORLEVEL 42 GOTO restart 
 
-rem cscript shutdown1.vbs
-rem timeout 1
-rem cscript shutdown2.vbs
+echo Shutting down
+
+cscript Scripts\shutdown1.vbs
+timeout 1
+cscript Scripts\shutdown2.vbs
+timeout 20
 
 git pull
 git add Logs/*
@@ -18,6 +27,8 @@ shutdown.exe /s /t 00
 GOTO :EOF
 
 :restart
+
+echo Restarting
 
 Scripts\launch.bat
 
