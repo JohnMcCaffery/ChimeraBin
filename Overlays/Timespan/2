@@ -1,0 +1,71 @@
+<Overlay Width="1920" Height="1080" >
+	<Any>
+
+		<Features>
+
+			<Area Factory="ActiveArea" Name="Drains" Frame="LeftWindow" >
+				<Feature Factory="Image" X="300" Y="50" Width="1200" Frame="RightWindow" >Images/ActiveAreas/Drains.png</Feature>
+				<Trigger>
+					<!--<Yaw Min="5" Max="82" />-->
+					<Points>
+						<P X="376.08" Y="280.15" />
+						<P X="377.57" Y="285.06" />
+						<P X="368.35" Y="287.94" />
+						<P X="367.04" Y="282.62" />
+					</Points>
+				</Trigger>
+			</Area>
+
+		</Features>
+
+		<Triggers />
+
+		<SelectionRenderers />
+
+		<TransitionStyles />
+
+		<States />
+
+		<Transitions />
+	</Any>
+
+	<!-- Settings specific to the overlay being instantiated based on hover interactions -->
+
+	<HoverBased>
+
+		<Triggers />
+
+		<Features>
+			<Feature Factory="Skeleton" Name="CornerSkeleton" X="340" Y="800" W="0" Scale="200" Frame="MainWindow" />
+		</Features>
+		<States>
+
+			<State Factory="KinectControl" Name="ActiveAreaTest" Avatar="true" Start="true" Opacity=".9" >
+				<Features>
+					<Feature Name="Drains" />
+				</Features>
+			</State>
+
+			<State Factory="KinectControl" Name="StickManFilm" Avatar="true" Opacity="1" >
+				<Features>
+					<Feature Name="ExploreIntroSkeleton" />
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Blank.png</Feature>
+				</Features>
+			</State>
+
+			<State Factory="Video" Name="ExploreIntro" File="Videos/Help.mp4" FinishState="ActiveAreaTest" Transition="Cut" Frame="RightWindow" >
+				<IdleTriggers>
+					<Trigger Name="VideoIdleTrigger" />
+				</IdleTriggers>
+				<Features>
+					<Feature Name="CornerSkeleton" />
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Explore-Intro.png</Feature>
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/Explore-Intro-L.png</Feature>
+				</Features>
+			</State>
+
+
+		</States>
+		<Transitions />
+	</HoverBased>
+</Overlay>

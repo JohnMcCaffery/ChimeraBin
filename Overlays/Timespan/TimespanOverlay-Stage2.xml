@@ -1,717 +1,373 @@
 <Overlay Width="1920" Height="1080" >
-  <Any>
+	<Any>
+		<Features>
 
-    <Features>
+			<Feature Factory="StaticText" Name="RaiseArmPrompt" X="30" Y="30" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow">
+				Whilst standing raise your arm above your head to walk 
+				through the township (great for kids) or view local stories
+			</Feature>
 
-      <Feature Factory="StaticText" Name="RaiseArmPrompt" X="30" Y="30" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow">
-        Whilst standing raise your arm above your head to walk 
-        through the township (great for kids) or view local stories
-    </Feature>
+			<Feature Factory="StaticText" Name="RaiseArmPromptExplore" X="15" Y="10" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow">Stand and raise your arm above your head to get back to the main menu </Feature>
 
-    <Feature Factory="StaticText" Name="RaiseArmPromptExplore" X="15" Y="10" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow">Stand and raise your arm above your head to get back to the main menu </Feature>
+			<Feature Factory="StaticText" Name="SurveyText" X="5" Y="5" Font="Verdana" Colour="White" Size="28" Frame="LeftWindow">These images were taken at the Caen site in November 2012 when this project was begun.
+				They document the initial surveying of the site to map the outlines of the original longhouses.
+				The geography of the model is taken from this survey.
+				The red flags were used to mark the corners of the buildings.
+				This process pre-dates the excavation of the summer of 2013.
+			</Feature>
 
-    <Feature Factory="StaticText" Name="SurveyText" X="5" Y="5" Font="Verdana" Colour="White" Size="28" Frame="LeftWindow">These images were taken at the Caen site in November 2012 when this project was begun.
-They document the initial surveying of the site to map the outlines of the original longhouses.
-The geography of the model is taken from this survey.
-The red flags were used to mark the corners of the buildings.
-This process pre-dates the excavation of the summer of 2013.
-    </Feature>
+			<!-- 			Drains 			-->
+			<Area Factory="ActiveArea" Name="Drains" Frame="LeftWindow" >
+				<Feature Factory="Image" X="300" Y="50" Width="1200" Frame="RightWindow" >Images/ActiveAreas/Drains.png</Feature>
+				<Trigger>
+					<!--<Yaw Min="5" Max="82" />-->
+					<Points>
+						<P X="376.08" Y="280.15" />
+						<P X="377.57" Y="285.06" />
+						<P X="368.35" Y="287.94" />
+						<P X="367.04" Y="282.62" />
+					</Points>
+				</Trigger>
+			</Area>
 
-    <!--
-	      <Area Factory="ActiveArea" Name="LonghouseArea" Frame="RightWindow" >
-		<Feature Factory="Image" X="1200" Y="50" >Images/ActiveAreas/Longhouse.png </Feature>
-		<Trigger>
-		  <Points>
-		    <P X="445.83" Y="282.11" />
-		    <P X="446.94" Y="285.69" />
-		    <P X="418.84" Y="293.44" />
-		    <P X="412.86" Y="291.65" />
-		  </Points>
-		</Trigger>
-	      </Area>
+			<Feature Factory="Image" Name="HelpSidebarAvatarL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
+			<Feature Factory="Image" Name="HelpSidebarFlycamL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
+
+		</Features>
+
+		<Triggers>
+			<Trigger Factory="FlythroughEnd" Name="FlythroughEnd" />
+			<Trigger Factory="Timer" Name="IntroTimer" LengthMS="5000" />
+		</Triggers>
+<SelectionRenderers>
+			<Renderer Factory="Cursor" Name="DialCursor" InnerRenderer="Dial" Radius="40" Colour="Red" Frame="MainWindow" />
+		</SelectionRenderers>
+
+		<TransitionStyles>
+			<Transition Factory="CutTransition" Name="Cut" />
+			<Transition Factory="OpacityTransition" Name="FadeOut" Length="2000" FadeOut="true" />
+			<Transition Factory="OpacityTransition" Name="FadeIn" Length="2000" FadeOut="false" />
+		</TransitionStyles>
+
+		<States>
+
+			<!-- 			Load Textures 			-->
+			<State Factory="Flythrough" Name="LoadTextures" File="Flythroughs/Timespan/TexLoad.xml" Loop="false" >
+				<IdleTriggers>
+					<Trigger Name="FlythroughEnd" />
+				</IdleTriggers>
+			</State>
+
+			<!-- 			Idle Intro 			-->
+			<State Factory="Blank" Name="IdleIntro" EnableCursor="false" Idle="true" >
+				<Features>
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Outro.png</Feature>
+				</Features>
+				<IdleTriggers>
+					<Trigger Name="IdleTrigger" />
+				</IdleTriggers>
+				<IdleTransition Name="FadeIn" />
+			</State>
+
+			<!-- 			Idle Flythrough 			-->
+			<State Factory="Flythrough" Name="Idle" File="Flythroughs/Timespan/Idle.xml" >
+				<IdleTriggers>
+					<Trigger Name="FlythroughEnd" />
+				</IdleTriggers>
+			</State>
+
+			<!-- 			Guided Tour Intro 			-->
+			<State Factory="Blank" Name="Intro" EnableCursor="false" >
+				<Features>
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Intro.png</Feature>
+				</Features>
+			</State>
+
+			<!-- 			Guided Tour Flythrough  			-->
+			<State Factory="Flythrough" Name="GuidedTour" Start="true" File="Flythroughs/Timespan/Guided.xml" AutoStep="true" Loop="false" DisplaySubtitles="true" SubtitleTimeout="11">
+
+				<SubtitleText Frame="MainWindow" Font="Verdana" Size="30" Colour="Yellow" Style="Regular" X="960" Y="978" Alignment="TopCenter" />
+
+				<IdleTriggers>
+					<Trigger Factory="Simple" />
+				</IdleTriggers>
+
+				<Features>
+					<Feature Name="RaiseArmPrompt" />
+				</Features>
+
+				<Steps>
+
+					<Step Step="0" Voiceover="Audio/1.mp3" />
+					<Step Step="1" Voiceover="Audio/2.mp3" />
+					<Step Step="2" Voiceover="Audio/3.mp3" />
+					<Step Step="3" Voiceover="Audio/4.mp3" />
+					<Step Step="4" Voiceover="Audio/5.mp3" />
+					<Step Step="5" Voiceover="Audio/6.mp3" />
+					<Step Step="6" Voiceover="Audio/7.mp3" />
+					<Step Step="7" Voiceover="Audio/8.mp3" />
+					<Step Step="8" Voiceover="Audio/9.mp3" />
+					<Step Step="9" Voiceover="Audio/10.mp3" >
+						<Features>
+							<Feature Factory="Image" X="200" Y="100" W="1000" Frame="LeftWindow" >Images/GuidedTour/RigAndFurrow.jpg</Feature>
+						</Features>
+					</Step>
+					<Step Step="10" Voiceover="Audio/11.mp3" />
+
+					<Step Step="11" Voiceover="Audio/12.mp3" >
+						<Features>
+							<Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="LeftWindow" />
+							<Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="RightWindow" />
+							<Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="MainWindow" />
+							<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+							<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+							<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/GuidedTour/Map.jpg</Feature>
+						</Features>
+					</Step>
+
+					<Step Step="12" Voiceover="Audio/13.mp3" >
+						<Features>
+							<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+							<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+							<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/GuidedTour/Map.jpg</Feature>
+						</Features>
+					</Step>>
+
+				</Steps>
+			</State>
+		
+			<!-- 			Splash 			-->
+			<State Factory="Blank" Name="Splash">
+				<Features>
+					<Feature Name="SplashSkeleton" Frame="MainWindow" />
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Splash.png</Feature>
+				</Features>
+			</State>
+
+			<!-- 			Slideshow 			-->
+			<State Factory="Slideshow" Name="Slideshow" StepLengthS="5" >
+				<NextTriggers>
+					<ImageTrigger X="1532" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/NextTrans.png</ImageTrigger>
+				</NextTriggers>
+				<PrevTriggers>
+					<ImageTrigger X="96" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/PrevTrans.png</ImageTrigger>
+				</PrevTriggers>
+				<Steps>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/1.JPG</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/2.JPG</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/3.JPG</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/4.JPG</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/5.JPG</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/6.JPG</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/7.JPG</Feature>
+					</Step>
+				</Steps>
+			</State>
+
+			<!-- 			Story 1 (Dogs) - Confirm 			-->
+			<State Factory="Blank" Name="Story1Confirm" BlackBG="true">
+				<Features>
+					<Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmDogs.png</Feature>
+				</Features>
+			</State>
+			<!-- 			Story 2 (Gartymore) - Confirm 			-->
+			<State Factory="Blank" Name="Story2Confirm" BlackBG="true">
+				<Features>
+					<Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmGartymore.png</Feature>
+				</Features>
+			</State>
+			<!-- 			Story 3 (Frakkok) - Confirm 			-->
+			<State Factory="Blank" Name="Story3Confirm" BlackBG="true">
+				<Features>
+					<Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFrakkok.png</Feature>
+				</Features>
+			</State>
+			<!-- 			Story 4 (Fisherman) - Confirm 			-->
+			<State Factory="Blank" Name="Story4Confirm" BlackBG="true">
+				<Features>
+					<Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFisherman.png</Feature>
+				</Features>
+			</State>
+			<!-- 			Story 5 (Wolf) - Confirm 			-->
+			<State Factory="Blank" Name="Story5Confirm" BlackBG="true">
+				<Features>
+					<Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmWolf.png</Feature>
+				</Features>
+			</State>
+
+			<!-- 			Story 1 (Dogs)  			-->
+			<State Factory="Video" Name="Story1" BlackBG="true" File="Videos/Dogs.m4v" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
+				<IdleTriggers>
+					<Trigger Name="VideoIdleTrigger" />
+				</IdleTriggers>
+			</State>
+			<!-- 			Story 2 (Gartymore)  			-->
+			<State Factory="Video" Name="Story2" BlackBG="true" File="Videos/garty.avi" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
+				<IdleTriggers>
+					<Trigger Name="VideoIdleTrigger" />
+				</IdleTriggers>50
+			</State>
+			<!-- 			Story 3 (Frakkok)  			-->
+			<State Factory="Video" Name="Story3" BlackBG="true" File="Videos/Orkney.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
+				<IdleTriggers>
+					<Trigger Name="VideoIdleTrigger" />
+				</IdleTriggers>
+			</State>
+			<!-- 			Story 4 (Fisherman)  			-->
+			<State Factory="Video" Name="Story4" BlackBG="true" File="Videos/Fisherman.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
+				<IdleTriggers>
+					<Trigger Name="VideoIdleTrigger" />
+				</IdleTriggers>
+			</State>
+			<!-- 			Story 5 (Wolf)  			-->
+			<State Factory="Video" Name="Story5" BlackBG="true" File="Videos/Wolf.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
+				<IdleTriggers>
+					<Trigger Name="VideoIdleTrigger" />
+				</IdleTriggers>
+			</State>
 	
-	      <Area Factory="ActiveArea" Name="PeatArea" Frame="LeftWindow" >
-		<Feature Factory="Image" X="1200" Y="50" Width="500" >Images/ActiveAreas/PeatCutting.png</Feature>
-		<Trigger>
-		  <Points>
-		    <P X="324.78" Y="348.74" />
-		    <P X="311.11" Y="249.81" />
-		    <P X="310.52" Y="230.37" />
-		    <P X="324.27" Y="230.50" />
-		  </Points>
-		</Trigger>
-	      </Area>
-	      -->
-
-      <Area Factory="ActiveArea" Name="YawAreaEast" Frame="LeftWindow" >
-        <Feature Factory="Image" X="1200" Y="50" Width="500" Frame="LeftWindpw" >Images/ActiveAreas/MidTownshipEast.JPG</Feature>
-        <Trigger>
-          <Yaw Min="5" Max="82" />
-          <Points>
-            <P X="390" Y="213" />
-            <P X="390" Y="231" />
-            <P X="402" Y="233" />
-            <P X="405" Y="218" />
-          </Points>
-        </Trigger>
-      </Area>
-
-      <Area Factory="ActiveArea" Name="YawAreaWest" Frame="RightWindow" >
-        <Feature Factory="Image" X="1200" Y="50" Width="500" Frame="RightWindow" >Images/ActiveAreas/MidTownshipWest.JPG</Feature>
-        <Trigger>
-          <Yaw Min="100" Max="180" />
-          <Points>
-            <P X="390" Y="213" />
-            <P X="390" Y="231" />
-            <P X="402" Y="233" />
-            <P X="405" Y="218" />
-          </Points>
-        </Trigger>
-      </Area>
-
-      <Feature Factory="Image" Name="HelpSidebarAvatarL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
-      <Feature Factory="Image" Name="HelpSidebarFlycamL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarFlycam.png</Feature>
-
-    </Features>
-
-    <Triggers>
-      <Trigger Factory="FlythroughEnd" Name="FlythroughEnd" />
-      <Trigger Factory="Timer" Name="IntroTimer" LengthMS="5000" />
-    </Triggers>
-
-    <SelectionRenderers>
-      <Renderer Factory="Cursor" Name="DialCursor" InnerRenderer="Dial" Radius="40" Colour="Red" Frame="MainWindow" />
-    </SelectionRenderers>
-
-    <TransitionStyles>
-      <!--<Transition Factory="BitmapTransition" Name="BitmapFade" Length="2000" Style="Fade" />-->
-      <Transition Factory="CutTransition" Name="Cut" />
-      <Transition Factory="OpacityTransition" Name="FadeOut" Length="2000" FadeOut="true" />
-      <Transition Factory="OpacityTransition" Name="FadeIn" Length="2000" FadeOut="false" />
-    </TransitionStyles>
-
-    <States>
-
-      <State Factory="Flythrough" Name="LoadTextures" File="Flythroughs/Timespan/TexLoad.xml" Loop="false" >
-        <IdleTriggers>
-          <Trigger Name="FlythroughEnd" />
-        </IdleTriggers>
-      </State>
-
-      <State Factory="Blank" Name="IdleOutro" EnableCursor="false" Start="true" Idle="true" >
-        <Features>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Outro.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
-        </Features>
-        <IdleTriggers>
-          <Trigger Name="IdleTrigger" />
-        </IdleTriggers>
-        <IdleTransition Name="FadeIn" />
-      </State>
-
-      <State Factory="Flythrough" Name="Idle" File="Flythroughs/Timespan/Idle.xml" >
-        <IdleTriggers>
-          <Trigger Name="FlythroughEnd" />
-        </IdleTriggers>
-      </State>
-
-      <State Factory="Blank" Name="Intro" EnableCursor="false" >
-        <Features>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Intro.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
-        </Features>
-      </State>
-
-      <State Factory="Blank" Name="Splash">
-        <Features>
-          <Feature Name="SplashSkeleton" Frame="MainWindow" />
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Splash.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
-        </Features>
-      </State>
-
-      <State Factory="Slideshow" Name="Slideshow" StepLengthS="5" >
-        <NextTriggers>
-          <ImageTrigger X="1532" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/NextTrans.png</ImageTrigger>
-        </NextTriggers>
-        <PrevTriggers>
-          <ImageTrigger X="96" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/PrevTrans.png</ImageTrigger>
-        </PrevTriggers>
-        <Steps>
-          <Step>
-            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-            <Feature Name="SurveyText" />
-            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/1.JPG</Feature>
-          </Step>
-          <Step>
-            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-            <Feature Name="SurveyText" />
-            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/2.JPG</Feature>
-          </Step>
-          <Step>
-            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-            <Feature Name="SurveyText" />
-            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/3.JPG</Feature>
-          </Step>
-          <Step>
-            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-            <Feature Name="SurveyText" />
-            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/4.JPG</Feature>
-          </Step>
-          <Step>
-            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-            <Feature Name="SurveyText" />
-            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/5.JPG</Feature>
-          </Step>
-          <Step>
-            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-            <Feature Name="SurveyText" />
-            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/6.JPG</Feature>
-          </Step>
-          <Step>
-            <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-            <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-            <Feature Name="SurveyText" />
-            <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/7.JPG</Feature>
-          </Step>
-        </Steps>
-      </State>
-
-      <State Factory="Blank" Name="Story1Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmDogs.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="Story2Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmGartymore.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="Story3Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFrakkok.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="Story4Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFisherman.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="Story5Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmWolf.png</Feature>
-        </Features>
-      </State>
-
-      <State Factory="Video" Name="Story1" BlackBG="true" File="Videos/Dogs.m4v" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-
-      <State Factory="Video" Name="Story2" BlackBG="true" File="Videos/garty.avi" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-
-      <State Factory="Video" Name="Story3" BlackBG="true" File="Videos/Orkney.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-
-      <State Factory="Video" Name="Story4" BlackBG="true" File="Videos/Fisherman.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-
-      <State Factory="Video" Name="Story5" BlackBG="true" File="Videos/Wolf.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-
-      <State Factory="Flythrough" Name="GuidedTour" File="Flythroughs/Timespan/Guided.xml" AutoStep="true" Loop="false" DisplaySubtitles="true" SubtitleTimeout="11">
-
-        <SubtitleText Frame="MainWindow" Font="Verdana" Size="30" Colour="Yellow" Style="Regular" X="960" Y="978" Alignment="TopCenter" />
-
-        <IdleTriggers>
-          <Trigger Factory="Simple" />
-        </IdleTriggers>
-
-        <Features>
-          <Feature Name="RaiseArmPrompt" />
-        </Features>
-
-        <Steps>
-
-          <Step Step="0" Voiceover="Audio/1.mp3" />
-          <Step Step="1" Voiceover="Audio/2.mp3" />
-          <Step Step="2" Voiceover="Audio/3.mp3" />
-          <Step Step="3" Voiceover="Audio/4.mp3" />
-          <Step Step="4" Voiceover="Audio/5.mp3" />
-          <Step Step="5" Voiceover="Audio/6.mp3" />
-          <Step Step="6" Voiceover="Audio/7.mp3" />
-          <Step Step="7" Voiceover="Audio/8.mp3" />
-          <Step Step="8" Voiceover="Audio/9.mp3" />
-          <Step Step="9" Voiceover="Audio/10.mp3" >
-            <Features>
-              <Feature Factory="Image" X="200" Y="100" W="1000" Frame="LeftWindow" >Images/GuidedTour/RigAndFurrow.jpg</Feature>
-            </Features>
-          </Step>
-          <Step Step="10" Voiceover="Audio/11.mp3" />
-
-          <Step Step="11" Voiceover="Audio/12.mp3" >
-            <Features>
-              <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="LeftWindow" />
-              <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="RightWindow" />
-              <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="MainWindow" />
-              <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-              <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-              <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/GuidedTour/Map.jpg</Feature>
-            </Features>
-          </Step>
-
-          <Step Step="12" Voiceover="Audio/13.mp3" >
-            <Features>
-              <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-              <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-              <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/GuidedTour/Map.jpg</Feature>
-            </Features>
-          </Step>>
-
-
-          <!--
-
-          <Step Step="0" Voiceover="Audio/1.mp3">
-            <Subtitles>
-              <Subtitle>
-                The settlement of Caen is located a few miles north of the fishing village of Helmsdale
-                along the Strath of Kildonan road.
-              </Subtitle>
-              <Subtitle Time="9">
-                It is located in a narrow valley along the banks of a tumbling burn that terminates in the 
-                Helmsdale River.
-              </Subtitle>
-              <Subtitle Time="15">
-                The presence of stone burial cairns in the vicinity indicates that people had been farming 
-                some 6000 years.
-              </Subtitle>
-              <Subtitle Time="23">
-                The last farmers were ejected from their homes at the time of Highland Clearances, some 
-                200 years ago, when the land was used to graze huge flocks of more profitable sheep.
-              </Subtitle>
-            </Subtitles>
-          </Step>
-
-          <Step Step="1" Voiceover="Audio/2.mp3" >
-            <Subtitles>
-              <Subtitle>
-                The place name Caen can be translated as ‘enclosed cultivated area’ and appears 
-                on a charter as far back as 1360.
-              </Subtitle>
-              <Subtitle Time="10">
-                At that time the Earls of Sutherland owned the land. 
-                The 1691 Hearth Tax records indicate that nine families were living here.
-              </Subtitle>
-              <Subtitle Time="20">
-                Caen was one of over a hundred small farming settlements in Kildonan and it is 
-                estimated that nearly 2,000 people populated the Strath around 1800.
-              </Subtitle>
-            </Subtitles>
-          </Step>
-
-          <Step Step="2" Voiceover="Audio/3.mp3" >
-            <Subtitles>
-              <Subtitle>
-                In 1813, the settlement of Caen is described by Donald Sage, the minister’s son, as...
-              </Subtitle>
-              <Subtitle Time="7">
-                “The last farm or township on the banks of the Helmisdale is Cäen, a snug sheltered spot,
-                surrounded with hills to the N.W. and E., and having a southerly exposure.
-              </Subtitle>
-              <Subtitle Time="19">
-                During the earlier years of my father’s ministry, this place contained nearly a hundred 
-                inhabitants.”
-              </Subtitle>
-              <Subtitle Time="26">
-                The group of buildings are situated at the edge of a large area of arable ‘rig and furrow’
-                land lower down on the valley floor.
-              </Subtitle>
-              <Subtitle Time="34.5">
-                The runrig system of farming prevailed where the rigs were shared out amongst the 
-                tenants and everyone used the hill grazing.
-              </Subtitle>
-              <Subtitle Time="42">
-                Further up the valley peat was cut annually as a source of fuel for heat and cooking.
-              </Subtitle>
-            </Subtitles>
-          </Step>
-
-          <Step Step="3" Voiceover="Audio/4.mp3" >
-            <Subtitles>
-              <Subtitle>
-                A longhouse is a long and narrow dwelling commonly found in small clusters in the inland 
-                Straths of Sutherland.
-              </Subtitle>
-              <Subtitle Time="8">
-                It is thought that the use of a rectangular building plan was influenced by the Vikings, who 
-                settled in Sutherland in the 9th century AD.
-              </Subtitle>
-              <Subtitle Time="18">
-                It is characterised by having the main living quarters at one end and a byre for cattle at 
-                the other end, although there are variations on this plan.
-              </Subtitle>
-
-              <Subtitle Time="27">
-                The narrowness of these buildings was determined by the limited availability of wood and 
-                the need to support a heavy thatched roof.
-              </Subtitle>
-              <Subtitle Time="35">
-                As long as the houses were narrow, there was no restriction on length; 
-                in fact some in Kildonan exceed 30m.
-              </Subtitle>
-              <Subtitle Time="42">
-                Most of the longhouses in Kildonan were inhabited up until the clearances.
-              </Subtitle>
-            </Subtitles>
-          </Step>
-
-          <Step Step="4" Voiceover="Audio/5.mp3" >
-            <Subtitles>
-              <Subtitle>
-                Longhouses commonly have two living areas separated by an internal wall of stone and
-                wattle fence of intertwined twigs.
-              </Subtitle>
-              <Subtitle Time="8">
-                The living room or ‘cearn’ as it was known in Gaelic, would have had a central fireplace
-                where all the cooking was been done in a cooking pot suspended over an open fire.
-              </Subtitle>
-              <Subtitle Time="18">
-                The simple furniture may have included a wooden dresser to store bowls and utensils,
-              </Subtitle>
-              <Subtitle Time="24">
-                wooden boxes or kists to store blankets and clothes and low wooden chairs, allowing the 
-                sitter to escape the peaty smoke. 
-              </Subtitle>
-              <Subtitle Time="33">
-                People slept in box beds made of wood with doors that could be closed to keep the drafts 
-                out. The family bible had pride of place in a recess in the wall.
-              </Subtitle>
-              <Subtitle Time="43">
-                The longhouse was central to the community way of life at the township and many evenings
-                would have been spent around the fire telling stories rich in oral tradition.
-              </Subtitle>
-            </Subtitles>
-          </Step>
-
-          <Step Step="5" Voiceover="Audio/6.mp3" >
-            <Subtitles>
-              <Subtitle>
-                Cattle in the highlands were routinely kept indoors during the winter months.
-              </Subtitle>
-              <Subtitle Time="5">
-                The byre (cattle shed) at Caen was incorporated into the house design and accessed by 
-                an internal door.
-              </Subtitle>
-              <Subtitle Time="12">
-                The byre was usually designed on a slight slope or a lower level, to facilitate draining 
-                away from the dwelling house.
-              </Subtitle>
-              <Subtitle Time="20">
-                There would have been a stone lined drain running the length of the byre to an aperture in
-                the wall to allow the waste to exit.
-              </Subtitle>
-              <Subtitle Time="27">
-                The byre sheltered the cows in winter and the heat from the tethered animals helped to 
-                keep the house warm.
-              </Subtitle>
-            </Subtitles>
-          </Step>
-
-          <Step Step="6" Voiceover="Audio/7.mp3" >
-            <Subtitles>
-              <Subtitle>
-                Some longhouses had gardens where vegetables were grown, including kale, which is a 
-                curly type of cabbage. 
-              </Subtitle>
-              <Subtitles Time="7">
-                These gardens were usually curved or irregular in shape and surrounded by a stone wall. 
-              </Subtitles>
-              <Subtitle Time="13">
-                The land was heavily fertilised and over many years the earth inside these gardens 
-                became higher than the surrounding land.
-              </Subtitle>
-            </Subtitles>
-          </Step>
-
-          <Step Step="7" Voiceover="Audio/8.mp3" >
-            <Subtitles>
-              <Subtitle>
-                The township had other buildings, including barns where peat and hay were stored along
-                with farming tools and implements. 
-              </Subtitle>
-              <Subtitles Time="7">
-                These were usually more rectangular in shape and without a hearth.
-              </Subtitles>
-            </Subtitles>
-          </Step>
-
-          <Step Step="8" Voiceover="Audio/9.mp3" >
-            <Subtitles>
-              <Subtitle>
-                Caen had two corn-drying kilns which were used to dry cereal crops, like oats, to
-                prevent rotting or premature germination.
-              </Subtitle>
-              <Subtitle Time="9">
-                This was essential so the grain could be ground and made into flour.
-              </Subtitle>
-              <Subtitle Time="13">
-                Many kilns were built into the slope of hills, with a stone-lined bowl at one end
-                and a place for a fire at the other end.
-              </Subtitle>
-              <Subtitle Time="20">
-                The grain would have been laid on top of wooden planks and straw.
-              </Subtitle>
-              <Subtitle Time="24">
-                The smoke from a fire at the other end of the kiln travelled up a flue and entered the
-                bottom of the bowl and up to the grain, eventually drying it.
-              </Subtitle>
-              <Subtitle Time="33">
-                It is recorded that kilns were used to conceal illicit whiskey production,
-                or courting couples and even one was used as a schoolroom.
-              </Subtitle>
-              <Subtitle Time="42">
-                This made sense as they would have been warm and cosy places!
-              </Subtitle>
-            </Subtitles>
-          </Step>
-
-          <Step Step="9" Voiceover="Audio/10.mp3" >
-            <Features>
-              <Feature Factory="Image" X="200" Y="100" W="1000" Frame="LeftWindow" >Images/GuidedTour/RigAndFurrow.jpg</Feature>
-            </Features>
-
-            <Subtitles>
-              <Subtitle>
-                Rig and furrow cultivation appears as a pattern of low corrugations on the ground.
-              </Subtitle>
-              <Subtitle Time="6">
-                It involved ploughing the land into a series of raised ridges (or rig) on which crops
-                were grown, with furrows between to serve as channels for draining surface water.
-              </Subtitle>
-              <Subtitle Time="16">
-                This type of cultivation was predominantly carried out prior to the clearances, 
-                i.e. pre-1820s.
-              </Subtitle>
-              <Subtitle Time="23">
-                The implement that created this pattern of cultivation was the ‘Old Scotch Plough’
-                which was drawn by teams of oxen or horses or a mixture of both.
-              </Subtitle>
-
-              <Subtitle Time="32">
-                A clearance cairn is an unstructured collection of stones that have been
-                painstakingly removed from an area of land for agricultural purposes.
-              </Subtitle>
-              -->
-          <!--
-              <Subtitle Time="35">
-                This practice has been carried since the Bronze Age and a collection of closely 
-                spaced cairns may form a cairn field, some of which may be associated with burials.
-              </Subtitle>
-              <Subtitle Time="45">
-                The aerial photograph included in the gallery for waymarker location 4 – Ulbster,
-                clearly shows the area of old rig and furrow cultivation and clearances heaps.
-              </Subtitle>
-              -->
-          <!--
-            </Subtitles>
-          </Step>
-
-          <Step Step="10" Voiceover="Audio/11.mp3" >
-            <Subtitles>
-              <Subtitle>
-                Peat was commonly used as a source of fuel for warmth and cooking and every summer
-                the township folk would make the journey up to the peat banks where they cut 
-              </Subtitle>
-              <Subtitle Time="9">
-                enough peats to last them though the winter months.
-              </Subtitle>
-              <Subtitle Time="13">
-                The peat was stacked and left to dry before being taken by cart back to the township
-                were it was stacked conveniently next to the house.
-              </Subtitle>
-            </Subtitles>
-          </Step>
-
-          <Step Step="11" Voiceover="Audio/12.mp3" >
-            <Features>
-              <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="LeftWindow" />
-              <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="RightWindow" />
-              <Feature Factory="OpacityFade" FadeIn="true" Length="5000" Frame="MainWindow" />
-              <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-              <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-              <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/GuidedTour/Map.jpg</Feature>
-            </Features>
-
-            <SubtitlesFont Frame="MainWindow" Font="Verdana" Size="30" Colour="Black" Style="Regular" X="960" Y="978" Alignment="TopCenter" />
-
-            <Subtitles>
-              <Subtitle>
-                The story of the demise of Caen as a farming settlement is closely linked to the events
-                that took place at the time of the Clearances 200 years ago
-              </Subtitle>
-              <Subtitle Time="9">
-                when the wider Strath was cleared to make way for more profitable sheep farming.
-              </Subtitle>
-              <Subtitle Time="13">
-                The last inhabitants Caen left around 1825 and the old rig and furrow cultivation near
-                the river on the valley floor was overlaid with large walled sheep enclosures.
-              </Subtitle>
-              <Subtitle Time="25">
-                Some of the people cleared emigrated to the Red River Settlement in Canada in 1815.
-                Today the only inhabited dwelling is the shepherd’s house.
-              </Subtitle>
-              <Subtitle Time="35">
-                The building remains survive as low stone footings covered in grass and you can see
-                the remains of old rig and furrow cultivation on the land around the township.
-              </Subtitle>
-            </Subtitles>
-          </Step>
-
-          <Step Step="12" Voiceover="Audio/13.mp3" >
-            <Features>
-              <Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
-              <Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
-              <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/GuidedTour/Map.jpg</Feature>
-            </Features>
-
-            <Subtitles>
-              <Subtitle>
-                If you’ve enjoyed this tour you can go back to the main menu
-                and enter the township with an avatar.
-              </Subtitle>
-            </Subtitles>
-          </Step>
-          -->
-        </Steps>
-      </State>
-    </States>
-
-    <Transitions>
-      <InvisibleTransition From="Splash" To="GuidedTour"    Transition="FadeOut"    L="1080" T="415" R="1755" B="500" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Splash" To="Slideshow"     Transition="Cut" L="1080" T="645" R="1755" B="735" Frame="MainWindow" Renderer="DialCursor"/>
-
-      <ImageTransition From="HelpAvatar" 	To="Splash" Transition="FadeIn" X="1200" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
-      <ImageTransition From="HelpFlycam" 	To="Splash" Transition="FadeIn" X="1200" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
-
-      <Transition From="Idle" 		      To="Intro" Transition="FadeIn" Trigger="SkeletonFound" />
-
-      <Transition From="IdleOutro"		  To="Idle" Transition="FadeOut" Trigger="IntroTimer" />
-
-      <Transition From="Intro" 		      To="GuidedTour" Transition="FadeOut" Trigger="IntroTimer" />
-      <Transition From="Intro" 		      To="Splash" Transition="Cut" Trigger="ExitWorld" />
-
-      <Transition From="GuidedTour" 		To="Splash" Transition="Cut" Trigger="FlythroughEnd" />
-      <Transition From="GuidedTour" 		To="Splash" Transition="FadeIn" Trigger="ExitWorld" />
-
-      <!--<ImageTransition From="GuidedTour" 	To="Splash" Transition="FadeIn" X="96" Y="918"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/Back.png</ImageTransition>-->
-      <ImageTransition From="Slideshow" 	To="Splash" Transition="Cut" X="864" Y="918"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/BackTrans.png</ImageTransition>
-
-      <InvisibleTransition From="Splash" To="Story1Confirm" 	Transition="Cut" L="115" T="395" R="835" B="485" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Splash" To="Story2Confirm" 	Transition="Cut" L="115" T="510" R="835" B="600" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Splash" To="Story3Confirm" 	Transition="Cut" L="115" T="625" R="835" B="720" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Splash" To="Story4Confirm" 	Transition="Cut" L="115" T="745" R="835" B="825" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Splash" To="Story5Confirm" 	Transition="Cut" L="115" T="860" R="835" B="955" Frame="MainWindow" Renderer="DialCursor" />
-
-      <InvisibleTransition From="Story1Confirm" To="Splash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story2Confirm" To="Splash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story3Confirm" To="Splash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story4Confirm" To="Splash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story5Confirm" To="Splash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-
-      <InvisibleTransition From="Story1Confirm" To="Story1" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story2Confirm" To="Story2" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story3Confirm" To="Story3" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story4Confirm" To="Story4" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story5Confirm" To="Story5" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-    </Transitions>
-  </Any>
-
-  <!-- Settings specific to the overlay being instantiated based on click interactions -->
-
-  <ClickBased>
-    <States>
-
-    </States>
-    <Transitions>
-
-    </Transitions>
-  </ClickBased>
-
-  <!-- Settings specific to the overlay being instantiated based on hover interactions -->
-
-  <HoverBased>
-
-    <Triggers>
-      <!--<Trigger Factory="SkeletonLost" Timeout="2000" Name="IdleTrigger" />-->
-      <Trigger Factory="SkeletonLost" Timeout="30000" Name="IdleTrigger" />
-      <Trigger Factory="SkeletonLost" Timeout="459000" Name="VideoIdleTrigger" />
-      <Trigger Factory="SkeletonFound" Name="SkeletonFound" />
-      <Trigger Factory="RaiseArm" Name="ExitWorld" />
-    </Triggers>
-
-    <Features>
-      <Feature Factory="Skeleton" Name="SplashSkeleton" L="940" R="1470" T="1000" Scale="100" Frame="MainWindow" />
-      <!--<Feature Factory="Skeleton" Name="ExploreSkeleton" X="60" Y="1050" W="1850" Scale="100" Frame="MainWindow" />-->
-      <Feature Factory="Skeleton" Name="ExploreSkeleton" X="100" Y="165.5" W="0" Scale="125" Frame="LeftWindow" />
-    </Features>
-    <States>
-
-      <State Factory="KinectControl" Name="KinectAvatar" Avatar="true" Opacity=".8" >
-        <Features>
-          <Feature Name="ExploreSkeleton" />
-          <Feature Name="HelpSidebarAvatarL" />
-          <Feature Name="RaiseArmPromptExplore" />
-          <Feature Name="YawAreaEast" />
-          <Feature Name="YawAreaWest" />
-        </Features>
-      </State>
-
-      <State Factory="KinectControl" Name="KinectFlycam" Avatar="false" X="487.95" Y="130.58" Z="60" Pitch="0" Yaw="126.00" Opacity=".7" >
-        <Features>
-          <Feature Name="RaiseArmPromptExplore" />
-          <Feature Name="ExploreSkeleton" Frame="MainWindow" />
-          <Feature Name="HelpSidebarFlycamL" />
-        </Features>
-      </State>
-
-    </States>
-    <Transitions>
-
-      <InvisibleTransition From="Splash" To="KinectAvatar"  Transition="FadeOut"    L="1080" T="535" R="1755" B="620" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Splash" To="KinectFlycam"  Transition="FadeOut"    L="1080" T="765" R="1755" B="865" Frame="MainWindow" Renderer="DialCursor" />
-
-      <!--
-      <Transition From="KinectAvatar" To="HelpAvatar"  Transition="FadeIn" Trigger="ExitWorld" />
-      <Transition From="KinectFlycam" To="HelpFlycam"  Transition="FadeIn" Trigger="ExitWorld" />
-      -->
-      <Transition From="KinectAvatar" To="Splash"  Transition="FadeIn" Trigger="ExitWorld" />
-      <Transition From="KinectFlycam" To="Splash"  Transition="FadeIn" Trigger="ExitWorld" />
-
-      <ImageTransition From="HelpAvatar" 	To="KinectAvatar" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
-      <ImageTransition From="HelpFlycam" 	To="KinectFlycam" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
-    </Transitions>
-  </HoverBased>
+		</States>
+
+		<Transitions>
+			<InvisibleTransition From="Splash" 	To="GuidedTour"    Transition="FadeOut"    L="1080" T="415" R="1755" B="500" Frame="MainWindow" Renderer="DialCursor" />
+			<InvisibleTransition From="Splash" 	To="Slideshow"     Transition="Cut" L="1080" T="645" R="1755" B="735" Frame="MainWindow" Renderer="DialCursor"/>
+
+			<ImageTransition From="HelpAvatar" 	To="Splash" Transition="FadeIn" X="1200" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
+			<ImageTransition From="HelpFlycam" 	To="Splash" Transition="FadeIn" X="1200" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
+
+			<Transition From="Idle" 		To="Intro" Transition="FadeIn" Trigger="SkeletonFound" />
+
+			<Transition From="IdleIntro"		To="Idle" Transition="FadeOut" Trigger="IntroTimer" />
+
+			<Transition From="Intro" 		To="GuidedTour" Transition="FadeOut" Trigger="IntroTimer" />
+			<Transition From="Intro" 		To="Splash" Transition="Cut" Trigger="ExitWorld" />
+
+			<Transition From="GuidedTour" 		To="ExploreIntro" Transition="Cut" Trigger="FlythroughEnd" />
+			<Transition From="GuidedTour" 		To="Splash" Transition="FadeIn" Trigger="ExitWorld" />
+
+			<!--<ImageTransition From="GuidedTour" 	To="Splash" Transition="FadeIn" X="96" Y="918"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/Back.png</ImageTransition>-->
+			<ImageTransition From="Slideshow" 	To="Splash" Transition="Cut" X="864" Y="918"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/BackTrans.png</ImageTransition>
+
+			<InvisibleTransition From="Splash" To="Story1Confirm" 	Transition="Cut" L="115" T="395" R="835" B="485" Frame="MainWindow" Renderer="DialCursor" />
+			<InvisibleTransition From="Splash" To="Story2Confirm" 	Transition="Cut" L="115" T="510" R="835" B="600" Frame="MainWindow" Renderer="DialCursor" />
+			<InvisibleTransition From="Splash" To="Story3Confirm" 	Transition="Cut" L="115" T="625" R="835" B="720" Frame="MainWindow" Renderer="DialCursor" />
+			<InvisibleTransition From="Splash" To="Story4Confirm" 	Transition="Cut" L="115" T="745" R="835" B="825" Frame="MainWindow" Renderer="DialCursor" />
+			<InvisibleTransition From="Splash" To="Story5Confirm" 	Transition="Cut" L="115" T="860" R="835" B="955" Frame="MainWindow" Renderer="DialCursor" />
+
+			<InvisibleTransition From="Story1Confirm" To="Splash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
+			<InvisibleTransition From="Story2Confirm" To="Splash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
+			<InvisibleTransition From="Story3Confirm" To="Splash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
+			<InvisibleTransition From="Story4Confirm" To="Splash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
+			<InvisibleTransition From="Story5Confirm" To="Splash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
+
+			<InvisibleTransition From="Story1Confirm" To="Story1" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
+			<InvisibleTransition From="Story2Confirm" To="Story2" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
+			<InvisibleTransition From="Story3Confirm" To="Story3" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
+			<InvisibleTransition From="Story4Confirm" To="Story4" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
+			<InvisibleTransition From="Story5Confirm" To="Story5" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
+		</Transitions>
+	</Any>
+
+	<!-- Settings specific to the overlay being instantiated based on hover interactions -->
+
+	<HoverBased>
+
+		<Triggers>
+			<Trigger Factory="SkeletonLost" Timeout="30000" Name="IdleTrigger" />
+			<Trigger Factory="SkeletonLost" Timeout="459000" Name="VideoIdleTrigger" />
+			<Trigger Factory="SkeletonFound" Name="SkeletonFound" />
+			<Trigger Factory="RaiseArm" Name="ExitWorld" />
+		</Triggers>
+
+		<Features>
+			<Feature Factory="Skeleton" Name="SplashSkeleton" L="940" R="1470" T="1000" Scale="100" Frame="MainWindow" />
+			<Feature Factory="Skeleton" Name="ExploreIntroSkeleton" X="340" Y="340" W="0" Scale="300" Frame="LeftWindow" />
+			<Feature Factory="Skeleton" Name="ExploreSkeleton" X="100" Y="165.5" W="0" Scale="125" Frame="LeftWindow" />
+		</Features>
+		<States>
+
+			<State Factory="KinectControl" Name="KinectAvatar" Avatar="true" Opacity=".9" >
+				<Features>
+					<Feature Name="ExploreSkeleton" />
+					<Feature Name="HelpSidebarAvatarL" />
+					<Feature Name="RaiseArmPromptExplore" />
+					<Feature Name="Drains" />
+					<Feature Name="YawAreaEast" />
+					<Feature Name="YawAreaWest" />
+				</Features>
+			</State>
+
+			<State Factory="KinectControl" Name="KinectFlycam" Avatar="false" X="487.95" Y="130.58" Z="60" Pitch="0" Yaw="126.00" Opacity=".9" >
+				<Features>
+					<Feature Name="RaiseArmPromptExplore" />
+					<Feature Name="ExploreSkeleton" Frame="MainWindow" />
+					<Feature Name="HelpSidebarFlycamL" />
+					<Feature Name="Drains" />
+				</Features>
+			</State>
+
+			<State Factory="Video" Name="ExploreIntro" File="Videos/HelpRaw.mp4" FinishState="KinectAvatar" Transition="Cut" Frame="RightWindow" >
+				<IdleTriggers>
+					<Trigger Name="VideoIdleTrigger" />
+				</IdleTriggers>
+				<Features>
+					<Feature Name="ExploreIntroSkeleton" />
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Explore-Intro.png</Feature>
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/Explore-Intro-L.png</Feature>
+				</Features>
+			</State>
+
+		</States>
+		<Transitions>
+
+			<InvisibleTransition From="Splash" To="KinectAvatar"  Transition="FadeOut"    L="1080" T="535" R="1755" B="620" Frame="MainWindow" Renderer="DialCursor" />
+			<InvisibleTransition From="Splash" To="KinectFlycam"  Transition="FadeOut"    L="1080" T="765" R="1755" B="865" Frame="MainWindow" Renderer="DialCursor" />
+
+			<Transition From="KinectAvatar" To="Splash"  Transition="FadeIn" Trigger="ExitWorld" />
+			<Transition From="KinectFlycam" To="Splash"  Transition="FadeIn" Trigger="ExitWorld" />
+
+			<ImageTransition From="HelpAvatar" 	To="KinectAvatar" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
+			<ImageTransition From="HelpFlycam" 	To="KinectFlycam" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
+		</Transitions>
+	</HoverBased>
 </Overlay>
