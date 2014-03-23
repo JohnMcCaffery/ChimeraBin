@@ -13,7 +13,9 @@
 
   <!-- Overlay bindings-->
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.OverlayPlugin, OverlayLib" scope="singleton" />
+  <!--
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.Plugins.MousePlugin, OverlayLib" scope="singleton" />
+  -->
 
   <!--                        OVERLAY BINDINGS                         -->
 
@@ -72,7 +74,7 @@
   <!-- Kinect related bindings -->
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.KinectMovementPlugin, KinectLib" scope="singleton" />
   <!--<bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.EyeTrackerPlugin, KinectLib" scope="singleton" />-->
-  <!--<bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.GUI.KinectCamera, KinectLib" scope="singleton" />-->
+  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.GUI.KinectCamera, KinectLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.SimpleKinectCursor, KinectLib" scope="singleton" />
 
   <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Kinect.Overlay.KinectControlStateFactory, KinectLib"  scope="singleton" />
