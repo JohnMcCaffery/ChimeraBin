@@ -128,14 +128,14 @@
 				</Features>
 			</State>
 
-			<State Factory="Video" Name="ExploreIntro" File="Videos/HelpRaw.mp4" FinishState="ActiveAreaTest" Transition="Cut" Frame="RightWindow" >
+			<State Factory="Video" Name="ExploreIntro" File="Videos/HelpRaw.mp4" FinishState="ActiveAreaTest" Transition="Cut" Frame="MainWindow" >
 				<IdleTriggers>
 					<Trigger Name="VideoIdleTrigger" />
 				</IdleTriggers>
 				<Features>
-					<Feature Name="ExploreIntroSkeleton" />
-					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Explore-Intro.png</Feature>
 					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/Explore-Intro-L.png</Feature>
+					<Feature Name="ExploreIntroSkeleton" />
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/Explore-Intro-R.png</Feature>
 				</Features>
 			</State>
 

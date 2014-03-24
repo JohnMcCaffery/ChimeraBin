@@ -52,7 +52,7 @@
 		<States>
 
 			<!-- 			Load Textures 			-->
-			<State Factory="Flythrough" Name="LoadTextures" File="Flythroughs/Timespan/TexLoad.xml" Loop="false" >
+			<State Factory="Flythrough" Name="LoadTextures" File="Flythroughs/Timespan/TexLoad.xml" Start="true" Loop="false" >
 				<IdleTriggers>
 					<Trigger Name="FlythroughEnd" />
 				</IdleTriggers>
@@ -88,7 +88,7 @@
 			</State>
 
 			<!-- 			Guided Tour Flythrough  			-->
-			<State Factory="Flythrough" Name="GuidedTour" Start="true" File="Flythroughs/Timespan/Guided.xml" AutoStep="true" Loop="false" DisplaySubtitles="true" SubtitleTimeout="11">
+			<State Factory="Flythrough" Name="GuidedTour" File="Flythroughs/Timespan/Guided.xml" AutoStep="true" Loop="false" DisplaySubtitles="true" SubtitleTimeout="11">
 
 				<SubtitleText Frame="MainWindow" Font="Verdana" Size="30" Colour="Yellow" Style="Regular" X="960" Y="978" Alignment="TopCenter" />
 
@@ -332,8 +332,11 @@
 					<Feature Name="HelpSidebarAvatarL" />
 					<Feature Name="RaiseArmPromptExplore" />
 					<Feature Name="Drains" />
-					<Feature Name="YawAreaEast" />
-					<Feature Name="YawAreaWest" />
+					<Feature Name="Floor" />
+					<Feature Name="WallsN" />
+					<Feature Name="WallsS" />
+					<Feature Name="WallsE" />
+					<Feature Name="WallsW" />
 				</Features>
 			</State>
 
@@ -343,17 +346,22 @@
 					<Feature Name="ExploreSkeleton" Frame="MainWindow" />
 					<Feature Name="HelpSidebarFlycamL" />
 					<Feature Name="Drains" />
+					<Feature Name="Floor" />
+					<Feature Name="WallsN" />
+					<Feature Name="WallsS" />
+					<Feature Name="WallsE" />
+					<Feature Name="WallsW" />
 				</Features>
 			</State>
 
-			<State Factory="Video" Name="ExploreIntro" File="Videos/HelpRaw.mp4" FinishState="KinectAvatar" Transition="Cut" Frame="RightWindow" >
+			<State Factory="Video" Name="ExploreIntro" File="Videos/HelpRaw.mp4" FinishState="KinectAvatar" Transition="Cut" Frame="MainWindow" >
 				<IdleTriggers>
 					<Trigger Name="VideoIdleTrigger" />
 				</IdleTriggers>
 				<Features>
-					<Feature Name="ExploreIntroSkeleton" />
-					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Explore-Intro.png</Feature>
 					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/Explore-Intro-L.png</Feature>
+					<Feature Name="ExploreIntroSkeleton" />
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/Explore-Intro-R.png</Feature>
 				</Features>
 			</State>
 
