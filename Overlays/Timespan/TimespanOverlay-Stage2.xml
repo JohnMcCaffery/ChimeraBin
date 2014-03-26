@@ -1,13 +1,10 @@
 <Overlay Width="1920" Height="1080" >
 	<Any>
 		<Features>
+>
+			<Feature Factory="Image" Name="RaiseArmPrompt" X="400" Y="20" Frame="LeftWindow">Images/Misc/RaiseArmPrompt.png</Feature>
 
-			<Feature Factory="StaticText" Name="RaiseArmPrompt" X="30" Y="30" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow">
-				Whilst standing raise your arm above your head to walk 
-				through the township (great for kids) or view local stories
-			</Feature>
-
-			<Feature Factory="StaticText" Name="RaiseArmPromptExplore" X="15" Y="10" Font="Verdana" Colour="Red" Size="30" Frame="LeftWindow">Stand and raise your arm above your head to get back to the main menu </Feature>
+			<Feature Factory="Image" Name="RaiseArmPromptExplore" X="400" Y="20" Frame="LeftWindow">Images/Misc/RaiseArmPrompt.png</Feature>
 
 			<Feature Factory="StaticText" Name="SurveyText" X="5" Y="5" Font="Verdana" Colour="White" Size="28" Frame="LeftWindow">These images were taken at the Caen site in November 2012 when this project was begun.
 				They document the initial surveying of the site to map the outlines of the original longhouses.
@@ -28,8 +25,8 @@
 						<P X="367.04" Y="282.62" />
 					</Points>
 				</Trigger>
-			</Area>
 
+			</Area>
 			<!--		Floor 		-->
 			<Area Factory="ActiveArea" Name="Floor" Frame="RightWindow" >
 				<Feature Factory="Image" X="300" Y="50" Width="1200" Frame="RightWindow" >Images/ActiveAreas/Floor.png</Feature>
@@ -163,13 +160,14 @@
 					<Trigger Factory="Simple" />
 				</IdleTriggers>
 
-				<Features>
-					<Feature Name="RaiseArmPrompt" />
-				</Features>
 
 				<Steps>
 
-					<Step Step="0" Voiceover="Audio/1.mp3" />
+					<Step Step="0" Voiceover="Audio/1.mp3" >
+						<Features>
+							<Feature Name="RaiseArmPrompt" />
+						</Features>
+					</Step>
 					<Step Step="1" Voiceover="Audio/2.mp3" />
 					<Step Step="2" Voiceover="Audio/3.mp3" />
 					<Step Step="3" Voiceover="Audio/4.mp3" />
@@ -336,6 +334,8 @@
 		</States>
 
 		<Transitions>
+			<Transition From="LoadTextures" 	To="Splash" Transition="Cut" Trigger="ExitWorld" />
+			
 			<InvisibleTransition From="Splash" 	To="GuidedTour"    Transition="FadeOut"    L="1080" T="415" R="1755" B="500" Frame="MainWindow" Renderer="DialCursor" />
 			<InvisibleTransition From="Splash" 	To="Slideshow"     Transition="Cut" L="1080" T="645" R="1755" B="735" Frame="MainWindow" Renderer="DialCursor"/>
 
@@ -421,7 +421,7 @@
 				</Features>
 			</State>
 
-			<State Factory="Video" Name="ExploreIntro" File="Videos/HelpRaw.mp4" FinishState="KinectAvatar" Transition="Cut" Frame="MainWindow" >
+			<State Factory="Video" Name="ExploreIntro" File="Videos/HelpEdited.mp4" FinishState="KinectAvatar" Transition="Cut" Frame="MainWindow" >
 				<IdleTriggers>
 					<Trigger Name="VideoIdleTrigger" />
 				</IdleTriggers>
@@ -443,6 +443,8 @@
 
 			<ImageTransition From="HelpAvatar" 	To="KinectAvatar" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
 			<ImageTransition From="HelpFlycam" 	To="KinectFlycam" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
+
+			<Transition From="ExploreIntro" 	To="Splash" Transition="Cut" Trigger="ExitWorld" />
 		</Transitions>
 	</HoverBased>
 </Overlay>
