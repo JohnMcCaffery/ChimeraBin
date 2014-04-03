@@ -12,35 +12,40 @@
 	  <Trigger Factory="SkeletonLost" Timeout="30000" Name="IdleTrigger" />
       <Trigger Factory="SkeletonLost" Timeout="459000" Name="VideoIdleTrigger" />
       <Trigger Factory="SkeletonFound" Name="SkeletonFound" />
-	  <Trigger Factory="JoystickButton" Button="Start" Name="ExitWorld" />
-	  <Trigger Factory="JoystickButton" Button="Back" Name="ForceIdle" />
+	  <Trigger Factory="JoystickButton" Button="A" Name="ExitWorld" />
+	  <Trigger Factory="JoystickButton" Button="Y" Name="Start" />
 	  <Trigger Factory="Timer" Name="IntroTimer" LengthMS="5000" />
-	  <Trigger Factory="Timer" Name="VideoTimer" LengthMS="1000" />
-	  <Trigger Factory="Timer" Name="VideoTimer2" LengthMS="1000" />
+	  <Trigger Factory="Timer" Name="InstructionTimer" LengthMS="10000" />
+	  <Trigger Factory="Timer" Name="Instruction1Timer" LengthMS="10000" />
     </Triggers>
 
-    <TransitionStyles>
-			<Transition Factory="Cut" Name="Cut" />
+			<TransitionStyles>
+			<!--<Transition Factory="BitmapTransition" Name="BitmapFade" Length="2000" Style="Fade" />-->
+			<Transition Factory="CutTransition" Name="Cut" />
+			<Transition Factory="OpacityTransition" Name="FadeOut" Length="2000" FadeOut="true" />
+			<Transition Factory="OpacityTransition" Name="FadeIn" Length="2000" FadeOut="false" />
 		</TransitionStyles>
 	  
+	  
+	  
+	  <States>
 	  <State Factory="Blank" Name="Splash">
         <IdleTransition Name="Cut" />
         <SplashTransition Name="Cut" />
         <Features>
-          <Feature Name="SplashSkeleton" Frame="MainWindow" />
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Eyemouth-Splash.png</Feature>
+          <!-- <Feature Name="SplashSkeleton" Frame="MainWindow" /> -->
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Eyemouth-Splash.jpg</Feature>
         </Features>
       </State>
 	  
-	  <States>
+	  
           <State Factory="Blank" Name="Idle" EnableCursor="false" Idle="true" Start="true" >
         <Features>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Eyemouth-idle.jpg</Feature>
-		  <Feature Factory="KeyPress" Keys="^+h" Frame="MainWindow"></Feature>
         </Features>
         <IdleTriggers>
           <Trigger Name="IdleTrigger" />
-		  <Trigger Name="ForceIdle" />
+		  <!-- <Trigger Name="ForceIdle" /> -->
         </IdleTriggers>
         <IdleTransition Name="FadeIn" />
       </State>
@@ -60,22 +65,37 @@
         </Features>
 		<IdleTriggers>
           <Trigger Name="IdleTrigger" />
-		  <Trigger Name="ForceIdle" />
+		  <!-- <Trigger Name="ForceIdle" /> -->
         </IdleTriggers>
 	  </State>
 	  
 	  <State Factory="Blank" Name="Intro" EnableCursor="false" >
         <Features>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Eyemouth-Intro.jpg</Feature>
+		  <Feature Factory="KeyPress" Keys="^+h" Frame="MainWindow"></Feature>
         </Features>
         <IdleTransition Name="FadeIn" />
       </State>
 	  
-	  <State Factory="Video" Name="Instruction" BlackBG="true" File="Videos/Instruction.mp4" FinishState="Explore" Transition="Cut" Frame="MainWindow" >
+	  <State Factory="Blank" Name="Instruction" EnableCursor="false" >
+        <Features>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Eyemouth-Instructions.jpg</Feature>
+        </Features>
+        <IdleTransition Name="FadeIn" />
+      </State>
+	  
+	  <State Factory="Blank" Name="Instruction1" EnableCursor="false" >
+        <Features>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Eyemouth-Instructions1.jpg</Feature>
+        </Features>
+        <IdleTransition Name="FadeIn" />
+      </State>
+	  
+	  <!-- <State Factory="Video" Name="Instruction" BlackBG="true" File="Videos/Instruction.mp4" FinishState="Explore" Transition="Cut" Frame="MainWindow" >
         <IdleTriggers>
           <Trigger Name="VideoIdleTrigger" />
         </IdleTriggers>
-      </State>
+      </State> -->
 	  
 	  <State Factory="Video" Name="Flythrough" BlackBG="true" File="Videos/Flythrough.mp4" FinishState="Instruction" Transition="Cut" Frame="MainWindow" >
         <IdleTriggers>
@@ -85,15 +105,23 @@
     </States>
 
     <Transitions>
-	  <Transition From="Idle" To="Intro" Transition="FadeIn" Trigger="SkeletonFound" />
-	  <Transition From="Idle" To="Intro" Transition="FadeIn" Trigger="JSActivated" />
-	  <Transition From="Intro"			To="Flythrough" Transition="FadeOut" Trigger="IntroTimer" />
+	  <Transition From="Idle" To="Intro" Transition="Cut" Trigger="SkeletonFound" />
+	  <Transition From="Idle" To="Intro" Transition="Cut" Trigger="JSActivated" />
+	  <Transition From="Idle"			To="Splash" Transition="Cut" Trigger="ExitWorld" />
+	  <Transition From="Intro"			To="Flythrough" Trigger="IntroTimer" />
+	  <Transition From="Instruction"			To="Instruction1" Transition="Cut" Trigger="InstructionTimer" />
+	  <Transition From="Instruction1"			To="Explore" Transition="Cut" Trigger="Instruction1Timer" />
+	  <Transition From="Idle"			To="Splash" Transition="Cut" Trigger="ExitWorld" />
       <Transition From="Intro"			To="Splash" Transition="Cut" Trigger="ExitWorld" />
-      <Transition From="Flythrough" 	To="Splash" Transition="FadeIn" Trigger="ExitWorld" />
-	  <!--<Transition From="Flythrough"			To="Instruction" Transition="FadeOut" Trigger="VideoTimer" />-->
-      <Transition From="Instruction"	To="Splash" Transition="FadeIn" Trigger="ExitWorld" />
-	   <!--<Transition From="Instruction"			To="Explore" Transition="FadeOut" Trigger="VideoTimer2" />-->
-	  <Transition From="Explore"		To="Splash" Transition="FadeIn" Trigger="ExitWorld" />
+      <Transition From="Flythrough" 	To="Splash" Transition="Cut" Trigger="ExitWorld" />
+      <Transition From="Instruction"	To="Splash" Transition="Cut" Trigger="ExitWorld" />
+	  <Transition From="Explore"		To="Splash" Transition="Cut" Trigger="ExitWorld" />
+	  
+	  <Transition From="Idle"			To="Intro" Transition="Cut" Trigger="Start" />
+      <Transition From="Splash"			To="Intro" Transition="Cut" Trigger="Start" />
+      <Transition From="Flythrough" 	To="Intro" Trigger="Start" />
+      <Transition From="Instruction"	To="Intro" Transition="Cut" Trigger="Start" />
+	  <Transition From="Explore"		To="Intro" Transition="Cut" Trigger="Start" />
     </Transitions>
   </Any>
 
@@ -104,7 +132,6 @@
 
     </States>
     <Transitions>
-      <Transition From="Splash" To="Explore" Transition="Cut" Trigger="X" />
     </Transitions>
   </ClickBased>
 
@@ -118,9 +145,10 @@
     </States>
     <Transitions>
 
-      <InvisibleTransition From="Splash" To="Explore"  Transition="FadeOut"    L="266" T="273" R="762" B="366" Frame="MainWindow" Renderer="DialCursor" />
-	  <!--<InvisibleTransition From="Splash" To="Slideshow" Transition="FadeOut"    L="274" T="404" R="769" B="495" Frame="MainWindow" Renderer="DialCursor" />
-	  <TextTransition     From="Splash" To="ExploreA"  Transition="FadeOut"    X="96" Y="918" Frame="MainWindow" Renderer="DialCursor">Walk around the fort</TextTransition>-->
+      <InvisibleTransition From="Splash" To="Flythrough"                           L="1131" T="273" R="1624" B="364" Frame="MainWindow" Renderer="DialCursor" />
+	  <InvisibleTransition From="Splash" To="Explore"  Transition="FadeOut"        L="1131" T="411" R="1624" B="500" Frame="MainWindow" Renderer="DialCursor" />
+	  <InvisibleTransition From="Splash" To="Instruction"  Transition="Cut"        L="1131" T="540" R="1624" B="632" Frame="MainWindow" Renderer="DialCursor" />
+	  <!-- <InvisibleTransition From="Splash" To="Slideshow" Transition="Cut"         L="1131" T="672" R="1624" B="764" Frame="MainWindow" Renderer="DialCursor" /> -->
     </Transitions>
   </HoverBased>
 </Overlay>
