@@ -115,12 +115,14 @@
       <Transition From="Intro"			To="Splash" Transition="Cut" Trigger="ExitWorld" />
       <Transition From="Flythrough" 	To="Splash" Transition="Cut" Trigger="ExitWorld" />
       <Transition From="Instruction"	To="Splash" Transition="Cut" Trigger="ExitWorld" />
+	  <Transition From="Instruction1"	To="Splash" Transition="Cut" Trigger="ExitWorld" />
 	  <Transition From="Explore"		To="Splash" Transition="Cut" Trigger="ExitWorld" />
 	  
 	  <Transition From="Idle"			To="Intro" Transition="Cut" Trigger="Start" />
       <Transition From="Splash"			To="Intro" Transition="Cut" Trigger="Start" />
       <Transition From="Flythrough" 	To="Intro" Trigger="Start" />
       <Transition From="Instruction"	To="Intro" Transition="Cut" Trigger="Start" />
+	  <Transition From="Instruction1"	To="Intro" Transition="Cut" Trigger="Start" />
 	  <Transition From="Explore"		To="Intro" Transition="Cut" Trigger="Start" />
     </Transitions>
   </Any>

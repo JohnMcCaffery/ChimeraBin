@@ -1,10 +1,4 @@
-cd ..\..\..\..\AppData\Roaming
-rm -rf Firestorm
-rem cd ..\Local
-rem rm -rf Firestorm
-cd ..\..\Documents\John\Chimera\Bin
-
-Timespan.exe
+Monitor.exe
 
 echo Chimera exited with code %errorlevel%
 
