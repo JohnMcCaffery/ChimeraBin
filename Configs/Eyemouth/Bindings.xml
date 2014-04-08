@@ -47,6 +47,7 @@
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Overlay.Triggers.TimerTriggerFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Overlay.Triggers.SimpleTriggerFactory, OverlayLib"  scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Flythrough.Overlay.FlythroughEndTriggerFactory, FlythroughLib"  scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Overlay.Triggers.MultiTriggerFactory, OverlayLib"  scope="singleton" />
   <!-- Selection Renderers -->
   <!--<bind service="Chimera.Interfaces.Overlay.ISelectionRendererFactory, OverlayLib" to="Chimera.Overlay.Triggers.TextClickTriggerFactory, OverlayLib"  scope="singleton" />-->
   <!-- Transition Styles -->

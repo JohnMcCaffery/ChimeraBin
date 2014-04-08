@@ -9,14 +9,26 @@
       <Trigger Factory="JoystickButton" Name="Y" Button="Y" />
       <Trigger Factory="JoystickButton" Button="RightShoulder" Name="R" />
       <Trigger Factory="JoystickButton" Button="LeftShoulder" Name="L" />
-	  <Trigger Factory="SkeletonLost" Timeout="30000" Name="IdleTrigger" />
-      <Trigger Factory="SkeletonLost" Timeout="459000" Name="VideoIdleTrigger" />
+	  <Trigger Factory="SkeletonLost" Timeout="30000" Name="SkeletonIdleTrigger" />
+      <Trigger Factory="SkeletonLost" Timeout="459000" Name="VideoSkeletonIdleTrigger" />
       <Trigger Factory="SkeletonFound" Name="SkeletonFound" />
 	  <Trigger Factory="JoystickButton" Button="A" Name="ExitWorld" />
 	  <Trigger Factory="JoystickButton" Button="Y" Name="Start" />
 	  <Trigger Factory="Timer" Name="IntroTimer" LengthMS="5000" />
 	  <Trigger Factory="Timer" Name="InstructionTimer" LengthMS="10000" />
 	  <Trigger Factory="Timer" Name="Instruction1Timer" LengthMS="10000" />
+	  <Trigger Factory="Multi" Name="IdleTrigger">
+		<Triggers>
+			<Trigger Name="SkeletonIdleTrigger" />
+			<Trigger Name="JSLost" />
+		</Triggers>
+	  </Trigger>
+	  <Trigger Factory="Multi" Name="VideoIdleTrigger">
+		<Triggers>
+			<Trigger Name="VideoSkeletonIdleTrigger" />
+			<Trigger Name="JSLost" />
+		</Triggers>
+	  </Trigger>
     </Triggers>
 
 			<TransitionStyles>
