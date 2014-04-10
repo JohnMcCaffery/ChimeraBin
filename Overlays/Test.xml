@@ -13,6 +13,7 @@
       <Trigger Factory="SkeletonLost" Timeout="459000" Name="VideoIdleTrigger" />
       <Trigger Factory="SkeletonFound" Name="SkeletonFound" />
 	  <Trigger Factory="CrossArms" Name="CrossArms" />
+	  <Trigger Factory="CrossArmsLow" Name="CrossArmsLow" />
 	  <Trigger Factory="JoystickButton" Button="Start" Name="ExitWorld" />
 	  <Trigger Factory="JoystickButton" Button="Back" Name="ForceIdle" />
 	  <Trigger Factory="Timer" Name="IntroTimer" LengthMS="5000" />
@@ -56,16 +57,16 @@
       </State>
 	  
 	  
-	  <State Factory="JoystickControl" Name="Explore" Avatar="true">
+	  <State Factory="KinectControl" Name="Explore" Avatar="true" Idle="true" Start="true" >
 		<Features>
           <Feature Factory="JoystickClick" LeftClick="true" Name="JoystickClick">
 			<Triggers>
-				<Trigger Factory="JoystickButton" Name="B" Button="B" />
+				<Trigger Name="CrossArms" />
 			</Triggers>
 		  </Feature>
 		  <Feature Factory="KeyClick" Keys="^w,^{TAB},^w" Frame="MainWindow">
 		    <Triggers>
-				<Trigger Factory="JoystickButton" Name="X" Button="X" />
+				<Trigger Name="CrossArmsLow" />
 			</Triggers>
 		  </Feature>
         </Features>
@@ -82,8 +83,8 @@
 	  <!-- <Transition From="Idle" To="Explore" Transition="FadeIn" Trigger="JSActivated" /> -->
 	  <Transition From="Idle" To="Idle1" Transition="FadeIn" Trigger="Multi" />
 	  <Transition From="Idle" To="Idle1" Transition="FadeIn" Trigger="X" />
-	  <Transition From="Idle" To="Idle1" Transition="FadeIn" Trigger="CrossArms" />
-	  <Transition From="Idle1" To="Idle" Transition="FadeIn" Trigger="CrossArms" />
+	  <Transition From="Idle" To="Idle1" Transition="FadeIn" Trigger="CrossArmsLow" />
+	  <Transition From="Idle1" To="Idle" Transition="FadeIn" Trigger="CrossArmsLow" />
     </Transitions>
   </Any>
 
