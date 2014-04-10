@@ -6,15 +6,15 @@ IF ERRORLEVEL 42 GOTO restart
 
 echo Shutting down
 
-cscript Scripts\shutdown1.vbs
-timeout 1
-cscript Scripts\shutdown2.vbs
+REM cscript Scripts\shutdown1.vbs
+REM timeout 1
+REM cscript Scripts\shutdown2.vbs
 timeout 20
 
-git pull
-git add Logs/*
-git commit -m "Shutdown log push - %DATE% %TIME% "
-git push
+REM git pull
+REM git add Logs/*
+REM git commit -m "Shutdown log push - %DATE% %TIME% "
+REM git push
 
 shutdown.exe /s /t 00
 

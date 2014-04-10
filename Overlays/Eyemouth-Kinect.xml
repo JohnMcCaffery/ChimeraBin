@@ -25,7 +25,7 @@
 		</Triggers>
 	  </Trigger>
 	  
-	  <Trigger Factory="JoystickButton" Button="A" Name="ExitWorld" />
+	  <Trigger Factory="RaiseArm" Name="ExitWorld" />
 	  <Trigger Factory="JoystickButton" Button="Y" Name="Start" />
     </Triggers>
 
@@ -36,9 +36,8 @@
 			<Transition Factory="OpacityTransition" Name="FadeIn" Length="2000" FadeOut="false" />
 		</TransitionStyles>
 	  
-	  
 	  <States>
-	  <State Factory="Blank" Name="Splash">
+	  <State Factory="Blank" Name="Splash" EnableCursor="true">
         <IdleTransition Name="Cut" />
         <SplashTransition Name="Cut" />
         <Features>
@@ -47,16 +46,16 @@
         </Features>
       </State>
 	  
-	  <State Factory="JoystickControl" Name="Explore" Avatar="true">
+	  <State Factory="KinectControl" Name="Explore" Avatar="true">
 		<Features>
           <Feature Factory="JoystickClick" LeftClick="true" Name="JoystickClick">
 			<Triggers>
-				<Trigger Factory="JoystickButton" Name="B" Button="B" />
+				<Trigger Factory="CrossArms" Name="CrossArms" />
 			</Triggers>
 		  </Feature>
 		  <Feature Factory="KeyClick" Keys="^w,^{TAB},^w" Frame="MainWindow">
 		    <Triggers>
-				<Trigger Factory="JoystickButton" Name="X" Button="X" />
+				<Trigger Factory="CrossArmsLow" Name="CrossArmsLow" />
 			</Triggers>
 		  </Feature>
         </Features>
@@ -146,7 +145,7 @@
 
   <ClickBased>
     <States>
-	
+		
     </States>
     <Transitions>
     </Transitions>
