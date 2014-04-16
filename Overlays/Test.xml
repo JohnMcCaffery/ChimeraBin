@@ -44,7 +44,7 @@
         <IdleTransition Name="FadeIn" />
       </State>
 	  
-          <State Factory="Blank" Name="Idle1" EnableCursor="false" >
+          <State Factory="Blank" Name="Idle1" EnableCursor="true" >
         <Features>
 		  <Feature Factory="KeyPress" Keys="^+h" Frame="MainWindow"></Feature>
 		  <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Eyemouth-Splash.jpg</Feature>
@@ -85,6 +85,9 @@
 	  <Transition From="Idle" To="Idle1" Transition="FadeIn" Trigger="X" />
 	  <Transition From="Idle" To="Idle1" Transition="FadeIn" Trigger="CrossArmsLow" />
 	  <Transition From="Idle1" To="Idle" Transition="FadeIn" Trigger="CrossArmsLow" />
+
+      <Transition From="Explore" To="Idle1" Transition="Cut" Trigger ="A" />
+      <Transition From="Idle1" To="Explore" Transition="Cut" Trigger ="A" />
     </Transitions>
   </Any>
 
