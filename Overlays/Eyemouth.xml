@@ -9,6 +9,7 @@
       <Trigger Factory="SkeletonLost" Timeout="459000" Name="VideoSkeletonIdleTrigger" />
       <Trigger Factory="SkeletonFound" Name="SkeletonFound" />
 
+	  <Trigger Factory="Timer" Name="StartTimer" LengthMS="60000" />
       <Trigger Factory="Timer" Name="IntroTimer" LengthMS="5000" />
       <Trigger Factory="Timer" Name="InstructionTimer" LengthMS="10000" />
       <Trigger Factory="Timer" Name="Instruction1Timer" LengthMS="10000" />
@@ -38,7 +39,7 @@
 
 
     <States>
-      <State Factory="Blank" Name="Splash">
+      <State Factory="Blank" Name="Splash" EnableCursor="true">
         <IdleTransition Name="Cut" />
         <SplashTransition Name="Cut" />
         <Features>
@@ -66,7 +67,17 @@
         </IdleTriggers>
       </State>
 
-      <State Factory="Blank" Name="Idle" EnableCursor="false" Idle="true" Start="true" >
+	  <State Factory="Blank" Name="Startup" EnableCursor="true" Start="true" >
+        <Features>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Eyemouth-idle.jpg</Feature>
+        </Features>
+        <IdleTriggers>
+			<Trigger Factory="Timer" Name="StartTimer" LengthMS="600000000" />
+        </IdleTriggers>
+        <IdleTransition Name="FadeIn" />
+      </State>
+	  
+      <State Factory="Blank" Name="Idle" EnableCursor="false" Idle="true" >
         <Features>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Eyemouth-idle.jpg</Feature>
         </Features>
@@ -113,6 +124,7 @@
     </States>
 
     <Transitions>
+	  <Transition From="Startup"		To="Idle" Trigger="StartTimer" />
       <Transition From="Idle" To="Intro" Transition="Cut" Trigger="SkeletonFound" />
       <Transition From="Idle" To="Intro" Transition="Cut" Trigger="JSActivated" />
       <Transition From="Intro"			To="Flythrough" Trigger="IntroTimer" />
