@@ -92,7 +92,7 @@
       </node>
       <node>
         <id>Cathedral 1:11</id>
-        <name></name>
+        <name>TranseptSouth</name>
         <x>215.7169</x>
         <y>345.2527</y>
         <z>43.42485</z>
@@ -132,7 +132,7 @@
       </node>
       <node>
         <id>Cathedral 1:16</id>
-        <name></name>
+        <name>ChoirDoor</name>
         <x>242.5294</x>
         <y>342.1607</y>
         <z>43.47305</z>
@@ -140,7 +140,7 @@
       </node>
       <node>
         <id>Cathedral 1:17</id>
-        <name></name>
+        <name>Choir</name>
         <x>241.1548</x>
         <y>345.4494</y>
         <z>43.42498</z>
@@ -204,7 +204,7 @@
       </node>
       <node>
         <id>Cathedral 1:25</id>
-        <name></name>
+        <name>TranseptNorth</name>
         <x>215.6609</x>
         <y>374.9919</y>
         <z>43.42485</z>
@@ -3438,8 +3438,56 @@
         <id>Cathedral 1:429</id>
         <name></name>
         <x>166.1074</x>
-        <y>305.7007</y>
+        <y>307.6146</y>
         <z>43.70186</z>
+        <scene>Cathedral 1</scene>
+      </node>
+      <node>
+        <id>Cathedral 1:430</id>
+        <name>ChoirExit</name>
+        <x>242.5391</x>
+        <y>334.5886</y>
+        <z>42.97295</z>
+        <scene>Cathedral 1</scene>
+      </node>
+      <node>
+        <id>Cathedral 1:431</id>
+        <name>Churchyard</name>
+        <x>290.1286</x>
+        <y>336.4089</y>
+        <z>40.86717</z>
+        <scene>Cathedral 1</scene>
+      </node>
+      <node>
+        <id>Cathedral 1:432</id>
+        <name></name>
+        <x>292.5</x>
+        <y>370</y>
+        <z>40.57598</z>
+        <scene>Cathedral 1</scene>
+      </node>
+      <node>
+        <id>Cathedral 1:433</id>
+        <name>NorthChurchyard</name>
+        <x>272.3462</x>
+        <y>385.622</y>
+        <z>42.93242</z>
+        <scene>Cathedral 1</scene>
+      </node>
+      <node>
+        <id>Cathedral 1:434</id>
+        <name>NorthDoorFar</name>
+        <x>229.782</x>
+        <y>409.7419</y>
+        <z>44.22915</z>
+        <scene>Cathedral 1</scene>
+      </node>
+      <node>
+        <id>Cathedral 1:435</id>
+        <name>NorthDoor</name>
+        <x>215.7809</x>
+        <y>400.476</y>
+        <z>42.97167</z>
         <scene>Cathedral 1</scene>
       </node>
     </nodes>
@@ -3597,6 +3645,10 @@
         <b>Cathedral 1:17</b>
       </link>
       <link>
+        <a>Cathedral 1:16</a>
+        <b>Cathedral 1:430</b>
+      </link>
+      <link>
         <a>Cathedral 1:17</a>
         <b>Cathedral 1:14</b>
       </link>
@@ -3695,6 +3747,10 @@
       <link>
         <a>Cathedral 1:25</a>
         <b>Cathedral 1:27</b>
+      </link>
+      <link>
+        <a>Cathedral 1:25</a>
+        <b>Cathedral 1:435</b>
       </link>
       <link>
         <a>Cathedral 1:26</a>
@@ -6797,6 +6853,10 @@
         <b>Cathedral 1:417</b>
       </link>
       <link>
+        <a>Cathedral 1:416</a>
+        <b>Cathedral 1:429</b>
+      </link>
+      <link>
         <a>Cathedral 1:417</a>
         <b>Cathedral 1:164</b>
       </link>
@@ -6876,6 +6936,58 @@
         <a>Cathedral 1:428</a>
         <b>Cathedral 1:427</b>
       </link>
+      <link>
+        <a>Cathedral 1:429</a>
+        <b>Cathedral 1:416</b>
+      </link>
+      <link>
+        <a>Cathedral 1:430</a>
+        <b>Cathedral 1:431</b>
+      </link>
+      <link>
+        <a>Cathedral 1:430</a>
+        <b>Cathedral 1:16</b>
+      </link>
+      <link>
+        <a>Cathedral 1:431</a>
+        <b>Cathedral 1:432</b>
+      </link>
+      <link>
+        <a>Cathedral 1:431</a>
+        <b>Cathedral 1:430</b>
+      </link>
+      <link>
+        <a>Cathedral 1:432</a>
+        <b>Cathedral 1:433</b>
+      </link>
+      <link>
+        <a>Cathedral 1:432</a>
+        <b>Cathedral 1:431</b>
+      </link>
+      <link>
+        <a>Cathedral 1:433</a>
+        <b>Cathedral 1:434</b>
+      </link>
+      <link>
+        <a>Cathedral 1:433</a>
+        <b>Cathedral 1:432</b>
+      </link>
+      <link>
+        <a>Cathedral 1:434</a>
+        <b>Cathedral 1:435</b>
+      </link>
+      <link>
+        <a>Cathedral 1:434</a>
+        <b>Cathedral 1:433</b>
+      </link>
+      <link>
+        <a>Cathedral 1:435</a>
+        <b>Cathedral 1:25</b>
+      </link>
+      <link>
+        <a>Cathedral 1:435</a>
+        <b>Cathedral 1:434</b>
+      </link>
     </links>
   </graph>
   <npcs>
@@ -6899,237 +7011,6 @@
       <x>201.2069</x>
       <y>250</y>
       <z>44</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Raulf</first_name>
-      <last_name>Dancort</last_name>
-      <appearance>cassock_canon</appearance>
-      <convo>canon_convo</convo>
-      <script>canon</script>
-      <x>195.9315</x>
-      <y>357.2354</y>
-      <z>44</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Eduard</first_name>
-      <last_name>Bell</last_name>
-      <appearance>pilgrim</appearance>
-      <convo>default</convo>
-      <script>pilgrim</script>
-      <x>156.6216</x>
-      <y>459.7259</y>
-      <z>43.41463</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Ranald</first_name>
-      <last_name>Marthokys</last_name>
-      <appearance>pilgrim</appearance>
-      <convo>default</convo>
-      <script>pilgrim</script>
-      <x>154.6216</x>
-      <y>459.7259</y>
-      <z>43.46372</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Iohne</first_name>
-      <last_name>Sancler</last_name>
-      <appearance>pilgrim</appearance>
-      <convo>default</convo>
-      <script>pilgrim</script>
-      <x>154.6216</x>
-      <y>457.7259</y>
-      <z>43.41463</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Thom</first_name>
-      <last_name>Webpownt</last_name>
-      <appearance>pilgrim</appearance>
-      <convo>default</convo>
-      <script>pilgrim</script>
-      <x>152.6216</x>
-      <y>457.7259</y>
-      <z>43.41463</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Alysandir</first_name>
-      <last_name>Dwn</last_name>
-      <appearance>pilgrim</appearance>
-      <convo>default</convo>
-      <script>pilgrim</script>
-      <x>152.6216</x>
-      <y>459.7259</y>
-      <z>43.41463</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Hew</first_name>
-      <last_name>Cammel</last_name>
-      <appearance>pilgrim</appearance>
-      <convo>default</convo>
-      <script>pilgrim</script>
-      <x>150.6216</x>
-      <y>459.7259</y>
-      <z>43.41463</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Adame</first_name>
-      <last_name>Forster</last_name>
-      <appearance>pilgrim</appearance>
-      <convo>default</convo>
-      <script>pilgrim</script>
-      <x>150.6216</x>
-      <y>457.7259</y>
-      <z>43.41463</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Gilbert</first_name>
-      <last_name>Inchmertyn</last_name>
-      <appearance>cassock_canon</appearance>
-      <convo>canon_convo</convo>
-      <script>canon</script>
-      <x>197.9315</x>
-      <y>356.2354</y>
-      <z>44</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Vileame</first_name>
-      <last_name>Logy</last_name>
-      <appearance>cassock_canon</appearance>
-      <convo>canon_convo</convo>
-      <script>canon</script>
-      <x>200.5334</x>
-      <y>345.0228</y>
-      <z>44</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Alexandir</first_name>
-      <last_name>Fiewaryne</last_name>
-      <appearance>cassock_canon</appearance>
-      <convo>canon_convo</convo>
-      <script>canon</script>
-      <x>202.2069</x>
-      <y>344.9126</y>
-      <z>44</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Edward</first_name>
-      <last_name>Gray</last_name>
-      <appearance>cassock_canon</appearance>
-      <convo>canon_convo</convo>
-      <script>canon</script>
-      <x>203.207</x>
-      <y>344.9051</y>
-      <z>44</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Gawter</first_name>
-      <last_name>Randoll</last_name>
-      <appearance>cassock_canon</appearance>
-      <convo>canon_convo</convo>
-      <script>canon</script>
-      <x>203.2069</x>
-      <y>345.9126</y>
-      <z>44</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Villiame</first_name>
-      <last_name>Loncastell</last_name>
-      <appearance>cassock_canon</appearance>
-      <convo>canon_convo</convo>
-      <script>canon</script>
-      <x>202.2069</x>
-      <y>345.9126</y>
-      <z>44</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Sym</first_name>
-      <last_name>Randale</last_name>
-      <appearance>cassock_canon</appearance>
-      <convo>canon_convo</convo>
-      <script>canon</script>
-      <x>201.2069</x>
-      <y>345.9126</y>
-      <z>44</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Symon</first_name>
-      <last_name>Boyd</last_name>
-      <appearance>cassock_canon</appearance>
-      <convo>canon_convo</convo>
-      <script>canon</script>
-      <x>196.9315</x>
-      <y>357.2354</y>
-      <z>44</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Alane</first_name>
-      <last_name>Dicson</last_name>
-      <appearance>cassock_canon</appearance>
-      <convo>canon_convo</convo>
-      <script>canon</script>
-      <x>195.9315</x>
-      <y>356.2354</y>
-      <z>44</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>William</first_name>
-      <last_name>Gilbertstoune</last_name>
-      <appearance>cassock_canon</appearance>
-      <convo>canon_convo</convo>
-      <script>canon</script>
-      <x>196.9315</x>
-      <y>356.2354</y>
-      <z>44</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Robert</first_name>
-      <last_name>Bruce</last_name>
-      <appearance>robert</appearance>
-      <convo>default</convo>
-      <script>bruce</script>
-      <x>156.3565</x>
-      <y>441.7207</y>
-      <z>44.01619</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Iamys</first_name>
-      <last_name>Maknauchtan</last_name>
-      <appearance>cassock_canon</appearance>
-      <convo>canon_convo</convo>
-      <script>canon</script>
-      <x>197.9315</x>
-      <y>357.2354</y>
-      <z>44</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Walter</first_name>
-      <last_name>Arthyn</last_name>
-      <appearance>pilgrim</appearance>
-      <convo>default</convo>
-      <script>pilgrim</script>
-      <x>156.6216</x>
-      <y>457.7259</y>
-      <z>43.41463</z>
       <scene>Cathedral 1</scene>
     </npc>
     <npc>
@@ -7163,17 +7044,6 @@
       <x>202</x>
       <y>367.9991</y>
       <z>44.5</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>John</first_name>
-      <last_name>Forfar</last_name>
-      <appearance>john_forfar</appearance>
-      <convo>default</convo>
-      <script>john_forfar</script>
-      <x>156.7095</x>
-      <y>439.4047</y>
-      <z>44.12406</z>
       <scene>Cathedral 1</scene>
     </npc>
   </npcs>
