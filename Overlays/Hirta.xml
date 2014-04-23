@@ -88,13 +88,13 @@
         <IdleTransition Name="FadeIn" />
       </State>
 
-      <State Factory="Blank" Name="Intro" EnableCursor="false" >
+      <!-- <State Factory="Blank" Name="Intro" EnableCursor="false" >
         <Features>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Eyemouth-Intro.jpg</Feature>
           <Feature Factory="KeyPress" Keys="^+h,^w,^{TAB},^w" Frame="MainWindow"></Feature>
         </Features>
         <IdleTransition Name="FadeIn" />
-      </State>
+      </State> -->
 
       <State Factory="Blank" Name="Instruction" EnableCursor="false" >
         <Features>
@@ -108,13 +108,14 @@
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Eyemouth-Instructions1.jpg</Feature>
         </Features>
         <IdleTransition Name="FadeIn" />
+		
       </State>
 
-      <!-- <State Factory="Video" Name="Instruction" BlackBG="true" File="Videos/Instruction.mp4" FinishState="Explore" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State> -->
+      <State Factory="Video" Name="Intro" BlackBG="true" File="Videos/hirta-boat.mp4" FinishState="Explore" Transition="Cut" Frame="MainWindow" >
+		<Features>
+          <Feature Factory="KeyPress" Keys="^+h,^w,^{TAB},^w" Frame="MainWindow"></Feature>
+        </Features>
+      </State>
 
       <!-- <State Factory="Video" Name="Flythrough" BlackBG="true" File="Videos/Flythrough.mp4" FinishState="Instruction" Transition="Cut" Frame="MainWindow" >
         <IdleTriggers>
@@ -125,9 +126,9 @@
 
     <Transitions>
 	  <Transition From="Startup"		To="Idle" Trigger="StartTimer" />
-      <Transition From="Idle" To="Intro" Transition="Cut" Trigger="SkeletonFound" />
-      <Transition From="Idle" To="Intro" Transition="Cut" Trigger="JSActivated" />
-      <Transition From="Intro"			To="Explore" Trigger="IntroTimer" />
+      <Transition From="Idle" To="Intro" Trigger="SkeletonFound" />
+      <Transition From="Idle" To="Intro" Trigger="JSActivated" />
+      <!--<Transition From="Intro"			To="Explore" Trigger="IntroTimer" />-->
       <Transition From="Instruction"			To="Instruction1" Transition="Cut" Trigger="InstructionTimer" />
       <Transition From="Instruction1"	To="Explore" Transition="Cut" Trigger="Instruction1Timer" />
 
