@@ -3460,7 +3460,7 @@
       </node>
       <node>
         <id>Cathedral 1:432</id>
-        <name></name>
+        <name>NorthGate</name>
         <x>292.5</x>
         <y>370</y>
         <z>40.57598</z>
@@ -6942,43 +6942,43 @@
       </link>
       <link>
         <a>Cathedral 1:430</a>
-        <b>Cathedral 1:431</b>
-      </link>
-      <link>
-        <a>Cathedral 1:430</a>
         <b>Cathedral 1:16</b>
       </link>
       <link>
-        <a>Cathedral 1:431</a>
-        <b>Cathedral 1:432</b>
+        <a>Cathedral 1:430</a>
+        <b>Cathedral 1:431</b>
       </link>
       <link>
         <a>Cathedral 1:431</a>
         <b>Cathedral 1:430</b>
       </link>
       <link>
-        <a>Cathedral 1:432</a>
-        <b>Cathedral 1:433</b>
+        <a>Cathedral 1:431</a>
+        <b>Cathedral 1:432</b>
       </link>
       <link>
         <a>Cathedral 1:432</a>
         <b>Cathedral 1:431</b>
       </link>
       <link>
-        <a>Cathedral 1:433</a>
-        <b>Cathedral 1:434</b>
+        <a>Cathedral 1:432</a>
+        <b>Cathedral 1:433</b>
       </link>
       <link>
         <a>Cathedral 1:433</a>
         <b>Cathedral 1:432</b>
       </link>
       <link>
-        <a>Cathedral 1:434</a>
-        <b>Cathedral 1:435</b>
+        <a>Cathedral 1:433</a>
+        <b>Cathedral 1:434</b>
       </link>
       <link>
         <a>Cathedral 1:434</a>
         <b>Cathedral 1:433</b>
+      </link>
+      <link>
+        <a>Cathedral 1:434</a>
+        <b>Cathedral 1:435</b>
       </link>
       <link>
         <a>Cathedral 1:435</a>
@@ -6992,35 +6992,13 @@
   </graph>
   <npcs>
     <npc>
-      <first_name>Default</first_name>
-      <last_name>Name</last_name>
-      <appearance>default</appearance>
-      <convo>default</convo>
-      <script>null</script>
-      <x>195.6949</x>
-      <y>338.1057</y>
-      <z>43.59069</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
-      <first_name>Default</first_name>
-      <last_name>Name</last_name>
-      <appearance>default</appearance>
-      <convo>default</convo>
-      <script>null</script>
-      <x>201.2069</x>
-      <y>250</y>
-      <z>44</z>
-      <scene>Cathedral 1</scene>
-    </npc>
-    <npc>
       <first_name>The</first_name>
-      <last_name>Deacon</last_name>
+      <last_name>Celebrant</last_name>
       <appearance>cassock_canon</appearance>
-      <convo>convo_deacon</convo>
-      <script>deacon</script>
-      <x>204</x>
-      <y>369</y>
+      <convo>convo_celebrant</convo>
+      <script>celebrant</script>
+      <x>202</x>
+      <y>367.9991</y>
       <z>44.5</z>
       <scene>Cathedral 1</scene>
     </npc>
@@ -7037,87 +7015,43 @@
     </npc>
     <npc>
       <first_name>The</first_name>
-      <last_name>Celebrant</last_name>
+      <last_name>Deacon</last_name>
       <appearance>cassock_canon</appearance>
-      <convo>convo_celebrant</convo>
-      <script>celebrant</script>
-      <x>202</x>
-      <y>367.9991</y>
+      <convo>convo_deacon</convo>
+      <script>deacon</script>
+      <x>204</x>
+      <y>369</y>
       <z>44.5</z>
+      <scene>Cathedral 1</scene>
+    </npc>
+    <npc>
+      <first_name>Default</first_name>
+      <last_name>Name</last_name>
+      <appearance>default</appearance>
+      <convo>default</convo>
+      <script>null</script>
+      <x>201.2069</x>
+      <y>250</y>
+      <z>44</z>
+      <scene>Cathedral 1</scene>
+    </npc>
+    <npc>
+      <first_name>Default</first_name>
+      <last_name>Name</last_name>
+      <appearance>default</appearance>
+      <convo>default</convo>
+      <script>null</script>
+      <x>195.6949</x>
+      <y>338.1057</y>
+      <z>43.59069</z>
       <scene>Cathedral 1</scene>
     </npc>
   </npcs>
   <light_sources>
     <light_source>
-      <x>207.8913</x>
-      <y>357.6411</y>
-      <z>44.69986</z>
-      <scene>Cathedral 1</scene>
-    </light_source>
-    <light_source>
-      <x>207.8818</x>
-      <y>355.5339</y>
-      <z>44.71097</z>
-      <scene>Cathedral 1</scene>
-    </light_source>
-    <light_source>
-      <x>226.7502</x>
-      <y>336.276</y>
-      <z>44.77385</z>
-      <scene>Cathedral 1</scene>
-    </light_source>
-    <light_source>
-      <x>226.7508</x>
-      <y>338.4602</y>
-      <z>44.76918</z>
-      <scene>Cathedral 1</scene>
-    </light_source>
-    <light_source>
-      <x>226.7464</x>
-      <y>331.4324</y>
-      <z>44.783</z>
-      <scene>Cathedral 1</scene>
-    </light_source>
-    <light_source>
-      <x>226.7458</x>
-      <y>329.2466</y>
-      <z>44.79479</z>
-      <scene>Cathedral 1</scene>
-    </light_source>
-    <light_source>
-      <x>226.7452</x>
-      <y>324.2979</y>
-      <z>44.77702</z>
-      <scene>Cathedral 1</scene>
-    </light_source>
-    <light_source>
-      <x>226.7465</x>
-      <y>322.1173</y>
-      <z>44.77507</z>
-      <scene>Cathedral 1</scene>
-    </light_source>
-    <light_source>
-      <x>226.7472</x>
-      <y>376.1462</y>
-      <z>44.79382</z>
-      <scene>Cathedral 1</scene>
-    </light_source>
-    <light_source>
-      <x>226.75</x>
-      <y>373.9597</y>
-      <z>44.77809</z>
-      <scene>Cathedral 1</scene>
-    </light_source>
-    <light_source>
-      <x>226.7404</x>
-      <y>383.5191</y>
-      <z>44.80146</z>
-      <scene>Cathedral 1</scene>
-    </light_source>
-    <light_source>
-      <x>226.7422</x>
-      <y>381.3368</y>
-      <z>44.79197</z>
+      <x>226.7513</x>
+      <y>389.9645</y>
+      <z>44.79912</z>
       <scene>Cathedral 1</scene>
     </light_source>
     <light_source>
@@ -7127,9 +7061,75 @@
       <scene>Cathedral 1</scene>
     </light_source>
     <light_source>
-      <x>226.7513</x>
-      <y>389.9645</y>
-      <z>44.79912</z>
+      <x>226.7422</x>
+      <y>381.3368</y>
+      <z>44.79197</z>
+      <scene>Cathedral 1</scene>
+    </light_source>
+    <light_source>
+      <x>226.7404</x>
+      <y>383.5191</y>
+      <z>44.80146</z>
+      <scene>Cathedral 1</scene>
+    </light_source>
+    <light_source>
+      <x>226.75</x>
+      <y>373.9597</y>
+      <z>44.77809</z>
+      <scene>Cathedral 1</scene>
+    </light_source>
+    <light_source>
+      <x>226.7472</x>
+      <y>376.1462</y>
+      <z>44.79382</z>
+      <scene>Cathedral 1</scene>
+    </light_source>
+    <light_source>
+      <x>226.7465</x>
+      <y>322.1173</y>
+      <z>44.77507</z>
+      <scene>Cathedral 1</scene>
+    </light_source>
+    <light_source>
+      <x>226.7452</x>
+      <y>324.2979</y>
+      <z>44.77702</z>
+      <scene>Cathedral 1</scene>
+    </light_source>
+    <light_source>
+      <x>226.7458</x>
+      <y>329.2466</y>
+      <z>44.79479</z>
+      <scene>Cathedral 1</scene>
+    </light_source>
+    <light_source>
+      <x>226.7464</x>
+      <y>331.4324</y>
+      <z>44.783</z>
+      <scene>Cathedral 1</scene>
+    </light_source>
+    <light_source>
+      <x>226.7508</x>
+      <y>338.4602</y>
+      <z>44.76918</z>
+      <scene>Cathedral 1</scene>
+    </light_source>
+    <light_source>
+      <x>226.7502</x>
+      <y>336.276</y>
+      <z>44.77385</z>
+      <scene>Cathedral 1</scene>
+    </light_source>
+    <light_source>
+      <x>207.8818</x>
+      <y>355.5339</y>
+      <z>44.71097</z>
+      <scene>Cathedral 1</scene>
+    </light_source>
+    <light_source>
+      <x>207.8913</x>
+      <y>357.6411</y>
+      <z>44.69986</z>
       <scene>Cathedral 1</scene>
     </light_source>
   </light_sources>
