@@ -62,4 +62,6 @@
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickInactivatedTriggerFactory, JoystickLib" scope="singleton" />
   -->
   <!--                        EXPERIMENTAL BINDINGS                         -->
+  <!--                        FLYTHROUGH BINDINGS                         -->
+  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Flythrough.FlythroughPlugin, FlythroughLib" scope="singleton" />
 </module>
