@@ -60,6 +60,16 @@
               <Trigger Factory="JoystickButton" Name="X" Button="X" />
             </Triggers>
           </Feature>
+		  <Feature Factory="KeyClick" Keys="+{TAB},{RIGHT}" Frame="MainWindow" Name="TabRight">
+            <Triggers>
+              <Trigger Name="R" />
+            </Triggers>
+          </Feature>
+		  <Feature Factory="KeyClick" Keys="+{TAB},{LEFT}" Frame="MainWindow" Name="TabLeft">
+            <Triggers>
+              <Trigger Name="L" />
+            </Triggers>
+          </Feature>
         </Features>
         <IdleTriggers>
           <Trigger Name="IdleTrigger" />

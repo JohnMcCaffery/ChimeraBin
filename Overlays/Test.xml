@@ -7,8 +7,8 @@
       <!-- <Trigger Factory="JoystickButton" Name="B" Button="B" /> -->
       <Trigger Factory="JoystickButton" Name="X" Button="X" />
       <Trigger Factory="JoystickButton" Name="Y" Button="Y" />
-      <!-- <Trigger Factory="JoystickButton" Button="RightShoulder" Name="R" />
-      <Trigger Factory="JoystickButton" Button="LeftShoulder" Name="L" /> -->
+      <!--<Trigger Factory="JoystickButton" Button="RightShoulder" Name="R" />
+      <Trigger Factory="JoystickButton" Button="LeftShoulder" Name="L" />-->
 	  <Trigger Factory="SkeletonLost" Timeout="30000" Name="IdleTrigger" />
       <Trigger Factory="SkeletonLost" Timeout="459000" Name="VideoIdleTrigger" />
       <Trigger Factory="SkeletonFound" Name="SkeletonFound" />
@@ -61,7 +61,7 @@
 		<Features>
           <Feature Factory="JoystickClick" LeftClick="true" Name="JoystickClick">
 			<Triggers>
-				<Trigger Name="CrossArms" />
+				<Trigger Factory="JoystickButton" Name="B" Button="B" />
 			</Triggers>
 		  </Feature>
 		  <Feature Factory="KeyClick" Keys="^w,^{TAB},^w" Frame="MainWindow">
@@ -69,6 +69,16 @@
 				<Trigger Name="CrossArmsLow" />
 			</Triggers>
 		  </Feature>
+		  <!--<Feature Factory="KeyClick" Keys="+{TAB},{RIGHT}" Frame="MainWindow" Name="TabRight">
+            <Triggers>
+              <Trigger Factory="JoystickButton" Button="RightShoulder" Name="R" />
+            </Triggers>
+          </Feature>
+		  <Feature Factory="KeyClick" Keys="+{TAB},{LEFT}" Frame="MainWindow" Name="TabLeft">
+            <Triggers>
+              <Trigger Factory="JoystickButton" Button="LeftShoulder" Name="L" />
+            </Triggers>
+          </Feature>-->
         </Features>
 		<IdleTriggers>
           <Trigger Name="IdleTrigger" />
