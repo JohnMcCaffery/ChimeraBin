@@ -1,389 +1,547 @@
-2014-05-08 08:50:26,036 [1] INFO  Core - Loaded VW-Viewer. Enabled.
-2014-05-08 08:50:26,400 [1] INFO  Core - Loaded Flythrough. Enabled.
-2014-05-08 08:50:26,487 [1] INFO  Core - Loaded RemoteControl. Enabled.
-2014-05-08 08:50:26,666 [1] INFO  Overlay - Loading overlay from Overlays/Timespan/TimespanOverlay-Stage2.xml.
-2014-05-08 08:50:27,174 [1] DEBUG Overlay - Unable to add Feature WallsE another Feature has been bound with that name.
-2014-05-08 08:50:27,215 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
-2014-05-08 08:50:27,216 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
-2014-05-08 08:50:27,217 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
-2014-05-08 08:50:27,241 [1] INFO  Overlay - Created FlythroughState state LoadTextures.
-2014-05-08 08:50:27,242 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2014-05-08 08:50:27,401 [1] INFO  Overlay - Created BlankState state IdleIntro.
-2014-05-08 08:50:27,402 [1] INFO  Overlay - Created FlythroughState state Idle.
-2014-05-08 08:50:27,402 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2014-05-08 08:50:27,516 [1] INFO  Overlay - Created BlankState state Intro.
-2014-05-08 08:50:27,578 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
-2014-05-08 08:50:27,578 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2014-05-08 08:50:27,679 [1] INFO  Overlay - Created BlankState state Splash.
-2014-05-08 08:50:28,011 [1] INFO  Overlay - Created SlideshowState state Slideshow.
-2014-05-08 08:50:28,012 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2014-05-08 08:50:28,029 [1] INFO  Overlay - Created BlankState state Story1Confirm.
-2014-05-08 08:50:28,030 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2014-05-08 08:50:28,041 [1] INFO  Overlay - Created BlankState state Story2Confirm.
-2014-05-08 08:50:28,042 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2014-05-08 08:50:28,053 [1] INFO  Overlay - Created BlankState state Story3Confirm.
-2014-05-08 08:50:28,053 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2014-05-08 08:50:28,072 [1] INFO  Overlay - Created BlankState state Story4Confirm.
-2014-05-08 08:50:28,073 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
-2014-05-08 08:50:28,086 [1] INFO  Overlay - Created BlankState state Story5Confirm.
-2014-05-08 08:50:28,099 [1] INFO  Overlay - Created VideoState state Story1.
-2014-05-08 08:50:28,107 [1] INFO  Overlay - Created VideoState state Story2.
-2014-05-08 08:50:28,114 [1] INFO  Overlay - Created VideoState state Story3.
-2014-05-08 08:50:28,121 [1] INFO  Overlay - Created VideoState state Story4.
-2014-05-08 08:50:28,128 [1] INFO  Overlay - Created VideoState state Story5.
-2014-05-08 08:50:28,131 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,131 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,131 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,132 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,133 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,134 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,135 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,136 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,137 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,138 [1] DEBUG Overlay - Unable to get feature for state feature from Feature. WallsW is not bound to a known instance. 
-2014-05-08 08:50:28,139 [1] INFO  Overlay - Created KinectControlState state KinectAvatar.
-2014-05-08 08:50:28,140 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,140 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,141 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,142 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,143 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,145 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,146 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,147 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,148 [1] DEBUG Overlay - Unable to get feature for state feature from Feature. WallsW is not bound to a known instance. 
-2014-05-08 08:50:28,149 [1] INFO  Overlay - Created KinectControlState state KinectFlycam.
-2014-05-08 08:50:28,203 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
-2014-05-08 08:50:28,274 [1] INFO  Overlay - Created VideoState state ExploreIntro.
-2014-05-08 08:50:28,276 [1] INFO  Overlay - Creating Transitions
-2014-05-08 08:50:28,278 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
-2014-05-08 08:50:28,293 [1] DEBUG Overlay - Unable to create transition.
-2014-05-08 08:50:28,293 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
-2014-05-08 08:50:28,294 [1] DEBUG Overlay - Unable to create transition.
-2014-05-08 08:50:28,307 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
-2014-05-08 08:50:28,312 [1] DEBUG Overlay - Unable to create transition.
-2014-05-08 08:50:28,312 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
-2014-05-08 08:50:28,313 [1] DEBUG Overlay - Unable to create transition.
-2014-05-08 08:50:28,344 [1] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 08:50:28,345 [1] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 08:50:28,346 [1] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 08:50:29,748 [1] INFO  Overlay - Current state set to LoadTextures.
-2014-05-08 08:50:29,750 [1] INFO  Core - Loaded Overlay. Enabled.
-2014-05-08 08:50:29,751 [1] INFO  Core - Loaded HeightmapBot. Enabled.
-2014-05-08 08:50:29,752 [1] INFO  Core - Loaded KinectMovement. Disabled.
-2014-05-08 08:50:29,754 [1] INFO  Core - Loaded KinectCursor. Enabled.
-2014-05-08 08:50:29,833 [1] INFO  OpenSim.MainWindowProxy - Proxying http://localhost:9000/
-2014-05-08 08:50:29,935 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
-2014-05-08 08:50:29,970 [1] INFO  ProcessController - Launching C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2014-05-08 08:50:30,102 [1] INFO  OpenSim.RightWindowProxy - Proxying http://localhost:9000/
-2014-05-08 08:50:30,104 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
-2014-05-08 08:50:30,104 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 20s.
-2014-05-08 08:50:30,106 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://localhost:9000/
-2014-05-08 08:50:30,107 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
-2014-05-08 08:50:30,107 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 40s.
-2014-05-08 08:50:30,232 [1] INFO  ProcessManager - Listening for crashes.
-2014-05-08 08:50:34,025 [XML-RPC Login] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9051)
-2014-05-08 08:50:37,570 [29] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9052)
-2014-05-08 08:50:37,570 [30] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9052)
-2014-05-08 08:50:37,571 [39] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9053)
-2014-05-08 08:50:37,571 [36] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9053)
-2014-05-08 08:50:37,572 [32] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9054)
-2014-05-08 08:50:37,575 [35] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9054)
-2014-05-08 08:50:37,576 [31] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9055)
-2014-05-08 08:50:37,577 [34] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9055)
-2014-05-08 08:50:37,578 [30] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9056)
-2014-05-08 08:50:37,594 [35] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9056)
-2014-05-08 08:50:38,558 [34] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9057)
-2014-05-08 08:50:38,791 [33] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9057)
-2014-05-08 08:50:39,032 [35] INFO  Heightmap - Finished mapping Timespan 1
-2014-05-08 08:50:39,411 [11] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9058)
-2014-05-08 08:50:39,411 [22] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9059)
-2014-05-08 08:50:39,411 [33] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9059)
-2014-05-08 08:50:39,411 [41] ERROR OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for unknown sim 127.0.0.1:9058
-2014-05-08 08:50:43,408 [11] INFO  Heightmap - Finished mapping Timespan 6
-2014-05-08 08:50:43,889 [41] INFO  Heightmap - Finished mapping Timespan 4
-2014-05-08 08:50:44,254 [39] INFO  Heightmap - Finished mapping Timespan 3
-2014-05-08 08:50:44,443 [42] INFO  Heightmap - Finished mapping Timespan 2
-2014-05-08 08:50:45,124 [39] INFO  Heightmap - Finished mapping Timespan 9
-2014-05-08 08:50:45,397 [33] INFO  Heightmap - Finished mapping Timespan 8
-2014-05-08 08:50:45,538 [31] INFO  Heightmap - Finished mapping Timespan 7
-2014-05-08 08:50:45,933 [34] INFO  Heightmap - Finished mapping Timespan 5
-2014-05-08 08:50:45,934 [34] INFO  OpenMetaverse - <Heightmap Bot>: Logging out
-2014-05-08 08:50:46,074 [29] INFO  OpenMetaverse - <Heightmap Bot>: NetworkManager shutdown initiated
-2014-05-08 08:50:46,074 [29] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 2 (127.0.0.1:9052) is aborting
-2014-05-08 08:50:46,193 [29] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 3 (127.0.0.1:9053) is aborting
-2014-05-08 08:50:46,194 [29] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 4 (127.0.0.1:9054) is aborting
-2014-05-08 08:50:46,195 [29] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 5 (127.0.0.1:9055) is aborting
-2014-05-08 08:50:46,196 [29] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 6 (127.0.0.1:9056) is aborting
-2014-05-08 08:50:46,198 [29] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 7 (127.0.0.1:9057) is aborting
-2014-05-08 08:50:46,202 [29] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 9 (127.0.0.1:9059) is aborting
-2014-05-08 08:50:46,208 [29] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 1 (127.0.0.1:9051) is aborting
-2014-05-08 08:50:56,040 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 127.0.0.1:9051 at 127.0.0.1:49179
-2014-05-08 08:51:10,107 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2014-05-08 08:51:19,857 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 127.0.0.1:9051 at 127.0.0.1:49193
-2014-05-08 08:51:30,110 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
-2014-05-08 08:51:31,302 [51] INFO  OpenSim - MainWindow viewer pressing ^%{F1}
-2014-05-08 08:51:31,954 [51] INFO  OpenSim - MainWindow viewer pressing ^+u
-2014-05-08 08:51:41,513 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 127.0.0.1:9051 at 127.0.0.1:49207
-2014-05-08 08:51:52,022 [50] INFO  OpenSim - RightWindow viewer pressing ^%{F1}
-2014-05-08 08:51:52,538 [50] INFO  OpenSim - RightWindow viewer pressing ^+u
-2014-05-08 08:52:09,025 [41] INFO  OpenSim - LeftWindow viewer pressing ^%{F1}
-2014-05-08 08:52:09,531 [41] INFO  OpenSim - LeftWindow viewer pressing ^+u
-2014-05-08 08:55:30,533 [StateChange] INFO  Overlay - Transitioning from LoadTextures to IdleIntro.
-2014-05-08 08:55:32,566 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 08:55:32,566 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 08:55:32,567 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 08:55:32,568 [Tick Thread] INFO  Overlay - Current state set to IdleIntro.
-2014-05-08 08:55:37,574 [StateChange] INFO  Overlay - Transitioning from IdleIntro to Idle.
-2014-05-08 08:55:37,575 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 08:55:37,575 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 08:55:37,576 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 08:55:39,600 [Tick Thread] INFO  Overlay - Current state set to Idle.
-2014-05-08 09:59:45,937 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
-2014-05-08 09:59:47,981 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 09:59:47,981 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 09:59:47,981 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 09:59:47,981 [Tick Thread] INFO  Overlay - Current state set to Intro.
-2014-05-08 09:59:53,004 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
-2014-05-08 09:59:53,020 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 09:59:53,020 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 09:59:53,020 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 09:59:55,033 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
-2014-05-08 10:07:40,365 [StateChange] INFO  Overlay - Transitioning from GuidedTour to ExploreIntro.
-2014-05-08 10:07:40,365 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
-2014-05-08 10:07:40,365 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
-2014-05-08 10:07:40,365 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
-2014-05-08 10:07:40,365 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:07:40,365 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:07:40,365 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:07:40,365 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
-2014-05-08 10:07:40,365 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
-2014-05-08 10:07:40,365 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
-2014-05-08 10:07:40,375 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:07:40,375 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:07:40,375 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:07:40,375 [StateChange] INFO  Overlay - Current state set to ExploreIntro.
-2014-05-08 10:08:51,398 [StateChange] INFO  Overlay - Transitioning from ExploreIntro to KinectAvatar.
-2014-05-08 10:08:51,401 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:08:51,403 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:08:51,405 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:08:51,408 [StateChange] DEBUG Core - Control mode changed to Delta.
-2014-05-08 10:08:51,408 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:08:51,409 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:08:51,410 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:08:51,414 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:08:51,420 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:08:51,422 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:08:51,424 [StateChange] DEBUG KinectMovement - Enabled
-2014-05-08 10:08:51,424 [StateChange] INFO  Overlay - Current state set to KinectAvatar.
-2014-05-08 10:09:50,907 [StateChange] INFO  Overlay - Transitioning from KinectAvatar to IdleIntro.
-2014-05-08 10:09:50,908 [StateChange] DEBUG KinectMovement - Disabled
-2014-05-08 10:09:53,007 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:09:53,008 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:09:53,009 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:09:53,011 [Tick Thread] INFO  Overlay - Current state set to IdleIntro.
-2014-05-08 10:09:58,019 [StateChange] INFO  Overlay - Transitioning from IdleIntro to Idle.
-2014-05-08 10:09:58,020 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:09:58,020 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:09:58,034 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:09:58,035 [StateChange] DEBUG Core - Control mode changed to Absolute.
-2014-05-08 10:10:00,067 [Tick Thread] INFO  Overlay - Current state set to Idle.
-2014-05-08 10:46:50,476 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
-2014-05-08 10:46:52,608 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:46:52,612 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:46:52,613 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:46:52,614 [Tick Thread] INFO  Overlay - Current state set to Intro.
-2014-05-08 10:46:57,616 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
-2014-05-08 10:46:57,634 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:46:57,634 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:46:57,634 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:46:59,677 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
-2014-05-08 10:54:44,293 [StateChange] INFO  Overlay - Transitioning from GuidedTour to ExploreIntro.
-2014-05-08 10:54:44,293 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
-2014-05-08 10:54:44,323 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
-2014-05-08 10:54:44,373 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
-2014-05-08 10:54:44,373 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:54:44,373 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:54:44,383 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:54:44,383 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
-2014-05-08 10:54:44,383 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
-2014-05-08 10:54:44,383 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
-2014-05-08 10:54:44,383 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:54:44,383 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:54:44,383 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:54:44,383 [StateChange] INFO  Overlay - Current state set to ExploreIntro.
-2014-05-08 10:55:54,994 [StateChange] INFO  Overlay - Transitioning from ExploreIntro to KinectAvatar.
-2014-05-08 10:55:54,994 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:55:54,994 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:55:55,003 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:55:55,003 [StateChange] DEBUG Core - Control mode changed to Delta.
-2014-05-08 10:55:55,004 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:55:55,007 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:55:55,007 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:55:55,011 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:55:55,011 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:55:55,012 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:55:55,015 [StateChange] DEBUG KinectMovement - Enabled
-2014-05-08 10:55:55,016 [StateChange] INFO  Overlay - Current state set to KinectAvatar.
-2014-05-08 10:58:16,659 [StateChange] INFO  Overlay - Transitioning from KinectAvatar to IdleIntro.
-2014-05-08 10:58:16,660 [StateChange] DEBUG KinectMovement - Disabled
-2014-05-08 10:58:18,761 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:58:18,761 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:58:18,763 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:58:18,763 [Tick Thread] INFO  Overlay - Current state set to IdleIntro.
-2014-05-08 10:58:23,772 [StateChange] INFO  Overlay - Transitioning from IdleIntro to Idle.
-2014-05-08 10:58:23,773 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 10:58:23,773 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 10:58:23,775 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 10:58:23,775 [StateChange] DEBUG Core - Control mode changed to Absolute.
-2014-05-08 10:58:25,790 [Tick Thread] INFO  Overlay - Current state set to Idle.
-2014-05-08 11:04:18,356 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
-2014-05-08 11:04:20,466 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 11:04:20,466 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 11:04:20,467 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 11:04:20,467 [Tick Thread] INFO  Overlay - Current state set to Intro.
-2014-05-08 11:04:25,472 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
-2014-05-08 11:04:25,491 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 11:04:25,491 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 11:04:25,492 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 11:04:27,540 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
-2014-05-08 11:04:31,170 [StateChange] INFO  Overlay - Transitioning from GuidedTour to Splash.
-2014-05-08 11:04:33,190 [Tick Thread] DEBUG MainWindowOverlay - Enabling cursor control
-2014-05-08 11:04:33,190 [Tick Thread] DEBUG RightWindowOverlay - Enabling cursor control
-2014-05-08 11:04:33,190 [Tick Thread] DEBUG LeftWindowOverlay - Enabling cursor control
-2014-05-08 11:04:33,190 [Tick Thread] INFO  Overlay - Current state set to Splash.
-2014-05-08 11:04:42,782 [StateChange] INFO  Overlay - Transitioning from Splash to Story5Confirm.
-2014-05-08 11:04:42,792 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
-2014-05-08 11:04:42,792 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
-2014-05-08 11:04:42,792 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
-2014-05-08 11:04:42,792 [StateChange] INFO  Overlay - Current state set to Story5Confirm.
-2014-05-08 11:04:47,312 [StateChange] INFO  Overlay - Transitioning from Story5Confirm to Story5.
-2014-05-08 11:04:47,312 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
-2014-05-08 11:04:47,312 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
-2014-05-08 11:04:47,312 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
-2014-05-08 11:04:47,312 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 11:04:47,322 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 11:04:47,322 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 11:04:47,322 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
-2014-05-08 11:04:47,322 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
-2014-05-08 11:04:47,322 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
-2014-05-08 11:04:47,322 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 11:04:47,322 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 11:04:47,322 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 11:04:47,322 [StateChange] INFO  Overlay - Current state set to Story5.
-2014-05-08 11:10:24,472 [StateChange] INFO  Overlay - Transitioning from Story5 to Splash.
-2014-05-08 11:10:24,562 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
-2014-05-08 11:10:24,562 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
-2014-05-08 11:10:24,562 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
-2014-05-08 11:10:24,572 [StateChange] INFO  Overlay - Current state set to Splash.
-2014-05-08 11:10:54,562 [StateChange] INFO  Overlay - Transitioning from Splash to IdleIntro.
-2014-05-08 11:10:56,662 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 11:10:56,662 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 11:10:56,662 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 11:10:56,672 [Tick Thread] INFO  Overlay - Current state set to IdleIntro.
-2014-05-08 11:11:01,674 [StateChange] INFO  Overlay - Transitioning from IdleIntro to Idle.
-2014-05-08 11:11:01,674 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 11:11:01,674 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 11:11:01,674 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 11:11:03,686 [Tick Thread] INFO  Overlay - Current state set to Idle.
-2014-05-08 11:11:57,002 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
-2014-05-08 11:11:59,102 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 11:11:59,102 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 11:11:59,102 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 11:11:59,102 [Tick Thread] INFO  Overlay - Current state set to Intro.
-2014-05-08 11:11:59,702 [StateChange] INFO  Overlay - Transitioning from Intro to Splash.
-2014-05-08 11:11:59,802 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
-2014-05-08 11:11:59,802 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
-2014-05-08 11:11:59,802 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
-2014-05-08 11:11:59,802 [StateChange] INFO  Overlay - Current state set to Splash.
-2014-05-08 11:12:11,498 [StateChange] INFO  Overlay - Transitioning from Splash to KinectFlycam.
-2014-05-08 11:12:11,498 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 11:12:11,498 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 11:12:11,508 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 11:12:11,508 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 11:12:11,508 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 11:12:11,508 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 11:12:13,510 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 11:12:13,510 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 11:12:13,510 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 11:12:13,520 [Tick Thread] DEBUG KinectMovement - Enabled
-2014-05-08 11:12:13,520 [Tick Thread] INFO  Overlay - Current state set to KinectFlycam.
-2014-05-08 11:12:46,698 [StateChange] INFO  Overlay - Transitioning from KinectFlycam to Splash.
-2014-05-08 11:12:46,698 [StateChange] DEBUG KinectMovement - Disabled
-2014-05-08 11:12:48,818 [Tick Thread] DEBUG MainWindowOverlay - Enabling cursor control
-2014-05-08 11:12:48,818 [Tick Thread] DEBUG RightWindowOverlay - Enabling cursor control
-2014-05-08 11:12:48,818 [Tick Thread] DEBUG LeftWindowOverlay - Enabling cursor control
-2014-05-08 11:12:48,818 [Tick Thread] INFO  Overlay - Current state set to Splash.
-2014-05-08 11:12:56,974 [StateChange] INFO  Overlay - Transitioning from Splash to Story3Confirm.
-2014-05-08 11:12:56,974 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
-2014-05-08 11:12:56,974 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
-2014-05-08 11:12:56,984 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
-2014-05-08 11:12:56,984 [StateChange] INFO  Overlay - Current state set to Story3Confirm.
-2014-05-08 11:12:58,474 [StateChange] INFO  Overlay - Transitioning from Story3Confirm to Splash.
-2014-05-08 11:12:58,584 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
-2014-05-08 11:12:58,584 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
-2014-05-08 11:12:58,584 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
-2014-05-08 11:12:58,584 [StateChange] INFO  Overlay - Current state set to Splash.
-2014-05-08 11:13:28,590 [StateChange] INFO  Overlay - Transitioning from Splash to IdleIntro.
-2014-05-08 11:13:30,720 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 11:13:30,720 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 11:13:30,730 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 11:13:30,730 [Tick Thread] INFO  Overlay - Current state set to IdleIntro.
-2014-05-08 11:13:35,730 [StateChange] INFO  Overlay - Transitioning from IdleIntro to Idle.
-2014-05-08 11:13:35,730 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 11:13:35,730 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 11:13:35,730 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 11:13:37,740 [Tick Thread] INFO  Overlay - Current state set to Idle.
-2014-05-08 13:23:28,706 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
-2014-05-08 13:23:30,850 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 13:23:30,850 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 13:23:30,850 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 13:23:30,850 [Tick Thread] INFO  Overlay - Current state set to Intro.
-2014-05-08 13:23:35,876 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
-2014-05-08 13:23:35,896 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 13:23:35,896 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 13:23:35,896 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 13:23:37,918 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
-2014-05-08 13:31:22,695 [StateChange] INFO  Overlay - Transitioning from GuidedTour to ExploreIntro.
-2014-05-08 13:31:22,695 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
-2014-05-08 13:31:22,725 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
-2014-05-08 13:31:22,775 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
-2014-05-08 13:31:22,775 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 13:31:22,775 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 13:31:22,785 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 13:31:22,788 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
-2014-05-08 13:31:22,790 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
-2014-05-08 13:31:22,790 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
-2014-05-08 13:31:22,794 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 13:31:22,794 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 13:31:22,795 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 13:31:22,796 [StateChange] INFO  Overlay - Current state set to ExploreIntro.
-2014-05-08 13:32:33,461 [StateChange] INFO  Overlay - Transitioning from ExploreIntro to KinectAvatar.
-2014-05-08 13:32:33,462 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 13:32:33,463 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 13:32:33,471 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 13:32:33,472 [StateChange] DEBUG Core - Control mode changed to Delta.
-2014-05-08 13:32:33,472 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 13:32:33,473 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 13:32:33,474 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 13:32:33,480 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 13:32:33,481 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 13:32:33,482 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 13:32:33,489 [StateChange] DEBUG KinectMovement - Enabled
-2014-05-08 13:32:33,492 [StateChange] INFO  Overlay - Current state set to KinectAvatar.
-2014-05-08 13:33:32,062 [StateChange] INFO  Overlay - Transitioning from KinectAvatar to IdleIntro.
-2014-05-08 13:33:32,063 [StateChange] DEBUG KinectMovement - Disabled
-2014-05-08 13:33:34,154 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 13:33:34,155 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 13:33:34,158 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 13:33:34,158 [Tick Thread] INFO  Overlay - Current state set to IdleIntro.
-2014-05-08 13:33:39,173 [StateChange] INFO  Overlay - Transitioning from IdleIntro to Idle.
-2014-05-08 13:33:39,174 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
-2014-05-08 13:33:39,174 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
-2014-05-08 13:33:39,174 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
-2014-05-08 13:33:39,177 [StateChange] DEBUG Core - Control mode changed to Absolute.
-2014-05-08 13:33:41,196 [Tick Thread] INFO  Overlay - Current state set to Idle.
-2014-05-08 16:46:03,954 [49] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
-2014-05-08 16:46:03,957 [1] DEBUG OpenSim.LeftWindowProxy - Closing
-2014-05-08 16:46:03,958 [1] INFO  OpenSim.LeftWindowProxy - Closed
-2014-05-08 16:46:04,065 [55] WARN  OpenMetaverse - Socket Shutdown: ConnectionReset
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+2014-05-09 10:01:10,528 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-05-09 10:01:10,944 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-05-09 10:01:10,974 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-05-09 10:01:11,243 [1] INFO  Overlay - Loading overlay from Overlays/Timespan/TimespanOverlay-Stage2.xml.
+2014-05-09 10:01:11,737 [1] DEBUG Overlay - Unable to add Feature WallsE another Feature has been bound with that name.
+2014-05-09 10:01:11,771 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
+2014-05-09 10:01:11,772 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-05-09 10:01:11,773 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-05-09 10:01:11,796 [1] INFO  Overlay - Created FlythroughState state LoadTextures.
+2014-05-09 10:01:11,798 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-05-09 10:01:11,921 [1] INFO  Overlay - Created BlankState state IdleIntro.
+2014-05-09 10:01:11,922 [1] INFO  Overlay - Created FlythroughState state Idle.
+2014-05-09 10:01:11,922 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-05-09 10:01:12,017 [1] INFO  Overlay - Created BlankState state Intro.
+2014-05-09 10:01:12,078 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
+2014-05-09 10:01:12,079 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-05-09 10:01:12,182 [1] INFO  Overlay - Created BlankState state Splash.
+2014-05-09 10:01:12,534 [1] INFO  Overlay - Created SlideshowState state Slideshow.
+2014-05-09 10:01:12,534 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-05-09 10:01:12,551 [1] INFO  Overlay - Created BlankState state Story1Confirm.
+2014-05-09 10:01:12,552 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-05-09 10:01:12,564 [1] INFO  Overlay - Created BlankState state Story2Confirm.
+2014-05-09 10:01:12,565 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-05-09 10:01:12,576 [1] INFO  Overlay - Created BlankState state Story3Confirm.
+2014-05-09 10:01:12,577 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-05-09 10:01:12,594 [1] INFO  Overlay - Created BlankState state Story4Confirm.
+2014-05-09 10:01:12,595 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-05-09 10:01:12,620 [1] INFO  Overlay - Created BlankState state Story5Confirm.
+2014-05-09 10:01:12,633 [1] INFO  Overlay - Created VideoState state Story1.
+2014-05-09 10:01:12,640 [1] INFO  Overlay - Created VideoState state Story2.
+2014-05-09 10:01:12,648 [1] INFO  Overlay - Created VideoState state Story3.
+2014-05-09 10:01:12,655 [1] INFO  Overlay - Created VideoState state Story4.
+2014-05-09 10:01:12,663 [1] INFO  Overlay - Created VideoState state Story5.
+2014-05-09 10:01:12,665 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,665 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,666 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,667 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,668 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,669 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,670 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,671 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,671 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,672 [1] DEBUG Overlay - Unable to get feature for state feature from Feature. WallsW is not bound to a known instance. 
+2014-05-09 10:01:12,673 [1] INFO  Overlay - Created KinectControlState state KinectAvatar.
+2014-05-09 10:01:12,675 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,676 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,678 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,679 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,680 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,681 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,681 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,682 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,683 [1] DEBUG Overlay - Unable to get feature for state feature from Feature. WallsW is not bound to a known instance. 
+2014-05-09 10:01:12,684 [1] INFO  Overlay - Created KinectControlState state KinectFlycam.
+2014-05-09 10:01:12,748 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-05-09 10:01:12,802 [1] INFO  Overlay - Created VideoState state ExploreIntro.
+2014-05-09 10:01:12,803 [1] INFO  Overlay - Creating Transitions
+2014-05-09 10:01:12,806 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-05-09 10:01:12,815 [1] DEBUG Overlay - Unable to create transition.
+2014-05-09 10:01:12,816 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-05-09 10:01:12,817 [1] DEBUG Overlay - Unable to create transition.
+2014-05-09 10:01:12,829 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-05-09 10:01:12,834 [1] DEBUG Overlay - Unable to create transition.
+2014-05-09 10:01:12,835 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-05-09 10:01:12,836 [1] DEBUG Overlay - Unable to create transition.
+2014-05-09 10:01:12,856 [1] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 10:01:12,856 [1] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 10:01:12,857 [1] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 10:01:14,390 [1] INFO  Overlay - Current state set to LoadTextures.
+2014-05-09 10:01:14,391 [1] INFO  Core - Loaded Overlay. Enabled.
+2014-05-09 10:01:14,393 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2014-05-09 10:01:14,394 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2014-05-09 10:01:14,397 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2014-05-09 10:01:14,499 [1] INFO  OpenSim.MainWindowProxy - Proxying http://localhost:9000/
+2014-05-09 10:01:14,556 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-05-09 10:01:14,592 [1] INFO  ProcessController - Launching C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
+2014-05-09 10:01:14,750 [1] INFO  OpenSim.RightWindowProxy - Proxying http://localhost:9000/
+2014-05-09 10:01:14,753 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2014-05-09 10:01:14,754 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 20s.
+2014-05-09 10:01:14,756 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://localhost:9000/
+2014-05-09 10:01:14,757 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2014-05-09 10:01:14,757 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 40s.
+2014-05-09 10:01:14,887 [1] INFO  ProcessManager - Listening for crashes.
+2014-05-09 10:01:18,925 [XML-RPC Login] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9051)
+2014-05-09 10:01:22,766 [35] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9052)
+2014-05-09 10:01:22,766 [33] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9052)
+2014-05-09 10:01:22,766 [29] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9053)
+2014-05-09 10:01:22,767 [32] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9053)
+2014-05-09 10:01:22,768 [40] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9054)
+2014-05-09 10:01:22,768 [34] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9054)
+2014-05-09 10:01:22,772 [37] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9055)
+2014-05-09 10:01:22,772 [30] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9055)
+2014-05-09 10:01:22,773 [36] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9056)
+2014-05-09 10:01:22,788 [35] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9056)
+2014-05-09 10:01:23,740 [32] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9057)
+2014-05-09 10:01:23,976 [30] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9057)
+2014-05-09 10:01:23,977 [30] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9058)
+2014-05-09 10:01:24,220 [35] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9058)
+2014-05-09 10:01:24,295 [35] INFO  Heightmap - Finished mapping Timespan 1
+2014-05-09 10:01:24,605 [35] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9059)
+2014-05-09 10:01:25,270 [34] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9059)
+2014-05-09 10:01:28,628 [42] INFO  Heightmap - Finished mapping Timespan 6
+2014-05-09 10:01:29,109 [50] INFO  Heightmap - Finished mapping Timespan 4
+2014-05-09 10:01:29,539 [37] INFO  Heightmap - Finished mapping Timespan 3
+2014-05-09 10:01:29,651 [37] INFO  Heightmap - Finished mapping Timespan 2
+2014-05-09 10:01:29,997 [37] INFO  Heightmap - Finished mapping Timespan 8
+2014-05-09 10:01:30,173 [34] INFO  Heightmap - Finished mapping Timespan 9
+2014-05-09 10:01:30,773 [45] INFO  Heightmap - Finished mapping Timespan 7
+2014-05-09 10:01:31,202 [43] INFO  Heightmap - Finished mapping Timespan 5
+2014-05-09 10:01:31,205 [43] INFO  OpenMetaverse - <Heightmap Bot>: Logging out
+2014-05-09 10:01:31,250 [48] INFO  OpenMetaverse - <Heightmap Bot>: NetworkManager shutdown initiated
+2014-05-09 10:01:31,253 [48] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 2 (127.0.0.1:9052) is aborting
+2014-05-09 10:01:31,604 [48] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 3 (127.0.0.1:9053) is aborting
+2014-05-09 10:01:31,605 [48] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 4 (127.0.0.1:9054) is aborting
+2014-05-09 10:01:31,606 [28] WARN  OpenMetaverse - No Message handler exists for event DisableSimulator. Unable to decode. Will try Generic Handler next
+2014-05-09 10:01:31,606 [26] WARN  OpenMetaverse - No Message handler exists for event DisableSimulator. Unable to decode. Will try Generic Handler next
+2014-05-09 10:01:31,606 [48] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 5 (127.0.0.1:9055) is aborting
+2014-05-09 10:01:31,669 [48] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 6 (127.0.0.1:9056) is aborting
+2014-05-09 10:01:31,670 [48] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 7 (127.0.0.1:9057) is aborting
+2014-05-09 10:01:31,671 [48] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 8 (127.0.0.1:9058) is aborting
+2014-05-09 10:01:31,671 [48] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 9 (127.0.0.1:9059) is aborting
+2014-05-09 10:01:31,672 [48] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 1 (127.0.0.1:9051) is aborting
+2014-05-09 10:01:31,672 [37] INFO  OpenMetaverse - <Heightmap Bot>: NetworkManager shutdown initiated
+2014-05-09 10:01:40,921 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 127.0.0.1:9051 at 127.0.0.1:49179
+2014-05-09 10:01:54,756 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
+2014-05-09 10:02:08,537 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 127.0.0.1:9051 at 127.0.0.1:49193
+2014-05-09 10:02:14,759 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
+2014-05-09 10:02:16,466 [53] INFO  OpenSim - MainWindow viewer pressing ^%{F1}
+2014-05-09 10:02:19,585 [53] INFO  OpenSim - MainWindow viewer pressing ^+u
+2014-05-09 10:02:25,902 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 127.0.0.1:9051 at 127.0.0.1:49207
+2014-05-09 10:02:43,406 [58] INFO  OpenSim - RightWindow viewer pressing ^%{F1}
+2014-05-09 10:02:43,914 [58] INFO  OpenSim - RightWindow viewer pressing ^+u
+2014-05-09 10:02:53,428 [63] INFO  OpenSim - LeftWindow viewer pressing ^%{F1}
+2014-05-09 10:02:53,934 [63] INFO  OpenSim - LeftWindow viewer pressing ^+u
+2014-05-09 10:06:15,498 [StateChange] INFO  Overlay - Transitioning from LoadTextures to IdleIntro.
+2014-05-09 10:06:17,519 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 10:06:17,519 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 10:06:17,520 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 10:06:17,521 [Tick Thread] INFO  Overlay - Current state set to IdleIntro.
+2014-05-09 10:06:22,528 [StateChange] INFO  Overlay - Transitioning from IdleIntro to Idle.
+2014-05-09 10:06:22,529 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 10:06:22,529 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 10:06:22,529 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 10:06:24,554 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2014-05-09 10:55:31,107 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2014-05-09 10:55:33,150 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 10:55:33,150 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 10:55:33,150 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 10:55:33,150 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2014-05-09 10:55:38,158 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
+2014-05-09 10:55:38,173 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 10:55:38,173 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 10:55:38,173 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 10:55:40,221 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2014-05-09 11:00:12,459 [StateChange] INFO  Overlay - Transitioning from GuidedTour to Splash.
+2014-05-09 11:00:14,473 [Tick Thread] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 11:00:14,473 [Tick Thread] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 11:00:14,473 [Tick Thread] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 11:00:14,473 [Tick Thread] INFO  Overlay - Current state set to Splash.
+2014-05-09 11:00:53,383 [StateChange] INFO  Overlay - Transitioning from Splash to IdleIntro.
+2014-05-09 11:00:55,485 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 11:00:55,485 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 11:00:55,485 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 11:00:55,485 [Tick Thread] INFO  Overlay - Current state set to IdleIntro.
+2014-05-09 11:01:00,495 [StateChange] INFO  Overlay - Transitioning from IdleIntro to Idle.
+2014-05-09 11:01:00,495 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 11:01:00,495 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 11:01:00,495 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 11:01:02,511 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2014-05-09 11:37:53,177 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2014-05-09 11:37:55,289 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 11:37:55,289 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 11:37:55,289 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 11:37:55,289 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2014-05-09 11:38:00,311 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
+2014-05-09 11:38:00,321 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 11:38:00,321 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 11:38:00,321 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 11:38:02,353 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2014-05-09 11:45:46,869 [StateChange] INFO  Overlay - Transitioning from GuidedTour to ExploreIntro.
+2014-05-09 11:45:46,869 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 11:45:46,869 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 11:45:46,869 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 11:45:46,869 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 11:45:46,879 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 11:45:46,879 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 11:45:46,879 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 11:45:46,879 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 11:45:46,879 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 11:45:46,889 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 11:45:46,889 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 11:45:46,889 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 11:45:46,889 [StateChange] INFO  Overlay - Current state set to ExploreIntro.
+2014-05-09 11:46:57,984 [StateChange] INFO  Overlay - Transitioning from ExploreIntro to KinectAvatar.
+2014-05-09 11:46:57,986 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 11:46:57,989 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 11:46:57,989 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 11:46:57,993 [StateChange] DEBUG Core - Control mode changed to Delta.
+2014-05-09 11:46:57,995 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 11:46:57,996 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 11:46:57,998 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 11:46:58,001 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 11:46:58,004 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 11:46:58,004 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 11:46:58,006 [StateChange] DEBUG KinectMovement - Enabled
+2014-05-09 11:46:58,006 [StateChange] INFO  Overlay - Current state set to KinectAvatar.
+2014-05-09 11:54:36,916 [StateChange] INFO  Overlay - Transitioning from KinectAvatar to Splash.
+2014-05-09 11:54:36,917 [StateChange] DEBUG KinectMovement - Disabled
+2014-05-09 11:54:39,043 [Tick Thread] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 11:54:39,044 [Tick Thread] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 11:54:39,044 [Tick Thread] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 11:54:39,046 [Tick Thread] INFO  Overlay - Current state set to Splash.
+2014-05-09 11:55:04,484 [StateChange] INFO  Overlay - Transitioning from Splash to Story3Confirm.
+2014-05-09 11:55:04,492 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 11:55:04,492 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 11:55:04,493 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 11:55:04,493 [StateChange] INFO  Overlay - Current state set to Story3Confirm.
+2014-05-09 11:55:48,747 [StateChange] INFO  Overlay - Transitioning from Story3Confirm to Story3.
+2014-05-09 11:55:48,748 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 11:55:48,748 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 11:55:48,749 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 11:55:48,750 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 11:55:48,751 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 11:55:48,751 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 11:55:48,753 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 11:55:48,754 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 11:55:48,754 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 11:55:48,755 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 11:55:48,755 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 11:55:48,756 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 11:55:48,756 [StateChange] INFO  Overlay - Current state set to Story3.
+2014-05-09 12:03:28,952 [StateChange] INFO  Overlay - Transitioning from Story3 to Splash.
+2014-05-09 12:03:29,042 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 12:03:29,042 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 12:03:29,042 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 12:03:29,052 [StateChange] INFO  Overlay - Current state set to Splash.
+2014-05-09 12:04:03,748 [StateChange] INFO  Overlay - Transitioning from Splash to GuidedTour.
+2014-05-09 12:04:03,768 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:04:03,768 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:04:03,768 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:04:03,768 [StateChange] DEBUG Core - Control mode changed to Absolute.
+2014-05-09 12:04:05,808 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2014-05-09 12:04:08,788 [StateChange] INFO  Overlay - Transitioning from GuidedTour to Splash.
+2014-05-09 12:04:10,908 [Tick Thread] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 12:04:10,908 [Tick Thread] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 12:04:10,908 [Tick Thread] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 12:04:10,908 [Tick Thread] INFO  Overlay - Current state set to Splash.
+2014-05-09 12:04:20,766 [StateChange] INFO  Overlay - Transitioning from Splash to GuidedTour.
+2014-05-09 12:04:20,786 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:04:20,786 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:04:20,786 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:04:22,818 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2014-05-09 12:07:25,894 [StateChange] INFO  Overlay - Transitioning from GuidedTour to Splash.
+2014-05-09 12:07:28,034 [Tick Thread] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 12:07:28,034 [Tick Thread] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 12:07:28,034 [Tick Thread] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 12:07:28,034 [Tick Thread] INFO  Overlay - Current state set to Splash.
+2014-05-09 12:07:43,238 [StateChange] INFO  Overlay - Transitioning from Splash to KinectAvatar.
+2014-05-09 12:07:43,238 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:07:43,258 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:07:43,268 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:07:43,268 [StateChange] DEBUG Core - Control mode changed to Delta.
+2014-05-09 12:07:43,268 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:07:43,268 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:07:43,268 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:07:45,276 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:07:45,276 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:07:45,276 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:07:45,276 [Tick Thread] DEBUG KinectMovement - Enabled
+2014-05-09 12:07:45,276 [Tick Thread] INFO  Overlay - Current state set to KinectAvatar.
+2014-05-09 12:07:55,048 [StateChange] INFO  Overlay - Transitioning from KinectAvatar to Splash.
+2014-05-09 12:07:55,048 [StateChange] DEBUG KinectMovement - Disabled
+2014-05-09 12:07:57,162 [Tick Thread] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 12:07:57,162 [Tick Thread] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 12:07:57,162 [Tick Thread] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 12:07:57,162 [Tick Thread] INFO  Overlay - Current state set to Splash.
+2014-05-09 12:08:07,904 [StateChange] INFO  Overlay - Transitioning from Splash to KinectAvatar.
+2014-05-09 12:08:07,904 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:08:07,904 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:08:07,914 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:08:07,914 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:08:07,914 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:08:07,914 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:08:09,918 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:08:09,918 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:08:09,918 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:08:09,918 [Tick Thread] DEBUG KinectMovement - Enabled
+2014-05-09 12:08:09,918 [Tick Thread] INFO  Overlay - Current state set to KinectAvatar.
+2014-05-09 12:08:13,700 [StateChange] INFO  Overlay - Transitioning from KinectAvatar to Splash.
+2014-05-09 12:08:13,700 [StateChange] DEBUG KinectMovement - Disabled
+2014-05-09 12:08:15,802 [Tick Thread] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 12:08:15,802 [Tick Thread] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 12:08:15,802 [Tick Thread] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 12:08:15,802 [Tick Thread] INFO  Overlay - Current state set to Splash.
+2014-05-09 12:08:27,728 [StateChange] INFO  Overlay - Transitioning from Splash to Slideshow.
+2014-05-09 12:08:27,928 [StateChange] INFO  Overlay - Current state set to Slideshow.
+2014-05-09 12:09:13,585 [StateChange] INFO  Overlay - Transitioning from Slideshow to Splash.
+2014-05-09 12:09:13,695 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 12:09:13,695 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 12:09:13,695 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 12:09:13,695 [StateChange] INFO  Overlay - Current state set to Splash.
+2014-05-09 12:09:19,797 [StateChange] INFO  Overlay - Transitioning from Splash to KinectFlycam.
+2014-05-09 12:09:19,797 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:09:19,797 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:09:19,807 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:09:19,807 [StateChange] DEBUG Core - Control mode changed to Absolute.
+2014-05-09 12:09:19,807 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:09:19,807 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:09:19,807 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:09:21,833 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:09:21,833 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:09:21,833 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:09:21,833 [Tick Thread] DEBUG KinectMovement - Enabled
+2014-05-09 12:09:21,843 [Tick Thread] INFO  Overlay - Current state set to KinectFlycam.
+2014-05-09 12:09:26,683 [StateChange] INFO  Overlay - Transitioning from KinectFlycam to Splash.
+2014-05-09 12:09:26,683 [StateChange] DEBUG KinectMovement - Disabled
+2014-05-09 12:09:28,795 [Tick Thread] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 12:09:28,795 [Tick Thread] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 12:09:28,795 [Tick Thread] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 12:09:28,795 [Tick Thread] INFO  Overlay - Current state set to Splash.
+2014-05-09 12:09:36,535 [StateChange] INFO  Overlay - Transitioning from Splash to Story2Confirm.
+2014-05-09 12:09:36,545 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 12:09:36,545 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 12:09:36,545 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 12:09:36,545 [StateChange] INFO  Overlay - Current state set to Story2Confirm.
+2014-05-09 12:09:41,065 [StateChange] INFO  Overlay - Transitioning from Story2Confirm to Story2.
+2014-05-09 12:09:41,075 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 12:09:41,075 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 12:09:41,075 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 12:09:41,075 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:09:41,075 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:09:41,075 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:09:41,085 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 12:09:41,085 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 12:09:41,085 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 12:09:41,085 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:09:41,085 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:09:41,085 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:09:41,085 [StateChange] INFO  Overlay - Current state set to Story2.
+2014-05-09 12:15:44,939 [StateChange] INFO  Overlay - Transitioning from Story2 to Splash.
+2014-05-09 12:15:45,039 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 12:15:45,039 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 12:15:45,039 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 12:15:45,039 [StateChange] INFO  Overlay - Current state set to Splash.
+2014-05-09 12:16:25,293 [StateChange] INFO  Overlay - Transitioning from Splash to Story4Confirm.
+2014-05-09 12:16:25,303 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 12:16:25,303 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 12:16:25,303 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 12:16:25,303 [StateChange] INFO  Overlay - Current state set to Story4Confirm.
+2014-05-09 12:16:29,463 [StateChange] INFO  Overlay - Transitioning from Story4Confirm to Story4.
+2014-05-09 12:16:29,463 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 12:16:29,463 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 12:16:29,463 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 12:16:29,463 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:16:29,473 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:16:29,473 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:16:29,473 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 12:16:29,473 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 12:16:29,483 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 12:16:29,483 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:16:29,483 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:16:29,483 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:16:29,483 [StateChange] INFO  Overlay - Current state set to Story4.
+2014-05-09 12:22:29,876 [StateChange] INFO  Overlay - Transitioning from Story4 to Splash.
+2014-05-09 12:22:29,966 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 12:22:29,966 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 12:22:29,966 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 12:22:29,966 [StateChange] INFO  Overlay - Current state set to Splash.
+2014-05-09 12:22:59,968 [StateChange] INFO  Overlay - Transitioning from Splash to IdleIntro.
+2014-05-09 12:23:02,068 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:23:02,068 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:23:02,068 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:23:02,068 [Tick Thread] INFO  Overlay - Current state set to IdleIntro.
+2014-05-09 12:23:07,078 [StateChange] INFO  Overlay - Transitioning from IdleIntro to Idle.
+2014-05-09 12:23:07,078 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 12:23:07,078 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 12:23:07,078 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 12:23:09,088 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2014-05-09 13:33:37,212 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2014-05-09 13:33:39,320 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 13:33:39,320 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 13:33:39,320 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 13:33:39,320 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2014-05-09 13:33:44,320 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
+2014-05-09 13:33:44,340 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 13:33:44,340 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 13:33:44,340 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 13:33:46,360 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2014-05-09 13:41:30,933 [StateChange] INFO  Overlay - Transitioning from GuidedTour to ExploreIntro.
+2014-05-09 13:41:30,933 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 13:41:30,963 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 13:41:31,013 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 13:41:31,013 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 13:41:31,023 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 13:41:31,023 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 13:41:31,023 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 13:41:31,023 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 13:41:31,023 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 13:41:31,023 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 13:41:31,023 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 13:41:31,033 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 13:41:31,033 [StateChange] INFO  Overlay - Current state set to ExploreIntro.
+2014-05-09 13:42:41,772 [StateChange] INFO  Overlay - Transitioning from ExploreIntro to KinectAvatar.
+2014-05-09 13:42:41,773 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 13:42:41,773 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 13:42:41,783 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 13:42:41,784 [StateChange] DEBUG Core - Control mode changed to Delta.
+2014-05-09 13:42:41,785 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 13:42:41,786 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 13:42:41,787 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 13:42:41,792 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 13:42:41,793 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 13:42:41,793 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 13:42:41,800 [StateChange] DEBUG KinectMovement - Enabled
+2014-05-09 13:42:41,800 [StateChange] INFO  Overlay - Current state set to KinectAvatar.
+2014-05-09 13:49:12,509 [StateChange] INFO  Overlay - Transitioning from KinectAvatar to IdleIntro.
+2014-05-09 13:49:12,510 [StateChange] DEBUG KinectMovement - Disabled
+2014-05-09 13:49:14,620 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 13:49:14,621 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 13:49:14,622 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 13:49:14,623 [Tick Thread] INFO  Overlay - Current state set to IdleIntro.
+2014-05-09 13:49:19,634 [StateChange] INFO  Overlay - Transitioning from IdleIntro to Idle.
+2014-05-09 13:49:19,635 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 13:49:19,635 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 13:49:19,637 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 13:49:19,639 [StateChange] DEBUG Core - Control mode changed to Absolute.
+2014-05-09 13:49:21,652 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2014-05-09 13:56:29,230 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2014-05-09 13:56:31,339 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 13:56:31,340 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 13:56:31,342 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 13:56:31,343 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2014-05-09 13:56:36,349 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
+2014-05-09 13:56:36,367 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 13:56:36,367 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 13:56:36,368 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 13:56:38,408 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2014-05-09 14:04:22,979 [StateChange] INFO  Overlay - Transitioning from GuidedTour to ExploreIntro.
+2014-05-09 14:04:22,979 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 14:04:23,009 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 14:04:23,059 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 14:04:23,059 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:04:23,059 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:04:23,059 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:04:23,059 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 14:04:23,059 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 14:04:23,059 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 14:04:23,059 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:04:23,059 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:04:23,059 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:04:23,059 [StateChange] INFO  Overlay - Current state set to ExploreIntro.
+2014-05-09 14:05:33,678 [StateChange] INFO  Overlay - Transitioning from ExploreIntro to KinectAvatar.
+2014-05-09 14:05:33,679 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:05:33,679 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:05:33,695 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:05:33,695 [StateChange] DEBUG Core - Control mode changed to Delta.
+2014-05-09 14:05:33,696 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:05:33,698 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:05:33,698 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:05:33,701 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:05:33,701 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:05:33,703 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:05:33,714 [StateChange] DEBUG KinectMovement - Enabled
+2014-05-09 14:05:33,714 [StateChange] INFO  Overlay - Current state set to KinectAvatar.
+2014-05-09 14:06:03,725 [StateChange] INFO  Overlay - Transitioning from KinectAvatar to IdleIntro.
+2014-05-09 14:06:03,726 [StateChange] DEBUG KinectMovement - Disabled
+2014-05-09 14:06:05,829 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:06:05,830 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:06:05,831 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:06:05,832 [Tick Thread] INFO  Overlay - Current state set to IdleIntro.
+2014-05-09 14:06:10,839 [StateChange] INFO  Overlay - Transitioning from IdleIntro to Idle.
+2014-05-09 14:06:10,839 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:06:10,840 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:06:10,841 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:06:10,841 [StateChange] DEBUG Core - Control mode changed to Absolute.
+2014-05-09 14:06:12,863 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2014-05-09 14:09:57,143 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2014-05-09 14:09:59,266 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:09:59,266 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:09:59,267 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:09:59,268 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2014-05-09 14:10:04,295 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
+2014-05-09 14:10:04,317 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:10:04,319 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:10:04,320 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:10:06,351 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2014-05-09 14:17:51,043 [StateChange] INFO  Overlay - Transitioning from GuidedTour to ExploreIntro.
+2014-05-09 14:17:51,043 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 14:17:51,073 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 14:17:51,133 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 14:17:51,133 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:17:51,133 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:17:51,133 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:17:51,133 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-05-09 14:17:51,133 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-05-09 14:17:51,133 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-05-09 14:17:51,143 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:17:51,143 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:17:51,143 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:17:51,143 [StateChange] INFO  Overlay - Current state set to ExploreIntro.
+2014-05-09 14:19:01,781 [StateChange] INFO  Overlay - Transitioning from ExploreIntro to KinectAvatar.
+2014-05-09 14:19:01,784 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:19:01,784 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:19:01,792 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:19:01,792 [StateChange] DEBUG Core - Control mode changed to Delta.
+2014-05-09 14:19:01,793 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:19:01,793 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:19:01,794 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:19:01,798 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:19:01,799 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:19:01,799 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:19:01,802 [StateChange] DEBUG KinectMovement - Enabled
+2014-05-09 14:19:01,802 [StateChange] INFO  Overlay - Current state set to KinectAvatar.
+2014-05-09 14:19:31,826 [StateChange] INFO  Overlay - Transitioning from KinectAvatar to IdleIntro.
+2014-05-09 14:19:31,827 [StateChange] DEBUG KinectMovement - Disabled
+2014-05-09 14:19:33,933 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:19:33,934 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:19:33,935 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:19:33,936 [Tick Thread] INFO  Overlay - Current state set to IdleIntro.
+2014-05-09 14:19:38,944 [StateChange] INFO  Overlay - Transitioning from IdleIntro to Idle.
+2014-05-09 14:19:38,945 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-05-09 14:19:38,945 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-05-09 14:19:38,945 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-05-09 14:19:38,946 [StateChange] DEBUG Core - Control mode changed to Absolute.
+2014-05-09 14:19:40,971 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2014-05-09 17:54:45,211 [1] DEBUG Core - Shutting down tick thread.
+2014-05-09 17:54:45,229 [Tick Thread] INFO  Core - Tick Thread shut down.
+2014-05-09 17:54:45,273 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2014-05-09 17:54:45,273 [99] DEBUG OpenSim.MainWindowViewer - Closing
+2014-05-09 17:54:45,273 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-05-09 17:54:45,290 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2014-05-09 17:54:45,355 [1] INFO  ProcessManager - Dumping to C:\Users\openvritualworlds\Documents\John\Chimera\Bin\Logs\2014\May\09-17.54Shutdown.html
+2014-05-09 17:54:45,365 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
+2014-05-09 17:54:45,365 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-05-09 17:54:45,365 [90] DEBUG OpenSim.MainWindowViewer - Closing
+2014-05-09 17:54:45,365 [1] DEBUG OpenSim.RightWindowProxy - Closing
+2014-05-09 17:54:45,365 [48] DEBUG OpenSim.RightWindowViewer - Closing
+2014-05-09 17:54:45,365 [1] INFO  OpenSim.RightWindowProxy - Closed
+2014-05-09 17:54:45,365 [1] DEBUG OpenSim.LeftWindowProxy - Closing
+2014-05-09 17:54:45,365 [98] DEBUG OpenSim.LeftWindowViewer - Closing
+2014-05-09 17:54:45,365 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2014-05-09 17:54:45,365 [1] INFO  Core - System shutdown for Shut down.
+2014-05-09 17:54:45,375 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
+2014-05-09 17:54:47,975 [99] INFO  OpenSim.MainWindowViewer - Closed
+2014-05-09 17:54:47,975 [90] INFO  OpenSim.MainWindowViewer - Closed
+2014-05-09 17:54:48,635 [48] INFO  OpenSim.RightWindowViewer - Closed
+2014-05-09 17:54:49,145 [98] INFO  OpenSim.LeftWindowViewer - Closed
