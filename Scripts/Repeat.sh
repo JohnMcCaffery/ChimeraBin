@@ -8,7 +8,7 @@ function repeat {
 
 if [ $ret -eq 12 ]
 then
-	echo "$1 exitited with repeat code (12) - Relaunching"
+	echo "$1 exited with repeat code (12) - Relaunching"
 	repeat $1 $2
 fi
 
