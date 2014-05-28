@@ -4,7 +4,7 @@ echo %errorlevel%
 
 IF ERRORLEVEL 12 GOTO restart 
 
-shutdown.exe /s /t 00
+rem shutdown.exe /s /t 00
 
 GOTO :EOF
 
