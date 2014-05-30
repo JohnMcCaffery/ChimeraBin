@@ -62,8 +62,10 @@
   <!--                        EXPERIMENTAL BINDINGS                         -->
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Experimental.Plugins.AvatarMovementPlugin, ExperimentalLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.OpenSim.RecorderPlugin, ExperimentalLib" scope="singleton" />
+  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Experimental.Plugins.SettingLoaderPlugin, ExperimentalLib" scope="singleton" />
   <!--                        OPENSIM BINDINGS                         -->
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.OpenSim.OpenSimController, OpenSimLib" scope="singleton" />
   <!--                        CHIMERA BINDINGS                         -->
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Plugins.KBMousePlugin, ChimeraLib" scope="singleton" />
+  <!--                        FLYTHROUGH BINDINGS                         -->
 </module>
