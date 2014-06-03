@@ -62,6 +62,7 @@
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickInactivatedTriggerFactory, JoystickLib" scope="singleton" />
   -->
   <!--                        EXPERIMENTAL BINDINGS                         -->
-  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.OpenSim.RecorderPlugin, ExperimentalLib" scope="singleton" />
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Experimental.Plugins.AvatarMovementPlugin, ExperimentalLib" scope="singleton" />
+  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.OpenSim.RecorderPlugin, ExperimentalLib" scope="singleton" />
+  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Experimental.Plugins.SettingLoaderPlugin, ExperimentalLib" scope="singleton" />
 </module>
