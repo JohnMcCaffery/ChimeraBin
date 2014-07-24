@@ -1,6 +1,8 @@
-for i in {1..$2}
+echo Running $1 $2 times
+
+for ((i = 1; i <= $2; i++));
 do
-	echo Running $1 $2 times
+	echo Run $i
 	Scripts/Repeat.sh $1
 done
 
