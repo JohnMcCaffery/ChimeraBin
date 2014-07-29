@@ -1,0 +1,120 @@
+<Overlay Width="1920" Height="1080" >
+  <Any>
+    <Features>
+
+    </Features>
+    
+    <SelectionRenderers>
+      <Renderer Factory="Cursor" Name="DialCursor" InnerRenderer="Dial" Radius="40" Colour="Red" Frame="MainWindow" />
+    </SelectionRenderers>
+
+    <TransitionStyles>
+			<Transition Factory="BitmapTransition" Name="BitmapFade" Length="2000" Style="Fade" />
+			<Transition Factory="OpacityTransition" Name="FadeOut" Length="2000" FadeOut="true" />
+			<Transition Factory="OpacityTransition" Name="FadeIn" Length="2000" FadeOut="false" />
+		</TransitionStyles>
+
+    <States>
+	
+   <State Factory="JoystickControl" Name="JoystickAvatar" Avatar="true" Start="true" Idle="true" >
+        <Features>
+		
+          <Feature Factory="Say" Name="ClickFeture" Message="avatar" Channel="1" Frame="MainWindow">
+			<Triggers>
+				<Trigger Factory="JoystickButton" Name="B" Button="B" />
+			</Triggers>
+		  </Feature>
+		  <Feature Factory="Say" Name="EyemouthFeture" Message="Eyemouth 1/264/556/46" Channel="2" Frame="MainWindow">
+			<Triggers>
+				<Trigger Factory="JoystickButton" Name="A" Button="A" />
+			</Triggers>
+		  </Feature>
+		  <Feature Factory="Say" Name="TimespanFeture" Message="Timespan 1/333/249/53" Channel="2" Frame="MainWindow">
+			<Triggers>
+				<Trigger Factory="JoystickButton" Name="Y" Button="Y" />
+			</Triggers>
+		  </Feature>
+		  <Feature Factory="Say" Name="ClickCameraFeture" Message="camera" Channel="1" Frame="MainWindow">
+			<Triggers>
+				<Trigger Factory="JoystickButton" Name="X" Button="X" />
+			</Triggers>
+		  </Feature>
+		  
+        </Features>
+		
+      </State>
+	  
+    </States>
+
+    <Transitions>
+
+    </Transitions>
+  </Any>
+
+  <!-- Settings specific to the overlay being instantiated based on click interactions -->
+
+  <ClickBased>
+    <States>
+
+    </States>
+    <Transitions>
+
+    </Transitions>
+  </ClickBased>
+
+  <!-- Settings specific to the overlay being instantiated based on hover interactions -->
+
+  <HoverBased>
+
+    <Triggers>
+    <!--
+      <Trigger Factory="SkeletonLost" Timeout="30000" Name="IdleTrigger" />
+      <Trigger Factory="SkeletonFound" Name="SkeletonFound" />
+      <Trigger Factory="RaiseArm" Name="ExitExplore" />
+      -->
+    </Triggers>
+
+    <Features>
+    <!--
+      <Feature Factory="Skeleton" Name="SplashSkeleton" L="940" R="1470" T="1000" Scale="100" Frame="MainWindow" />
+      -->
+      <!--<Feature Factory="Skeleton" Name="ExploreSkeleton" X="60" Y="1050" W="1850" Scale="100" Frame="MainWindow" />-->
+    <!--
+      <Feature Factory="Skeleton" Name="ExploreSkeleton" X="125" Y="140.5" W="0" Scale="125" Frame="LeftWindow" />
+      <Feature Factory="Skeleton" Name="HelpSkeleton" X="125" Y="140.5" W="0" Scale="125" Frame="MainWindow" />
+      -->
+    </Features>
+    <States>
+
+    <!--
+      <State Factory="KinectControl" Name="KinectAvatar" Avatar="true" Opacity=".7" >
+        <Features>
+          <Feature Name="ExploreSkeleton" />
+          <Feature Name="HelpSidebarAvatarL" />
+        </Features>
+      </State>
+
+      <State Factory="KinectControl" Name="KinectFlycam" Avatar="false" X="600" Y="500" Z="60" Pitch="0" Yaw="-90" Opacity=".7" >
+        <Features>
+          <Feature Name="ExploreSkeleton" Frame="MainWindow" />
+          <Feature Name="HelpSidebarFlycamL" />
+        </Features>
+      </State>
+      -->
+
+    </States>
+    <Transitions>
+
+    <!--
+      <InvisibleTransition From="Splash" To="KinectAvatar"  Transition="FadeOut"    L="1080" T="535" R="1755" B="620" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Splash" To="KinectFlycam"  Transition="FadeOut"    L="1080" T="765" R="1755" B="865" Frame="MainWindow" Renderer="DialCursor" />
+
+      <Transition From="KinectAvatar" To="HelpAvatar"  Transition="FadeIn" Trigger="ExitExplore" />
+      <Transition From="KinectFlycam" To="HelpFlycam"  Transition="FadeIn" Trigger="ExitExplore" />
+
+      <ImageTransition From="HelpAvatar" 	To="KinectAvatar" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
+      <ImageTransition From="HelpFlycam" 	To="KinectFlycam" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
+      -->
+    </Transitions>
+  </HoverBased>
+</Overlay>

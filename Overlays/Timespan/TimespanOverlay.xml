@@ -92,7 +92,7 @@ This process pre-dates the excavation of the summer of 2013.
 
     <States>
 
-      <State Factory="Blank" Name="IdleOutro" EnableCursor="false" Idle="true" >
+      <State Factory="Blank" Name="IdleOutro" EnableCursor="false" Idle="true" Start="false" >
         <Features>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Outro.png</Feature>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
@@ -686,6 +686,39 @@ This process pre-dates the excavation of the summer of 2013.
           <Feature Name="RaiseArmPromptExplore" />
           <Feature Name="YawAreaEast" />
           <Feature Name="YawAreaWest" />
+		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/333/249/53" Channel="2" Frame="MainWindow" />
+		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="RightWindow" />
+		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="LeftWindow" />
+		  <Feature Factory="Say" Name="TimespanFeture" Message="Timespan 1/333/249/53" Channel="2" Frame="MainWindow">
+			<Triggers>
+				<Trigger Factory="JoystickButton" Name="Y" Button="Y" />
+			</Triggers>
+		  </Feature>
+		  <Feature Factory="Say" Name="TimespanFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="RightWindow">
+			<Triggers>
+				<Trigger Factory="JoystickButton" Name="Y" Button="Y" />
+			</Triggers>
+		  </Feature>
+		  <Feature Factory="Say" Name="TimespanFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="LeftWindow">
+			<Triggers>
+				<Trigger Factory="JoystickButton" Name="Y" Button="Y" />
+			</Triggers>
+		  </Feature>
+		  <Feature Factory="Say" Name="TimespanFeture" Message="Salt Pans 1/290/320/53" Channel="2" Frame="MainWindow">
+			<Triggers>
+				<Trigger Factory="JoystickButton" Name="X" Button="X" />
+			</Triggers>
+		  </Feature>
+		  <Feature Factory="Say" Name="TimespanFeture" Message="Salt Pans 1/1/1/53" Channel="2" Frame="RightWindow">
+			<Triggers>
+				<Trigger Factory="JoystickButton" Name="X" Button="X" />
+			</Triggers>
+		  </Feature>
+		  <Feature Factory="Say" Name="TimespanFeture" Message="Salt Pans 1/1/1/53" Channel="2" Frame="LeftWindow">
+			<Triggers>
+				<Trigger Factory="JoystickButton" Name="X" Button="X" />
+			</Triggers>
+		  </Feature>
         </Features>
       </State>
 
