@@ -1,0 +1,1309 @@
+2014-07-29 15:29:44,861 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-07-29 15:29:44,878 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-07-29 15:29:44,880 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-07-29 15:29:44,933 [1] INFO  Overlay - Loading overlay from Overlays/Timespan/TimespanOverlay.xml.
+2014-07-29 15:29:45,178 [1] DEBUG Overlay - LeftWindpw is not a known frame. Using MainWindow as default.
+2014-07-29 15:29:45,349 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
+2014-07-29 15:29:45,349 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 15:29:45,350 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 15:29:45,353 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:29:45,529 [1] INFO  Overlay - Created BlankState state IdleOutro.
+2014-07-29 15:29:45,533 [1] INFO  Overlay - Created FlythroughState state Idle.
+2014-07-29 15:29:45,534 [1] INFO  Overlay - Created FlythroughState state LoadTextures.
+2014-07-29 15:29:45,534 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:29:45,633 [1] INFO  Overlay - Created BlankState state Intro.
+2014-07-29 15:29:45,634 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:29:45,729 [1] INFO  Overlay - Created BlankState state Splash.
+2014-07-29 15:29:46,174 [1] INFO  Overlay - Created SlideshowState state Slideshow.
+2014-07-29 15:29:46,174 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:29:46,217 [1] INFO  Overlay - Created BlankState state Story1Confirm.
+2014-07-29 15:29:46,218 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:29:46,251 [1] INFO  Overlay - Created BlankState state Story2Confirm.
+2014-07-29 15:29:46,252 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:29:46,282 [1] INFO  Overlay - Created BlankState state Story3Confirm.
+2014-07-29 15:29:46,282 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:29:46,314 [1] INFO  Overlay - Created BlankState state Story4Confirm.
+2014-07-29 15:29:46,315 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:29:46,338 [1] INFO  Overlay - Created BlankState state Story5Confirm.
+2014-07-29 15:29:46,343 [1] INFO  Overlay - Created VideoState state Story1.
+2014-07-29 15:29:46,344 [1] INFO  Overlay - Created VideoState state Story2.
+2014-07-29 15:29:46,345 [1] INFO  Overlay - Created VideoState state Story3.
+2014-07-29 15:29:46,345 [1] INFO  Overlay - Created VideoState state Story4.
+2014-07-29 15:29:46,346 [1] INFO  Overlay - Created VideoState state Story5.
+2014-07-29 15:29:46,403 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:29:46,403 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
+2014-07-29 15:29:46,405 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:29:46,405 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:29:46,405 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:29:46,405 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:29:46,405 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:29:46,415 [1] WARN  Core - Unable to instantiate core. The given key was not present in the dictionary.
+2014-07-29 15:29:46,416 [1] DEBUG Core - Unable to instantiate core.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Chimera.OpenSim.Overlay.ProximityClickFeature..ctor(OverlayPlugin plugin, XmlNode node) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OpenSimLib\Overlay\ProximityClickFeature.cs:line 36
+   at Chimera.OpenSim.Overlay.ProximityClickFeatureFactory.Create(OverlayPlugin manager, XmlNode node, Rectangle clip) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OpenSimLib\Overlay\ProximityClickFeature.cs:line 21
+   at Chimera.Overlay.OverlayPlugin.Create[T](IFactory`1 factory, XmlNode node) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 411
+   at Chimera.Overlay.OverlayPlugin.GetInstanceFromDefaults[T](XmlNode node, Dictionary`2 map, T defalt, String reason, String unable, String ifDefault) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 384
+   at Chimera.Overlay.OverlayPlugin.GetInstance[T](XmlNode node, Dictionary`2 map, String target, String reason, T defalt, String[] attributes) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 339
+   at Chimera.Overlay.OverlayPlugin.LoadState(State state, XmlNode node) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 207
+   at Chimera.Overlay.OverlayPlugin.LoadFactory[T](XmlNode node, Dictionary`2 instances) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 184
+   at Chimera.Overlay.OverlayPlugin.LoadComponent[T](XmlDocument doc, Dictionary`2 map, String nodeID) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 146
+   at Chimera.Overlay.OverlayPlugin.LoadXML(String xml) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 114
+   at Chimera.Overlay.OverlayPlugin.Init(Core coordinator) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.cs:line 158
+   at Chimera.Core..ctor(IOutputFactory outputFactory, ISystemPlugin[] plugins) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\ChimeraLib\Core\Core.cs:line 308
+2014-07-29 15:29:46,421 [1] DEBUG Core - Shutting down tick thread.
+2014-07-29 15:29:46,481 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 15:29:46,484 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2014-07-29 15:29:46,500 [1] INFO  ProcessManager - Dumping to C:\Users\openvirtualwolds\Documents\John\Chimera\Bin\Logs\2014\Jul\29-15.29Shutdown.html
+2014-07-29 15:29:46,501 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
+2014-07-29 15:29:46,507 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 15:29:46,508 [1] INFO  OpenSim.RightWindowProxy - Closed
+2014-07-29 15:29:46,509 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2014-07-29 15:29:46,509 [1] INFO  Core - System shutdown for -Shutdown.
+2014-07-29 15:29:46,513 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
+2014-07-29 15:30:24,356 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-07-29 15:30:24,373 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-07-29 15:30:24,375 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-07-29 15:30:24,433 [1] INFO  Overlay - Loading overlay from Overlays/Timespan/TimespanOverlay.xml.
+2014-07-29 15:30:24,553 [1] DEBUG Overlay - LeftWindpw is not a known frame. Using MainWindow as default.
+2014-07-29 15:30:24,631 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
+2014-07-29 15:30:24,631 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 15:30:24,632 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 15:30:24,634 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:24,715 [1] INFO  Overlay - Created BlankState state IdleOutro.
+2014-07-29 15:30:24,718 [1] INFO  Overlay - Created FlythroughState state Idle.
+2014-07-29 15:30:24,719 [1] INFO  Overlay - Created FlythroughState state LoadTextures.
+2014-07-29 15:30:24,719 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:24,796 [1] INFO  Overlay - Created BlankState state Intro.
+2014-07-29 15:30:24,797 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:24,871 [1] INFO  Overlay - Created BlankState state Splash.
+2014-07-29 15:30:25,022 [1] INFO  Overlay - Created SlideshowState state Slideshow.
+2014-07-29 15:30:25,023 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:25,031 [1] INFO  Overlay - Created BlankState state Story1Confirm.
+2014-07-29 15:30:25,031 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:25,039 [1] INFO  Overlay - Created BlankState state Story2Confirm.
+2014-07-29 15:30:25,040 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:25,047 [1] INFO  Overlay - Created BlankState state Story3Confirm.
+2014-07-29 15:30:25,048 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:25,056 [1] INFO  Overlay - Created BlankState state Story4Confirm.
+2014-07-29 15:30:25,057 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:25,065 [1] INFO  Overlay - Created BlankState state Story5Confirm.
+2014-07-29 15:30:25,070 [1] INFO  Overlay - Created VideoState state Story1.
+2014-07-29 15:30:25,071 [1] INFO  Overlay - Created VideoState state Story2.
+2014-07-29 15:30:25,071 [1] INFO  Overlay - Created VideoState state Story3.
+2014-07-29 15:30:25,072 [1] INFO  Overlay - Created VideoState state Story4.
+2014-07-29 15:30:25,072 [1] INFO  Overlay - Created VideoState state Story5.
+2014-07-29 15:30:25,089 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:30:25,089 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
+2014-07-29 15:30:25,091 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:30:25,091 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:30:25,092 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:30:25,092 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:30:25,093 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:30:25,102 [1] WARN  Core - Unable to instantiate core. The given key was not present in the dictionary.
+2014-07-29 15:30:25,103 [1] DEBUG Core - Unable to instantiate core.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Chimera.OpenSim.Overlay.ProximityClickFeature..ctor(OverlayPlugin plugin, XmlNode node) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OpenSimLib\Overlay\ProximityClickFeature.cs:line 36
+   at Chimera.OpenSim.Overlay.ProximityClickFeatureFactory.Create(OverlayPlugin manager, XmlNode node, Rectangle clip) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OpenSimLib\Overlay\ProximityClickFeature.cs:line 21
+   at Chimera.Overlay.OverlayPlugin.Create[T](IFactory`1 factory, XmlNode node) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 411
+   at Chimera.Overlay.OverlayPlugin.GetInstanceFromDefaults[T](XmlNode node, Dictionary`2 map, T defalt, String reason, String unable, String ifDefault) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 384
+   at Chimera.Overlay.OverlayPlugin.GetInstance[T](XmlNode node, Dictionary`2 map, String target, String reason, T defalt, String[] attributes) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 339
+   at Chimera.Overlay.OverlayPlugin.LoadState(State state, XmlNode node) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 207
+   at Chimera.Overlay.OverlayPlugin.LoadFactory[T](XmlNode node, Dictionary`2 instances) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 184
+   at Chimera.Overlay.OverlayPlugin.LoadComponent[T](XmlDocument doc, Dictionary`2 map, String nodeID) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 146
+   at Chimera.Overlay.OverlayPlugin.LoadXML(String xml) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 114
+   at Chimera.Overlay.OverlayPlugin.Init(Core coordinator) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.cs:line 158
+   at Chimera.Core..ctor(IOutputFactory outputFactory, ISystemPlugin[] plugins) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\ChimeraLib\Core\Core.cs:line 308
+2014-07-29 15:30:25,109 [1] DEBUG Core - Shutting down tick thread.
+2014-07-29 15:30:25,169 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 15:30:25,184 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
+2014-07-29 15:30:25,198 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2014-07-29 15:30:25,199 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
+2014-07-29 15:30:25,207 [1] INFO  ProcessManager - Dumping to C:\Users\openvirtualwolds\Documents\John\Chimera\Bin\Logs\2014\Jul\29-15.30Shutdown.html
+2014-07-29 15:30:25,210 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 15:30:25,210 [1] INFO  OpenSim.RightWindowProxy - Closed
+2014-07-29 15:30:25,211 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2014-07-29 15:30:25,211 [1] INFO  Core - System shutdown for -Shutdown.
+2014-07-29 15:30:38,430 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-07-29 15:30:38,447 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-07-29 15:30:38,450 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-07-29 15:30:38,513 [1] INFO  Overlay - Loading overlay from Overlays/Timespan/TimespanOverlay.xml.
+2014-07-29 15:30:38,628 [1] DEBUG Overlay - LeftWindpw is not a known frame. Using MainWindow as default.
+2014-07-29 15:30:38,705 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
+2014-07-29 15:30:38,705 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 15:30:38,706 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 15:30:38,708 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:38,786 [1] INFO  Overlay - Created BlankState state IdleOutro.
+2014-07-29 15:30:38,790 [1] INFO  Overlay - Created FlythroughState state Idle.
+2014-07-29 15:30:38,791 [1] INFO  Overlay - Created FlythroughState state LoadTextures.
+2014-07-29 15:30:38,791 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:38,865 [1] INFO  Overlay - Created BlankState state Intro.
+2014-07-29 15:30:38,866 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:38,940 [1] INFO  Overlay - Created BlankState state Splash.
+2014-07-29 15:30:39,090 [1] INFO  Overlay - Created SlideshowState state Slideshow.
+2014-07-29 15:30:39,091 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:39,098 [1] INFO  Overlay - Created BlankState state Story1Confirm.
+2014-07-29 15:30:39,099 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:39,107 [1] INFO  Overlay - Created BlankState state Story2Confirm.
+2014-07-29 15:30:39,108 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:39,116 [1] INFO  Overlay - Created BlankState state Story3Confirm.
+2014-07-29 15:30:39,117 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:39,125 [1] INFO  Overlay - Created BlankState state Story4Confirm.
+2014-07-29 15:30:39,125 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:30:39,133 [1] INFO  Overlay - Created BlankState state Story5Confirm.
+2014-07-29 15:30:39,138 [1] INFO  Overlay - Created VideoState state Story1.
+2014-07-29 15:30:39,139 [1] INFO  Overlay - Created VideoState state Story2.
+2014-07-29 15:30:39,139 [1] INFO  Overlay - Created VideoState state Story3.
+2014-07-29 15:30:39,140 [1] INFO  Overlay - Created VideoState state Story4.
+2014-07-29 15:30:39,141 [1] INFO  Overlay - Created VideoState state Story5.
+2014-07-29 15:30:39,158 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:30:39,158 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
+2014-07-29 15:30:39,160 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:30:39,160 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:30:39,161 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:30:39,161 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:30:39,162 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:30:39,170 [1] WARN  Core - Unable to instantiate core. The given key was not present in the dictionary.
+2014-07-29 15:30:39,171 [1] DEBUG Core - Unable to instantiate core.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Chimera.OpenSim.Overlay.ProximityClickFeature..ctor(OverlayPlugin plugin, XmlNode node) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OpenSimLib\Overlay\ProximityClickFeature.cs:line 36
+   at Chimera.OpenSim.Overlay.ProximityClickFeatureFactory.Create(OverlayPlugin manager, XmlNode node, Rectangle clip) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OpenSimLib\Overlay\ProximityClickFeature.cs:line 21
+   at Chimera.Overlay.OverlayPlugin.Create[T](IFactory`1 factory, XmlNode node) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 411
+   at Chimera.Overlay.OverlayPlugin.GetInstanceFromDefaults[T](XmlNode node, Dictionary`2 map, T defalt, String reason, String unable, String ifDefault) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 384
+   at Chimera.Overlay.OverlayPlugin.GetInstance[T](XmlNode node, Dictionary`2 map, String target, String reason, T defalt, String[] attributes) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 339
+   at Chimera.Overlay.OverlayPlugin.LoadState(State state, XmlNode node) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 207
+   at Chimera.Overlay.OverlayPlugin.LoadFactory[T](XmlNode node, Dictionary`2 instances) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 184
+   at Chimera.Overlay.OverlayPlugin.LoadComponent[T](XmlDocument doc, Dictionary`2 map, String nodeID) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 146
+   at Chimera.Overlay.OverlayPlugin.LoadXML(String xml) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.XML.cs:line 114
+   at Chimera.Overlay.OverlayPlugin.Init(Core coordinator) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\OverlayLib\Plugin\OverlayPlugin.cs:line 158
+   at Chimera.Core..ctor(IOutputFactory outputFactory, ISystemPlugin[] plugins) in C:\Users\openvirtualwolds\Documents\John\Chimera\Src\ChimeraLib\Core\Core.cs:line 308
+2014-07-29 15:30:39,180 [1] DEBUG Core - Shutting down tick thread.
+2014-07-29 15:30:39,240 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 15:30:39,266 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
+2014-07-29 15:30:39,272 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2014-07-29 15:30:39,272 [1] INFO  ProcessManager - Dumping to C:\Users\openvirtualwolds\Documents\John\Chimera\Bin\Logs\2014\Jul\29-15.30Shutdown.html
+2014-07-29 15:30:39,275 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 15:30:39,275 [1] INFO  OpenSim.RightWindowProxy - Closed
+2014-07-29 15:30:39,276 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2014-07-29 15:30:39,276 [1] INFO  Core - System shutdown for -Shutdown.
+2014-07-29 15:30:39,281 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
+2014-07-29 15:32:23,313 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-07-29 15:32:23,358 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-07-29 15:32:23,360 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-07-29 15:32:23,426 [1] INFO  Overlay - Loading overlay from Overlays/Timespan/TimespanOverlay.xml.
+2014-07-29 15:32:23,541 [1] DEBUG Overlay - LeftWindpw is not a known frame. Using MainWindow as default.
+2014-07-29 15:32:23,618 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
+2014-07-29 15:32:23,618 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 15:32:23,619 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 15:32:23,622 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:32:23,701 [1] INFO  Overlay - Created BlankState state IdleOutro.
+2014-07-29 15:32:23,705 [1] INFO  Overlay - Created FlythroughState state Idle.
+2014-07-29 15:32:23,705 [1] INFO  Overlay - Created FlythroughState state LoadTextures.
+2014-07-29 15:32:23,706 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:32:23,779 [1] INFO  Overlay - Created BlankState state Intro.
+2014-07-29 15:32:23,780 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:32:23,854 [1] INFO  Overlay - Created BlankState state Splash.
+2014-07-29 15:32:24,005 [1] INFO  Overlay - Created SlideshowState state Slideshow.
+2014-07-29 15:32:24,006 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:32:24,014 [1] INFO  Overlay - Created BlankState state Story1Confirm.
+2014-07-29 15:32:24,015 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:32:24,023 [1] INFO  Overlay - Created BlankState state Story2Confirm.
+2014-07-29 15:32:24,024 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:32:24,032 [1] INFO  Overlay - Created BlankState state Story3Confirm.
+2014-07-29 15:32:24,032 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:32:24,040 [1] INFO  Overlay - Created BlankState state Story4Confirm.
+2014-07-29 15:32:24,041 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:32:24,049 [1] INFO  Overlay - Created BlankState state Story5Confirm.
+2014-07-29 15:32:24,055 [1] INFO  Overlay - Created VideoState state Story1.
+2014-07-29 15:32:24,056 [1] INFO  Overlay - Created VideoState state Story2.
+2014-07-29 15:32:24,056 [1] INFO  Overlay - Created VideoState state Story3.
+2014-07-29 15:32:24,057 [1] INFO  Overlay - Created VideoState state Story4.
+2014-07-29 15:32:24,057 [1] INFO  Overlay - Created VideoState state Story5.
+2014-07-29 15:32:24,075 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:32:24,075 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
+2014-07-29 15:32:24,078 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:32:24,078 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:32:24,078 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:32:24,079 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:32:24,079 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:32:24,089 [1] INFO  Overlay - Created KinectControlState state KinectAvatar.
+2014-07-29 15:32:24,090 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:32:24,090 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:32:24,090 [1] INFO  Overlay - Created KinectControlState state KinectFlycam.
+2014-07-29 15:32:24,091 [1] INFO  Overlay - Creating Transitions
+2014-07-29 15:32:24,093 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-07-29 15:32:24,103 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 15:32:24,103 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-07-29 15:32:24,104 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 15:32:24,113 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-07-29 15:32:24,125 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 15:32:24,125 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-07-29 15:32:24,126 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 15:32:24,204 [1] DEBUG MainWindowOverlay - Disabling cursor control
+2014-07-29 15:32:24,204 [1] DEBUG RightWindowOverlay - Disabling cursor control
+2014-07-29 15:32:24,204 [1] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-07-29 15:32:24,205 [1] INFO  Overlay - Current state set to LoadTextures.
+2014-07-29 15:32:24,207 [1] INFO  Core - Loaded Overlay. Enabled.
+2014-07-29 15:32:24,208 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2014-07-29 15:32:24,209 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2014-07-29 15:32:24,211 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2014-07-29 15:32:24,215 [1] INFO  Core - Loaded Shutdown. Enabled.
+2014-07-29 15:32:24,217 [1] DEBUG XBoxController - Enabled
+2014-07-29 15:32:24,217 [1] INFO  Core - Loaded XBoxController. Enabled.
+2014-07-29 15:32:24,230 [1] INFO  OpenSim.MainWindowProxy - Proxying http://localhost:9000/
+2014-07-29 15:32:24,233 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-07-29 15:32:24,235 [1] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 15:32:24,251 [1] INFO  OpenSim.RightWindowProxy - Proxying http://localhost:9000/
+2014-07-29 15:32:24,252 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2014-07-29 15:32:24,253 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 40s.
+2014-07-29 15:32:24,253 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://localhost:9000/
+2014-07-29 15:32:24,255 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2014-07-29 15:32:24,255 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 80s.
+2014-07-29 15:32:24,263 [1] INFO  ProcessManager - Listening for crashes.
+2014-07-29 15:32:25,380 [Heightmap Bot Login Thread] WARN  Heightmap - Unable to log in heightmap bot. Error opening the login server connection: Unable to connect to the remote server
+2014-07-29 15:32:27,999 [1] DEBUG Core - Shutting down tick thread.
+2014-07-29 15:32:28,028 [Tick Thread] INFO  Core - Tick Thread shut down.
+2014-07-29 15:32:28,059 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2014-07-29 15:32:28,059 [23] DEBUG OpenSim.MainWindowViewer - Closing
+2014-07-29 15:32:28,060 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 15:32:28,077 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
+2014-07-29 15:32:28,082 [1] INFO  ProcessManager - Dumping to C:\Users\openvirtualwolds\Documents\John\Chimera\Bin\Logs\2014\Jul\29-15.32Shutdown.html
+2014-07-29 15:32:28,083 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2014-07-29 15:32:28,086 [1] DEBUG XBoxController - Disabled
+2014-07-29 15:32:28,087 [24] DEBUG OpenSim.MainWindowViewer - Closing
+2014-07-29 15:32:28,087 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 15:32:28,088 [1] DEBUG OpenSim.RightWindowProxy - Closing
+2014-07-29 15:32:28,088 [1] INFO  OpenSim.RightWindowProxy - Closed
+2014-07-29 15:32:28,090 [1] DEBUG OpenSim.LeftWindowProxy - Closing
+2014-07-29 15:32:28,090 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2014-07-29 15:32:28,091 [1] INFO  Core - System shutdown for Shut down.
+2014-07-29 15:32:28,094 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
+2014-07-29 15:32:34,692 [24] INFO  OpenSim.MainWindowViewer - Closed
+2014-07-29 15:32:34,692 [23] INFO  OpenSim.MainWindowViewer - Closed
+2014-07-29 15:34:05,874 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-07-29 15:34:05,891 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-07-29 15:34:05,893 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-07-29 15:34:05,954 [1] INFO  Overlay - Loading overlay from Overlays/Timespan/TimespanOverlay.xml.
+2014-07-29 15:34:06,072 [1] DEBUG Overlay - LeftWindpw is not a known frame. Using MainWindow as default.
+2014-07-29 15:34:06,150 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
+2014-07-29 15:34:06,150 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 15:34:06,151 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 15:34:06,154 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:34:06,233 [1] INFO  Overlay - Created BlankState state IdleOutro.
+2014-07-29 15:34:06,237 [1] INFO  Overlay - Created FlythroughState state Idle.
+2014-07-29 15:34:06,238 [1] INFO  Overlay - Created FlythroughState state LoadTextures.
+2014-07-29 15:34:06,238 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:34:06,314 [1] INFO  Overlay - Created BlankState state Intro.
+2014-07-29 15:34:06,315 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:34:06,390 [1] INFO  Overlay - Created BlankState state Splash.
+2014-07-29 15:34:06,546 [1] INFO  Overlay - Created SlideshowState state Slideshow.
+2014-07-29 15:34:06,547 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:34:06,555 [1] INFO  Overlay - Created BlankState state Story1Confirm.
+2014-07-29 15:34:06,556 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:34:06,564 [1] INFO  Overlay - Created BlankState state Story2Confirm.
+2014-07-29 15:34:06,565 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:34:06,572 [1] INFO  Overlay - Created BlankState state Story3Confirm.
+2014-07-29 15:34:06,573 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:34:06,581 [1] INFO  Overlay - Created BlankState state Story4Confirm.
+2014-07-29 15:34:06,582 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:34:06,590 [1] INFO  Overlay - Created BlankState state Story5Confirm.
+2014-07-29 15:34:06,595 [1] INFO  Overlay - Created VideoState state Story1.
+2014-07-29 15:34:06,596 [1] INFO  Overlay - Created VideoState state Story2.
+2014-07-29 15:34:06,596 [1] INFO  Overlay - Created VideoState state Story3.
+2014-07-29 15:34:06,597 [1] INFO  Overlay - Created VideoState state Story4.
+2014-07-29 15:34:06,597 [1] INFO  Overlay - Created VideoState state Story5.
+2014-07-29 15:34:06,615 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:34:06,615 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
+2014-07-29 15:34:06,617 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:34:06,617 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:34:06,617 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:34:06,617 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:34:06,618 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:34:06,627 [1] INFO  Overlay - Created KinectControlState state KinectAvatar.
+2014-07-29 15:34:06,627 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:34:06,627 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:34:06,628 [1] INFO  Overlay - Created KinectControlState state KinectFlycam.
+2014-07-29 15:34:06,628 [1] INFO  Overlay - Creating Transitions
+2014-07-29 15:34:06,630 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-07-29 15:34:06,631 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 15:34:06,631 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-07-29 15:34:06,632 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 15:34:06,634 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-07-29 15:34:06,635 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 15:34:06,635 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-07-29 15:34:06,636 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 15:34:06,713 [1] DEBUG MainWindowOverlay - Disabling cursor control
+2014-07-29 15:34:06,713 [1] DEBUG RightWindowOverlay - Disabling cursor control
+2014-07-29 15:34:06,713 [1] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-07-29 15:34:06,713 [1] INFO  Overlay - Current state set to LoadTextures.
+2014-07-29 15:34:06,715 [1] INFO  Core - Loaded Overlay. Enabled.
+2014-07-29 15:34:06,716 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2014-07-29 15:34:06,717 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2014-07-29 15:34:06,719 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2014-07-29 15:34:06,723 [1] INFO  Core - Loaded Shutdown. Enabled.
+2014-07-29 15:34:06,725 [1] DEBUG XBoxController - Enabled
+2014-07-29 15:34:06,725 [1] INFO  Core - Loaded XBoxController. Enabled.
+2014-07-29 15:34:06,738 [1] INFO  OpenSim.MainWindowProxy - Proxying http://localhost:9000/
+2014-07-29 15:34:06,742 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-07-29 15:34:06,744 [1] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 15:34:06,755 [1] INFO  OpenSim.RightWindowProxy - Proxying http://localhost:9000/
+2014-07-29 15:34:06,757 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2014-07-29 15:34:06,757 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 40s.
+2014-07-29 15:34:06,758 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://localhost:9000/
+2014-07-29 15:34:06,759 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2014-07-29 15:34:06,759 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 80s.
+2014-07-29 15:34:06,766 [1] INFO  ProcessManager - Listening for crashes.
+2014-07-29 15:34:06,980 [Heightmap Bot Login Thread] WARN  Heightmap - Unable to log in heightmap bot. Could not authenticate your avatar. Please check your username and password, and check the grid if problems persist.
+2014-07-29 15:34:14,699 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:61526
+2014-07-29 15:34:18,114 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:61527
+2014-07-29 15:34:19,113 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:61528
+2014-07-29 15:34:19,114 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:61529
+2014-07-29 15:34:19,613 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:61530
+2014-07-29 15:34:20,113 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:61531
+2014-07-29 15:34:20,613 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:61532
+2014-07-29 15:34:21,113 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:61533
+2014-07-29 15:34:21,613 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:61534
+2014-07-29 15:34:22,114 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:61535
+2014-07-29 15:34:23,114 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:61536
+2014-07-29 15:34:23,615 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:61537
+2014-07-29 15:34:24,114 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:61538
+2014-07-29 15:34:24,614 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:61539
+2014-07-29 15:34:25,114 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:61540
+2014-07-29 15:34:25,614 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:61541
+2014-07-29 15:34:41,850 [24] INFO  OpenSim - MainWindow viewer pressing ^+u
+2014-07-29 15:35:26,758 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 15:35:35,001 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:61546
+2014-07-29 15:35:42,735 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:61549
+2014-07-29 15:35:43,235 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:61550
+2014-07-29 15:35:44,235 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:61551
+2014-07-29 15:35:44,735 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:61552
+2014-07-29 15:35:45,235 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:61553
+2014-07-29 15:35:45,735 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:61554
+2014-07-29 15:35:46,235 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:61555
+2014-07-29 15:35:46,735 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:61556
+2014-07-29 15:35:47,235 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:61557
+2014-07-29 15:35:48,235 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:61558
+2014-07-29 15:35:48,246 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:61559
+2014-07-29 15:35:49,235 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:61560
+2014-07-29 15:35:49,236 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:61561
+2014-07-29 15:35:50,236 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:61562
+2014-07-29 15:35:50,237 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:61563
+2014-07-29 15:36:01,625 [65] INFO  OpenSim - RightWindow viewer pressing ^+u
+2014-07-29 15:36:06,760 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 15:36:17,904 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:61569
+2014-07-29 15:36:24,370 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:61570
+2014-07-29 15:36:24,870 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:61571
+2014-07-29 15:36:25,370 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:61572
+2014-07-29 15:36:25,870 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:61573
+2014-07-29 15:36:26,370 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:61574
+2014-07-29 15:36:26,870 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:61575
+2014-07-29 15:36:27,871 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:61576
+2014-07-29 15:36:28,370 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:61577
+2014-07-29 15:36:28,870 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:61578
+2014-07-29 15:36:29,370 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:61579
+2014-07-29 15:36:29,870 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:61580
+2014-07-29 15:36:30,370 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:61581
+2014-07-29 15:36:30,870 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:61582
+2014-07-29 15:36:31,375 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:61583
+2014-07-29 15:36:31,871 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:61584
+2014-07-29 15:36:44,645 [112] INFO  OpenSim - LeftWindow viewer pressing ^+u
+2014-07-29 15:39:04,556 [StateChange] INFO  Overlay - Transitioning from LoadTextures to IdleOutro.
+2014-07-29 15:39:06,603 [Tick Thread] INFO  Overlay - Current state set to IdleOutro.
+2014-07-29 15:39:11,609 [StateChange] INFO  Overlay - Transitioning from IdleOutro to Idle.
+2014-07-29 15:39:13,656 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2014-07-29 15:41:11,455 [1] DEBUG Core - Shutting down tick thread.
+2014-07-29 15:41:11,480 [Tick Thread] INFO  Core - Tick Thread shut down.
+2014-07-29 15:41:11,517 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2014-07-29 15:41:11,517 [50] DEBUG OpenSim.MainWindowViewer - Closing
+2014-07-29 15:41:11,517 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 15:41:11,536 [1] INFO  ProcessManager - Dumping to C:\Users\openvirtualwolds\Documents\John\Chimera\Bin\Logs\2014\Jul\29-15.41Shutdown.html
+2014-07-29 15:41:11,540 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2014-07-29 15:41:11,540 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
+2014-07-29 15:41:11,543 [1] DEBUG XBoxController - Disabled
+2014-07-29 15:41:11,548 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
+2014-07-29 15:41:11,549 [85] DEBUG OpenSim.MainWindowViewer - Closing
+2014-07-29 15:41:11,549 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 15:41:11,552 [32] DEBUG OpenSim.RightWindowViewer - Closing
+2014-07-29 15:41:11,552 [1] DEBUG OpenSim.RightWindowProxy - Closing
+2014-07-29 15:41:11,552 [1] INFO  OpenSim.RightWindowProxy - Closed
+2014-07-29 15:41:11,553 [95] DEBUG OpenSim.LeftWindowViewer - Closing
+2014-07-29 15:41:11,553 [1] DEBUG OpenSim.LeftWindowProxy - Closing
+2014-07-29 15:41:11,553 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2014-07-29 15:41:11,554 [1] INFO  Core - System shutdown for Shut down.
+2014-07-29 15:41:13,922 [85] INFO  OpenSim.MainWindowViewer - Closed
+2014-07-29 15:41:13,922 [50] INFO  OpenSim.MainWindowViewer - Closed
+2014-07-29 15:41:14,708 [32] INFO  OpenSim.RightWindowViewer - Closed
+2014-07-29 15:41:15,073 [95] INFO  OpenSim.LeftWindowViewer - Closed
+2014-07-29 15:43:15,258 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-07-29 15:43:15,274 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-07-29 15:43:15,277 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-07-29 15:43:15,327 [1] INFO  Overlay - Loading overlay from Overlays/Timespan/TimespanOverlay.xml.
+2014-07-29 15:43:15,449 [1] DEBUG Overlay - LeftWindpw is not a known frame. Using MainWindow as default.
+2014-07-29 15:43:15,532 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
+2014-07-29 15:43:15,532 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 15:43:15,533 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 15:43:15,535 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:43:15,616 [1] INFO  Overlay - Created BlankState state IdleOutro.
+2014-07-29 15:43:15,620 [1] INFO  Overlay - Created FlythroughState state Idle.
+2014-07-29 15:43:15,621 [1] INFO  Overlay - Created FlythroughState state LoadTextures.
+2014-07-29 15:43:15,621 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:43:15,710 [1] INFO  Overlay - Created BlankState state Intro.
+2014-07-29 15:43:15,710 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:43:15,790 [1] INFO  Overlay - Created BlankState state Splash.
+2014-07-29 15:43:15,948 [1] INFO  Overlay - Created SlideshowState state Slideshow.
+2014-07-29 15:43:15,949 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:43:15,957 [1] INFO  Overlay - Created BlankState state Story1Confirm.
+2014-07-29 15:43:15,958 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:43:15,966 [1] INFO  Overlay - Created BlankState state Story2Confirm.
+2014-07-29 15:43:15,967 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:43:15,975 [1] INFO  Overlay - Created BlankState state Story3Confirm.
+2014-07-29 15:43:15,976 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:43:15,984 [1] INFO  Overlay - Created BlankState state Story4Confirm.
+2014-07-29 15:43:15,985 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 15:43:15,993 [1] INFO  Overlay - Created BlankState state Story5Confirm.
+2014-07-29 15:43:15,998 [1] INFO  Overlay - Created VideoState state Story1.
+2014-07-29 15:43:15,998 [1] INFO  Overlay - Created VideoState state Story2.
+2014-07-29 15:43:15,999 [1] INFO  Overlay - Created VideoState state Story3.
+2014-07-29 15:43:16,000 [1] INFO  Overlay - Created VideoState state Story4.
+2014-07-29 15:43:16,000 [1] INFO  Overlay - Created VideoState state Story5.
+2014-07-29 15:43:16,019 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:43:16,019 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
+2014-07-29 15:43:16,022 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:43:16,022 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:43:16,022 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:43:16,022 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:43:16,022 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:43:16,032 [1] INFO  Overlay - Created KinectControlState state KinectAvatar.
+2014-07-29 15:43:16,033 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:43:16,033 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 15:43:16,033 [1] INFO  Overlay - Created KinectControlState state KinectFlycam.
+2014-07-29 15:43:16,033 [1] INFO  Overlay - Creating Transitions
+2014-07-29 15:43:16,036 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-07-29 15:43:16,037 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 15:43:16,037 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-07-29 15:43:16,037 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 15:43:16,040 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-07-29 15:43:16,040 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 15:43:16,040 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-07-29 15:43:16,041 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 15:43:16,103 [1] DEBUG MainWindowOverlay - Disabling cursor control
+2014-07-29 15:43:16,103 [1] DEBUG RightWindowOverlay - Disabling cursor control
+2014-07-29 15:43:16,103 [1] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-07-29 15:43:16,103 [1] INFO  Overlay - Current state set to LoadTextures.
+2014-07-29 15:43:16,105 [1] INFO  Core - Loaded Overlay. Enabled.
+2014-07-29 15:43:16,106 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2014-07-29 15:43:16,107 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2014-07-29 15:43:16,109 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2014-07-29 15:43:16,112 [1] INFO  Core - Loaded Shutdown. Enabled.
+2014-07-29 15:43:16,114 [1] DEBUG XBoxController - Enabled
+2014-07-29 15:43:16,114 [1] INFO  Core - Loaded XBoxController. Enabled.
+2014-07-29 15:43:16,128 [1] INFO  OpenSim.MainWindowProxy - Proxying http://localhost:9000/
+2014-07-29 15:43:16,132 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-07-29 15:43:16,134 [1] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 15:43:16,144 [1] INFO  OpenSim.RightWindowProxy - Proxying http://localhost:9000/
+2014-07-29 15:43:16,146 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2014-07-29 15:43:16,147 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 40s.
+2014-07-29 15:43:16,147 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://localhost:9000/
+2014-07-29 15:43:16,148 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2014-07-29 15:43:16,149 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 80s.
+2014-07-29 15:43:16,156 [1] INFO  ProcessManager - Listening for crashes.
+2014-07-29 15:43:16,388 [Heightmap Bot Login Thread] WARN  Heightmap - Unable to log in heightmap bot. Could not authenticate your avatar. Please check your username and password, and check the grid if problems persist.
+2014-07-29 15:43:24,117 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:61593
+2014-07-29 15:43:27,705 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:61594
+2014-07-29 15:43:28,204 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:61595
+2014-07-29 15:43:28,704 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:61596
+2014-07-29 15:43:29,204 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:61597
+2014-07-29 15:43:29,704 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:61598
+2014-07-29 15:43:30,204 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:61599
+2014-07-29 15:43:31,204 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:61600
+2014-07-29 15:43:31,704 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:61605
+2014-07-29 15:43:32,204 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:61606
+2014-07-29 15:43:32,704 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:61607
+2014-07-29 15:43:33,204 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:61608
+2014-07-29 15:43:33,704 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:61609
+2014-07-29 15:43:34,204 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:61610
+2014-07-29 15:43:34,704 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:61611
+2014-07-29 15:43:35,204 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:61612
+2014-07-29 15:43:51,576 [25] INFO  OpenSim - MainWindow viewer pressing ^+u
+2014-07-29 15:44:36,148 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 15:44:44,433 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:61618
+2014-07-29 15:44:52,711 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:61619
+2014-07-29 15:44:53,211 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:61620
+2014-07-29 15:44:53,711 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:61621
+2014-07-29 15:44:54,211 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:61622
+2014-07-29 15:44:54,711 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:61623
+2014-07-29 15:44:55,211 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:61624
+2014-07-29 15:44:55,711 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:61625
+2014-07-29 15:44:56,211 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:61626
+2014-07-29 15:44:56,711 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:61627
+2014-07-29 15:44:57,211 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:61628
+2014-07-29 15:44:57,711 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:61629
+2014-07-29 15:44:58,211 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:61630
+2014-07-29 15:44:58,711 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:61631
+2014-07-29 15:44:59,211 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:61632
+2014-07-29 15:44:59,711 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:61633
+2014-07-29 15:45:10,953 [68] INFO  OpenSim - RightWindow viewer pressing ^+u
+2014-07-29 15:45:16,150 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 15:45:26,954 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:61639
+2014-07-29 15:45:35,713 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:61640
+2014-07-29 15:45:36,213 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:61641
+2014-07-29 15:45:36,713 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:61642
+2014-07-29 15:45:37,213 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:61643
+2014-07-29 15:45:37,713 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:61644
+2014-07-29 15:45:38,977 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:61645
+2014-07-29 15:45:39,477 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:61646
+2014-07-29 15:45:40,477 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:61647
+2014-07-29 15:45:40,478 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:61648
+2014-07-29 15:45:40,977 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:61649
+2014-07-29 15:45:41,477 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:61650
+2014-07-29 15:45:41,977 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:61651
+2014-07-29 15:45:42,477 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:61652
+2014-07-29 15:45:42,977 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:61653
+2014-07-29 15:45:43,477 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:61654
+2014-07-29 15:45:53,703 [113] INFO  OpenSim - LeftWindow viewer pressing ^+u
+2014-07-29 15:48:14,418 [StateChange] INFO  Overlay - Transitioning from LoadTextures to IdleOutro.
+2014-07-29 15:48:16,432 [Tick Thread] INFO  Overlay - Current state set to IdleOutro.
+2014-07-29 15:48:21,438 [StateChange] INFO  Overlay - Transitioning from IdleOutro to Idle.
+2014-07-29 15:48:29,232 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2014-07-29 16:19:03,449 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2014-07-29 16:19:05,490 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2014-07-29 16:19:08,427 [StateChange] INFO  Overlay - Transitioning from Intro to Splash.
+2014-07-29 16:19:08,446 [StateChange] INFO  Overlay - Current state set to Splash.
+2014-07-29 16:19:08,558 [1] DEBUG MainWindowOverlay - Enabling cursor control
+2014-07-29 16:19:08,558 [1] DEBUG RightWindowOverlay - Enabling cursor control
+2014-07-29 16:19:08,558 [1] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-07-29 16:19:13,939 [StateChange] INFO  Overlay - Transitioning from Splash to KinectAvatar.
+2014-07-29 16:19:13,947 [StateChange] DEBUG Core - Control mode changed to Delta.
+2014-07-29 16:19:13,948 [1] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-07-29 16:19:13,948 [1] DEBUG MainWindowOverlay - Disabling cursor control
+2014-07-29 16:19:13,948 [1] DEBUG RightWindowOverlay - Disabling cursor control
+2014-07-29 16:19:15,957 [Tick Thread] DEBUG KinectMovement - Enabled
+2014-07-29 16:19:15,957 [Tick Thread] INFO  Overlay - Current state set to KinectAvatar.
+2014-07-29 16:20:35,954 [1] DEBUG Core - Shutting down tick thread.
+2014-07-29 16:20:35,977 [Tick Thread] INFO  Core - Tick Thread shut down.
+2014-07-29 16:20:36,015 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2014-07-29 16:20:36,015 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 16:20:36,015 [162] DEBUG OpenSim.MainWindowViewer - Closing
+2014-07-29 16:20:36,026 [1] INFO  ProcessManager - Dumping to C:\Users\openvirtualwolds\Documents\John\Chimera\Bin\Logs\2014\Jul\29-16.20Shutdown.html
+2014-07-29 16:20:36,031 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
+2014-07-29 16:20:36,031 [1] DEBUG KinectMovement - Disabled
+2014-07-29 16:20:36,032 [1] DEBUG XBoxController - Disabled
+2014-07-29 16:20:36,033 [35] DEBUG OpenSim.MainWindowViewer - Closing
+2014-07-29 16:20:36,033 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 16:20:36,034 [1] DEBUG OpenSim.RightWindowProxy - Closing
+2014-07-29 16:20:36,034 [1] INFO  OpenSim.RightWindowProxy - Closed
+2014-07-29 16:20:36,034 [48] DEBUG OpenSim.RightWindowViewer - Closing
+2014-07-29 16:20:36,036 [186] DEBUG OpenSim.LeftWindowViewer - Closing
+2014-07-29 16:20:36,036 [1] DEBUG OpenSim.LeftWindowProxy - Closing
+2014-07-29 16:20:36,036 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2014-07-29 16:20:36,037 [1] INFO  Core - System shutdown for Shut down.
+2014-07-29 16:20:36,041 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2014-07-29 16:20:36,048 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
+2014-07-29 16:20:38,570 [35] INFO  OpenSim.MainWindowViewer - Closed
+2014-07-29 16:20:38,570 [162] INFO  OpenSim.MainWindowViewer - Closed
+2014-07-29 16:20:39,887 [186] INFO  OpenSim.LeftWindowViewer - Closed
+2014-07-29 16:20:50,449 [48] INFO  OpenSim.RightWindowViewer - Closed
+2014-07-29 16:23:16,306 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-07-29 16:23:16,323 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-07-29 16:23:16,325 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-07-29 16:23:16,378 [1] INFO  Overlay - Loading overlay from Overlays/Timespan/TimespanOverlay.xml.
+2014-07-29 16:23:16,497 [1] DEBUG Overlay - LeftWindpw is not a known frame. Using MainWindow as default.
+2014-07-29 16:23:16,579 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
+2014-07-29 16:23:16,580 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 16:23:16,581 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 16:23:16,584 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:23:16,669 [1] INFO  Overlay - Created BlankState state IdleOutro.
+2014-07-29 16:23:16,672 [1] INFO  Overlay - Created FlythroughState state Idle.
+2014-07-29 16:23:16,673 [1] INFO  Overlay - Created FlythroughState state LoadTextures.
+2014-07-29 16:23:16,673 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:23:16,749 [1] INFO  Overlay - Created BlankState state Intro.
+2014-07-29 16:23:16,750 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:23:16,829 [1] INFO  Overlay - Created BlankState state Splash.
+2014-07-29 16:23:16,989 [1] INFO  Overlay - Created SlideshowState state Slideshow.
+2014-07-29 16:23:16,989 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:23:16,998 [1] INFO  Overlay - Created BlankState state Story1Confirm.
+2014-07-29 16:23:16,999 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:23:17,007 [1] INFO  Overlay - Created BlankState state Story2Confirm.
+2014-07-29 16:23:17,008 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:23:17,017 [1] INFO  Overlay - Created BlankState state Story3Confirm.
+2014-07-29 16:23:17,018 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:23:17,026 [1] INFO  Overlay - Created BlankState state Story4Confirm.
+2014-07-29 16:23:17,027 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:23:17,035 [1] INFO  Overlay - Created BlankState state Story5Confirm.
+2014-07-29 16:23:17,041 [1] INFO  Overlay - Created VideoState state Story1.
+2014-07-29 16:23:17,041 [1] INFO  Overlay - Created VideoState state Story2.
+2014-07-29 16:23:17,042 [1] INFO  Overlay - Created VideoState state Story3.
+2014-07-29 16:23:17,042 [1] INFO  Overlay - Created VideoState state Story4.
+2014-07-29 16:23:17,043 [1] INFO  Overlay - Created VideoState state Story5.
+2014-07-29 16:23:17,062 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:23:17,062 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
+2014-07-29 16:23:17,064 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:23:17,064 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:23:17,064 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:23:17,064 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:23:17,064 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:23:17,074 [1] INFO  Overlay - Created KinectControlState state KinectAvatar.
+2014-07-29 16:23:17,075 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:23:17,075 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:23:17,075 [1] INFO  Overlay - Created KinectControlState state KinectFlycam.
+2014-07-29 16:23:17,076 [1] INFO  Overlay - Creating Transitions
+2014-07-29 16:23:17,078 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-07-29 16:23:17,079 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 16:23:17,079 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-07-29 16:23:17,080 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 16:23:17,082 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-07-29 16:23:17,083 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 16:23:17,083 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-07-29 16:23:17,084 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 16:23:17,150 [1] DEBUG MainWindowOverlay - Disabling cursor control
+2014-07-29 16:23:17,150 [1] DEBUG RightWindowOverlay - Disabling cursor control
+2014-07-29 16:23:17,150 [1] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-07-29 16:23:17,150 [1] INFO  Overlay - Current state set to LoadTextures.
+2014-07-29 16:23:17,151 [1] INFO  Core - Loaded Overlay. Enabled.
+2014-07-29 16:23:17,153 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2014-07-29 16:23:17,154 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2014-07-29 16:23:17,156 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2014-07-29 16:23:17,160 [1] INFO  Core - Loaded Shutdown. Enabled.
+2014-07-29 16:23:17,162 [1] DEBUG XBoxController - Enabled
+2014-07-29 16:23:17,162 [1] INFO  Core - Loaded XBoxController. Enabled.
+2014-07-29 16:23:17,175 [1] INFO  OpenSim.MainWindowProxy - Proxying http://localhost:9000/
+2014-07-29 16:23:17,179 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-07-29 16:23:17,181 [1] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 16:23:17,193 [1] INFO  OpenSim.RightWindowProxy - Proxying http://localhost:9000/
+2014-07-29 16:23:17,194 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2014-07-29 16:23:17,195 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 40s.
+2014-07-29 16:23:17,196 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://localhost:9000/
+2014-07-29 16:23:17,197 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2014-07-29 16:23:17,197 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 80s.
+2014-07-29 16:23:17,205 [1] INFO  ProcessManager - Listening for crashes.
+2014-07-29 16:23:17,430 [Heightmap Bot Login Thread] WARN  Heightmap - Unable to log in heightmap bot. Could not authenticate your avatar. Please check your username and password, and check the grid if problems persist.
+2014-07-29 16:23:25,153 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:62680
+2014-07-29 16:23:28,877 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:62681
+2014-07-29 16:23:29,376 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:62682
+2014-07-29 16:23:29,876 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:62683
+2014-07-29 16:23:30,876 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:62684
+2014-07-29 16:23:30,877 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:62685
+2014-07-29 16:23:31,376 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:62686
+2014-07-29 16:23:31,876 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:62687
+2014-07-29 16:23:32,376 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:62688
+2014-07-29 16:23:32,876 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:62689
+2014-07-29 16:23:33,376 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:62690
+2014-07-29 16:23:33,876 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:62691
+2014-07-29 16:23:34,376 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:62692
+2014-07-29 16:23:34,876 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:62693
+2014-07-29 16:23:35,376 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:62694
+2014-07-29 16:23:35,876 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:62695
+2014-07-29 16:23:52,446 [26] INFO  OpenSim - MainWindow viewer pressing ^+u
+2014-07-29 16:24:37,197 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 16:24:45,808 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:57265
+2014-07-29 16:24:53,881 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:57266
+2014-07-29 16:24:54,381 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:57267
+2014-07-29 16:24:54,881 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:57268
+2014-07-29 16:24:55,381 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:57269
+2014-07-29 16:24:55,881 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:57270
+2014-07-29 16:24:56,881 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:57271
+2014-07-29 16:24:57,381 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:57272
+2014-07-29 16:24:57,881 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:57273
+2014-07-29 16:24:58,381 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:57274
+2014-07-29 16:24:58,881 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:57275
+2014-07-29 16:24:59,381 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:57276
+2014-07-29 16:24:59,881 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:57277
+2014-07-29 16:25:00,381 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:57278
+2014-07-29 16:25:00,881 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:57279
+2014-07-29 16:25:01,381 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:57280
+2014-07-29 16:25:12,424 [63] INFO  OpenSim - RightWindow viewer pressing ^+u
+2014-07-29 16:25:17,199 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 16:25:28,196 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:57286
+2014-07-29 16:25:36,386 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:57287
+2014-07-29 16:25:36,883 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:57288
+2014-07-29 16:25:37,383 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:57289
+2014-07-29 16:25:38,016 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:57290
+2014-07-29 16:25:38,515 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:57291
+2014-07-29 16:25:39,016 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:57292
+2014-07-29 16:25:39,516 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:57293
+2014-07-29 16:25:40,016 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:57294
+2014-07-29 16:25:40,516 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:57295
+2014-07-29 16:25:41,016 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:57296
+2014-07-29 16:25:41,516 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:57297
+2014-07-29 16:25:42,016 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:57298
+2014-07-29 16:25:42,516 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:57299
+2014-07-29 16:25:43,016 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:57300
+2014-07-29 16:25:44,016 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:57301
+2014-07-29 16:25:54,922 [79] INFO  OpenSim - LeftWindow viewer pressing ^+u
+2014-07-29 16:28:15,023 [StateChange] INFO  Overlay - Transitioning from LoadTextures to IdleOutro.
+2014-07-29 16:28:17,048 [Tick Thread] INFO  Overlay - Current state set to IdleOutro.
+2014-07-29 16:28:22,055 [StateChange] INFO  Overlay - Transitioning from IdleOutro to Idle.
+2014-07-29 16:28:24,085 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2014-07-29 16:28:24,086 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2014-07-29 16:28:26,108 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2014-07-29 16:28:31,128 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
+2014-07-29 16:28:33,287 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2014-07-29 16:28:34,672 [StateChange] INFO  Overlay - Transitioning from GuidedTour to Splash.
+2014-07-29 16:28:34,695 [StateChange] INFO  Overlay - Current state set to Splash.
+2014-07-29 16:28:34,747 [1] DEBUG MainWindowOverlay - Enabling cursor control
+2014-07-29 16:28:34,747 [1] DEBUG RightWindowOverlay - Enabling cursor control
+2014-07-29 16:28:34,747 [1] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-07-29 16:28:58,579 [StateChange] INFO  Overlay - Transitioning from Splash to KinectAvatar.
+2014-07-29 16:28:58,590 [StateChange] DEBUG Core - Control mode changed to Delta.
+2014-07-29 16:28:58,591 [1] DEBUG MainWindowOverlay - Disabling cursor control
+2014-07-29 16:28:58,591 [1] DEBUG RightWindowOverlay - Disabling cursor control
+2014-07-29 16:28:58,591 [1] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-07-29 16:29:00,605 [Tick Thread] DEBUG KinectMovement - Enabled
+2014-07-29 16:29:00,605 [Tick Thread] INFO  Overlay - Current state set to KinectAvatar.
+2014-07-29 16:31:49,167 [StateChange] INFO  Overlay - Transitioning from KinectAvatar to IdleOutro.
+2014-07-29 16:31:49,168 [StateChange] DEBUG KinectMovement - Disabled
+2014-07-29 16:31:51,270 [Tick Thread] INFO  Overlay - Current state set to IdleOutro.
+2014-07-29 16:31:56,285 [StateChange] INFO  Overlay - Transitioning from IdleOutro to Idle.
+2014-07-29 16:31:56,287 [StateChange] DEBUG Core - Control mode changed to Absolute.
+2014-07-29 16:31:58,296 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2014-07-29 16:32:11,986 [1] DEBUG Core - Shutting down tick thread.
+2014-07-29 16:32:12,010 [Tick Thread] INFO  Core - Tick Thread shut down.
+2014-07-29 16:32:12,047 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2014-07-29 16:32:12,047 [152] DEBUG OpenSim.MainWindowViewer - Closing
+2014-07-29 16:32:12,047 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 16:32:12,058 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2014-07-29 16:32:12,068 [1] INFO  ProcessManager - Dumping to C:\Users\openvirtualwolds\Documents\John\Chimera\Bin\Logs\2014\Jul\29-16.32Shutdown.html
+2014-07-29 16:32:12,074 [1] DEBUG XBoxController - Disabled
+2014-07-29 16:32:12,077 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 16:32:12,077 [135] DEBUG OpenSim.MainWindowViewer - Closing
+2014-07-29 16:32:12,079 [136] DEBUG OpenSim.RightWindowViewer - Closing
+2014-07-29 16:32:12,079 [1] DEBUG OpenSim.RightWindowProxy - Closing
+2014-07-29 16:32:12,079 [1] INFO  OpenSim.RightWindowProxy - Closed
+2014-07-29 16:32:12,083 [138] DEBUG OpenSim.LeftWindowViewer - Closing
+2014-07-29 16:32:12,083 [1] DEBUG OpenSim.LeftWindowProxy - Closing
+2014-07-29 16:32:12,083 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2014-07-29 16:32:12,085 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
+2014-07-29 16:32:12,085 [1] INFO  Core - System shutdown for Shut down.
+2014-07-29 16:32:12,093 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
+2014-07-29 16:32:14,636 [152] INFO  OpenSim.MainWindowViewer - Closed
+2014-07-29 16:32:14,636 [135] INFO  OpenSim.MainWindowViewer - Closed
+2014-07-29 16:32:15,329 [136] INFO  OpenSim.RightWindowViewer - Closed
+2014-07-29 16:32:15,652 [138] INFO  OpenSim.LeftWindowViewer - Closed
+2014-07-29 16:36:02,311 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-07-29 16:36:02,329 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-07-29 16:36:02,331 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-07-29 16:36:02,385 [1] INFO  Overlay - Loading overlay from Overlays/Timespan/TimespanOverlay.xml.
+2014-07-29 16:36:02,507 [1] DEBUG Overlay - LeftWindpw is not a known frame. Using MainWindow as default.
+2014-07-29 16:36:02,587 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
+2014-07-29 16:36:02,587 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 16:36:02,588 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 16:36:02,590 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:36:02,672 [1] INFO  Overlay - Created BlankState state IdleOutro.
+2014-07-29 16:36:02,676 [1] INFO  Overlay - Created FlythroughState state Idle.
+2014-07-29 16:36:02,676 [1] INFO  Overlay - Created FlythroughState state LoadTextures.
+2014-07-29 16:36:02,677 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:36:02,753 [1] INFO  Overlay - Created BlankState state Intro.
+2014-07-29 16:36:02,754 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:36:02,832 [1] INFO  Overlay - Created BlankState state Splash.
+2014-07-29 16:36:02,989 [1] INFO  Overlay - Created SlideshowState state Slideshow.
+2014-07-29 16:36:02,989 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:36:02,997 [1] INFO  Overlay - Created BlankState state Story1Confirm.
+2014-07-29 16:36:02,998 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:36:03,007 [1] INFO  Overlay - Created BlankState state Story2Confirm.
+2014-07-29 16:36:03,007 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:36:03,015 [1] INFO  Overlay - Created BlankState state Story3Confirm.
+2014-07-29 16:36:03,016 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:36:03,024 [1] INFO  Overlay - Created BlankState state Story4Confirm.
+2014-07-29 16:36:03,025 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:36:03,033 [1] INFO  Overlay - Created BlankState state Story5Confirm.
+2014-07-29 16:36:03,038 [1] INFO  Overlay - Created VideoState state Story1.
+2014-07-29 16:36:03,039 [1] INFO  Overlay - Created VideoState state Story2.
+2014-07-29 16:36:03,039 [1] INFO  Overlay - Created VideoState state Story3.
+2014-07-29 16:36:03,040 [1] INFO  Overlay - Created VideoState state Story4.
+2014-07-29 16:36:03,041 [1] INFO  Overlay - Created VideoState state Story5.
+2014-07-29 16:36:03,059 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:36:03,059 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
+2014-07-29 16:36:03,061 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:36:03,061 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:36:03,061 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:36:03,061 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:36:03,062 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:36:03,070 [1] INFO  Overlay - Created KinectControlState state KinectAvatar.
+2014-07-29 16:36:03,071 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:36:03,071 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:36:03,071 [1] INFO  Overlay - Created KinectControlState state KinectFlycam.
+2014-07-29 16:36:03,072 [1] INFO  Overlay - Creating Transitions
+2014-07-29 16:36:03,074 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-07-29 16:36:03,075 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 16:36:03,075 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-07-29 16:36:03,076 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 16:36:03,077 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-07-29 16:36:03,078 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 16:36:03,078 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-07-29 16:36:03,079 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 16:36:03,142 [1] DEBUG MainWindowOverlay - Disabling cursor control
+2014-07-29 16:36:03,142 [1] DEBUG RightWindowOverlay - Disabling cursor control
+2014-07-29 16:36:03,142 [1] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-07-29 16:36:03,142 [1] INFO  Overlay - Current state set to LoadTextures.
+2014-07-29 16:36:03,144 [1] INFO  Core - Loaded Overlay. Enabled.
+2014-07-29 16:36:03,145 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2014-07-29 16:36:03,146 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2014-07-29 16:36:03,148 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2014-07-29 16:36:03,152 [1] INFO  Core - Loaded Shutdown. Enabled.
+2014-07-29 16:36:03,160 [1] DEBUG XBoxController - Enabled
+2014-07-29 16:36:03,161 [1] INFO  Core - Loaded XBoxController. Enabled.
+2014-07-29 16:36:03,175 [1] INFO  OpenSim.MainWindowProxy - Proxying http://localhost:9000/
+2014-07-29 16:36:03,179 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-07-29 16:36:03,180 [1] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 16:36:03,192 [1] INFO  OpenSim.RightWindowProxy - Proxying http://localhost:9000/
+2014-07-29 16:36:03,193 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2014-07-29 16:36:03,193 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 40s.
+2014-07-29 16:36:03,194 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://localhost:9000/
+2014-07-29 16:36:03,195 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2014-07-29 16:36:03,196 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 80s.
+2014-07-29 16:36:03,204 [1] INFO  ProcessManager - Listening for crashes.
+2014-07-29 16:36:03,448 [Heightmap Bot Login Thread] WARN  Heightmap - Unable to log in heightmap bot. Could not authenticate your avatar. Please check your username and password, and check the grid if problems persist.
+2014-07-29 16:36:11,133 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:49763
+2014-07-29 16:36:14,720 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:49764
+2014-07-29 16:36:15,219 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:49765
+2014-07-29 16:36:15,719 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:49766
+2014-07-29 16:36:16,219 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:49767
+2014-07-29 16:36:16,719 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:49768
+2014-07-29 16:36:17,219 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:49769
+2014-07-29 16:36:17,719 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:49770
+2014-07-29 16:36:18,219 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:49771
+2014-07-29 16:36:18,719 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:49772
+2014-07-29 16:36:19,219 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:49773
+2014-07-29 16:36:20,219 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:49774
+2014-07-29 16:36:20,719 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:49775
+2014-07-29 16:36:21,219 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:49776
+2014-07-29 16:36:21,719 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:49777
+2014-07-29 16:36:22,219 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:49778
+2014-07-29 16:36:37,730 [30] INFO  OpenSim - MainWindow viewer pressing ^+u
+2014-07-29 16:37:23,195 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 16:37:31,558 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:49783
+2014-07-29 16:37:39,729 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:49786
+2014-07-29 16:37:40,230 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:49787
+2014-07-29 16:37:40,732 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:49788
+2014-07-29 16:37:41,229 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:49789
+2014-07-29 16:37:41,729 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:49790
+2014-07-29 16:37:42,229 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:49791
+2014-07-29 16:37:42,729 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:49792
+2014-07-29 16:37:43,231 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:49793
+2014-07-29 16:37:43,730 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:49794
+2014-07-29 16:37:44,230 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:49795
+2014-07-29 16:37:44,730 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:49796
+2014-07-29 16:37:45,730 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:49797
+2014-07-29 16:37:46,231 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:49798
+2014-07-29 16:37:46,730 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:49799
+2014-07-29 16:37:47,230 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:49800
+2014-07-29 16:37:58,109 [66] INFO  OpenSim - RightWindow viewer pressing ^+u
+2014-07-29 16:38:03,197 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 16:38:14,185 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:49806
+2014-07-29 16:38:22,239 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:49807
+2014-07-29 16:38:22,739 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:49808
+2014-07-29 16:38:23,240 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:49809
+2014-07-29 16:38:23,740 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:49810
+2014-07-29 16:38:24,739 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:49811
+2014-07-29 16:38:27,468 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:49812
+2014-07-29 16:38:28,245 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:49813
+2014-07-29 16:38:28,247 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:49814
+2014-07-29 16:38:28,262 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:49815
+2014-07-29 16:38:28,266 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:49816
+2014-07-29 16:38:28,267 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:49817
+2014-07-29 16:38:45,325 [91] INFO  OpenSim - LeftWindow viewer pressing ^+u
+2014-07-29 16:38:50,248 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:49818
+2014-07-29 16:38:50,250 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:49819
+2014-07-29 16:38:50,251 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:49820
+2014-07-29 16:38:50,253 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:49821
+2014-07-29 16:41:03,538 [StateChange] INFO  Overlay - Transitioning from LoadTextures to IdleOutro.
+2014-07-29 16:41:05,563 [Tick Thread] INFO  Overlay - Current state set to IdleOutro.
+2014-07-29 16:41:10,564 [StateChange] INFO  Overlay - Transitioning from IdleOutro to Idle.
+2014-07-29 16:41:12,607 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2014-07-29 16:41:12,608 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2014-07-29 16:41:14,644 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2014-07-29 16:41:16,701 [StateChange] INFO  Overlay - Transitioning from Intro to Splash.
+2014-07-29 16:41:16,706 [StateChange] INFO  Overlay - Current state set to Splash.
+2014-07-29 16:41:16,837 [1] DEBUG MainWindowOverlay - Enabling cursor control
+2014-07-29 16:41:16,838 [1] DEBUG RightWindowOverlay - Enabling cursor control
+2014-07-29 16:41:16,838 [1] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-07-29 16:41:21,803 [StateChange] INFO  Overlay - Transitioning from Splash to KinectAvatar.
+2014-07-29 16:41:21,811 [StateChange] DEBUG Core - Control mode changed to Delta.
+2014-07-29 16:41:21,811 [1] DEBUG MainWindowOverlay - Disabling cursor control
+2014-07-29 16:41:21,811 [1] DEBUG RightWindowOverlay - Disabling cursor control
+2014-07-29 16:41:21,811 [1] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-07-29 16:41:23,826 [Tick Thread] DEBUG KinectMovement - Enabled
+2014-07-29 16:41:23,826 [Tick Thread] INFO  Overlay - Current state set to KinectAvatar.
+2014-07-29 16:44:02,558 [85] WARN  OpenSim - Restarting RightWindow viewer because ViewerStoppedResponding.
+2014-07-29 16:44:02,585 [85] DEBUG OpenSim.RightWindowViewer - Closing
+2014-07-29 16:44:05,586 [85] INFO  OpenSim.RightWindowViewer - Closed
+2014-07-29 16:44:05,588 [1] DEBUG OpenSim.RightWindowProxy - Closing
+2014-07-29 16:44:05,588 [1] INFO  OpenSim.RightWindowProxy - Closed
+2014-07-29 16:44:06,597 [1] INFO  OpenSim.RightWindowProxy - Proxying http://localhost:9000/
+2014-07-29 16:44:06,598 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2014-07-29 16:44:06,598 [85] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 16:44:16,200 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:49828
+2014-07-29 16:44:20,434 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:49829
+2014-07-29 16:44:20,935 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:49830
+2014-07-29 16:44:21,434 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:49831
+2014-07-29 16:44:21,936 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:49832
+2014-07-29 16:44:22,436 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:49833
+2014-07-29 16:44:22,937 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:49834
+2014-07-29 16:44:23,439 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:49835
+2014-07-29 16:44:24,437 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:49836
+2014-07-29 16:44:24,438 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:49837
+2014-07-29 16:44:25,437 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:49838
+2014-07-29 16:44:25,445 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:49839
+2014-07-29 16:44:26,446 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:49840
+2014-07-29 16:44:26,941 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:49841
+2014-07-29 16:44:27,942 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:49842
+2014-07-29 16:44:27,945 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:49843
+2014-07-29 16:44:42,940 [157] INFO  OpenSim - RightWindow viewer pressing ^+u
+2014-07-29 16:46:28,750 [118] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
+2014-07-29 16:46:28,761 [102] WARN  OpenMetaverse - Socket Shutdown: ConnectionReset
+2014-07-29 16:46:28,785 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2014-07-29 16:46:28,785 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 16:46:29,786 [1] INFO  OpenSim.MainWindowProxy - Proxying http://localhost:9000/
+2014-07-29 16:46:29,787 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-07-29 16:46:29,788 [118] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 16:46:41,402 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:49850
+2014-07-29 16:46:45,021 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:49851
+2014-07-29 16:46:46,097 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:49852
+2014-07-29 16:46:46,599 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:49853
+2014-07-29 16:46:47,099 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:49854
+2014-07-29 16:46:47,599 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:49855
+2014-07-29 16:46:48,099 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:49856
+2014-07-29 16:46:48,599 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:49857
+2014-07-29 16:46:49,099 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:49858
+2014-07-29 16:46:49,599 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:49859
+2014-07-29 16:46:50,599 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:49860
+2014-07-29 16:46:51,599 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:49861
+2014-07-29 16:46:52,099 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:49862
+2014-07-29 16:46:52,600 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:49863
+2014-07-29 16:46:53,103 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:49864
+2014-07-29 16:46:53,601 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:49865
+2014-07-29 16:47:08,158 [177] INFO  OpenSim - MainWindow viewer pressing ^+u
+2014-07-29 16:49:35,251 [1] DEBUG Core - Shutting down tick thread.
+2014-07-29 16:49:35,258 [Tick Thread] INFO  Core - Tick Thread shut down.
+2014-07-29 16:49:35,311 [64] DEBUG OpenSim.MainWindowViewer - Closing
+2014-07-29 16:49:35,311 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2014-07-29 16:49:35,311 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 16:49:35,322 [1] INFO  ProcessManager - Dumping to C:\Users\openvirtualwolds\Documents\John\Chimera\Bin\Logs\2014\Jul\29-16.49Shutdown.html
+2014-07-29 16:49:35,327 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2014-07-29 16:49:35,327 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
+2014-07-29 16:49:35,327 [1] DEBUG KinectMovement - Disabled
+2014-07-29 16:49:35,327 [1] DEBUG XBoxController - Disabled
+2014-07-29 16:49:35,329 [124] DEBUG OpenSim.MainWindowViewer - Closing
+2014-07-29 16:49:35,329 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 16:49:35,338 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
+2014-07-29 16:49:35,340 [66] DEBUG OpenSim.RightWindowViewer - Closing
+2014-07-29 16:49:35,340 [1] DEBUG OpenSim.RightWindowProxy - Closing
+2014-07-29 16:49:35,340 [1] INFO  OpenSim.RightWindowProxy - Closed
+2014-07-29 16:49:35,342 [189] DEBUG OpenSim.LeftWindowViewer - Closing
+2014-07-29 16:49:35,342 [1] DEBUG OpenSim.LeftWindowProxy - Closing
+2014-07-29 16:49:35,342 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2014-07-29 16:49:35,343 [1] INFO  Core - System shutdown for Shut down.
+2014-07-29 16:49:37,617 [64] INFO  OpenSim.MainWindowViewer - Closed
+2014-07-29 16:49:37,617 [124] INFO  OpenSim.MainWindowViewer - Closed
+2014-07-29 16:49:38,509 [66] INFO  OpenSim.RightWindowViewer - Closed
+2014-07-29 16:49:39,032 [189] INFO  OpenSim.LeftWindowViewer - Closed
+2014-07-29 16:53:49,212 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-07-29 16:53:49,229 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-07-29 16:53:49,231 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-07-29 16:53:49,289 [1] INFO  Overlay - Loading overlay from Overlays/Timespan/TimespanOverlay.xml.
+2014-07-29 16:53:49,416 [1] DEBUG Overlay - LeftWindpw is not a known frame. Using MainWindow as default.
+2014-07-29 16:53:49,494 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
+2014-07-29 16:53:49,495 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 16:53:49,496 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 16:53:49,501 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:53:49,579 [1] INFO  Overlay - Created BlankState state IdleOutro.
+2014-07-29 16:53:49,582 [1] INFO  Overlay - Created FlythroughState state Idle.
+2014-07-29 16:53:49,583 [1] INFO  Overlay - Created FlythroughState state LoadTextures.
+2014-07-29 16:53:49,583 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:53:49,660 [1] INFO  Overlay - Created BlankState state Intro.
+2014-07-29 16:53:49,660 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:53:49,739 [1] INFO  Overlay - Created BlankState state Splash.
+2014-07-29 16:53:49,897 [1] INFO  Overlay - Created SlideshowState state Slideshow.
+2014-07-29 16:53:49,897 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:53:49,906 [1] INFO  Overlay - Created BlankState state Story1Confirm.
+2014-07-29 16:53:49,906 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:53:49,915 [1] INFO  Overlay - Created BlankState state Story2Confirm.
+2014-07-29 16:53:49,916 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:53:49,924 [1] INFO  Overlay - Created BlankState state Story3Confirm.
+2014-07-29 16:53:49,925 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:53:49,933 [1] INFO  Overlay - Created BlankState state Story4Confirm.
+2014-07-29 16:53:49,934 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 16:53:49,941 [1] INFO  Overlay - Created BlankState state Story5Confirm.
+2014-07-29 16:53:49,947 [1] INFO  Overlay - Created VideoState state Story1.
+2014-07-29 16:53:49,947 [1] INFO  Overlay - Created VideoState state Story2.
+2014-07-29 16:53:49,948 [1] INFO  Overlay - Created VideoState state Story3.
+2014-07-29 16:53:49,949 [1] INFO  Overlay - Created VideoState state Story4.
+2014-07-29 16:53:49,949 [1] INFO  Overlay - Created VideoState state Story5.
+2014-07-29 16:53:49,968 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:53:49,968 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
+2014-07-29 16:53:49,970 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:53:49,970 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:53:49,970 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:53:49,970 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:53:49,971 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:53:49,979 [1] INFO  Overlay - Created KinectControlState state KinectAvatar.
+2014-07-29 16:53:49,979 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:53:49,979 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 16:53:49,979 [1] INFO  Overlay - Created KinectControlState state KinectFlycam.
+2014-07-29 16:53:49,980 [1] INFO  Overlay - Creating Transitions
+2014-07-29 16:53:49,983 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-07-29 16:53:49,983 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 16:53:49,983 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-07-29 16:53:49,984 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 16:53:49,986 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-07-29 16:53:49,987 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 16:53:49,987 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-07-29 16:53:49,988 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 16:53:50,053 [1] DEBUG MainWindowOverlay - Disabling cursor control
+2014-07-29 16:53:50,053 [1] DEBUG RightWindowOverlay - Disabling cursor control
+2014-07-29 16:53:50,053 [1] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-07-29 16:53:50,053 [1] INFO  Overlay - Current state set to LoadTextures.
+2014-07-29 16:53:50,054 [1] INFO  Core - Loaded Overlay. Enabled.
+2014-07-29 16:53:50,056 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2014-07-29 16:53:50,057 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2014-07-29 16:53:50,059 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2014-07-29 16:53:50,062 [1] INFO  Core - Loaded Shutdown. Enabled.
+2014-07-29 16:53:50,070 [1] DEBUG XBoxController - Enabled
+2014-07-29 16:53:50,070 [1] INFO  Core - Loaded XBoxController. Enabled.
+2014-07-29 16:53:50,084 [1] INFO  OpenSim.MainWindowProxy - Proxying http://localhost:9000/
+2014-07-29 16:53:50,087 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-07-29 16:53:50,089 [1] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 16:53:50,099 [1] INFO  OpenSim.RightWindowProxy - Proxying http://localhost:9000/
+2014-07-29 16:53:50,100 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2014-07-29 16:53:50,100 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 40s.
+2014-07-29 16:53:50,101 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://localhost:9000/
+2014-07-29 16:53:50,102 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2014-07-29 16:53:50,102 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 80s.
+2014-07-29 16:53:50,110 [1] INFO  ProcessManager - Listening for crashes.
+2014-07-29 16:53:50,331 [Heightmap Bot Login Thread] WARN  Heightmap - Unable to log in heightmap bot. Could not authenticate your avatar. Please check your username and password, and check the grid if problems persist.
+2014-07-29 16:53:58,187 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:59237
+2014-07-29 16:54:01,772 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:59238
+2014-07-29 16:54:02,771 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:59239
+2014-07-29 16:54:02,772 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:59240
+2014-07-29 16:54:03,771 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:59241
+2014-07-29 16:54:03,772 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:59242
+2014-07-29 16:54:04,771 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:59243
+2014-07-29 16:54:05,271 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:59244
+2014-07-29 16:54:05,829 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:59245
+2014-07-29 16:54:06,271 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:59246
+2014-07-29 16:54:06,771 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:59247
+2014-07-29 16:54:07,771 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:59248
+2014-07-29 16:54:07,772 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:59249
+2014-07-29 16:54:08,771 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:59250
+2014-07-29 16:54:08,772 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:59251
+2014-07-29 16:54:09,771 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:59252
+2014-07-29 16:54:25,731 [24] INFO  OpenSim - MainWindow viewer pressing ^+u
+2014-07-29 16:55:10,102 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 16:55:18,405 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:59258
+2014-07-29 16:55:26,329 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:59259
+2014-07-29 16:55:26,829 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:59260
+2014-07-29 16:55:27,329 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:59261
+2014-07-29 16:55:27,829 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:59262
+2014-07-29 16:55:28,829 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:59263
+2014-07-29 16:55:29,329 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:59264
+2014-07-29 16:55:29,829 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:59265
+2014-07-29 16:55:30,329 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:59266
+2014-07-29 16:55:30,831 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:59267
+2014-07-29 16:55:31,829 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:59268
+2014-07-29 16:55:31,830 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:59269
+2014-07-29 16:55:32,329 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:59270
+2014-07-29 16:55:32,829 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:59271
+2014-07-29 16:55:33,330 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:59272
+2014-07-29 16:55:33,829 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:59273
+2014-07-29 16:55:44,952 [73] INFO  OpenSim - RightWindow viewer pressing ^+u
+2014-07-29 16:55:50,104 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 16:56:00,989 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9000 at 127.0.0.1:59279
+2014-07-29 16:56:09,333 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9001 at 127.0.0.1:59280
+2014-07-29 16:56:09,833 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9018 at 127.0.0.1:59281
+2014-07-29 16:56:10,333 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9019 at 127.0.0.1:59282
+2014-07-29 16:56:11,337 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9002 at 127.0.0.1:59283
+2014-07-29 16:56:11,834 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9003 at 127.0.0.1:59284
+2014-07-29 16:56:12,333 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9020 at 127.0.0.1:59285
+2014-07-29 16:56:12,833 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9021 at 127.0.0.1:59286
+2014-07-29 16:56:13,333 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9004 at 127.0.0.1:59287
+2014-07-29 16:56:13,833 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9005 at 127.0.0.1:59288
+2014-07-29 16:56:14,333 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9022 at 127.0.0.1:59289
+2014-07-29 16:56:14,834 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9007 at 127.0.0.1:59290
+2014-07-29 16:56:15,334 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9006 at 127.0.0.1:59291
+2014-07-29 16:56:16,334 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9023 at 127.0.0.1:59292
+2014-07-29 16:56:16,335 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9024 at 127.0.0.1:59293
+2014-07-29 16:56:17,334 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.207.238:9008 at 127.0.0.1:59294
+2014-07-29 16:56:27,643 [78] INFO  OpenSim - LeftWindow viewer pressing ^+u
+2014-07-29 16:58:47,486 [StateChange] INFO  Overlay - Transitioning from LoadTextures to IdleOutro.
+2014-07-29 16:58:49,520 [Tick Thread] INFO  Overlay - Current state set to IdleOutro.
+2014-07-29 16:58:54,549 [StateChange] INFO  Overlay - Transitioning from IdleOutro to Idle.
+2014-07-29 16:58:57,035 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2014-07-29 16:58:57,060 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2014-07-29 16:58:59,093 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2014-07-29 16:59:04,118 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
+2014-07-29 16:59:06,179 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2014-07-29 16:59:19,711 [StateChange] INFO  Overlay - Transitioning from GuidedTour to Splash.
+2014-07-29 16:59:19,740 [StateChange] INFO  Overlay - Current state set to Splash.
+2014-07-29 16:59:19,858 [1] DEBUG MainWindowOverlay - Enabling cursor control
+2014-07-29 16:59:19,858 [1] DEBUG RightWindowOverlay - Enabling cursor control
+2014-07-29 16:59:19,858 [1] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-07-29 17:02:34,714 [StateChange] INFO  Overlay - Transitioning from Splash to IdleOutro.
+2014-07-29 17:02:34,810 [1] DEBUG MainWindowOverlay - Disabling cursor control
+2014-07-29 17:02:34,811 [1] DEBUG RightWindowOverlay - Disabling cursor control
+2014-07-29 17:02:34,811 [1] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-07-29 17:02:36,818 [Tick Thread] INFO  Overlay - Current state set to IdleOutro.
+2014-07-29 17:02:41,827 [StateChange] INFO  Overlay - Transitioning from IdleOutro to Idle.
+2014-07-29 17:02:43,851 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2014-07-29 17:03:06,487 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2014-07-29 17:03:08,635 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2014-07-29 17:03:13,638 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
+2014-07-29 17:03:15,676 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2014-07-29 17:03:24,047 [StateChange] INFO  Overlay - Transitioning from GuidedTour to Splash.
+2014-07-29 17:03:24,163 [StateChange] INFO  Overlay - Current state set to Splash.
+2014-07-29 17:03:24,250 [1] DEBUG MainWindowOverlay - Enabling cursor control
+2014-07-29 17:03:24,251 [1] DEBUG RightWindowOverlay - Enabling cursor control
+2014-07-29 17:03:24,251 [1] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-07-29 17:04:56,194 [StateChange] INFO  Overlay - Transitioning from Splash to Story2Confirm.
+2014-07-29 17:04:56,201 [StateChange] INFO  Overlay - Current state set to Story2Confirm.
+2014-07-29 17:06:19,211 [StateChange] INFO  Overlay - Transitioning from Story2Confirm to Splash.
+2014-07-29 17:06:19,334 [StateChange] INFO  Overlay - Current state set to Splash.
+2014-07-29 17:07:22,106 [StateChange] INFO  Overlay - Transitioning from Splash to Story5Confirm.
+2014-07-29 17:07:22,114 [StateChange] INFO  Overlay - Current state set to Story5Confirm.
+2014-07-29 17:07:36,237 [StateChange] INFO  Overlay - Transitioning from Story5Confirm to Splash.
+2014-07-29 17:07:36,380 [StateChange] INFO  Overlay - Current state set to Splash.
+2014-07-29 17:09:36,771 [StateChange] INFO  Overlay - Transitioning from Splash to Story3Confirm.
+2014-07-29 17:09:36,779 [StateChange] INFO  Overlay - Current state set to Story3Confirm.
+2014-07-29 17:11:15,392 [StateChange] INFO  Overlay - Transitioning from Story3Confirm to IdleOutro.
+2014-07-29 17:11:15,489 [1] DEBUG MainWindowOverlay - Disabling cursor control
+2014-07-29 17:11:15,489 [1] DEBUG RightWindowOverlay - Disabling cursor control
+2014-07-29 17:11:15,489 [1] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-07-29 17:11:17,507 [Tick Thread] INFO  Overlay - Current state set to IdleOutro.
+2014-07-29 17:11:22,520 [StateChange] INFO  Overlay - Transitioning from IdleOutro to Idle.
+2014-07-29 17:11:24,552 [Tick Thread] INFO  Overlay - Current state set to Idle.
+2014-07-29 17:11:47,389 [StateChange] INFO  Overlay - Transitioning from Idle to Intro.
+2014-07-29 17:11:49,505 [Tick Thread] INFO  Overlay - Current state set to Intro.
+2014-07-29 17:11:54,517 [StateChange] INFO  Overlay - Transitioning from Intro to GuidedTour.
+2014-07-29 17:11:56,552 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2014-07-29 17:12:07,700 [1] DEBUG Core - Shutting down tick thread.
+2014-07-29 17:12:07,722 [Tick Thread] INFO  Core - Tick Thread shut down.
+2014-07-29 17:12:07,761 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2014-07-29 17:12:07,761 [177] DEBUG OpenSim.MainWindowViewer - Closing
+2014-07-29 17:12:07,761 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 17:12:07,782 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2014-07-29 17:12:07,788 [1] INFO  ProcessManager - Dumping to C:\Users\openvirtualwolds\Documents\John\Chimera\Bin\Logs\2014\Jul\29-17.12Shutdown.html
+2014-07-29 17:12:07,791 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
+2014-07-29 17:12:07,792 [1] DEBUG XBoxController - Disabled
+2014-07-29 17:12:07,793 [188] DEBUG OpenSim.MainWindowViewer - Closing
+2014-07-29 17:12:07,793 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 17:12:07,795 [136] DEBUG OpenSim.RightWindowViewer - Closing
+2014-07-29 17:12:07,795 [1] DEBUG OpenSim.RightWindowProxy - Closing
+2014-07-29 17:12:07,795 [1] INFO  OpenSim.RightWindowProxy - Closed
+2014-07-29 17:12:07,796 [135] DEBUG OpenSim.LeftWindowViewer - Closing
+2014-07-29 17:12:07,796 [1] DEBUG OpenSim.LeftWindowProxy - Closing
+2014-07-29 17:12:07,796 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2014-07-29 17:12:07,799 [1] INFO  Core - System shutdown for Shut down.
+2014-07-29 17:12:07,801 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
+2014-07-29 17:12:10,361 [188] INFO  OpenSim.MainWindowViewer - Closed
+2014-07-29 17:12:10,364 [177] INFO  OpenSim.MainWindowViewer - Closed
+2014-07-29 17:12:11,177 [136] INFO  OpenSim.RightWindowViewer - Closed
+2014-07-29 17:12:11,502 [135] INFO  OpenSim.LeftWindowViewer - Closed
+2014-07-29 17:47:22,096 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2014-07-29 17:47:22,113 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-07-29 17:47:22,116 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-07-29 17:47:22,117 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-07-29 17:47:22,132 [1] INFO  OpenSim.MainWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2014-07-29 17:47:22,135 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-07-29 17:47:22,137 [1] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation "Jing" from ../../../../../../Program Files (x86)/Firestorm-private-shutle01
+2014-07-29 17:47:22,293 [1] INFO  ProcessManager - Listening for crashes.
+2014-07-29 17:47:34,640 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-07-29 17:47:34,659 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-07-29 17:47:34,661 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-07-29 17:47:34,722 [1] INFO  Overlay - Loading overlay from Overlays/Timespan/TimespanOverlay.xml.
+2014-07-29 17:47:34,838 [1] DEBUG Overlay - LeftWindpw is not a known frame. Using MainWindow as default.
+2014-07-29 17:47:34,916 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
+2014-07-29 17:47:34,917 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 17:47:34,918 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-07-29 17:47:34,920 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 17:47:34,998 [1] INFO  Overlay - Created BlankState state IdleOutro.
+2014-07-29 17:47:35,002 [1] INFO  Overlay - Created FlythroughState state Idle.
+2014-07-29 17:47:35,003 [1] INFO  Overlay - Created FlythroughState state LoadTextures.
+2014-07-29 17:47:35,003 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 17:47:35,081 [1] INFO  Overlay - Created BlankState state Intro.
+2014-07-29 17:47:35,082 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 17:47:35,156 [1] INFO  Overlay - Created BlankState state Splash.
+2014-07-29 17:47:35,309 [1] INFO  Overlay - Created SlideshowState state Slideshow.
+2014-07-29 17:47:35,310 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 17:47:35,318 [1] INFO  Overlay - Created BlankState state Story1Confirm.
+2014-07-29 17:47:35,319 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 17:47:35,327 [1] INFO  Overlay - Created BlankState state Story2Confirm.
+2014-07-29 17:47:35,328 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 17:47:35,336 [1] INFO  Overlay - Created BlankState state Story3Confirm.
+2014-07-29 17:47:35,337 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 17:47:35,345 [1] INFO  Overlay - Created BlankState state Story4Confirm.
+2014-07-29 17:47:35,346 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-07-29 17:47:35,354 [1] INFO  Overlay - Created BlankState state Story5Confirm.
+2014-07-29 17:47:35,359 [1] INFO  Overlay - Created VideoState state Story1.
+2014-07-29 17:47:35,360 [1] INFO  Overlay - Created VideoState state Story2.
+2014-07-29 17:47:35,360 [1] INFO  Overlay - Created VideoState state Story3.
+2014-07-29 17:47:35,361 [1] INFO  Overlay - Created VideoState state Story4.
+2014-07-29 17:47:35,362 [1] INFO  Overlay - Created VideoState state Story5.
+2014-07-29 17:47:35,380 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 17:47:35,380 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
+2014-07-29 17:47:35,383 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 17:47:35,383 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 17:47:35,383 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 17:47:35,384 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 17:47:35,384 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 17:47:35,392 [1] INFO  Overlay - Created KinectControlState state KinectAvatar.
+2014-07-29 17:47:35,393 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 17:47:35,393 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-07-29 17:47:35,394 [1] INFO  Overlay - Created KinectControlState state KinectFlycam.
+2014-07-29 17:47:35,395 [1] INFO  Overlay - Creating Transitions
+2014-07-29 17:47:35,397 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-07-29 17:47:35,398 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 17:47:35,398 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-07-29 17:47:35,399 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 17:47:35,401 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-07-29 17:47:35,402 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 17:47:35,402 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-07-29 17:47:35,403 [1] DEBUG Overlay - Unable to create transition.
+2014-07-29 17:47:35,467 [1] DEBUG MainWindowOverlay - Disabling cursor control
+2014-07-29 17:47:35,467 [1] DEBUG RightWindowOverlay - Disabling cursor control
+2014-07-29 17:47:35,468 [1] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-07-29 17:47:35,469 [1] INFO  Overlay - Current state set to LoadTextures.
+2014-07-29 17:47:35,471 [1] INFO  Core - Loaded Overlay. Enabled.
+2014-07-29 17:47:35,472 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2014-07-29 17:47:35,473 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2014-07-29 17:47:35,475 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2014-07-29 17:47:35,479 [1] INFO  Core - Loaded Shutdown. Enabled.
+2014-07-29 17:47:35,487 [1] DEBUG XBoxController - Enabled
+2014-07-29 17:47:35,487 [1] INFO  Core - Loaded XBoxController. Enabled.
+2014-07-29 17:47:35,501 [1] INFO  OpenSim.MainWindowProxy - Proxying http://localhost:9000/
+2014-07-29 17:47:35,504 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-07-29 17:47:35,506 [1] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from ../../../../../../Program%20Files%20(x86)/Firestorm-private-shutle01
+2014-07-29 17:47:35,516 [1] INFO  OpenSim.RightWindowProxy - Proxying http://localhost:9000/
+2014-07-29 17:47:35,518 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2014-07-29 17:47:35,518 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 40s.
+2014-07-29 17:47:35,519 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://localhost:9000/
+2014-07-29 17:47:35,520 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2014-07-29 17:47:35,520 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 80s.
+2014-07-29 17:47:35,527 [1] INFO  ProcessManager - Listening for crashes.
+2014-07-29 17:47:36,645 [Heightmap Bot Login Thread] WARN  Heightmap - Unable to log in heightmap bot. Error opening the login server connection: Unable to connect to the remote server
+2014-07-29 17:47:42,591 [LoginProxy] ERROR OpenMetaverse - Request error
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:9000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
+2014-07-29 17:47:43,652 [LoginProxy] WARN  OpenMetaverse - [2] Bad request!
+2014-07-29 17:47:44,653 [1] DEBUG Core - Shutting down tick thread.
+2014-07-29 17:47:44,668 [Tick Thread] INFO  Core - Tick Thread shut down.
+2014-07-29 17:47:44,713 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2014-07-29 17:47:44,714 [26] DEBUG OpenSim.MainWindowViewer - Closing
+2014-07-29 17:47:44,714 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 17:47:44,724 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2014-07-29 17:47:44,743 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
+2014-07-29 17:47:44,743 [1] INFO  ProcessManager - Dumping to C:\Users\openvirtualwolds\Documents\John\Chimera\Bin\Logs\2014\Jul\29-17.47Shutdown.html
+2014-07-29 17:47:44,750 [1] DEBUG XBoxController - Disabled
+2014-07-29 17:47:44,751 [27] DEBUG OpenSim.MainWindowViewer - Closing
+2014-07-29 17:47:44,751 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-07-29 17:47:44,752 [1] DEBUG OpenSim.RightWindowProxy - Closing
+2014-07-29 17:47:44,752 [1] INFO  OpenSim.RightWindowProxy - Closed
+2014-07-29 17:47:44,753 [1] DEBUG OpenSim.LeftWindowProxy - Closing
+2014-07-29 17:47:44,753 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2014-07-29 17:47:44,754 [1] INFO  Core - System shutdown for Shut down.
+2014-07-29 17:47:44,757 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.

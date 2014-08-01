@@ -212,7 +212,7 @@ This process pre-dates the excavation of the summer of 2013.
         </Features>
       </State>
 
-      <State Factory="Video" Name="Story1" BlackBG="true" File="Videos/Dogs.m4v" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
+      <State Factory="Video" Name="Story1" BlackBG="true" File="Videos/Dogs.m4v" FinishState="Splash" Transition="Cut" Frame="LeftWindow" >
         <IdleTriggers>
           <Trigger Name="VideoIdleTrigger" />
         </IdleTriggers>
@@ -689,7 +689,7 @@ This process pre-dates the excavation of the summer of 2013.
 		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/333/249/53" Channel="2" Frame="MainWindow" />
 		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="RightWindow" />
 		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="LeftWindow" />
-		  <Feature Factory="Say" Name="TimespanFeture" Message="Timespan 1/333/249/53" Channel="2" Frame="MainWindow">
+		  <!--<Feature Factory="Say" Name="TimespanFeture" Message="Timespan 1/333/249/53" Channel="2" Frame="MainWindow">
 			<Triggers>
 				<Trigger Factory="JoystickButton" Name="Y" Button="Y" />
 			</Triggers>
@@ -718,7 +718,18 @@ This process pre-dates the excavation of the summer of 2013.
 			<Triggers>
 				<Trigger Factory="JoystickButton" Name="X" Button="X" />
 			</Triggers>
+		  </Feature>-->
+		  <Feature Factory="ProximityClick" Name="ClickFeture" Message="camera" Channel="1" Frame="RightWindow" Camera="MainWindow">
+			<Triggers>
+				<Trigger Factory="CrossArms" Name="B"  />
+			</Triggers>
 		  </Feature>
+		  <Feature Factory="KeyClick" Keys="^w,^{TAB},^w" Frame="RightWindow">
+            <Triggers>
+              <!--<Trigger Factory="JoystickButton" Name="X" Button="X" />-->
+			  <Trigger Factory="CrossArmsLow" Name="X" />
+            </Triggers>
+          </Feature>
         </Features>
       </State>
 

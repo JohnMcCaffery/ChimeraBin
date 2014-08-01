@@ -78,4 +78,8 @@
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickActivatedTriggerFactory, JoystickLib" scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickInactivatedTriggerFactory, JoystickLib" scope="singleton" />
 -->
+  <!--                        KINECT BINDINGS                         -->
+  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.KinectDisablePlugin, KinectLib" scope="singleton" />
+  <!--                        CHIMERA BINDINGS                         -->
+  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Plugins.ShutdownPlugin, ChimeraLib" scope="singleton" />
 </module>
