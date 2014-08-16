@@ -14,6 +14,6 @@ cd C:\Users\openvritualworlds\Desktop\Opensim-Timespan\
 start "OpenSim" /MAX OpenSim.exe
 cd C:\Users\openvritualworlds\Documents\John\Chimera\Bin\
 
-choice /C CBMX /N /M "Press C for Caen,  B for Brora or M for Mosfell" /D X /T 150
+choice /C CBMX /N /M "Press C for Caen,  B for Brora or M for Mosfell" /D X /T 200
 
 Scripts/launch.bat %errorlevel%

@@ -1252,3 +1252,360 @@
 2014-08-16 19:01:50,801 [50] INFO  OpenSim - LeftWindow viewer pressing ^%{F1}
 2014-08-16 19:01:51,307 [50] INFO  OpenSim - LeftWindow viewer pressing ^+u
 2014-08-16 19:03:13,034 [46] WARN  OpenSim - Restarting LeftWindow viewer because UnexpectedViewerClose.
+2014-08-16 19:22:46,876 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-08-16 19:22:46,922 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-08-16 19:22:46,924 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-08-16 19:22:46,979 [1] INFO  Overlay - Loading overlay from Overlays/Timespan/TimespanOverlay-Stage2.xml.
+2014-08-16 19:22:47,190 [1] DEBUG Overlay - Unable to get IFeature factory for conditional feature. Sound is not a mapped IFeature factory. Check Ninject config to make sure the binding exists.
+2014-08-16 19:22:47,190 [1] WARN  Core - Unable to instantiate core. Unable to load Active Area. Unable to parse feature.
+2014-08-16 19:22:47,191 [1] DEBUG Core - Unable to instantiate core.
+System.ArgumentException: Unable to load Active Area. Unable to parse feature.
+   at Chimera.Overlay.Features.ActiveAreaFeature..ctor(OverlayPlugin plugin, XmlNode node)
+   at Chimera.Overlay.Features.ActiveAreaFeatureFactory.Create(OverlayPlugin manager, XmlNode node, Rectangle clip)
+   at Chimera.Overlay.OverlayPlugin.Create[T](IFactory`1 factory, XmlNode node)
+   at Chimera.Overlay.OverlayPlugin.LoadFactory[T](XmlNode node, Dictionary`2 instances)
+   at Chimera.Overlay.OverlayPlugin.LoadComponent[T](XmlDocument doc, Dictionary`2 map, String nodeID)
+   at Chimera.Overlay.OverlayPlugin.LoadXML(String xml)
+   at Chimera.Overlay.OverlayPlugin.Init(Core coordinator)
+   at Chimera.Core..ctor(IOutputFactory outputFactory, ISystemPlugin[] plugins)
+2014-08-16 19:22:47,196 [1] DEBUG Core - Shutting down tick thread.
+2014-08-16 19:22:47,256 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-08-16 19:22:47,268 [1] INFO  ProcessManager - Dumping to C:\Users\openvritualworlds\Documents\John\Chimera\Bin\Logs\2014\Aug\16-19.22Shutdown.html
+2014-08-16 19:22:47,269 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
+2014-08-16 19:22:47,269 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-08-16 19:22:47,270 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2014-08-16 19:22:47,270 [1] INFO  OpenSim.RightWindowProxy - Closed
+2014-08-16 19:22:47,270 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2014-08-16 19:22:47,271 [1] INFO  Core - System shutdown for -Shutdown.
+2014-08-16 19:22:47,284 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
+2014-08-16 19:24:23,943 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-08-16 19:24:23,960 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-08-16 19:24:23,962 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-08-16 19:24:24,015 [1] INFO  Overlay - Loading overlay from Overlays/Timespan/TimespanOverlay-Stage2.xml.
+2014-08-16 19:24:24,240 [1] WARN  Sound - Creating Sound Factory
+2014-08-16 19:24:24,241 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,242 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,243 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,243 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,243 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,243 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,243 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,244 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,244 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,244 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,244 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,244 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,245 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,245 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,245 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,245 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,246 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,246 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,246 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,246 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,246 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,246 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,247 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,247 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,247 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,247 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,247 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,247 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,247 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,248 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,248 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,248 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,248 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,248 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,248 [1] WARN  Sound - Creating Sound Feature
+2014-08-16 19:24:24,249 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:24,277 [1] DEBUG Overlay - Unable to get ITransitionStyle factory for Cut. CutTransition is not a mapped ITransitionStyle factory. Check Ninject config to make sure the binding exists.
+2014-08-16 19:24:24,277 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-08-16 19:24:24,278 [1] INFO  Overlay.OpacityTransition - Creating Opacity Window Transition
+2014-08-16 19:24:24,297 [1] INFO  Overlay - Created FlythroughState state LoadTextures.
+2014-08-16 19:24:24,298 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-08-16 19:24:24,379 [1] INFO  Overlay - Created BlankState state IdleIntro.
+2014-08-16 19:24:24,380 [1] INFO  Overlay - Created FlythroughState state Idle.
+2014-08-16 19:24:24,380 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-08-16 19:24:24,465 [1] INFO  Overlay - Created BlankState state Intro.
+2014-08-16 19:24:24,484 [1] INFO  Overlay - Created FlythroughState state GuidedTour.
+2014-08-16 19:24:24,485 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-08-16 19:24:24,567 [1] INFO  Overlay - Created BlankState state Splash.
+2014-08-16 19:24:24,896 [1] INFO  Overlay - Created SlideshowState state Slideshow.
+2014-08-16 19:24:24,897 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-08-16 19:24:24,914 [1] INFO  Overlay - Created BlankState state Story1Confirm.
+2014-08-16 19:24:24,915 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-08-16 19:24:24,927 [1] INFO  Overlay - Created BlankState state Story2Confirm.
+2014-08-16 19:24:24,928 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-08-16 19:24:24,949 [1] INFO  Overlay - Created BlankState state Story3Confirm.
+2014-08-16 19:24:24,950 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-08-16 19:24:24,968 [1] INFO  Overlay - Created BlankState state Story4Confirm.
+2014-08-16 19:24:24,969 [1] DEBUG XmlLoader - Unable to get colour for State. No Colour attribute specified.
+2014-08-16 19:24:24,983 [1] INFO  Overlay - Created BlankState state Story5Confirm.
+2014-08-16 19:24:24,996 [1] INFO  Overlay - Created VideoState state Story1.
+2014-08-16 19:24:25,004 [1] INFO  Overlay - Created VideoState state Story2.
+2014-08-16 19:24:25,011 [1] INFO  Overlay - Created VideoState state Story3.
+2014-08-16 19:24:25,018 [1] INFO  Overlay - Created VideoState state Story4.
+2014-08-16 19:24:25,025 [1] INFO  Overlay - Created VideoState state Story5.
+2014-08-16 19:24:25,028 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,028 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,029 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,031 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,032 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,033 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,033 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,034 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,035 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,036 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,037 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,038 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,039 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,039 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,040 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,041 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,042 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,042 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,043 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,047 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,047 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,047 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,048 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,049 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,051 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,052 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,052 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,053 [1] INFO  Overlay - Created KinectControlState state KinectAvatar.
+2014-08-16 19:24:25,055 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,055 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,056 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,057 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,058 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,059 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,060 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,062 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,063 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,064 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,065 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,066 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,066 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,067 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,068 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,069 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,070 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,071 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,072 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,073 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,073 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,074 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,075 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,076 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,078 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,079 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,080 [1] INFO  Overlay - Created KinectControlState state KinectFlycam.
+2014-08-16 19:24:25,328 [1] DEBUG Overlay - No window specified whilst resolving Feature from Feature. Using MainWindow as default.
+2014-08-16 19:24:25,375 [1] INFO  Overlay - Created VideoState state ExploreIntro.
+2014-08-16 19:24:25,376 [1] INFO  Overlay - Creating Transitions
+2014-08-16 19:24:25,379 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-08-16 19:24:25,400 [1] DEBUG Overlay - Unable to create transition.
+2014-08-16 19:24:25,400 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-08-16 19:24:25,401 [1] DEBUG Overlay - Unable to create transition.
+2014-08-16 19:24:25,414 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpAvatar' did not map to any factories or instances.
+2014-08-16 19:24:25,419 [1] DEBUG Overlay - Unable to create transition.
+2014-08-16 19:24:25,419 [1] DEBUG Overlay - Unable to get state for transition start from ImageTransition. 'HelpFlycam' did not map to any factories or instances.
+2014-08-16 19:24:25,420 [1] DEBUG Overlay - Unable to create transition.
+2014-08-16 19:24:25,428 [1] DEBUG MainWindowOverlay - Disabling cursor control
+2014-08-16 19:24:25,428 [1] DEBUG RightWindowOverlay - Disabling cursor control
+2014-08-16 19:24:25,429 [1] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-08-16 19:24:25,502 [1] INFO  Overlay - Current state set to LoadTextures.
+2014-08-16 19:24:25,505 [1] INFO  Core - Loaded Overlay. Enabled.
+2014-08-16 19:24:25,506 [1] INFO  Core - Loaded HeightmapBot. Enabled.
+2014-08-16 19:24:25,507 [1] INFO  Core - Loaded KinectMovement. Disabled.
+2014-08-16 19:24:25,509 [1] INFO  Core - Loaded KinectCursor. Enabled.
+2014-08-16 19:24:25,522 [1] INFO  OpenSim.MainWindowProxy - Proxying http://localhost:9000/
+2014-08-16 19:24:25,525 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-08-16 19:24:25,527 [1] INFO  ProcessController - Launching C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
+2014-08-16 19:24:25,552 [1] INFO  OpenSim.RightWindowProxy - Proxying http://localhost:9000/
+2014-08-16 19:24:25,553 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8082/
+2014-08-16 19:24:25,553 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 20s.
+2014-08-16 19:24:25,555 [1] INFO  OpenSim.LeftWindowProxy - Proxying http://localhost:9000/
+2014-08-16 19:24:25,562 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8081/
+2014-08-16 19:24:25,562 [1] INFO  OpenSim - Queuing viewer start for VW-Viewer in 40s.
+2014-08-16 19:24:25,573 [1] INFO  ProcessManager - Listening for crashes.
+2014-08-16 19:24:26,982 [XML-RPC Login] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9051)
+2014-08-16 19:24:30,737 [37] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9052)
+2014-08-16 19:24:30,737 [40] ERROR OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for unknown sim 127.0.0.1:9052
+2014-08-16 19:24:30,737 [30] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9053)
+2014-08-16 19:24:30,739 [28] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9053)
+2014-08-16 19:24:30,739 [32] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9054)
+2014-08-16 19:24:30,739 [27] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9054)
+2014-08-16 19:24:30,741 [38] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9055)
+2014-08-16 19:24:30,741 [31] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9055)
+2014-08-16 19:24:30,747 [33] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9056)
+2014-08-16 19:24:30,755 [40] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9056)
+2014-08-16 19:24:30,759 [28] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9057)
+2014-08-16 19:24:30,759 [31] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9057)
+2014-08-16 19:24:31,877 [40] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9058)
+2014-08-16 19:24:31,889 [31] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9058)
+2014-08-16 19:24:31,890 [31] INFO  OpenMetaverse - <Heightmap Bot>: Connecting to (127.0.0.1:9059)
+2014-08-16 19:24:32,519 [27] INFO  OpenMetaverse - <Heightmap Bot>: Got EstablishAgentCommunication for (127.0.0.1:9059)
+2014-08-16 19:24:32,522 [27] INFO  Heightmap - Finished mapping Timespan 1
+2014-08-16 19:24:34,524 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 127.0.0.1:9051 at 127.0.0.1:49224
+2014-08-16 19:24:37,171 [44] INFO  Heightmap - Finished mapping Timespan 6
+2014-08-16 19:24:37,483 [45] INFO  Heightmap - Finished mapping Timespan 9
+2014-08-16 19:24:37,534 [44] INFO  Heightmap - Finished mapping Timespan 4
+2014-08-16 19:24:37,789 [27] INFO  Heightmap - Finished mapping Timespan 8
+2014-08-16 19:24:37,855 [42] INFO  Heightmap - Finished mapping Timespan 3
+2014-08-16 19:24:38,171 [28] INFO  Heightmap - Finished mapping Timespan 7
+2014-08-16 19:24:38,399 [43] INFO  Heightmap - Finished mapping Timespan 2
+2014-08-16 19:24:39,827 [22] INFO  Heightmap - Finished mapping Timespan 5
+2014-08-16 19:24:39,828 [22] INFO  OpenMetaverse - <Heightmap Bot>: Logging out
+2014-08-16 19:24:39,891 [47] INFO  OpenMetaverse - <Heightmap Bot>: NetworkManager shutdown initiated
+2014-08-16 19:24:39,892 [47] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 3 (127.0.0.1:9053) is aborting
+2014-08-16 19:24:39,894 [47] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 4 (127.0.0.1:9054) is aborting
+2014-08-16 19:24:39,895 [47] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 5 (127.0.0.1:9055) is aborting
+2014-08-16 19:24:39,896 [47] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 6 (127.0.0.1:9056) is aborting
+2014-08-16 19:24:39,896 [47] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 7 (127.0.0.1:9057) is aborting
+2014-08-16 19:24:39,897 [47] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 8 (127.0.0.1:9058) is aborting
+2014-08-16 19:24:39,900 [47] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 9 (127.0.0.1:9059) is aborting
+2014-08-16 19:24:39,901 [47] INFO  OpenMetaverse - <Heightmap Bot>: Caps system for Timespan 1 (127.0.0.1:9051) is aborting
+2014-08-16 19:25:05,555 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8082 --login Slave2 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
+2014-08-16 19:25:05,571 [11] INFO  OpenSim - MainWindow viewer pressing ^%{F1}
+2014-08-16 19:25:06,079 [11] INFO  OpenSim - MainWindow viewer pressing ^+u
+2014-08-16 19:25:15,395 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 127.0.0.1:9051 at 127.0.0.1:49238
+2014-08-16 19:25:25,564 [VW-Viewer viewer start] INFO  ProcessController - Launching C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin\firestorm-bin.exe  --loginuri http://127.0.0.1:8081 --login Slave1 Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation home from C:\Users\openvritualworlds\Documents\John\Armadillo-Phoenix\Armadillo\Bin
+2014-08-16 19:25:35,713 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 127.0.0.1:9051 at 127.0.0.1:49252
+2014-08-16 19:25:42,165 [56] INFO  OpenSim - RightWindow viewer pressing ^%{F1}
+2014-08-16 19:25:42,671 [56] INFO  OpenSim - RightWindow viewer pressing ^+u
+2014-08-16 19:26:05,041 [43] INFO  OpenSim - LeftWindow viewer pressing ^%{F1}
+2014-08-16 19:26:05,547 [43] INFO  OpenSim - LeftWindow viewer pressing ^+u
+2014-08-16 19:26:21,937 [StateChange] INFO  Overlay - Transitioning from LoadTextures to Splash.
+2014-08-16 19:26:21,976 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-08-16 19:26:21,977 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-08-16 19:26:21,977 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-08-16 19:26:21,977 [StateChange] INFO  Overlay - Current state set to Splash.
+2014-08-16 19:26:31,518 [StateChange] INFO  Overlay - Transitioning from Splash to KinectAvatar.
+2014-08-16 19:26:31,521 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-08-16 19:26:31,521 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-08-16 19:26:31,522 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-08-16 19:26:31,524 [StateChange] DEBUG Core - Control mode changed to Delta.
+2014-08-16 19:26:31,524 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-08-16 19:26:31,525 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-08-16 19:26:31,525 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-08-16 19:26:33,546 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-08-16 19:26:33,546 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-08-16 19:26:33,547 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-08-16 19:26:33,550 [Tick Thread] DEBUG KinectMovement - Enabled
+2014-08-16 19:26:33,551 [Tick Thread] INFO  Overlay - Current state set to KinectAvatar.
+2014-08-16 19:26:47,614 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:26:50,139 [StateChange] INFO  Overlay - Transitioning from KinectAvatar to Splash.
+2014-08-16 19:26:50,140 [StateChange] DEBUG KinectMovement - Disabled
+2014-08-16 19:26:52,288 [Tick Thread] WARN  Sound - Stopping
+2014-08-16 19:26:52,290 [Tick Thread] DEBUG MainWindowOverlay - Enabling cursor control
+2014-08-16 19:26:52,291 [Tick Thread] DEBUG RightWindowOverlay - Enabling cursor control
+2014-08-16 19:26:52,292 [Tick Thread] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-08-16 19:26:52,292 [Tick Thread] INFO  Overlay - Current state set to Splash.
+2014-08-16 19:26:59,154 [StateChange] INFO  Overlay - Transitioning from Splash to KinectAvatar.
+2014-08-16 19:26:59,155 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-08-16 19:26:59,157 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-08-16 19:26:59,165 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-08-16 19:26:59,165 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-08-16 19:26:59,166 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-08-16 19:26:59,167 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-08-16 19:27:01,193 [Tick Thread] DEBUG MainWindowOverlay - Disabling cursor control
+2014-08-16 19:27:01,193 [Tick Thread] DEBUG RightWindowOverlay - Disabling cursor control
+2014-08-16 19:27:01,194 [Tick Thread] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-08-16 19:27:01,194 [Tick Thread] DEBUG KinectMovement - Enabled
+2014-08-16 19:27:01,194 [Tick Thread] INFO  Overlay - Current state set to KinectAvatar.
+2014-08-16 19:27:56,783 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:27:59,914 [Tick Thread] WARN  Sound - Stopping
+2014-08-16 19:28:07,327 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:28:08,079 [Tick Thread] WARN  Sound - Stopping
+2014-08-16 19:28:13,247 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:28:29,033 [Tick Thread] WARN  Sound - Stopping
+2014-08-16 19:28:53,187 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:29:10,430 [Tick Thread] WARN  Sound - Stopping
+2014-08-16 19:29:11,697 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:29:16,322 [Tick Thread] WARN  Sound - Stopping
+2014-08-16 19:30:27,869 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:30:32,261 [Tick Thread] WARN  Sound - Stopping
+2014-08-16 19:30:44,833 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:30:51,741 [Tick Thread] WARN  Sound - Stopping
+2014-08-16 19:30:54,747 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:30:56,551 [Tick Thread] WARN  Sound - Stopping
+2014-08-16 19:31:06,272 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:31:14,610 [Tick Thread] WARN  Sound - Stopping
+2014-08-16 19:31:17,748 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:31:27,665 [Tick Thread] WARN  Sound - Stopping
+2014-08-16 19:31:46,665 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:31:50,164 [Tick Thread] WARN  Sound - Stopping
+2014-08-16 19:31:57,866 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:31:59,950 [Tick Thread] WARN  Sound - Stopping
+2014-08-16 19:32:10,149 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:32:12,566 [StateChange] INFO  Overlay - Transitioning from KinectAvatar to Splash.
+2014-08-16 19:32:12,573 [StateChange] DEBUG KinectMovement - Disabled
+2014-08-16 19:32:14,679 [Tick Thread] WARN  Sound - Stopping
+2014-08-16 19:32:14,680 [Tick Thread] DEBUG MainWindowOverlay - Enabling cursor control
+2014-08-16 19:32:14,681 [Tick Thread] DEBUG RightWindowOverlay - Enabling cursor control
+2014-08-16 19:32:14,683 [Tick Thread] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-08-16 19:32:14,685 [Tick Thread] INFO  Overlay - Current state set to Splash.
+2014-08-16 19:32:19,790 [StateChange] INFO  Overlay - Transitioning from Splash to GuidedTour.
+2014-08-16 19:32:19,816 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-08-16 19:32:19,816 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-08-16 19:32:19,818 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-08-16 19:32:19,820 [StateChange] DEBUG Core - Control mode changed to Absolute.
+2014-08-16 19:32:21,890 [Tick Thread] INFO  Overlay - Current state set to GuidedTour.
+2014-08-16 19:40:06,821 [StateChange] INFO  Overlay - Transitioning from GuidedTour to ExploreIntro.
+2014-08-16 19:40:06,822 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-08-16 19:40:06,824 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-08-16 19:40:06,825 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-08-16 19:40:06,826 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-08-16 19:40:06,828 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-08-16 19:40:06,829 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-08-16 19:40:06,830 [StateChange] DEBUG MainWindowOverlay - Enabling cursor control
+2014-08-16 19:40:06,836 [StateChange] DEBUG RightWindowOverlay - Enabling cursor control
+2014-08-16 19:40:06,836 [StateChange] DEBUG LeftWindowOverlay - Enabling cursor control
+2014-08-16 19:40:06,841 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-08-16 19:40:06,842 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-08-16 19:40:06,844 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-08-16 19:40:06,846 [StateChange] INFO  Overlay - Current state set to ExploreIntro.
+2014-08-16 19:41:18,984 [StateChange] INFO  Overlay - Transitioning from ExploreIntro to KinectAvatar.
+2014-08-16 19:41:18,985 [StateChange] WARN  Sound - Playing
+2014-08-16 19:41:18,986 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-08-16 19:41:18,999 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-08-16 19:41:19,009 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-08-16 19:41:19,010 [StateChange] DEBUG Core - Control mode changed to Delta.
+2014-08-16 19:41:19,012 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-08-16 19:41:19,013 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-08-16 19:41:19,015 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-08-16 19:41:19,022 [StateChange] WARN  Sound - Stopping
+2014-08-16 19:41:19,022 [StateChange] DEBUG MainWindowOverlay - Disabling cursor control
+2014-08-16 19:41:19,024 [StateChange] DEBUG RightWindowOverlay - Disabling cursor control
+2014-08-16 19:41:19,025 [StateChange] DEBUG LeftWindowOverlay - Disabling cursor control
+2014-08-16 19:41:19,027 [StateChange] DEBUG KinectMovement - Enabled
+2014-08-16 19:41:19,029 [StateChange] INFO  Overlay - Current state set to KinectAvatar.
+2014-08-16 19:41:19,578 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:41:23,868 [Tick Thread] WARN  Sound - Stopping
+2014-08-16 19:41:32,166 [Tick Thread] WARN  Sound - Playing
+2014-08-16 19:41:38,943 [1] DEBUG Core - Shutting down tick thread.
+2014-08-16 19:41:38,965 [Tick Thread] INFO  Core - Tick Thread shut down.
+2014-08-16 19:41:39,005 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2014-08-16 19:41:39,005 [32] DEBUG OpenSim.MainWindowViewer - Closing
+2014-08-16 19:41:39,005 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-08-16 19:41:39,025 [MainWindow graphics thread.] INFO  Flythrough - MainWindow graphics thread shut down.
+2014-08-16 19:41:39,279 [1] INFO  ProcessManager - Dumping to C:\Users\openvritualworlds\Documents\John\Chimera\Bin\Logs\2014\Aug\16-19.41Shutdown.html
+2014-08-16 19:41:39,297 [RightWindow graphics thread.] INFO  Flythrough - RightWindow graphics thread shut down.
+2014-08-16 19:41:39,300 [LeftWindow graphics thread.] INFO  Flythrough - LeftWindow graphics thread shut down.
+2014-08-16 19:41:39,304 [1] DEBUG KinectMovement - Disabled
+2014-08-16 19:41:39,306 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-08-16 19:41:39,306 [33] DEBUG OpenSim.MainWindowViewer - Closing
+2014-08-16 19:41:39,310 [1] DEBUG OpenSim.RightWindowProxy - Closing
+2014-08-16 19:41:39,310 [35] DEBUG OpenSim.RightWindowViewer - Closing
+2014-08-16 19:41:39,310 [1] INFO  OpenSim.RightWindowProxy - Closed
+2014-08-16 19:41:39,312 [1] DEBUG OpenSim.LeftWindowProxy - Closing
+2014-08-16 19:41:39,313 [36] DEBUG OpenSim.LeftWindowViewer - Closing
+2014-08-16 19:41:39,313 [1] INFO  OpenSim.LeftWindowProxy - Closed
+2014-08-16 19:41:39,315 [1] INFO  Core - System shutdown for Shut down.
+2014-08-16 19:41:42,531 [35] INFO  OpenSim.RightWindowViewer - Closed
+2014-08-16 19:41:53,459 [32] INFO  OpenSim.MainWindowViewer - Closed
+2014-08-16 19:41:53,459 [33] INFO  OpenSim.MainWindowViewer - Closed
+2014-08-16 19:41:54,110 [36] INFO  OpenSim.LeftWindowViewer - Closed

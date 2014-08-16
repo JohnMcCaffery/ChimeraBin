@@ -13,17 +13,17 @@ IF %1==3 GOTO mosfell
 IF %1==4 GOTO exhibit
 
 :caen
-timeout 150
+timeout 200
 Timespan.exe
 goto cont
 
 :brora
-timeout 150
+timeout 200
 Brora.exe
 goto cont
 
 :mosfell
-timeout 150
+timeout 200
 Mosfell.exe
 goto cont
 
