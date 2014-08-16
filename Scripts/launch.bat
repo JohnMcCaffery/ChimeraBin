@@ -10,16 +10,25 @@ IF %1==2 GOTO brora
 
 IF %1==3 GOTO mosfell
 
+IF %1==4 GOTO exhibit
+
 :caen
+timeout 150
 Timespan.exe
 goto cont
 
 :brora
+timeout 150
 Brora.exe
 goto cont
 
 :mosfell
+timeout 150
 Mosfell.exe
+goto cont
+
+:exhibit
+Timespan.exe
 
 :cont
 
