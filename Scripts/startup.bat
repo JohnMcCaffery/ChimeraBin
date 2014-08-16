@@ -1,4 +1,4 @@
-timeout 10
+timeout 30
 
 run autossh -M 4000 -R 0.0.0.0:3022:localhost:22 timespan@fyne.cs.st-andrews.ac.uk
 
