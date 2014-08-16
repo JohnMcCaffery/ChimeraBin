@@ -6,11 +6,11 @@ cd ..\..\Documents\John\Chimera\Bin
 
 rem Timespan.exe
 
-IF %1 1 GOTO caen
+IF %1==1 GOTO caen
 
-IF %1 2 GOTO brora
+IF %1==2 GOTO brora
 
-IF %1 3 GOTO mosfell
+IF %1==3 GOTO mosfell
 
 :caen
 Timespan.exe
