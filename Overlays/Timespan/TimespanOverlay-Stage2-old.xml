@@ -81,7 +81,7 @@
 				</Trigger>
 			</Area>
 			<!-- W -->
-			<Area Factory="ActiveArea" Name="WallsW" Frame="RightWindow" >
+			<Area Factory="ActiveArea" Name="WallsE" Frame="RightWindow" >
 				<Feature Factory="Image" X="300" Y="50" Frame="RightWindow" >Images/ActiveAreas/Walls.png</Feature>
 				<Trigger>
 					<Yaw Min="93" Max="-53" />
@@ -90,123 +90,6 @@
 						<P X="343" Y="294" />
 						<P X="342" Y="289" />
 						<P X="330" Y="288" />
-					</Points>
-				</Trigger>
-			</Area>
-			
-			<Area Factory="ActiveArea" Name="CentralFire" Frame="RightWindow" >
-				<Feature Factory="Image" X="300" Y="50" Frame="RightWindow" >Images/ActiveAreas/CentralFire.png</Feature>
-				<Trigger>
-					<!--<Yaw Min="93" Max="-53" />-->
-					<Points>
-						<P X="317" Y="222" />
-						<P X="314" Y="219" />
-						<P X="316" Y="214" />
-						<P X="317" Y="219" />
-					</Points>
-				</Trigger>
-			</Area>
-			
-			<Area Factory="ActiveArea" Name="GaelicHolyBible" Frame="RightWindow" >
-				<Feature Factory="Image" X="300" Y="50" Frame="RightWindow" >Images/ActiveAreas/Bible.png</Feature>
-				<Trigger>
-					<!--<Yaw Min="93" Max="-53" />-->
-					<Points>
-						<P X="358" Y="280" />
-						<P X="360" Y="274" />
-						<P X="366" Y="276" />
-						<P X="369" Y="280" />
-					</Points>
-				</Trigger>
-			</Area>
-			
-			<Area Factory="ActiveArea" Name="Bagpipes" Frame="RightWindow" >
-				<Feature Factory="Image" X="300" Y="50" Frame="RightWindow" >Images/ActiveAreas/Bagpipes.png</Feature>
-				<Trigger>
-					<!--<Yaw Min="93" Max="-53" />-->
-					<Points>
-						<P X="325" Y="226" />
-						<P X="329" Y="223" />
-						<P X="333" Y="224" />
-						<P X="329" Y="231" />
-					</Points>
-				</Trigger>
-			</Area>
-			
-			<Area Factory="ActiveArea" Name="PeatCutting" Frame="RightWindow" >
-				<Feature Factory="Image" X="300" Y="50" Frame="RightWindow" >Images/ActiveAreas/Peat.png</Feature>
-				<Trigger>
-					<!--<Yaw Min="93" Max="-53" />-->
-					<Points>
-						<P X="250" Y="329" />
-						<P X="289" Y="323" />
-						<P X="289" Y="384" />
-						<P X="233" Y="389" />
-					</Points>
-				</Trigger>
-			</Area>
-			
-			<Area Factory="ActiveArea" Name="StillHouse" Frame="RightWindow" >
-				<Feature Factory="Image" X="300" Y="50" Frame="RightWindow" >Images/ActiveAreas/Still.png</Feature>
-				<Trigger>
-					<!--<Yaw Min="93" Max="-53" />-->
-					<Points>
-						<P X="294" Y="215" />
-						<P X="295" Y="201" />
-						<P X="315" Y="203" />
-						<P X="309" Y="213" />
-					</Points>
-				</Trigger>
-			</Area>
-			
-			<Area Factory="ActiveArea" Name="Barn" Frame="RightWindow" >
-				<Feature Factory="Image" X="300" Y="50" Frame="RightWindow" >Images/ActiveAreas/Barn.png</Feature>
-				<Trigger>
-					<!--<Yaw Min="93" Max="-53" />-->
-					<Points>
-						<P X="313" Y="298" />
-						<P X="335" Y="287" />
-						<P X="340" Y="304" />
-						<P X="321" Y="321" />
-					</Points>
-				</Trigger>
-			</Area>
-			
-			<Area Factory="ActiveArea" Name="RigAndFurrow" Frame="RightWindow" >
-				<Feature Factory="Image" X="300" Y="50" Frame="RightWindow" >Images/ActiveAreas/Rig.png</Feature>
-				<Trigger>
-					<!--<Yaw Min="93" Max="-53" />-->
-					<Points>
-						<P X="315" Y="350" />
-						<P X="432" Y="394" />
-						<P X="355" Y="491" />
-						<P X="294" Y="451" />
-					</Points>
-				</Trigger>
-			</Area>
-			
-			<Area Factory="ActiveArea" Name="CornDryingKiln" Frame="RightWindow" >
-				<Feature Factory="Image" X="300" Y="50" Frame="RightWindow" >Images/ActiveAreas/Corn.png</Feature>
-				<Trigger>
-					<!--<Yaw Min="93" Max="-53" />-->
-					<Points>
-						<P X="314" Y="263" />
-						<P X="295" Y="260" />
-						<P X="295" Y="238" />
-						<P X="314" Y="241" />
-					</Points>
-				</Trigger>
-			</Area>
-			
-			<Area Factory="ActiveArea" Name="Loom" Frame="RightWindow" >
-				<Feature Factory="Image" X="300" Y="50" Frame="RightWindow" >Images/ActiveAreas/Loom.png</Feature>
-				<Trigger>
-					<!--<Yaw Min="93" Max="-53" />-->
-					<Points>
-						<P X="356" Y="289" />
-						<P X="356" Y="286" />
-						<P X="364" Y="287" />
-						<P X="365" Y="285" />
 					</Points>
 				</Trigger>
 			</Area>
@@ -521,15 +404,6 @@
 					<Feature Name="WallsS" />
 					<Feature Name="WallsE" />
 					<Feature Name="WallsW" />
-					<Feature Name="CentralFire" />
-					<Feature Name="GaelicHolyBible" />
-					<Feature Name="Bagpipes" />
-					<Feature Name="PeatCutting" />
-					<Feature Name="StillHouse" />
-					<Feature Name="Barn" />
-					<Feature Name="RigAndFurrow" />
-					<Feature Name="CornDryingKiln" />
-					<Feature Name="Loom" />
 				</Features>
 			</State>
 
@@ -544,15 +418,6 @@
 					<Feature Name="WallsS" />
 					<Feature Name="WallsE" />
 					<Feature Name="WallsW" />
-					<Feature Name="CentralFire" />
-					<Feature Name="GaelicHolyBible" />
-					<Feature Name="Bagpipes" />
-					<Feature Name="PeatCutting" />
-					<Feature Name="StillHouse" />
-					<Feature Name="Barn" />
-					<Feature Name="RigAndFurrow" />
-					<Feature Name="CornDryingKiln" />
-					<Feature Name="Loom" />
 				</Features>
 			</State>
 
