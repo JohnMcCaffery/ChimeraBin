@@ -16,6 +16,6 @@ cd C:\Users\openvritualworlds\Documents\John\Chimera\Bin\
 
 rem timeout 150
 
-choice /C CBM /D /C /T 5
+choice /C CBM /D C /T 5
 
 launch.bat %errorlevel%
