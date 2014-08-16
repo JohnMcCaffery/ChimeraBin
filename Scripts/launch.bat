@@ -50,6 +50,6 @@ GOTO :EOF
 
 echo Restarting
 
-Scripts\launch.bat
+Scripts\launch.bat %1
 
 GOTO :EOF

@@ -18,4 +18,4 @@ rem timeout 150
 
 choice /C CBM /D C /T 5
 
-launch.bat %errorlevel%
+Scripts/launch.bat %errorlevel%
