@@ -10,10 +10,12 @@ git commit -m "Startup log push - %DATE% %TIME%"
 git pull
 git push
 
-cd C:\Users\openvritualworlds\Desktop\Opensim-Timespan\
-start "OpenSim" /MAX OpenSim.exe
+rem cd C:\Users\openvritualworlds\Desktop\Opensim-Timespan\
+rem start "OpenSim" /MAX OpenSim.exe
 cd C:\Users\openvritualworlds\Documents\John\Chimera\Bin\
 
-timeout 150
+rem timeout 150
 
-Scripts\launch.bat
+choice /C CBM /D /C /T 5
+
+launch.bat %errorlevel%

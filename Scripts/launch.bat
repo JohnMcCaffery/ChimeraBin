@@ -4,7 +4,27 @@ rem cd ..\Local
 rem rm -rf Firestorm
 cd ..\..\Documents\John\Chimera\Bin
 
+rem Timespan.exe
+
+IF %1 1 GOTO caen
+
+IF %1 2 GOTO brora
+
+IF %1 3 GOTO mosfell
+
+:caen
 Timespan.exe
+goto cont
+
+:brora
+Brora.exe
+goto cont
+
+:mosfell
+Mosfell.exe
+
+:cont
+
 
 echo Chimera exited with code %errorlevel%
 
