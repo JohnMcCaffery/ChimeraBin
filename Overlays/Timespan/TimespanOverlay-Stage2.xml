@@ -6,11 +6,9 @@
 
 			<Feature Factory="Image" Name="RaiseArmPromptExplore" X="400" Y="20" Frame="LeftWindow">Images/Misc/RaiseArmPrompt.png</Feature>
 
-			<Feature Factory="StaticText" Name="SurveyText" X="5" Y="5" Font="Verdana" Colour="White" Size="28" Frame="LeftWindow">These images were taken at the Caen site in November 2012 when this project was begun.
-				They document the initial surveying of the site to map the outlines of the original longhouses.
-				The geography of the model is taken from this survey.
-				The red flags were used to mark the corners of the buildings.
-				This process pre-dates the excavation of the summer of 2013.
+			<Feature Factory="StaticText" Name="SurveyText" X="40" Y="40" Font="Verdana" Colour="White" Size="60" Frame="LeftWindow">These images show the process 
+of investigation which informed
+the creation of Virtual Caen.
 			</Feature>
 
 			<!-- 			Drains 			-->
@@ -307,10 +305,10 @@
 				<Trigger>
 					<!--<Yaw Min="93" Max="-53" />-->
 					<Points>
-						<P X="305" Y="243" />
-						<P X="306" Y="231" />
-						<P X="355" Y="239" />
-						<P X="343" Y="248" />
+						<P X="316" Y="234" />
+						<P X="316" Y="268" />
+						<P X="351" Y="251" />
+						<P X="350" Y="237" />
 					</Points>
 				</Trigger>
 			</Area>
@@ -452,13 +450,13 @@
 			<!-- 			Slideshow 			-->
 			<State Factory="Slideshow" Name="Slideshow" StepLengthS="5" >
 				<NextTriggers>
-					<ImageTrigger X="1532" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/NextTrans.png</ImageTrigger>
+					<!--<ImageTrigger X="1532" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/NextTrans.png</ImageTrigger>-->
 				</NextTriggers>
 				<PrevTriggers>
-					<ImageTrigger X="96" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/PrevTrans.png</ImageTrigger>
+					<!--<ImageTrigger X="96" Y="918"  Frame="MainWindow" Renderer="DialCursor">Images/Buttons/PrevTrans.png</ImageTrigger>-->
 				</PrevTriggers>
 				<Steps>
-					<Step>
+					<!--<Step>
 						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
 						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
 						<Feature Name="SurveyText" />
@@ -499,6 +497,156 @@
 						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
 						<Feature Name="SurveyText" />
 						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/TodaySlideshow/7.JPG</Feature>
+					</Step>-->
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/01.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/02.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/03.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/04.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/05.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/06.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/07.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/08.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/09.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/10.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/11.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/12.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/13.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/14.png</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/15.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/16.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/17.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/18.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/19.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/20.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/21.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/22.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/23.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/24.jpg</Feature>
+					</Step>
+					<Step>
+						<Feature Factory="Colour" Colour="Black" Frame="LeftWindow" />
+						<Feature Factory="Colour" Colour="Black" Frame="RightWindow" />
+						<Feature Name="SurveyText" />
+						<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/Slideshow/slides/25.png</Feature>
 					</Step>
 				</Steps>
 			</State>
