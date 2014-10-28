@@ -4,9 +4,33 @@ rem cd ..\Local
 rem rm -rf Firestorm
 cd ..\..\Documents\John\Chimera\Bin
 
+IF %1==1 GOTO caen
 
-timeout 140
-Monitor.exe
+IF %1==2 GOTO brora
+
+IF %1==3 GOTO mosfell
+
+IF %1==4 GOTO exhibit
+
+:caen
+timeout 200
+Timespan.exe
+goto cont
+
+:brora
+timeout 200
+Brora.exe
+goto cont
+
+:mosfell
+timeout 200
+Mosfell.exe
+goto cont
+
+:exhibit
+Timespan.exe
+
+:cont
 
 
 echo Chimera exited with code %errorlevel%
