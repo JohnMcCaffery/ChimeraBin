@@ -20,10 +20,10 @@ timeout 1
 cscript Scripts\shutdown2.vbs
 timeout 20
 
-git pull
-git add Logs/*
-git commit -m "Shutdown log push - %DATE% %TIME% "
-git push
+rem git pull
+rem git add Logs/*
+rem git commit -m "Shutdown log push - %DATE% %TIME% "
+rem git push
 
 shutdown.exe /s /t 00
 
