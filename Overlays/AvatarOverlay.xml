@@ -1,0 +1,49 @@
+<Overlay Width="1920" Height="1080" >
+	<Any>
+
+		<States>
+
+		</States>
+
+	</Any>
+
+	<!-- Settings specific to the overlay being instantiated based on click interactions -->
+
+	<ClickBased>
+		<States>
+
+		</States>
+		<Transitions>
+
+		</Transitions>
+	</ClickBased>
+
+	<!-- Settings specific to the overlay being instantiated based on hover interactions -->
+
+	<HoverBased>
+
+		<States>
+
+			<State Factory="KinectControl" Name="KinectAvatar" Avatar="true" Opacity=".7" Start="true">
+				<Features>
+					<Feature Factory="Image" Name="HelpSidebarAvatarL"  X="50" Y="150" Frame="LeftWindow" >Images/Misc/HelpSidebarAvatar.png</Feature>
+			<Feature Factory="Skeleton" Name="ExploreSkeleton" X="125" Y="140.5" W="0" Scale="125" Frame="LeftWindow" />
+			<Feature Factory="ProximityClick" Name="ClickFeture" Message="camera" Channel="1" Frame="RightWindow" Camera="MainWindow">
+						<Triggers>
+							<Trigger Factory="JoystickButton" Name="B" Button="B" />
+							<Trigger Factory="CrossArms" Name="CrossArms"  />
+						</Triggers>
+					</Feature>
+					<Feature Factory="CloseBrowser" Frame="RightWindow">
+						<Triggers>
+							<Trigger Factory="JoystickButton" Name="X" Button="X" />
+							<Trigger Factory="CrossArmsLow" Name="CrossArmsLow" />
+						</Triggers>
+					</Feature>
+				</Features>
+			</State>
+
+		</States>
+
+	</HoverBased>
+</Overlay>

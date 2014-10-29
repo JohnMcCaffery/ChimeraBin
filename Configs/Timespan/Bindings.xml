@@ -11,7 +11,6 @@
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.OverlayPlugin, OverlayLib" scope="singleton" />
   <!--<bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.Plugins.MousePlugin, OverlayLib" scope="singleton" />-->
   <!--                        OVERLAY BINDINGS                         -->
-  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Overlay.Plugins.AxisCursorPlugin, OverlayLib" scope="singleton" />
   <!-- Features -->
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Features.ColourFeatureFactory, OverlayLib" scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Features.OverlayImageFactory, OverlayLib" scope="singleton" />
@@ -77,28 +76,16 @@
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickActivatedTriggerFactory, JoystickLib" scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickInactivatedTriggerFactory, JoystickLib" scope="singleton" />
   -->
+  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.Overlay.Features.SoundFeatureFactory, SoundFeature" scope="singleton" />
   <!--                        CHIMERA BINDINGS                         -->
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Plugins.ShutdownPlugin, ChimeraLib" scope="singleton" />
-  <!--                        JOYSTICK BINDINGS                         -->
-  <bind service="Chimera.Interfaces.IAxis, ChimeraLib" to="Joystick.RightThumbstickY, JoystickLib" scope="singleton" />
-  <bind service="Chimera.Interfaces.IAxis, ChimeraLib" to="Joystick.RightThumbstickX, JoystickLib" scope="singleton" />
-  <bind service="Chimera.Interfaces.IAxis, ChimeraLib" to="Joystick.LeftThumbstickY, JoystickLib" scope="singleton" />
-  <bind service="Chimera.Interfaces.IAxis, ChimeraLib" to="Joystick.LeftThumbstickX, JoystickLib" scope="singleton" />
-  <bind service="Chimera.Interfaces.IAxis, ChimeraLib" to="Joystick.DPadY, JoystickLib" scope="singleton" />
-  <bind service="Chimera.Interfaces.IAxis, ChimeraLib" to="Joystick.DPadX, JoystickLib" scope="singleton" />
-  <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickInactivatedTriggerFactory, JoystickLib" scope="singleton" />
-  <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickActivatedTriggerFactory, JoystickLib" scope="singleton" />
-  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Joystick.XBoxControllerPlugin, JoystickLib" scope="singleton" />
-  <bind service="Chimera.Interfaces.Overlay.IStateFactory, OverlayLib" to="Chimera.Joystick.Overlay.JoystickControlStateFactory, JoystickLib" scope="singleton" />
-  <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickButtonTriggerFactory, JoystickLib" scope="singleton" />
   <!--                        KINECT BINDINGS                         -->
-  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.KinectDisablePlugin, KinectLib" scope="singleton" />
-  <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.CrossArmsLowTriggerFactory, KinectLib" scope="singleton" />
   <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.CrossArmsTriggerFactory, KinectLib" scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Chimera.Kinect.Overlay.CrossArmsLowTriggerFactory, KinectLib" scope="singleton" />
+  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Kinect.KinectDisablePlugin, KinectLib" scope="singleton" />
   <!--                        OPENSIM BINDINGS                         -->
   <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.OpenSim.Overlay.ProximityClickFeatureFactory, OpenSimLib" scope="singleton" />
-  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.OpenSim.Overlay.KeyClickFeatureFactory, OpenSimLib" scope="singleton" />
-  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.OpenSim.Overlay.KeyPressFeatureFactory, OpenSimLib" scope="singleton" />
-  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.OpenSim.Overlay.SayOnceFeatureFactory, OpenSimLib" scope="singleton" />
-  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.OpenSim.Overlay.SayFeatureFactory, OpenSimLib" scope="singleton" />
+  <bind service="Chimera.Interfaces.Overlay.IFeatureFactory, OverlayLib" to="Chimera.OpenSim.Overlay.CloseBrowserFeatureFactory, OpenSimLib" scope="singleton" />
+  <!--                        JOYSTICK BINDINGS                         -->
+  <bind service="Chimera.Interfaces.Overlay.ITriggerFactory, OverlayLib" to="Joystick.Overlay.JoystickButtonTriggerFactory, JoystickLib" scope="singleton" />
 </module>

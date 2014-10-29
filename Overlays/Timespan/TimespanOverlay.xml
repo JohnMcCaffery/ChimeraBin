@@ -92,14 +92,11 @@ This process pre-dates the excavation of the summer of 2013.
 
     <States>
 
-      <State Factory="Blank" Name="IdleOutro" EnableCursor="false" Idle="true" Start="false" >
+      <State Factory="Blank" Name="IdleOutro" EnableCursor="false" Idle="true" >
         <Features>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Outro.png</Feature>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="MainWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="RightWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="LeftWindow" />
         </Features>
         <IdleTriggers>
           <Trigger Name="IdleTrigger" />
@@ -130,43 +127,7 @@ This process pre-dates the excavation of the summer of 2013.
       <State Factory="Blank" Name="Splash">
         <Features>
           <Feature Name="SplashSkeleton" Frame="MainWindow" />
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Cean-Splash-Cathedral.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
-        </Features>
-      </State>
-	  
-	  <State Factory="Blank" Name="TimespanSplash">
-        <Features>
-          <Feature Name="SplashSkeleton" Frame="MainWindow" />
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/TimespanSplash.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
-        </Features>
-      </State>
-	  
-	  <State Factory="Blank" Name="SaltPansSplash">
-        <Features>
-          <Feature Name="SplashSkeleton" Frame="MainWindow" />
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/SaltPansSplash.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
-        </Features>
-      </State>
-	  
-	  <State Factory="Blank" Name="MosfellSplash">
-        <Features>
-          <Feature Name="SplashSkeleton" Frame="MainWindow" />
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/MosfellSplash.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
-        </Features>
-      </State>
-	  
-	  <State Factory="Blank" Name="CathedralSplash">
-        <Features>
-          <Feature Name="SplashSkeleton" Frame="MainWindow" />
-          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/CathedralSplash.png</Feature>
+          <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Caen-Splash.png</Feature>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/BG-L.png</Feature>
           <Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/BG-R.png</Feature>
         </Features>
@@ -225,230 +186,6 @@ This process pre-dates the excavation of the summer of 2013.
         </Steps>
       </State>
 
-	  <State Factory="KinectControl" Name="TimespanAvatar" Avatar="true" Opacity=".8" >
-        <Features>
-          <Feature Name="ExploreSkeleton" />
-          <Feature Name="HelpSidebarAvatarL" />
-          <Feature Name="RaiseArmPromptExplore" />
-          <Feature Name="YawAreaEast" />
-          <Feature Name="YawAreaWest" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/333/249/53" Channel="2" Frame="MainWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="RightWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="LeftWindow" />
-		  <!--<Feature Factory="Say" Name="TimespanFeture" Message="Timespan 1/333/249/53" Channel="2" Frame="MainWindow">
-			<Triggers>
-				<Trigger Factory="JoystickButton" Name="Y" Button="Y" />
-			</Triggers>
-		  </Feature>
-		  <Feature Factory="Say" Name="TimespanFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="RightWindow">
-			<Triggers>
-				<Trigger Factory="JoystickButton" Name="Y" Button="Y" />
-			</Triggers>
-		  </Feature>
-		  <Feature Factory="Say" Name="TimespanFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="LeftWindow">
-			<Triggers>
-				<Trigger Factory="JoystickButton" Name="Y" Button="Y" />
-			</Triggers>
-		  </Feature>
-		  <Feature Factory="Say" Name="TimespanFeture" Message="Salt Pans 1/290/320/53" Channel="2" Frame="MainWindow">
-			<Triggers>
-				<Trigger Factory="JoystickButton" Name="X" Button="X" />
-			</Triggers>
-		  </Feature>
-		  <Feature Factory="Say" Name="TimespanFeture" Message="Salt Pans 1/1/1/53" Channel="2" Frame="RightWindow">
-			<Triggers>
-				<Trigger Factory="JoystickButton" Name="X" Button="X" />
-			</Triggers>
-		  </Feature>
-		  <Feature Factory="Say" Name="TimespanFeture" Message="Salt Pans 1/1/1/53" Channel="2" Frame="LeftWindow">
-			<Triggers>
-				<Trigger Factory="JoystickButton" Name="X" Button="X" />
-			</Triggers>
-		  </Feature>-->
-		  <Feature Factory="ProximityClick" Name="ClickFeture" Message="camera" Channel="1" Frame="RightWindow" Camera="MainWindow">
-			<Triggers>
-				<Trigger Factory="JoystickButton" Name="B" Button="B" />
-				<Trigger Factory="CrossArms" Name="CrossArms"  />
-			</Triggers>
-		  </Feature>
-		  <Feature Factory="KeyClick" Keys="^w,^{TAB},^w" Frame="RightWindow">
-            <Triggers>
-              <Trigger Factory="JoystickButton" Name="X" Button="X" />
-			  <Trigger Factory="CrossArmsLow" Name="CrossArmsLow" />
-            </Triggers>
-          </Feature>
-        </Features>
-      </State>
-
-      <State Factory="KinectControl" Name="TimespanFlycam" Avatar="false" X="487.95" Y="130.58" Z="60" Pitch="0" Yaw="126.00" Opacity=".7" >
-        <Features>
-          <Feature Name="RaiseArmPromptExplore" />
-          <Feature Name="ExploreSkeleton" Frame="MainWindow" />
-          <Feature Name="HelpSidebarFlycamL" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="MainWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="RightWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="LeftWindow" />
-		  <Feature Factory="ProximityClick" Name="ClickFeture" Message="camera" Channel="1" Frame="RightWindow" Camera="MainWindow">
-			<Triggers>
-				<Trigger Factory="JoystickButton" Name="B" Button="B" />
-				<Trigger Factory="CrossArms" Name="CrossArms"  />
-			</Triggers>
-		  </Feature>
-		  <Feature Factory="KeyClick" Keys="^w,^{TAB},^w" Frame="RightWindow">
-            <Triggers>
-              <Trigger Factory="JoystickButton" Name="X" Button="X" />
-			  <Trigger Factory="CrossArmsLow" Name="CrossArmsLow" />
-            </Triggers>
-          </Feature>
-        </Features>
-      </State>
-	  
-	  <State Factory="KinectControl" Name="SaltPansAvatar" Avatar="true" Opacity=".8" >
-        <Features>
-          <Feature Name="ExploreSkeleton" />
-          <Feature Name="HelpSidebarAvatarL" />
-          <Feature Name="RaiseArmPromptExplore" />
-          <Feature Name="YawAreaEast" />
-          <Feature Name="YawAreaWest" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Salt Pans 1/333/249/53" Channel="2" Frame="MainWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Salt Pans 1/1/1/53" Channel="2" Frame="RightWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Salt Pans 1/1/1/53" Channel="2" Frame="LeftWindow" />
-		  <Feature Factory="ProximityClick" Name="ClickFeture" Message="camera" Channel="1" Frame="RightWindow" Camera="MainWindow">
-			<Triggers>
-				<Trigger Factory="JoystickButton" Name="B" Button="B" />
-				<Trigger Factory="CrossArms" Name="CrossArms"  />
-			</Triggers>
-		  </Feature>
-		  <Feature Factory="KeyClick" Keys="^w,^{TAB},^w" Frame="RightWindow">
-            <Triggers>
-              <Trigger Factory="JoystickButton" Name="X" Button="X" />
-			  <Trigger Factory="CrossArmsLow" Name="CrossArmsLow" />
-            </Triggers>
-          </Feature>
-        </Features>
-      </State>
-
-      <State Factory="KinectControl" Name="SaltPansFlycam" Avatar="false" X="487.95" Y="130.58" Z="60" Pitch="0" Yaw="126.00" Opacity=".7" >
-        <Features>
-          <Feature Name="RaiseArmPromptExplore" />
-          <Feature Name="ExploreSkeleton" Frame="MainWindow" />
-          <Feature Name="HelpSidebarFlycamL" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Salt Pans 1/1/1/53" Channel="2" Frame="MainWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Salt Pans 1/1/1/53" Channel="2" Frame="RightWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Salt Pans 1/1/1/53" Channel="2" Frame="LeftWindow" />
-		  <Feature Factory="ProximityClick" Name="ClickFeture" Message="camera" Channel="1" Frame="RightWindow" Camera="MainWindow">
-			<Triggers>
-				<Trigger Factory="JoystickButton" Name="B" Button="B" />
-				<Trigger Factory="CrossArms" Name="CrossArms"  />
-			</Triggers>
-		  </Feature>
-		  <Feature Factory="KeyClick" Keys="^w,^{TAB},^w" Frame="RightWindow">
-            <Triggers>
-              <Trigger Factory="JoystickButton" Name="X" Button="X" />
-			  <Trigger Factory="CrossArmsLow" Name="CrossArmsLow" />
-            </Triggers>
-          </Feature>
-        </Features>
-      </State>
-	  
-	  <State Factory="KinectControl" Name="MosfellAvatar" Avatar="true" Opacity=".8" >
-        <Features>
-          <Feature Name="ExploreSkeleton" />
-          <Feature Name="HelpSidebarAvatarL" />
-          <Feature Name="RaiseArmPromptExplore" />
-          <Feature Name="YawAreaEast" />
-          <Feature Name="YawAreaWest" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Mosfell 1/333/249/53" Channel="2" Frame="MainWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Mosfell 1/1/1/53" Channel="2" Frame="RightWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Mosfell 1/1/1/53" Channel="2" Frame="LeftWindow" />
-		  <Feature Factory="ProximityClick" Name="ClickFeture" Message="camera" Channel="1" Frame="RightWindow" Camera="MainWindow">
-			<Triggers>
-				<Trigger Factory="JoystickButton" Name="B" Button="B" />
-				<Trigger Factory="CrossArms" Name="CrossArms"  />
-			</Triggers>
-		  </Feature>
-		  <Feature Factory="KeyClick" Keys="^w,^{TAB},^w" Frame="RightWindow">
-            <Triggers>
-              <Trigger Factory="JoystickButton" Name="X" Button="X" />
-			  <Trigger Factory="CrossArmsLow" Name="CrossArmsLow" />
-            </Triggers>
-          </Feature>
-        </Features>
-      </State>
-
-      <State Factory="KinectControl" Name="MosfellFlycam" Avatar="false" X="487.95" Y="130.58" Z="60" Pitch="0" Yaw="126.00" Opacity=".7" >
-        <Features>
-          <Feature Name="RaiseArmPromptExplore" />
-          <Feature Name="ExploreSkeleton" Frame="MainWindow" />
-          <Feature Name="HelpSidebarFlycamL" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Mosfell 1/1/1/53" Channel="2" Frame="MainWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Mosfell 1/1/1/53" Channel="2" Frame="RightWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Mosfell 1/1/1/53" Channel="2" Frame="LeftWindow" />
-		  <Feature Factory="ProximityClick" Name="ClickFeture" Message="camera" Channel="1" Frame="RightWindow" Camera="MainWindow">
-			<Triggers>
-				<Trigger Factory="JoystickButton" Name="B" Button="B" />
-				<Trigger Factory="CrossArms" Name="CrossArms"  />
-			</Triggers>
-		  </Feature>
-		  <Feature Factory="KeyClick" Keys="^w,^{TAB},^w" Frame="RightWindow">
-            <Triggers>
-              <Trigger Factory="JoystickButton" Name="X" Button="X" />
-			  <Trigger Factory="CrossArmsLow" Name="CrossArmsLow" />
-            </Triggers>
-          </Feature>
-        </Features>
-      </State>
-	  
-	  
-	  <State Factory="KinectControl" Name="CathedralAvatar" Avatar="true" Opacity=".8" >
-        <Features>
-          <Feature Name="ExploreSkeleton" />
-          <Feature Name="HelpSidebarAvatarL" />
-          <Feature Name="RaiseArmPromptExplore" />
-          <Feature Name="YawAreaEast" />
-          <Feature Name="YawAreaWest" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Cathedral 1/128/128/53" Channel="2" Frame="MainWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Cathedral 1/1/1/53" Channel="2" Frame="RightWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Cathedral 1/1/1/53" Channel="2" Frame="LeftWindow" />
-		  <Feature Factory="ProximityClick" Name="ClickFeture" Message="camera" Channel="1" Frame="RightWindow" Camera="MainWindow">
-			<Triggers>
-				<Trigger Factory="JoystickButton" Name="B" Button="B" />
-				<Trigger Factory="CrossArms" Name="CrossArms"  />
-			</Triggers>
-		  </Feature>
-		  <Feature Factory="KeyClick" Keys="^w,^{TAB},^w" Frame="RightWindow">
-            <Triggers>
-              <Trigger Factory="JoystickButton" Name="X" Button="X" />
-			  <Trigger Factory="CrossArmsLow" Name="CrossArmsLow" />
-            </Triggers>
-          </Feature>
-        </Features>
-      </State>
-
-      <State Factory="KinectControl" Name="CatrheralFlycam" Avatar="false" X="487.95" Y="130.58" Z="60" Pitch="0" Yaw="126.00" Opacity=".7" >
-        <Features>
-          <Feature Name="RaiseArmPromptExplore" />
-          <Feature Name="ExploreSkeleton" Frame="MainWindow" />
-          <Feature Name="HelpSidebarFlycamL" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Cathedral 1/1/1/53" Channel="2" Frame="MainWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Cathedral 1/1/1/53" Channel="2" Frame="RightWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Cathedral 1/1/1/53" Channel="2" Frame="LeftWindow" />
-		  <Feature Factory="ProximityClick" Name="ClickFeture" Message="camera" Channel="1" Frame="RightWindow" Camera="MainWindow">
-			<Triggers>
-				<Trigger Factory="JoystickButton" Name="B" Button="B" />
-				<Trigger Factory="CrossArms" Name="CrossArms"  />
-			</Triggers>
-		  </Feature>
-		  <Feature Factory="KeyClick" Keys="^w,^{TAB},^w" Frame="RightWindow">
-            <Triggers>
-              <Trigger Factory="JoystickButton" Name="X" Button="X" />
-			  <Trigger Factory="CrossArmsLow" Name="CrossArmsLow" />
-            </Triggers>
-          </Feature>
-        </Features>
-      </State>
-	  
-	  
       <State Factory="Blank" Name="Story1Confirm" BlackBG="true">
         <Features>
           <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmDogs.png</Feature>
@@ -475,7 +212,7 @@ This process pre-dates the excavation of the summer of 2013.
         </Features>
       </State>
 
-      <State Factory="Video" Name="Story1" BlackBG="true" File="Videos/Dogs.m4v" FinishState="Splash" Transition="Cut" Frame="LeftWindow" >
+      <State Factory="Video" Name="Story1" BlackBG="true" File="Videos/Dogs.m4v" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
         <IdleTriggers>
           <Trigger Name="VideoIdleTrigger" />
         </IdleTriggers>
@@ -503,262 +240,6 @@ This process pre-dates the excavation of the summer of 2013.
         <IdleTriggers>
           <Trigger Name="VideoIdleTrigger" />
         </IdleTriggers>
-      </State>
-	  
-	  <State Factory="Blank" Name="SaltPansStory1Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmDogs.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="SaltPansStory2Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmGartymore.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="SaltPansStory3Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFrakkok.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="SaltPansStory4Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFisherman.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="SaltPansStory5Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmWolf.png</Feature>
-        </Features>
-      </State>
-	  
-	  <State Factory="Video" Name="SaltPansStory1" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="SaltPansStory2" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="SaltPansStory3" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="SaltPansStory4" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="SaltPansStory5" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  
-	  
-	  <State Factory="Blank" Name="TimespanStory1Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmDogs.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="TimespanStory2Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmGartymore.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="TimespanStory3Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFrakkok.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="TimespanStory4Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFisherman.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="TimespanStory5Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmWolf.png</Feature>
-        </Features>
-      </State>
-	  
-	  <State Factory="Video" Name="TimespanStory1" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="TimespanStory2" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="TimespanStory3" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="TimespanStory4" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="TimespanStory5" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  
-	  
-	  <State Factory="Blank" Name="MosfellStory1Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmDogs.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="MosfellStory2Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmGartymore.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="MosfellStory3Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFrakkok.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="MosfellStory4Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFisherman.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="MosfellStory5Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmWolf.png</Feature>
-        </Features>
-      </State>
-	  
-	  <State Factory="Video" Name="MosfellStory1" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="MosfellStory2" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="MosfellStory3" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="MosfellStory4" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="MosfellStory5" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  
-	  
-	  <State Factory="Blank" Name="CathedralStory1Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmDogs.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="CathedralStory2Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmGartymore.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="CathedralStory3Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFrakkok.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="CathedralStory4Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmFisherman.png</Feature>
-        </Features>
-      </State>
-      <State Factory="Blank" Name="CathedralStory5Confirm" BlackBG="true">
-        <Features>
-          <Feature Factory="Image" Frame="MainWindow" X="0" Y="0" W="1920" H="1080">Images/StorytellingVideos/ConfirmWolf.png</Feature>
-        </Features>
-      </State>
-	  
-	  <State Factory="Video" Name="CathedralStory1" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="CathedralStory2" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="CathedralStory3" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="CathedralStory4" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  <State Factory="Video" Name="CathedralStory5" BlackBG="true" File="Videos/salty_business.mp4" FinishState="Splash" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-      </State>
-	  
-	  
-	  <State Factory="Video" Name="TimespanVideo" BlackBG="true" File="Videos/salty_business.mp4" FinishState="TimespanAvatar" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-		<Features>
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="MainWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="RightWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Timespan 1/1/1/53" Channel="2" Frame="LeftWindow" />
-		</Features>
-      </State>
-	  
-	  <State Factory="Video" Name="SaltPansVideo" BlackBG="true" File="Videos/salty_business.mp4" FinishState="SaltPansAvatar" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-		<Features>
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Salt Pans 1/1/1/53" Channel="2" Frame="MainWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Salt Pans 1/1/1/53" Channel="2" Frame="RightWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Salt Pans 1/1/1/53" Channel="2" Frame="LeftWindow" />
-		</Features>
-      </State>
-	  
-	  <State Factory="Video" Name="MosfellVideo" BlackBG="true" File="Videos/salty_business.mp4" FinishState="MosfellAvatar" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-		<Features>
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Mosfell 1/1/1/53" Channel="2" Frame="MainWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Mosfell 1/1/1/53" Channel="2" Frame="RightWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Mosfell 1/1/1/53" Channel="2" Frame="LeftWindow" />
-		</Features>
-      </State>
-	  
-	  <State Factory="Video" Name="CathedralVideo" BlackBG="true" File="Videos/salty_business.mp4" FinishState="CathedralAvatar" Transition="Cut" Frame="MainWindow" >
-        <IdleTriggers>
-          <Trigger Name="VideoIdleTrigger" />
-        </IdleTriggers>
-		<Features>
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Cathedral 1/1/1/53" Channel="2" Frame="MainWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Cathedral 1/1/1/53" Channel="2" Frame="RightWindow" />
-		  <Feature Factory="SayOnce" Name="TimespanOnceFeture" Message="Cathedral 1/1/1/53" Channel="2" Frame="LeftWindow" />
-		</Features>
       </State>
 
       <State Factory="Flythrough" Name="GuidedTour" File="Flythroughs/Timespan/Guided.xml" AutoStep="true" Loop="false" DisplaySubtitles="true" SubtitleTimeout="11">
@@ -1129,154 +610,42 @@ This process pre-dates the excavation of the summer of 2013.
     </States>
 
     <Transitions>
-      
+      <InvisibleTransition From="Splash" To="GuidedTour"    Transition="FadeOut"    L="1080" T="415" R="1755" B="500" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Splash" To="Slideshow"     Transition="Cut" L="1080" T="645" R="1755" B="735" Frame="MainWindow" Renderer="DialCursor"/>
 
-      <ImageTransition From="HelpAvatar"		To="Splash"				Transition="FadeIn" X="1200" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
-      <ImageTransition From="HelpFlycam"		To="Splash"				Transition="FadeIn" X="1200" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
+      <ImageTransition From="HelpAvatar" 	To="Splash" Transition="FadeIn" X="1200" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
+      <ImageTransition From="HelpFlycam" 	To="Splash" Transition="FadeIn" X="1200" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/MainMenu.png</ImageTransition>
 
-      <Transition From="Idle" 					To="Intro"				Transition="FadeIn" Trigger="SkeletonFound" />
-	  <Transition From="Idle" 					To="Intro"				Transition="FadeIn" Trigger="JSActivated" />
+      <Transition From="Idle" 		      To="Intro" Transition="FadeIn" Trigger="SkeletonFound" />
 
-      <Transition From="IdleOutro"				To="Idle"				Transition="FadeOut" Trigger="IntroTimer" />
+      <Transition From="IdleOutro"		  To="Idle" Transition="FadeOut" Trigger="IntroTimer" />
 
-      <Transition From="Intro" 					To="GuidedTour"			Transition="FadeOut" Trigger="IntroTimer" />
-      <Transition From="Intro" 					To="Splash"				Transition="Cut" Trigger="ExitWorld" />
-	  <Transition From="Intro" 			   		To="Splash" 			Transition="Cut" Trigger="ExitWorldXBox" />
+      <Transition From="Intro" 		      To="GuidedTour" Transition="FadeOut" Trigger="IntroTimer" />
+      <Transition From="Intro" 		      To="Splash" Transition="Cut" Trigger="ExitWorld" />
 
-      <Transition From="GuidedTour" 			To="TimespanAvatar" 	Transition="Cut" Trigger="FlythroughEnd" />
-      <Transition From="GuidedTour" 			To="Splash" 			Transition="FadeIn" Trigger="ExitWorld" />
-	  <Transition From="GuidedTour" 			To="Splash" 			Transition="FadeIn" Trigger="ExitWorldXBox" />
-	  
-	  <Transition From="TimespanVideo" 			To="TimespanSplash" 	Transition="Cut" Trigger="ExitWorld" />
-	  <Transition From="TimespanVideo" 			To="TimespanSplash" 	Transition="Cut" Trigger="ExitWorldXBox" />
-	  <Transition From="SaltPansVideo" 			To="SaltPansSplash"		Transition="Cut" Trigger="ExitWorld" />
-	  <Transition From="SaltPansVideo" 			To="SaltPansSplash" 	Transition="Cut" Trigger="ExitWorldXBox" />
-	  <Transition From="MosfellVideo" 			To="MosfellSplash"		Transition="Cut" Trigger="ExitWorld" />
-	  <Transition From="MosfellVideo" 			To="MosfellSplash"		Transition="Cut" Trigger="ExitWorldXBox" />
-	  <Transition From="CathedralVideo"			To="CathedralSplash"	Transition="Cut" Trigger="ExitWorld" />
-	  <Transition From="CathedralVideo" 		To="CathedralSplash"	Transition="Cut" Trigger="ExitWorldXBox" />
+      <Transition From="GuidedTour" 		To="Splash" Transition="Cut" Trigger="FlythroughEnd" />
+      <Transition From="GuidedTour" 		To="Splash" Transition="FadeIn" Trigger="ExitWorld" />
 
       <!--<ImageTransition From="GuidedTour" 	To="Splash" Transition="FadeIn" X="96" Y="918"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/Back.png</ImageTransition>-->
-      <ImageTransition From="Slideshow" 		To="Splash" Transition="Cut" X="864" Y="918"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/BackTrans.png</ImageTransition>
+      <ImageTransition From="Slideshow" 	To="Splash" Transition="Cut" X="864" Y="918"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/BackTrans.png</ImageTransition>
 
-	  <InvisibleTransition From="Splash" 		To="TimespanVideo"		Transition="Cut"    L="1080" T="415" R="1755" B="500" Frame="MainWindow" Renderer="DialCursor" />
-	  <InvisibleTransition From="Splash" 		To="SaltPansVideo"		Transition="Cut"    L="1080" T="535" R="1755" B="620" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Splash" 		To="MosfellVideo"		Transition="Cut"	L="1080" T="645" R="1755" B="735" Frame="MainWindow" Renderer="DialCursor"/>
-	  <InvisibleTransition From="Splash" 		To="CathedralVideo"		Transition="Cut"    L="1080" T="765" R="1755" B="865" Frame="MainWindow" Renderer="DialCursor" />
-	  
-      <InvisibleTransition From="Splash"		To="Story1Confirm"		Transition="Cut" L="115" T="395" R="835" B="485" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Splash"		To="Story2Confirm"		Transition="Cut" L="115" T="510" R="835" B="600" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Splash"		To="Story3Confirm"		Transition="Cut" L="115" T="625" R="835" B="720" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Splash"		To="Story4Confirm"		Transition="Cut" L="115" T="745" R="835" B="825" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Splash"		To="Story5Confirm"		Transition="Cut" L="115" T="860" R="835" B="955" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Splash" To="Story1Confirm" 	Transition="Cut" L="115" T="395" R="835" B="485" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Splash" To="Story2Confirm" 	Transition="Cut" L="115" T="510" R="835" B="600" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Splash" To="Story3Confirm" 	Transition="Cut" L="115" T="625" R="835" B="720" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Splash" To="Story4Confirm" 	Transition="Cut" L="115" T="745" R="835" B="825" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Splash" To="Story5Confirm" 	Transition="Cut" L="115" T="860" R="835" B="955" Frame="MainWindow" Renderer="DialCursor" />
 
-      <InvisibleTransition From="Story1Confirm"	To="Splash" 			Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story2Confirm" To="Splash" 			Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story3Confirm" To="Splash"				Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story4Confirm" To="Splash" 			Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story5Confirm" To="Splash" 			Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Story1Confirm" To="Splash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Story2Confirm" To="Splash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Story3Confirm" To="Splash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Story4Confirm" To="Splash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Story5Confirm" To="Splash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
 
-      <InvisibleTransition From="Story1Confirm" To="Story1" 			Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story2Confirm" To="Story2" 			Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story3Confirm" To="Story3" 			Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story4Confirm" To="Story4"				Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Story5Confirm" To="Story5"				Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-	  
-	  
-	  <InvisibleTransition From="SaltPansSplash" To="Splash"			Transition="Cut"    L="1080" T="415" R="1755" B="500" Frame="MainWindow" Renderer="DialCursor" />
-	  <InvisibleTransition From="SaltPansSplash" To="SaltPansAvatar"	Transition="FadeOut"    L="1080" T="535" R="1755" B="620" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="SaltPansSplash" To="SaltPansVideo"		Transition="Cut" L="1080" T="645" R="1755" B="735" Frame="MainWindow" Renderer="DialCursor"/>
-	  <InvisibleTransition From="SaltPansSplash" To="SaltPansFlycam"	Transition="FadeOut"    L="1080" T="765" R="1755" B="865" Frame="MainWindow" Renderer="DialCursor" />
-	  
-	  <InvisibleTransition From="SaltPansSplash" To="SaltPansStory1Confirm" 	Transition="Cut" L="115" T="395" R="835" B="485" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="SaltPansSplash" To="SaltPansStory2Confirm" 	Transition="Cut" L="115" T="510" R="835" B="600" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="SaltPansSplash" To="SaltPansStory3Confirm" 	Transition="Cut" L="115" T="625" R="835" B="720" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="SaltPansSplash" To="SaltPansStory4Confirm" 	Transition="Cut" L="115" T="745" R="835" B="825" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="SaltPansSplash" To="SaltPansStory5Confirm" 	Transition="Cut" L="115" T="860" R="835" B="955" Frame="MainWindow" Renderer="DialCursor" />
-	  
-	  <InvisibleTransition From="SaltPansStory1Confirm" To="SaltPansSplash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="SaltPansStory2Confirm" To="SaltPansSplash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="SaltPansStory3Confirm" To="SaltPansSplash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="SaltPansStory4Confirm" To="SaltPansSplash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="SaltPansStory5Confirm" To="SaltPansSplash" Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-
-      <InvisibleTransition From="SaltPansStory1Confirm" To="SaltPansStory1" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="SaltPansStory2Confirm" To="SaltPansStory2" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="SaltPansStory3Confirm" To="SaltPansStory3" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="SaltPansStory4Confirm" To="SaltPansStory4" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="SaltPansStory5Confirm" To="SaltPansStory5" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-	  
-	  
-	  <InvisibleTransition From="TimespanSplash"			To="Splash"					Transition="Cut"    L="1080" T="415" R="1755" B="500" Frame="MainWindow" Renderer="DialCursor" />
-	  <InvisibleTransition From="TimespanSplash"			To="TimespanAvatar"			Transition="FadeOut"    L="1080" T="535" R="1755" B="620" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="TimespanSplash"			To="TimespanVideo"			Transition="Cut" L="1080" T="645" R="1755" B="735" Frame="MainWindow" Renderer="DialCursor"/>
-	  <InvisibleTransition From="TimespanSplash"			To="TimespanFlycam"			Transition="FadeOut"    L="1080" T="765" R="1755" B="865" Frame="MainWindow" Renderer="DialCursor" />
-	  
-	  <InvisibleTransition From="TimespanSplash"			To="TimespanStory1Confirm"	Transition="Cut" L="115" T="395" R="835" B="485" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="TimespanSplash"			To="TimespanStory2Confirm"	Transition="Cut" L="115" T="510" R="835" B="600" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="TimespanSplash"			To="TimespanStory3Confirm"	Transition="Cut" L="115" T="625" R="835" B="720" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="TimespanSplash"			To="TimespanStory4Confirm"	Transition="Cut" L="115" T="745" R="835" B="825" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="TimespanSplash"			To="TimespanStory5Confirm"	Transition="Cut" L="115" T="860" R="835" B="955" Frame="MainWindow" Renderer="DialCursor" />
-	  
-	  <InvisibleTransition From="TimespanStory1Confirm"		To="TimespanSplash"			Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="TimespanStory2Confirm"		To="TimespanSplash"			Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="TimespanStory3Confirm"		To="TimespanSplash"			Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="TimespanStory4Confirm"		To="TimespanSplash"			Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="TimespanStory5Confirm"		To="TimespanSplash"			Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-
-      <InvisibleTransition From="TimespanStory1Confirm"		To="TimespanStory1"			Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="TimespanStory2Confirm"		To="TimespanStory2"			Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="TimespanStory3Confirm"		To="TimespanStory3"			Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="TimespanStory4Confirm"		To="TimespanStory4"			Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="TimespanStory5Confirm"		To="TimespanStory5"			Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-	  
-	  
-	  <InvisibleTransition From="MosfellSplash"				To="Splash"					Transition="Cut"    L="1080" T="415" R="1755" B="500" Frame="MainWindow" Renderer="DialCursor" />
-	  <InvisibleTransition From="MosfellSplash"				To="MosfellAvatar"			Transition="FadeOut"    L="1080" T="535" R="1755" B="620" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="MosfellSplash"				To="MosfellVideo"			Transition="Cut" L="1080" T="645" R="1755" B="735" Frame="MainWindow" Renderer="DialCursor"/>
-	  <InvisibleTransition From="MosfellSplash"				To="MosfellFlycam"			Transition="FadeOut"    L="1080" T="765" R="1755" B="865" Frame="MainWindow" Renderer="DialCursor" />
-	  
-	  <InvisibleTransition From="MosfellSplash"				To="MosfellStory1Confirm" 	Transition="Cut" L="115" T="395" R="835" B="485" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="MosfellSplash"				To="MosfellStory2Confirm" 	Transition="Cut" L="115" T="510" R="835" B="600" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="MosfellSplash"				To="MosfellStory3Confirm" 	Transition="Cut" L="115" T="625" R="835" B="720" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="MosfellSplash"				To="MosfellStory4Confirm" 	Transition="Cut" L="115" T="745" R="835" B="825" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="MosfellSplash"				To="MosfellStory5Confirm" 	Transition="Cut" L="115" T="860" R="835" B="955" Frame="MainWindow" Renderer="DialCursor" />
-	  
-	  <InvisibleTransition From="MosfellStory1Confirm"		To="MosfellSplash"			Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="MosfellStory2Confirm"		To="MosfellSplash"			Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="MosfellStory3Confirm"		To="MosfellSplash"			Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="MosfellStory4Confirm"		To="MosfellSplash"			Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="MosfellStory5Confirm"		To="MosfellSplash"			Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-
-      <InvisibleTransition From="MosfellStory1Confirm"		To="MosfellStory1"			Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="MosfellStory2Confirm"		To="MosfellStory2"			Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="MosfellStory3Confirm"		To="MosfellStory3"			Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="MosfellStory4Confirm"		To="MosfellStory4"			Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="MosfellStory5Confirm"		To="MosfellStory5"			Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-	  
-	  
-	  <InvisibleTransition From="CathedralSplash"			To="Splash"					Transition="Cut"    L="1080" T="415" R="1755" B="500" Frame="MainWindow" Renderer="DialCursor" />
-	  <InvisibleTransition From="CathedralSplash"			To="CathedralAvatar"		Transition="FadeOut"    L="1080" T="535" R="1755" B="620" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="CathedralSplash"			To="CathedralVideo"			Transition="Cut" L="1080" T="645" R="1755" B="735" Frame="MainWindow" Renderer="DialCursor"/>
-	  <InvisibleTransition From="CathedralSplash"			To="CathedralFlycam"		Transition="FadeOut"    L="1080" T="765" R="1755" B="865" Frame="MainWindow" Renderer="DialCursor" />
-	  
-	  <InvisibleTransition From="CathedralSplash"			To="CathedralStory1Confirm" Transition="Cut" L="115" T="395" R="835" B="485" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="CathedralSplash"			To="CathedralStory2Confirm" Transition="Cut" L="115" T="510" R="835" B="600" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="CathedralSplash"			To="CathedralStory3Confirm" Transition="Cut" L="115" T="625" R="835" B="720" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="CathedralSplash"			To="CathedralStory4Confirm" Transition="Cut" L="115" T="745" R="835" B="825" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="CathedralSplash"			To="CathedralStory5Confirm"	Transition="Cut" L="115" T="860" R="835" B="955" Frame="MainWindow" Renderer="DialCursor" />
-	  
-	  <InvisibleTransition From="CathedralStory1Confirm"	To="CathedralSplash"		Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="CathedralStory2Confirm"	To="CathedralSplash"		Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="CathedralStory3Confirm"	To="CathedralSplash"		Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="CathedralStory4Confirm"	To="CathedralSplash"		Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="CathedralStory5Confirm"	To="CathedralSplash"		Transition="Cut" L="440" T="380" R="900" B="670" Frame="MainWindow" Renderer="DialCursor" />
-
-      <InvisibleTransition From="CathedralStory1Confirm"	To="CathedralStory1"		Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="CathedralStory2Confirm"	To="CathedralStory2"		Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="CathedralStory3Confirm"	To="CathedralStory3"		Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="CathedralStory4Confirm"	To="CathedralStory4"		Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="CathedralStory5Confirm"	To="CathedralStory5"		Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Story1Confirm" To="Story1" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Story2Confirm" To="Story2" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Story3Confirm" To="Story3" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Story4Confirm" To="Story4" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Story5Confirm" To="Story5" Transition="Cut" L="1075" T="380" R="1535" B="670" Frame="MainWindow" Renderer="DialCursor" />
     </Transitions>
   </Any>
 
@@ -1300,9 +669,7 @@ This process pre-dates the excavation of the summer of 2013.
       <Trigger Factory="SkeletonLost" Timeout="30000" Name="IdleTrigger" />
       <Trigger Factory="SkeletonLost" Timeout="459000" Name="VideoIdleTrigger" />
       <Trigger Factory="SkeletonFound" Name="SkeletonFound" />
-	  <Trigger Factory="JoystickActivated" Name="JSActivated" />
       <Trigger Factory="RaiseArm" Name="ExitWorld" />
-	  <Trigger Factory="JoystickButton" Button="A" Name="ExitWorldXBox" />
     </Triggers>
 
     <Features>
@@ -1312,42 +679,39 @@ This process pre-dates the excavation of the summer of 2013.
     </Features>
     <States>
 
-      
+      <State Factory="KinectControl" Name="KinectAvatar" Avatar="true" Opacity=".8" >
+        <Features>
+          <Feature Name="ExploreSkeleton" />
+          <Feature Name="HelpSidebarAvatarL" />
+          <Feature Name="RaiseArmPromptExplore" />
+          <Feature Name="YawAreaEast" />
+          <Feature Name="YawAreaWest" />
+        </Features>
+      </State>
+
+      <State Factory="KinectControl" Name="KinectFlycam" Avatar="false" X="487.95" Y="130.58" Z="60" Pitch="0" Yaw="126.00" Opacity=".7" >
+        <Features>
+          <Feature Name="RaiseArmPromptExplore" />
+          <Feature Name="ExploreSkeleton" Frame="MainWindow" />
+          <Feature Name="HelpSidebarFlycamL" />
+        </Features>
+      </State>
 
     </States>
     <Transitions>
 
-      <!--
-	  <InvisibleTransition From="Splash" 	To="TimespanAvatar"		Transition="FadeOut"    L="1080" T="535" R="1755" B="620" Frame="MainWindow" Renderer="DialCursor" />
-      <InvisibleTransition From="Splash" 	To="TimespanFlycam"		Transition="FadeOut"    L="1080" T="765" R="1755" B="865" Frame="MainWindow" Renderer="DialCursor" />
-	  -->
+      <InvisibleTransition From="Splash" To="KinectAvatar"  Transition="FadeOut"    L="1080" T="535" R="1755" B="620" Frame="MainWindow" Renderer="DialCursor" />
+      <InvisibleTransition From="Splash" To="KinectFlycam"  Transition="FadeOut"    L="1080" T="765" R="1755" B="865" Frame="MainWindow" Renderer="DialCursor" />
 
       <!--
-      <Transition From="TimespanAvatar" 	To="HelpAvatar"			Transition="FadeIn" Trigger="ExitWorld" />
-      <Transition From="TimespanFlycam" 	To="HelpFlycam"			Transition="FadeIn" Trigger="ExitWorld" />
+      <Transition From="KinectAvatar" To="HelpAvatar"  Transition="FadeIn" Trigger="ExitWorld" />
+      <Transition From="KinectFlycam" To="HelpFlycam"  Transition="FadeIn" Trigger="ExitWorld" />
       -->
-      <Transition From="TimespanAvatar"		To="TimespanSplash"		Transition="FadeIn" Trigger="ExitWorld" />
-      <Transition From="TimespanFlycam"		To="TimespanSplash"		Transition="FadeIn" Trigger="ExitWorld" />
-	  <Transition From="TimespanAvatar"		To="TimespanSplash"		Transition="FadeIn" Trigger="ExitWorldXBox" />
-      <Transition From="TimespanFlycam"		To="TimespanSplash"		Transition="FadeIn" Trigger="ExitWorldXBox" />
-	  
-	  <Transition From="SaltPansAvatar"		To="SaltPansSplash"		Transition="FadeIn" Trigger="ExitWorld" />
-      <Transition From="SaltPansFlycam"		To="SaltPansSplash"		Transition="FadeIn" Trigger="ExitWorld" />
-	  <Transition From="SaltPansAvatar"		To="SaltPansSplash"		Transition="FadeIn" Trigger="ExitWorldXBox" />
-      <Transition From="SaltPansFlycam"		To="SaltPansSplash"		Transition="FadeIn" Trigger="ExitWorldXBox" />
-	  
-	  <Transition From="MosfellAvatar"		To="MosfellSplash"		Transition="FadeIn" Trigger="ExitWorld" />
-      <Transition From="MosfellFlycam"		To="MosfellSplash"		Transition="FadeIn" Trigger="ExitWorld" />
-	  <Transition From="MosfellAvatar"		To="MosfellSplash"		Transition="FadeIn" Trigger="ExitWorldXBox" />
-      <Transition From="MosfellFlycam"		To="MosfellSplash"		Transition="FadeIn" Trigger="ExitWorldXBox" />
-	  
-	  <Transition From="CathedralAvatar"	To="CathedralSplash"	Transition="FadeIn" Trigger="ExitWorld" />
-      <Transition From="CathedralFlycam"	To="CathedralSplash"	Transition="FadeIn" Trigger="ExitWorld" />
-	  <Transition From="CathedralAvatar"	To="CathedralSplash"	Transition="FadeIn" Trigger="ExitWorldXBox" />
-      <Transition From="CathedralFlycam"	To="CathedralSplash"	Transition="FadeIn" Trigger="ExitWorldXBox" />
+      <Transition From="KinectAvatar" To="Splash"  Transition="FadeIn" Trigger="ExitWorld" />
+      <Transition From="KinectFlycam" To="Splash"  Transition="FadeIn" Trigger="ExitWorld" />
 
-      <ImageTransition From="HelpAvatar" 	To="TimespanAvatar"		Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
-      <ImageTransition From="HelpFlycam" 	To="TimespanFlycam"		Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
+      <ImageTransition From="HelpAvatar" 	To="KinectAvatar" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
+      <ImageTransition From="HelpFlycam" 	To="KinectFlycam" Transition="FadeIn" X="1600" Y="900"  Frame="MainWindow" Renderer="DialCursor" >Images/Buttons/HelpToWorld.png</ImageTransition>
     </Transitions>
   </HoverBased>
 </Overlay>

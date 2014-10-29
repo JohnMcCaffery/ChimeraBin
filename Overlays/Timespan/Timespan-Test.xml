@@ -1,0 +1,146 @@
+<Overlay Width="1920" Height="1080" >
+	<Any>
+
+		<Features>
+
+			<!--		Drains 		-->
+			<Area Factory="ActiveArea" Name="Drains" Frame="RightWindow" >
+				<Feature Factory="Image" X="300" Y="50" Width="1200" Frame="RightWindow" >Images/ActiveAreas/Drains.png</Feature>
+				<Trigger>
+					<!--<Yaw Min="5" Max="82" />-->
+					<Points>
+						<P X="376.08" Y="280.15" />
+						<P X="377.57" Y="285.06" />
+						<P X="368.35" Y="287.94" />
+						<P X="367.04" Y="282.62" />
+					</Points>
+				</Trigger>
+			</Area>
+
+			<!--		Floor 		-->
+			<Area Factory="ActiveArea" Name="Floor" Frame="RightWindow" >
+				<Feature Factory="Image" X="300" Y="50" Width="1200" Frame="RightWindow" >Images/ActiveAreas/Floor.png</Feature>
+				<Trigger>
+					<Points>
+						<P X="313" Y="224" />
+						<P X="317" Y="225" />
+						<P X="319" Y="218" />
+						<P X="313" Y="216" />
+					</Points>
+				</Trigger>
+			</Area>
+
+			<!--		Walls 		-->
+			<!-- S -->
+			<Area Factory="ActiveArea" Name="WallsS" Frame="RightWindow" >
+				<Feature Factory="Image" X="300" Y="50" Frame="RightWindow" >Images/ActiveAreas/Walls.png</Feature>
+				<Trigger>
+					<Yaw Min="0" Max="140" />
+					<Points>
+						<P X="324" Y="289" />
+						<P X="324" Y="284" />
+						<P X="390" Y="261" />
+						<P X="390" Y="276" />
+					</Points>
+				</Trigger>
+			</Area>
+			<!-- N -->
+			<Area Factory="ActiveArea" Name="WallsN" Frame="RightWindow" >
+				<Feature Factory="Image" X="300" Y="50" Frame="RightWindow" >Images/ActiveAreas/Walls.png</Feature>
+				<Trigger>
+					<Yaw Min="-173" Max="-33" />
+					<Points>
+						<P X="340" Y="364" />
+						<P X="393" Y="349" />
+						<P X="340" Y="294" />
+						<P X="393" Y="285" />
+					</Points>
+				</Trigger>
+			</Area>
+			<!-- E -->
+			<Area Factory="ActiveArea" Name="WallsE" Frame="RightWindow" >
+				<Feature Factory="Image" X="300" Y="50" Frame="RightWindow" >Images/ActiveAreas/Walls.png</Feature>
+				<Trigger>
+					<Yaw Min="120" Max="-137" />
+					<Points>
+						<P X="377" Y="285" />
+						<P X="393" Y="285" />
+						<P X="390" Y="280" />
+						<P X="376" Y="280" />
+					</Points>
+				</Trigger>
+			</Area>
+			<!-- W -->
+			<Area Factory="ActiveArea" Name="WallsE" Frame="RightWindow" >
+				<Feature Factory="Image" X="300" Y="50" Frame="RightWindow" >Images/ActiveAreas/Walls.png</Feature>
+				<Trigger>
+					<Yaw Min="93" Max="-53" />
+					<Points>
+						<P X="340" Y="303" />
+						<P X="343" Y="294" />
+						<P X="342" Y="289" />
+						<P X="330" Y="288" />
+					</Points>
+				</Trigger>
+			</Area>
+
+		</Features>
+
+		<Triggers />
+
+		<SelectionRenderers />
+
+		<TransitionStyles />
+
+		<States />
+
+		<Transitions />
+	</Any>
+
+	<!-- Settings specific to the overlay being instantiated based on hover interactions -->
+
+	<HoverBased>
+
+		<Triggers />
+
+		<Features>
+			<Feature Factory="Skeleton" Name="ExploreIntroSkeleton" X="340" Y="340" W="0" Scale="300" Frame="LeftWindow" />
+			<Feature Factory="Skeleton" Name="CornerSkeleton" X="200" Y="800" W="0" Scale="200" Frame="MainWindow" />
+		</Features>
+		<States>
+
+			<State Factory="KinectControl" Name="ActiveAreaTest" Avatar="true" Start="true" Opacity=".9" >
+				<Features>
+					<Feature Name="Drains" />
+					<Feature Name="Floor" />
+					<Feature Name="WallsN" />
+					<Feature Name="WallsS" />
+					<Feature Name="WallsE" />
+					<Feature Name="WallsW" />
+					<Feature Name="ExploreIntroSkeleton" />
+				</Features>
+			</State>
+
+			<State Factory="KinectControl" Name="StickManFilm" Avatar="true" Opacity="1" >
+				<Features>
+					<Feature Name="CornerSkeleton" />
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="MainWindow">Images/MenuBGs/Blank.png</Feature>
+				</Features>
+			</State>
+
+			<State Factory="Video" Name="ExploreIntro" File="Videos/HelpRaw.mp4" FinishState="ActiveAreaTest" Transition="Cut" Frame="MainWindow" >
+				<IdleTriggers>
+					<Trigger Name="VideoIdleTrigger" />
+				</IdleTriggers>
+				<Features>
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="LeftWindow">Images/MenuBGs/Explore-Intro-L.png</Feature>
+					<Feature Name="ExploreIntroSkeleton" />
+					<Feature Factory="Image" X="0" Y="0" W="1920" H="1080" Frame="RightWindow">Images/MenuBGs/Explore-Intro-R.png</Feature>
+				</Features>
+			</State>
+
+
+		</States>
+		<Transitions />
+	</HoverBased>
+</Overlay>

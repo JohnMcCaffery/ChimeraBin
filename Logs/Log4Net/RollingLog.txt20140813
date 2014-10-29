@@ -1,0 +1,149 @@
+2014-08-13 12:04:26,611 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2014-08-13 12:04:26,709 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-08-13 12:04:26,713 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-08-13 12:04:26,714 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-08-13 12:04:26,718 [1] INFO  Core - Loaded KiectDisable. Enabled.
+2014-08-13 12:04:26,720 [1] INFO  Core - Loaded Shutdown. Enabled.
+2014-08-13 12:04:26,735 [1] INFO  OpenSim.MainWindowProxy - Proxying http://apollo.cs.st-andrews.ac.uk:8002/
+2014-08-13 12:04:26,757 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-08-13 12:04:26,759 [1] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation "Jing" from ../../../../../../Program Files (x86)/Firestorm-private-shutle01
+2014-08-13 12:04:26,983 [1] INFO  ProcessManager - Listening for crashes.
+2014-08-13 12:04:36,602 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 138.251.214.217:9003 at 127.0.0.1:53824
+2014-08-13 12:04:57,745 [1] DEBUG Core - Shutting down tick thread.
+2014-08-13 12:04:57,773 [Tick Thread] INFO  Core - Tick Thread shut down.
+2014-08-13 12:04:57,807 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2014-08-13 12:04:57,807 [20] DEBUG OpenSim.MainWindowViewer - Closing
+2014-08-13 12:04:57,807 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-08-13 12:04:57,838 [21] DEBUG OpenSim.MainWindowViewer - Closing
+2014-08-13 12:04:57,838 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-08-13 12:04:57,839 [1] INFO  Core - System shutdown for -Shutdown.
+2014-08-13 12:04:58,928 [20] INFO  OpenSim.MainWindowViewer - Closed
+2014-08-13 12:04:58,928 [21] INFO  OpenSim.MainWindowViewer - Closed
+2014-08-13 12:04:59,097 [LoginProxy] ERROR OpenMetaverse - Request error
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 138.251.214.217:9000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at GridProxy.Proxy.ProxyCaps(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
+2014-08-13 12:04:59,608 [16] WARN  OpenMetaverse - Socket Shutdown: ConnectionReset
+2014-08-13 12:05:03,276 [17] INFO  OpenSim - MainWindow viewer pressing ^%{F1}
+2014-08-13 12:06:06,639 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2014-08-13 12:06:06,656 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-08-13 12:06:06,658 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-08-13 12:06:06,659 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-08-13 12:06:06,663 [1] INFO  Core - Loaded KiectDisable. Enabled.
+2014-08-13 12:06:06,665 [1] INFO  Core - Loaded Shutdown. Enabled.
+2014-08-13 12:06:06,680 [1] INFO  OpenSim.MainWindowProxy - Proxying http://128.0.0.1:9000/
+2014-08-13 12:06:06,683 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-08-13 12:06:06,685 [1] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation "Jing" from ../../../../../../Program Files (x86)/Firestorm-private-shutle01
+2014-08-13 12:06:06,851 [1] INFO  ProcessManager - Listening for crashes.
+2014-08-13 12:06:31,132 [3] WARN  OpenSim - Restarting MainWindow viewer because UnexpectedViewerClose.
+2014-08-13 12:06:31,134 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2014-08-13 12:06:31,134 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-08-13 12:06:32,136 [1] INFO  OpenSim.MainWindowProxy - Proxying http://128.0.0.1:9000/
+2014-08-13 12:06:32,137 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-08-13 12:06:32,138 [3] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation "Jing" from ../../../../../../Program Files (x86)/Firestorm-private-shutle01
+2014-08-13 12:06:33,904 [LoginProxy] ERROR OpenMetaverse - Request error
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 128.0.0.1:9000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
+2014-08-13 12:06:33,907 [LoginProxy] ERROR OpenMetaverse - Unable to return response to client
+System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at GridProxy.Proxy.ProxyGetGridInfo(NetworkStream netStream, String meth, String uri, Dictionary`2 headers, Byte[] content, Int32 reqNo)
+2014-08-13 12:06:41,320 [1] DEBUG Core - Shutting down tick thread.
+2014-08-13 12:06:41,347 [Tick Thread] INFO  Core - Tick Thread shut down.
+2014-08-13 12:06:41,382 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2014-08-13 12:06:41,383 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-08-13 12:06:41,383 [18] DEBUG OpenSim.MainWindowViewer - Closing
+2014-08-13 12:06:41,384 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-08-13 12:06:41,384 [19] DEBUG OpenSim.MainWindowViewer - Closing
+2014-08-13 12:06:41,385 [1] INFO  Core - System shutdown for -Shutdown.
+2014-08-13 12:06:52,149 [18] INFO  OpenSim.MainWindowViewer - Closed
+2014-08-13 12:06:52,149 [19] INFO  OpenSim.MainWindowViewer - Closed
+2014-08-13 12:07:11,620 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2014-08-13 12:07:11,637 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-08-13 12:07:11,640 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-08-13 12:07:11,641 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-08-13 12:07:11,644 [1] INFO  Core - Loaded KiectDisable. Enabled.
+2014-08-13 12:07:11,647 [1] INFO  Core - Loaded Shutdown. Enabled.
+2014-08-13 12:07:11,662 [1] INFO  OpenSim.MainWindowProxy - Proxying http://127.0.0.1:9000/
+2014-08-13 12:07:11,666 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-08-13 12:07:11,668 [1] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation "Jing" from ../../../../../../Program Files (x86)/Firestorm-private-shutle01
+2014-08-13 12:07:11,834 [1] INFO  ProcessManager - Listening for crashes.
+2014-08-13 12:07:20,541 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9000 at 127.0.0.1:59262
+2014-08-13 12:07:23,675 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9001 at 127.0.0.1:59263
+2014-08-13 12:07:24,174 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9002 at 127.0.0.1:59264
+2014-08-13 12:07:24,674 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9003 at 127.0.0.1:59265
+2014-08-13 12:07:25,174 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9004 at 127.0.0.1:59266
+2014-08-13 12:07:25,674 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9005 at 127.0.0.1:59267
+2014-08-13 12:07:26,174 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9006 at 127.0.0.1:59268
+2014-08-13 12:07:26,674 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9007 at 127.0.0.1:59269
+2014-08-13 12:07:27,174 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9008 at 127.0.0.1:59270
+2014-08-13 12:07:40,685 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9010 at 127.0.0.1:59271
+2014-08-13 12:07:42,685 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9011 at 127.0.0.1:59272
+2014-08-13 12:07:43,185 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9012 at 127.0.0.1:59273
+2014-08-13 12:07:43,685 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9013 at 127.0.0.1:59274
+2014-08-13 12:07:44,185 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9014 at 127.0.0.1:59275
+2014-08-13 12:07:44,685 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9015 at 127.0.0.1:59276
+2014-08-13 12:07:45,185 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9016 at 127.0.0.1:59277
+2014-08-13 12:07:45,685 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9017 at 127.0.0.1:59278
+2014-08-13 12:07:46,685 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9018 at 127.0.0.1:59279
+2014-08-13 12:07:47,592 [19] INFO  OpenSim - MainWindow viewer pressing ^%{F1}
+2014-08-13 12:13:02,929 [1] DEBUG Core - Shutting down tick thread.
+2014-08-13 12:13:02,930 [Tick Thread] INFO  Core - Tick Thread shut down.
+2014-08-13 12:13:02,991 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2014-08-13 12:13:02,991 [113] DEBUG OpenSim.MainWindowViewer - Closing
+2014-08-13 12:13:02,991 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-08-13 12:13:02,993 [114] DEBUG OpenSim.MainWindowViewer - Closing
+2014-08-13 12:13:02,993 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-08-13 12:13:02,994 [1] INFO  Core - System shutdown for -Shutdown.
+2014-08-13 12:13:04,503 [113] INFO  OpenSim.MainWindowViewer - Closed
+2014-08-13 12:13:04,503 [114] INFO  OpenSim.MainWindowViewer - Closed
+2014-08-13 12:18:24,182 [1] INFO  Core - Loaded KB+Mouse. Enabled.
+2014-08-13 12:18:24,207 [1] INFO  Core - Loaded Flythrough. Enabled.
+2014-08-13 12:18:24,210 [1] INFO  Core - Loaded RemoteControl. Enabled.
+2014-08-13 12:18:24,211 [1] INFO  Core - Loaded VW-Viewer. Enabled.
+2014-08-13 12:18:24,217 [1] INFO  Core - Loaded KiectDisable. Enabled.
+2014-08-13 12:18:24,221 [1] INFO  Core - Loaded Shutdown. Enabled.
+2014-08-13 12:18:24,240 [1] INFO  OpenSim.MainWindowProxy - Proxying http://127.0.0.1:9000/
+2014-08-13 12:18:24,244 [1] INFO  OpenMetaverse - Proxy ready at http://127.0.0.1:8080/
+2014-08-13 12:18:24,246 [1] INFO  ProcessController - Launching C:\Program Files (x86)\Firestorm-private-shutle01\Firestorm-private-shutle01.exe  --loginuri http://127.0.0.1:8080 --login Master Client clientPassword --channel "Firestorm-Release" --settings settings_firestorm_release_v4.xml --set InstallLanguage en --set LoginLocation "Jing" from ../../../../../../Program Files (x86)/Firestorm-private-shutle01
+2014-08-13 12:18:24,418 [1] INFO  ProcessManager - Listening for crashes.
+2014-08-13 12:18:36,472 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9000 at 127.0.0.1:50817
+2014-08-13 12:18:39,741 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9001 at 127.0.0.1:50818
+2014-08-13 12:18:40,240 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9002 at 127.0.0.1:50819
+2014-08-13 12:18:40,740 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9003 at 127.0.0.1:50820
+2014-08-13 12:18:41,240 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9004 at 127.0.0.1:50821
+2014-08-13 12:18:41,740 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9005 at 127.0.0.1:50822
+2014-08-13 12:18:42,240 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9006 at 127.0.0.1:50823
+2014-08-13 12:18:42,740 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9007 at 127.0.0.1:50824
+2014-08-13 12:18:43,240 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9008 at 127.0.0.1:50825
+2014-08-13 12:18:57,741 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9010 at 127.0.0.1:50826
+2014-08-13 12:18:59,241 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9011 at 127.0.0.1:50827
+2014-08-13 12:18:59,741 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9012 at 127.0.0.1:50828
+2014-08-13 12:19:00,741 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9013 at 127.0.0.1:50829
+2014-08-13 12:19:01,242 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9014 at 127.0.0.1:50830
+2014-08-13 12:19:01,742 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9015 at 127.0.0.1:50831
+2014-08-13 12:19:02,242 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9016 at 127.0.0.1:50832
+2014-08-13 12:19:03,242 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9017 at 127.0.0.1:50833
+2014-08-13 12:19:03,243 [LoginProxy] INFO  OpenMetaverse - Creating proxy for 192.168.1.68:9018 at 127.0.0.1:50834
+2014-08-13 12:19:03,667 [18] INFO  OpenSim - MainWindow viewer pressing ^%{F1}
+2014-08-13 12:44:42,923 [1] DEBUG Core - Shutting down tick thread.
+2014-08-13 12:44:42,940 [Tick Thread] INFO  Core - Tick Thread shut down.
+2014-08-13 12:44:42,986 [1] DEBUG OpenSim.MainWindowProxy - Closing
+2014-08-13 12:44:42,986 [67] DEBUG OpenSim.MainWindowViewer - Closing
+2014-08-13 12:44:42,987 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-08-13 12:44:42,990 [32] DEBUG OpenSim.MainWindowViewer - Closing
+2014-08-13 12:44:42,990 [1] INFO  OpenSim.MainWindowProxy - Closed
+2014-08-13 12:44:42,992 [1] INFO  Core - System shutdown for -Shutdown.
+2014-08-13 12:44:44,606 [67] INFO  OpenSim.MainWindowViewer - Closed
+2014-08-13 12:44:44,606 [32] INFO  OpenSim.MainWindowViewer - Closed
