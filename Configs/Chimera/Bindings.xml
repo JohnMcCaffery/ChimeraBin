@@ -64,4 +64,6 @@
   <!--                        EXPERIMENTAL BINDINGS                         -->
   <!--                        FLYTHROUGH BINDINGS                         -->
   <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Flythrough.FlythroughPlugin, FlythroughLib" scope="singleton" />
+  <!--                        CHIMERA BINDINGS                         -->
+  <bind service="Chimera.ISystemPlugin, ChimeraLib" to="Chimera.Plugins.ScreenshotSequencePlugin, ChimeraLib" scope="singleton" />
 </module>
